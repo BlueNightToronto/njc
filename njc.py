@@ -23,7 +23,7 @@ class njc:
     @commands.command()
     async def brampton(self, ctx):
         channel = ctx.message.channel
-        with open('data/njc/BramptonGatewayTerminal.wav', 'rb') as f:
+        with open('njc/BramptonGatewayTerminal.wav', 'rb') as f:
             await self.bot.send_file(channel, f)
 
 
@@ -204,7 +204,7 @@ class njc:
             agencyname = ""
 
         try:
-            fleetlist = open("data/njc/fleets/{}.csv".format(agency))
+            fleetlist = open("njc/fleets/{}.csv".format(agency))
             reader = csv.reader(fleetlist,delimiter="	")
             line = []
         except:
@@ -247,7 +247,7 @@ class njc:
         
         try:
             reader = None
-            fleetlist = open("data/njc/fleets/{}.csv".format(agency))
+            fleetlist = open("njc/fleets/{}.csv".format(agency))
             reader = csv.reader(fleetlist,delimiter="	")
         except:
             data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the fleet lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
@@ -279,7 +279,7 @@ class njc:
             await self.bot.say("Invalid field")
             return
         writer = None
-        with open("data/njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
+        with open("njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
             writer = csv.writer(fleetlist,delimiter="	")     
             for i in lines:
                 writer.writerow(i)
