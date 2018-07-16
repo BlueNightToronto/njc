@@ -99,7 +99,7 @@ class njc:
             routename = i.attributes['routeTitle'].value # GETS ROUTE NAME
             predictions = i.getElementsByTagName('prediction') # Get all sub-tags called 'prediction'
             for i in predictions: # Loop through these
-                try:
+                try: #test
                     seconds = int(i.attributes['seconds'].value) # If the seconds value is blank, this will throw an error (dividing by 0) and trigger the exception handler, and this value needs to be an int later anyway
                     vehicle = i.attributes['vehicle'].value
                     if vehicle >= '1000' and vehicle <= '1149':
