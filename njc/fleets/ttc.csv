@@ -1,5 +1,5 @@
 vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
-7	N/A	Prevost	1998 LeMirage XL-45	Lakeshore	DD60-B500	Inactive	long thing with several words	9 July 2018
+1	N/A	Prevost	1998 LeMirage XL-45	Lakeshore	DD60-B500	Inactive		9 July 2018
 100	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Community Bus	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 101	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Community Bus	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 102	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Community Bus	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
@@ -42,7 +42,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 139	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 140	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 141	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
-142	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
+142	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	lasa	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 143	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 144	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 145	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
@@ -111,7 +111,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 208	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 209	100-209	Ford/StarTrans Bus	F-450/Senator SII LF (2009)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 210	210-214	Ford/StarTrans Bus	F-450/Senator SII LF	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
-211	210-214	Ford/StarTrans Bus	F-450/Senator SII LF	TTC Community Bus	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
+211	210-214	Ford/StarTrans Bus	F-450/Senator SII LF	TTC Community Bus	Ford Power Stroke-Ford 5R110W	Active	https://cdn.discordapp.com/attachments/385830976879722499/466636235155177472/IMG_0574.JPG	11 July 2018
 212	210-214	Ford/StarTrans Bus	F-450/Senator SII LF	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 213	210-214	Ford/StarTrans Bus	F-450/Senator SII LF	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 214	210-214	Ford/StarTrans Bus	F-450/Senator SII LF	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
@@ -142,7 +142,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 239	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 240	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 241	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
-242	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
+242	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active	https://media.discordapp.net/attachments/385830976879722499/466453465867091968/IMG_4784.JPG?width=500&height=300	11 July 2018
 243	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 244	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
 245	215-300	Ford/StarTrans Bus	F-450/Senator SII LF (2011-2012)	TTC Wheel Trans	Ford Power Stroke-Ford 5R110W	Active		9 July 2018
@@ -219,7 +219,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 515	500-519	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	Active		9 July 2018
 516	500-519	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	Active		9 July 2018
 517	500-519	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	Active		9 July 2018
-518	500-519	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	Active		9 July 2018
+518	500-519	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	Active	https://media.discordapp.net/attachments/385830976879722499/466665231779758080/IMG_6045.JPG?width=779&height=520	11 July 2018
 519	500-519	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	Active		9 July 2018
 520	520-579	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	TBD		9 July 2018
 521	520-579	Creative Carraige/Ram	ProMaster CS-1	TTC Wheel Trans	Pentastar-62TE	TBD		9 July 2018
@@ -298,7 +298,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1014	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1015	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1016	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1017	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1017	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466612114623168522/IMG_85871.JPG	11 July 2018
 1018	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1019	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1020	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -337,13 +337,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1053	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1054	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1055	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1056	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1056	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466661735034781706/IMG_6200.JPG?width=779&height=520	11 July 2018
 1057	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1058	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1059	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://www.flickr.com/photos/137793316@N02/41088268095/in/dateposted-public/	9 July 2018
 1060	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1061	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1062	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1062	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466454235522007040/IMG_4838.JPG?width=500&height=300	11 July 2018
 1063	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://www.flickr.com/photos/137793316@N02/41560088081/in/dateposted-public/	9 July 2018
 1064	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1065	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -355,7 +355,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1071	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1072	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1073	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1074	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1074	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466447992925323276/IMG_4397.JPG?width=500&height=300	10 July 2018
 1075	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1076	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1077	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -392,7 +392,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1108	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1109	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1110	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1111	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1111	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466617842247401482/IMG_0780.JPG	11 July 2018
 1112	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1113	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1114	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -403,7 +403,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1119	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1120	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1121	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1122	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1122	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466617506145107980/IMG_20180706_122754_043.jpg	11 July 2018
 1123	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1124	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1125	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -422,7 +422,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1138	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1139	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1140	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1141	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1141	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466672306014519297/IMG_5658.JPG?width=779&height=520	11 July 2018
 1142	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1143	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1144	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -443,7 +443,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1209	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1210	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1211	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1212	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1212	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466634774178562062/IMG_0003_Edited_2.JPG	11 July 2018
 1213	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1214	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1215	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -473,7 +473,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1239	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1240	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1241	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1242	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1242	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466442601332080640/IMG_3689.JPG?width=500&height=300	10 July 2018
 1243	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1244	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1245	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
@@ -488,7 +488,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1254	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1255	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1256	1200-1423	Orion	2007 VII HEV	N/A	ISB-BAE	Retired - 2010		9 July 2018
-1257	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
+1257	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466670277368217600/IMG_5774.JPG?width=779&height=520	11 July 2018
 1258	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1259	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1260	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -503,12 +503,12 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1269	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1270	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1271	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
-1272	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1272	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466607050378706974/IMG_0023.JPG	11 July 2018
 1273	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1274	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1275	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1276	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
-1277	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
+1277	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466635686855049236/fGZ83z0LFLz3W1w9xJDdkabdXkG4EjF6_WKCwb8sMtRD68__ZSRX0VFDqdYAcbBRx3nQmUk92WHVaqNhLlJ9ryZrHqQDW-HhZZAh.png	11 July 2018
 1278	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1279	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1280	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
@@ -531,8 +531,8 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1297	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1298	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1299	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
-1300	1200-1423	Orion	2007 VII HEV	N/A	ISB-BAE	Retired		9 July 2018
-1301	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
+1300	1200-1423	Orion	2007 VII HEV	N/A	ISB-BAE	Retired		13 July 2018
+1301	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466593014215868426/IMG_6787.JPG	11 July 2018
 1302	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1303	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1304	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
@@ -567,13 +567,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1333	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1334	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1335	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
-1336	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
+1336	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466445500598452232/IMG_4176.JPG?width=500&height=300	10 July 2018
 1337	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1338	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1339	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1340	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
-1341	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
-1342	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
+1341	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466684119305420840/IMG_1217.JPG	11 July 2018
+1342	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466460401996136469/IMG_5087.JPG?width=500&height=300	11 July 2018
 1343	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1344	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1345	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -639,7 +639,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1405	1200-1423	Orion	2007 VII HEV	N/A	ISB-BAE	Retired		9 July 2018
 1406	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1407	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1408	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1408	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/351584615166902304/466670706286002186/20180711_142142.jpg	11 July 2018
 1409	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1410	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1411	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -653,14 +653,14 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1419	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1420	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1421	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1422	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1422	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466619227818819584/IMG_0243_Edited.JPG	11 July 2018
 1423	1200-1423	Orion	2007 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1500	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1501	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1502	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1503	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1504	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1505	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
+1505	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466627523716055050/B0TNy5kTDD_qA4Lhs-qUMPxR5P6H0iJrVfVE2krcF6uRgfltEhS1omgN7ZcU5js3uknN3wdczqd2DM8V6DlquDzNOCOpMoEOUN80.png	11 July 2018
 1506	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1507	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1508	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -702,13 +702,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1544	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1545	1500-1689	Orion	2008 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
 1546	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1547	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
+1547	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466610306739601418/IMG_8992.JPG	11 July 2018
 1548	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1549	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1550	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1551	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1552	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1553	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1553	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466453922509226004/IMG_4826.JPG?width=500&height=300	11 July 2018
 1554	1500-1689	Orion	2008 VII HEV	N/A	ISB-BAE	Retired - 2018		9 July 2018
 1555	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1556	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -730,7 +730,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1572	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1573	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1574	1500-1689	Orion	2008 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
-1575	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1575	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466443022356316172/IMG_3725.JPG?width=500&height=300	10 July 2018
 1576	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1577	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1578	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -741,7 +741,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1583	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1584	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1585	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1586	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1586	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466628778332782602/IMG_1352.JPG	11 July 2018
 1587	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1588	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1589	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -757,7 +757,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1599	1500-1689	Orion	2008 VII HEV	N/A	ISB-BAE	Retired - 2017		9 July 2018
 1600	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1601	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1602	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
+1602	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466675275023777792/IMG_5329.JPG?width=779&height=520	11 July 2018
 1603	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1604	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1605	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -820,7 +820,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1662	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1663	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1664	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1665	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
+1665	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466663802385989632/IMG_6110.JPG?width=779&height=520	11 July 2018
 1666	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1667	1500-1689	Orion	2008 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1668	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -861,7 +861,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1713	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1714	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1715	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1716	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
+1716	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466449924150657035/IMG_4495.JPG?width=500&height=300	10 July 2018
 1717	1700-1829	Orion	2009 VII HEV	N/A	ISB-BAE	Retired - 2018		9 July 2018
 1718	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1719	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -905,7 +905,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1757	1700-1829	Orion	2009 VII HEV	N/A	ISB-BAE	Retired - 2018		9 July 2018
 1758	1700-1829	Orion	2009 VII HEV	N/A	ISB-BAE	Retired - 2018		9 July 2018
 1759	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1760	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
+1760	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466628821072740357/rOuvI9Ro7dNQE4lG4Kx3ZLvx_-Ui9sBtAJbHRK7w1UOC3Oq6v9XbmHyz6d7dsgA1Xs-OVd6OUjX6WkzBQancCJIcPw8fuRIl5FNb.png	11 July 2018
 1761	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1762	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1763	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -969,29 +969,29 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1821	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1822	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1823	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1824	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
+1824	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466630501545803776/IMG_1736.JPG	11 July 2018
 1825	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1826	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1827	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1828	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1829	1700-1829	Orion	2009 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 2766	2700-2898	CC&F	1922 Peter Witt	Hillcrest	Overhead Wire	Inactive	https://cptdb.ca/wiki/images/f/f5/Toronto_Transit_Commission_2766-a.jpg	9 July 2018
-3000	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3001	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
+3000	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466605321003991040/IMG_6348.JPG	11 July 2018
+3001	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466603475703300116/IMG_0447.JPG	11 July 2018
 3002	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3003	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3004	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3005	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
+3003	3000-3027	ICTS	1982 Mark I	McCowan	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466293957375295498/20180710_123052.jpg	12 July 2018
+3004	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://media.discordapp.net/attachments/385830976879722499/466433802999431178/IMG_20180708_203131_576.jpg?width=500&height=300	10 July 2018
+3005	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466677568951681024/IMG_0141.JPG	11 July 2018
 3006	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3007	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3008	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3009	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3010	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3011	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3012	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
+3012	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://media.discordapp.net/attachments/385830976879722499/466671155504218112/IMG_5763.JPG?width=779&height=520	11 July 2018
 3013	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3014	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3015	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
+3015	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://media.discordapp.net/attachments/385830976879722499/466461487876014080/IMG_5099.JPG?width=500&height=300	11 July 2018
 3016	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3017	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3018	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
@@ -1004,18 +1004,18 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3025	3000-3027	ICTS	1986 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3026	3000-3027	ICTS	1986 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3027	3000-3027	ICTS	1986 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3100	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	3 phase linear	Active		9 July 2018
-3101	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3100	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R	Unavailable		13 July 2018
+3101	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		13 July 2018
 3102	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3103	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3104	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3105	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3106	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3104	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R	Active		12 July 2018
+3105	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R	Inactive		12 July 2018
+3106	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R	Unavailable		12 July 2018
 3107	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3108	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3109	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3110	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3111	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3111	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Inactive		12 July 2018
 3112	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3113	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3114	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1025,7 +1025,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3118	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3119	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3120	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3121	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3121	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3122	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3123	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3124	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1034,7 +1034,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3127	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3128	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3129	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3130	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3130	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3131	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3132	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3133	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
@@ -1050,7 +1050,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3143	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3144	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3145	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3146	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3146	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 July 2018
 3147	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3148	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3149	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1058,14 +1058,14 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3151	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3152	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3153	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3154	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3154	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3155	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3156	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3157	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3158	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3159	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3160	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3161	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3160	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
+3161	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3162	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3163	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3164	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
@@ -1089,17 +1089,17 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3182	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3183	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3184	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3185	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3186	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3185	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
+3186	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Unavailable		13 July 2018
 3187	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3188	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3188	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 July 2018
 3189	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3190	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3191	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3192	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3193	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3194	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3195	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3195	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3196	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3197	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3198	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
@@ -1119,19 +1119,19 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3212	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3213	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3214	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3215	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3215	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 July 2018
 3216	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3217	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3218	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3219	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3220	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3220	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3221	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3222	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3223	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3224	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3225	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3226	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3227	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3227	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Inactive		12 July 2018
 3228	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3229	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3230	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1147,7 +1147,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3240	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3241	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3242	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3243	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3243	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3244	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3245	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3246	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1157,7 +1157,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3250	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3251	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3252	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3253	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3253	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
 3254	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3255	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3256	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1171,7 +1171,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3264	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3265	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3266	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3267	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3267	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Inactive		12 July 2018
 3268	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3269	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3270	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1187,22 +1187,22 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3280	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3281	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3282	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3283	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3284	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3285	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3283	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Inactive		12 July 2018
+3284	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
+3285	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
 3286	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3287	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3288	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3289	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3289	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
 3290	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3291	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3292	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3292	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
 3293	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3294	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3295	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3295	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
 3296	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3297	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3298	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3298	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
 3299	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3300	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3301	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1217,7 +1217,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3310	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3311	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3312	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3313	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3313	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Inactive		12 July 2018
 3314	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3315	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3316	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1227,7 +1227,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3320	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3321	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3322	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
-3323	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3323	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Inactive		12 July 2018
 3324	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3325	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3326	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1444,7 +1444,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3567	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3568	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3569	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-4000	4000-4005	SIG	CLRV L1	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
+4000	4000-4005	SIG	CLRV L1	TTC Streetcar	Overhead Wire	Retired - 2017	https://cdn.discordapp.com/attachments/385830976879722499/466602502771703808/19622963_1944721129142841_8394014006615998464_n_2.jpg	11 July 2018
 4001	4000-4005	SIG	CLRV L1	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4002	4000-4005	SIG	CLRV L1	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4003	4000-4005	SIG	CLRV L1	TTC Streetcar	Overhead Wire	Active		9 July 2018
@@ -1461,7 +1461,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4018	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4019	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4020	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4021	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4021	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466634226301665280/2015-06-29-165644.jpg	11 July 2018
 4022	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4023	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4024	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
@@ -1481,7 +1481,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4038	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4039	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4040	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4041	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4041	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://media.discordapp.net/attachments/385830976879722499/466439466324590592/IMG_1653.JPG?width=500&height=300	10 July 2018
 4042	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4043	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4044	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
@@ -1492,24 +1492,24 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4049	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4050	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4051	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4052	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4052	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://media.discordapp.net/attachments/385830976879722499/466461035688361984/IMG_5193.JPG?width=500&height=300	11 July 2018
 4053	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4054	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
-4055	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4055	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://media.discordapp.net/attachments/385830976879722499/466441870285733889/IMG_3616.JPG?width=500&height=300	10 July 2018
 4056	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4057	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4058	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
 4059	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4060	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
 4061	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2015		9 July 2018
-4062	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
+4062	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017	https://cdn.discordapp.com/attachments/385830976879722499/466601890545664002/984260_750949441661659_8981331374969407725_n.jpg	11 July 2018
 4063	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2006		9 July 2018
 4064	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2018		9 July 2018
 4065	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4066	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4067	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4068	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4069	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4069	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466588817672110080/IMG_0410.JPG	11 July 2018
 4070	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4071	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4072	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
@@ -1559,7 +1559,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4116	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2015		9 July 2018
 4117	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4118	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
-4119	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4119	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://media.discordapp.net/attachments/385830976879722499/466661061316182023/IMG_6205.JPG?width=779&height=520	11 July 2018
 4120	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4121	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4122	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
@@ -1573,13 +1573,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4130	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4131	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4132	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4133	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4133	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466682600287895552/IMG_0903.JPG	11 July 2018
 4134	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2018		9 July 2018
 4135	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4136	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4137	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
 4138	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
-4139	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2018		9 July 2018
+4139	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2018	https://cdn.discordapp.com/attachments/385830976879722499/466600041901981706/21272092_1457311511025445_8875455773917883385_n.jpg	11 July 2018
 4140	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4141	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4142	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2018		9 July 2018
@@ -1595,7 +1595,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4152	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4153	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4154	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4155	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4155	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466593523207241728/IMG_7813.JPG	11 July 2018
 4156	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4157	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
 4158	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
@@ -1609,7 +1609,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4166	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4167	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4168	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
-4169	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4169	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466633835535138817/IMG_1552.JPG	11 July 2018
 4170	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4171	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4172	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
@@ -1618,11 +1618,11 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4175	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4176	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4177	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4178	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4178	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466629721182961684/IMG_1437_Edited.JPG	11 July 2018
 4179	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4180	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4181	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4182	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4182	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/464882173690773514/20180706_152325.jpg	11 July 2018
 4183	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4184	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4185	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
@@ -1633,25 +1633,25 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4190	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4191	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4192	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4193	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4193	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/351584615166902304/466671358584029189/SmartSelect_20180711-142510_Instagram.jpg	11 July 2018
 4194	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2014		9 July 2018
 4195	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4196	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2016		9 July 2018
 4197	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4198	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4198	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466617151713705994/IMG_0756.JPG	11 July 2018
 4199	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4200	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
+4200	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active	https://cdn.discordapp.com/attachments/385830976879722499/466591795116244993/image.jpg	11 July 2018
 4201	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2017		9 July 2018
 4202	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4203	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4204	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4205	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2018		9 July 2018
 4206	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2015		9 July 2018
-4207	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
+4207	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active	https://cdn.discordapp.com/attachments/385830976879722499/466599171621650458/IMG_1512.JPG	11 July 2018
 4208	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4209	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2017		9 July 2018
 4210	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
-4211	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2015		9 July 2018
+4211	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2015	https://cdn.discordapp.com/attachments/385830976879722499/466600468504772638/2016-03-11-113924.jpg	11 July 2018
 4212	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2018		9 July 2018
 4213	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2018		9 July 2018
 4214	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
@@ -1666,7 +1666,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4223	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2018		9 July 2018
 4224	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4225	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
-4226	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
+4226	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active	https://media.discordapp.net/attachments/385830976879722499/466668344423088128/IMG_5830.JPG?width=779&height=520	11 July 2018
 4227	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2018		9 July 2018
 4228	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4229	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
@@ -1683,7 +1683,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4240	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4241	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2018		9 July 2018
 4242	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
-4243	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
+4243	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active	https://cdn.discordapp.com/attachments/385830976879722499/466599553152319488/IMG_1511.JPG	11 July 2018
 4244	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4245	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
 4246	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Active		9 July 2018
@@ -1713,7 +1713,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4418	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4419	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4420	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4421	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4421	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active	https://media.discordapp.net/attachments/385830976879722499/466666868451573781/IMG_5892.JPG?width=779&height=520	11 July 2018
 4422	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4423	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4424	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
@@ -1741,20 +1741,20 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4446	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4447	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4448	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4449	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4449	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/466596571929116682/IMG_1354.JPG	11 July 2018
 4450	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4451	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4452	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4453	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4454	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4455	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4455	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active	https://media.discordapp.net/attachments/385830976879722499/466661488627679252/IMG_6201.JPG?width=779&height=520	11 July 2018
 4456	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4457	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4458	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4459	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4460	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4461	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4462	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
+4462	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/463063358216601612/20180701_145610.jpg	11 July 2018
 4463	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4464	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4465	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		9 July 2018
@@ -1792,7 +1792,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4497	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4498	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4499	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
-4500	4600-4618	Canadian Car and Foundry	1951 PCC A-15	TTC Streetcar	Westinghouse 1432	Inactive		9 July 2018
+4500	4600-4618	Canadian Car and Foundry	1951 PCC A-15	TTC Streetcar	Westinghouse 1432	Inactive	https://cdn.discordapp.com/attachments/385830976879722499/466587596781518871/18620321_1353110604778870_7774414949635130044_n.jpg	11 July 2018
 4501	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4502	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4503	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
@@ -1841,7 +1841,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4546	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4547	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4548	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
-4549	4600-4618	Canadian Car and Foundry	1989 PCC A-15	TTC Streetcar	Westinghouse 1432	Inactive		9 July 2018
+4549	4600-4618	Canadian Car and Foundry	1989 PCC A-15	TTC Streetcar	Westinghouse 1432	Inactive	https://cdn.discordapp.com/attachments/385830976879722499/466585157760188427/IMG_1833_Edited.JPG	11 July 2018
 4550	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4551	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4552	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
@@ -1896,16 +1896,16 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 4601	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4602	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
 4603	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Unavailable		9 July 2018
-5000	5000-5371	Bombardier	T1 5000-5001	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5001	5000-5371	Bombardier	T1 5000-5001	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
+5000	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active	https://cdn.discordapp.com/attachments/385830976879722499/466638052584980490/IMG_1269.JPG	12 July 2018
+5001	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
 5002	5000-5371	Bombardier	T1 5002-5003	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5003	5000-5371	Bombardier	T1 5002-5003	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5004	5000-5371	Bombardier	T1 5004-5005	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5005	5000-5371	Bombardier	T1 5004-5005	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5006	5000-5371	Bombardier	T1 5006-5007	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5007	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5008	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5009	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
+5003	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
+5004	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
+5005	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
+5006	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
+5007	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
+5008	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
+5009	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		12 July 2018
 5010	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5011	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5012	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
@@ -2082,11 +2082,11 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 5183	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5184	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5185	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5186	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
+5186	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active	https://cdn.discordapp.com/attachments/385830976879722499/466635415734976523/CPD26wgK05ovpb7e0RBI3gxEWoFWo19nS2oi6-FZ0OONgOHvuaGDDRpHb8ZPPtoiVfsnQm937wHGnciqScfV7hQ1fMc2TSRF1DNA.png	11 July 2018
 5187	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5188	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5189	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
-5190	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
+5190	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active	https://media.discordapp.net/attachments/385830976879722499/466675811332915210/IMG_5306.JPG?width=779&height=520	11 July 2018
 5191	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5192	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
 5193	5000-5371	Bombardier	T1	TTC 2 Subway	ADTranz 1507A	Active		9 July 2018
@@ -2788,7 +2788,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7537	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7538	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7539	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
-7540	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
+7540	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017	https://cdn.discordapp.com/attachments/385830976879722499/466627761864179732/HeSX06j9iDgZA95u-xwktEsBHq1O_tpAMh-la2zdvVwGYHZz_dZSO-jSXuBz8pnK442xehtl9dizl8vcVGOOm8U0BiXrSf0sHNcZ.png	11 July 2018
 7541	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7542	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7543	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
@@ -2806,7 +2806,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7555	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7556	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7557	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
-7558	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
+7558	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2018	https://cdn.discordapp.com/attachments/385830976879722499/466632179275792395/VaOKRGEyNN-d4PtZm_k_AAkZ4lj88oF5vf112ovo6KSq2YlMOmhjB0UoEVRT8ANuEcKfmkvIIeCw2FvJ-pXSHBdxaEfck_-iRgnv.png	11 July 2018
 7559	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7560	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7561	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
@@ -2823,7 +2823,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7572	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7573	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7574	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
-7575	7500-7619	Orion	2004 VII	Birchmount	DDS50EGR-B400R	Active (ffs)		9 July 2018
+7575	7500-7619	Orion	2004 VII	Birchmount	DDS50EGR-B400R	Active)	https://cptdb.ca/wiki/images/thumb/3/32/Toronto_Transit_Commission_7575-b.jpg/800px-Toronto_Transit_Commission_7575-b.jpg	10 July 2018
 7576	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7577	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7578	7500-7619	Orion	2004 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
@@ -2895,7 +2895,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7644	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7645	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7646	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
-7647	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
+7647	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018	https://cdn.discordapp.com/attachments/385830976879722499/466632162930720772/I-tDDss7iHo9Sdkigf168wGVWmiTzxqqbBgrzYcxnL9ew96GCRzO_FZ3v6OgTz5zMI3MdjsWEqlWs5HUTdkyKQz9HvofBMtIbIq2.png	11 July 2018
 7648	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7649	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7650	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
@@ -2983,7 +2983,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7732	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7733	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7734	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
-7735	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7735	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466623585210073118/IMG_0444.JPG	11 July 2018
 7736	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7737	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7738	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
@@ -2993,9 +2993,9 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7742	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7743	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7744	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7745	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7745	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466668618743283742/IMG_5819.JPG?width=779&height=520	11 July 2018
 7746	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7747	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7747	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466451292856778762/IMG_4654.JPG?width=500&height=300	10 July 2018
 7748	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7749	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7750	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
@@ -3003,29 +3003,29 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7752	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7753	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7754	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7755	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7756	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7755	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466682177862500352/IMG_4792.JPG?width=779&height=520	11 July 2018
+7756	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466449391809462292/IMG_4438.JPG?width=500&height=300	10 July 2018
 7757	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7758	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7759	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7760	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7761	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7762	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7763	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7761	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/464823876547772427/20180706_113253.jpg	11 July 2018
+7762	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466613968463462400/IMG_7950.JPG	11 July 2018
+7763	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466630834271682590/20180711_114339.jpg	11 July 2018
 7764	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7765	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7766	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7767	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7768	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7769	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7769	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466614690408169472/IMG_7364.JPG?width=884&height=663	11 July 2018
 7770	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7771	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7771	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466608976461561856/IMG_9181.JPG	11 July 2018
 7772	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7773	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7774	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
-7775	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7775	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466627261416865792/IMG_1226.JPG	11 July 2018
 7776	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7777	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7777	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466458815970410497/IMG_5021.JPG?width=500&height=300	11 July 2018
 7778	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7779	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7780	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
@@ -3055,7 +3055,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7804	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7805	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7806	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
-7807	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2016		9 July 2018
+7807	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2016	https://cdn.discordapp.com/attachments/385830976879722499/466601433341362176/10897978_750949444994992_6146771808495031068_n.jpg	11 July 2018
 7808	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7809	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7810	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
@@ -3068,9 +3068,9 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7817	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7818	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7819	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7820	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7821	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7822	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
+7820	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466436632053284874/IMG_3319.JPG?width=500&height=300	10 July 2018
+7821	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466434424993480714/IMG_20180706_121305_575.jpg?width=519&height=519	10 July 2018
+7822	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018	https://cdn.discordapp.com/attachments/385830976879722499/466637149744136193/IMG_4810_Edited.JPG	11 July 2018
 7823	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7824	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7825	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
@@ -3086,16 +3086,16 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7835	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7836	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7837	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7838	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7838	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466623236726325258/IMG_0442_Edited.JPG	11 July 2018
 7839	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7840	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7841	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7842	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7843	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7844	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7845	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7846	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7847	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7844	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466631967782338561/IMG_1747_Edited.JPG	11 July 2018
+7845	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466590666558930954/IMG_7339.JPG	11 July 2018
+7846	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466678870863642634/IMG_0223.JPG	11 July 2018
+7847	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466609284625596427/IMG_9186.JPG	11 July 2018
 7848	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7849	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
 7850	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
@@ -3108,7 +3108,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7857	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7858	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7859	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7860	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7860	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466663258745602076/IMG_6146.JPG?width=779&height=520	11 July 2018
 7861	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7862	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7863	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
@@ -3116,7 +3116,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7865	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7866	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7867	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2017		9 July 2018
-7868	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7868	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/464784475709243402/image.jpg	11 July 2018
 7869	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7870	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7871	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
@@ -3129,9 +3129,9 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7878	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
 7879	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
 7880	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7881	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Retired 2018		9 July 2018
+7881	7620-7881	Orion	2005 VII	N/A	DDS50EGR-B400R	Inactive		12 July 2018
 7882	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
-7883	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active		9 July 2018
+7883	7620-7881	Orion	2005 VII	Birchmount	DDS50EGR-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466581672469725184/image.jpg	11 July 2018
 7884	7900-7979	<@335904109003538432>	<@335904109003538432>	Lmao	ISL-B400R	Active		9 July 2018
 7900	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7901	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3180,7 +3180,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7944	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7945	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7946	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
-7947	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
+7947	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466430088817278976/IMG_3092.JPG?width=500&height=300	10 July 2018
 7948	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7949	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7950	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3188,7 +3188,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7952	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7953	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7954	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
-7955	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
+7955	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466628086251651092/t6auIR07K3ToZld-hy5aNF9u3pNb_UJ0tc2jbDbQDwJbNuqJcRnNa4C6B4yDVrNy9fOys4Ynn03YwsoAHFL2QmJx9d4Ly1sRhnwv.png	11 July 2018
 7956	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7957	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7958	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3199,11 +3199,11 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7963	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7964	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7965	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
-7966	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
+7966	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active	https://media.discordapp.net/attachments/466672200024588301/466672851554926633/IMG_20180704_000253_918.jpg	11 July 2018
 7967	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7968	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7969	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
-7970	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
+7970	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466638501736087552/IMG_1264.JPG	11 July 2018
 7971	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7972	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7973	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3214,13 +3214,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 7978	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 7979	7900-7979	Orion	2006 VII	Queensway	ISL-B400R	Active		9 July 2018
 8000	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8001	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
+8001	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active	https://media.discordapp.net/attachments/466672200024588301/466999887742107659/IMG_20180503_195347_205.jpg	12 July 2018
 8002	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8003	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8004	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
+8004	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466682522076708894/IMG_4747.JPG?width=779&height=520	11 July 2018
 8005	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8006	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8007	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
+8007	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466584429280755712/IMG_0784.JPG	11 July 2018
 8008	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8009	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8010	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3234,7 +3234,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8018	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8019	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8020	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8021	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
+8021	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466617088317063178/IMG_20180627_003517_813.jpg	11 July 2018
 8022	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8023	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8024	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3251,7 +3251,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8035	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8036	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8037	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8038	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
+8038	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466677896254193664/IMG_5225.JPG?width=779&height=520	11 July 2018
 8039	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8040	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8041	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3262,7 +3262,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8046	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8047	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8048	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8049	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
+8049	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466441385055223819/IMG_3570.JPG?width=500&height=300	10 July 2018
 8050	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8051	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8052	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3313,14 +3313,14 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8097	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8098	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8099	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8100	8100-8219	Orion	2009 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8100	8100-8219	Orion	2009 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466641127009943582/IMG_9129.JPG	11 July 2018
 8101	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8102	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8102	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466641910791012352/IMG_7450.JPG	11 July 2018
 8103	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8104	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8105	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8106	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8107	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8107	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466616555275550720/IMG_0582.JPG	11 July 2018
 8108	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8109	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8110	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
@@ -3331,7 +3331,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8115	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8116	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8117	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8118	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8118	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466635118908407818/YGDptSnoZroVP8d6kYnmWTCj3y9TyrvmVq89CYINuFwBiPUftMDlWS7YHtVCaXjZXtxKvDHSAUa7kO6_AYywixDCTDSZX_1yfdvn.png?width=760&height=570	11 July 2018
 8119	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8120	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8121	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
@@ -3345,35 +3345,35 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8129	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8130	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8131	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8132	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8132	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466629289425502209/IMG_1364.JPG	11 July 2018
 8133	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8134	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8134	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/467623864013422592/IMG_20180714_001953_406.jpg	14 July 2018
 8135	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8136	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8137	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8138	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8139	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8139	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466424850085445635/IMG_2897.JPG?width=500&height=300	10 July 2018
 8140	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8141	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8142	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8143	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8144	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8144	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466635189154611200/VtKUbjAKP1dhQwBogajFnGd8aZijIbz_NegvMrdM-jbPAalogweLBZb1FXgOJlPyJrVjXk75zsh_WmcrAUnnYz8NSIf8Asy9pgs4.png?width=760&height=570	11 July 2018
 8145	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8146	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8147	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8148	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8149	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8150	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8151	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8151	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466678157479772160/IMG_0242.JPG	11 July 2018
 8152	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8153	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
-8154	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
+8154	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466615972162174988/IMG_8168.JPG	11 July 2018
 8155	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8156	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8157	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8158	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
 8159	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
-8160	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
+8160	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466615216235610122/IMG_7313.JPG	11 July 2018
 8161	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
 8162	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
 8163	8100-8219	Orion	2010 VII NG	Birchmount	ISL-B400R6	Active		9 July 2018
@@ -3413,11 +3413,11 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8197	8100-8219	Orion	2010 VII NG	Arrow Rd	ISL-B400R6	Inactive		9 July 2018
 8198	8100-8219	Orion	2010 VII NG	Arrow Rd	ISL-B400R6	Inactive		9 July 2018
 8199	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
-8200	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
+8200	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		12 July 2018
 8201	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
 8202	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
 8203	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
-8204	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
+8204	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		12 July 2018
 8205	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
 8206	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
 8207	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
@@ -3433,7 +3433,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8217	8100-8219	Orion	2010 VII NG	Arrow Rd	ISL-B400R6	Inactive		9 July 2018
 8218	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
 8219	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		9 July 2018
-8300	8300-8334	Orion	2011 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
+8300	8300-8334	Orion	2011 VII NG EPA10	Wilson	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466447707733622787/image.jpg	11 July 2018
 8301	8300-8334	Orion	2011 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8302	8300-8334	Orion	2011 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8303	8300-8334	Orion	2011 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
@@ -3477,7 +3477,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8341	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8342	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8343	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
-8344	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
+8344	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466592099924574208/image.jpg	11 July 2018
 8345	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8346	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8347	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
@@ -3491,7 +3491,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8355	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8356	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8357	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
-8358	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
+8358	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466431209128460289/IMG_3208.JPG?width=500&height=300	10 July 2018
 8359	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8360	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8361	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
@@ -3529,11 +3529,11 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8393	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8394	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8395	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
-8396	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
-8400	8400-8504	Nova Bus	2014 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8401	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8402	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8403	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8396	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466309872669949954/20180710_140831.jpg	12 July 2018
+8400	8400-8504	Nova Bus	2014 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
+8401	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
+8402	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
+8403	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
 8404	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8405	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8406	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3562,8 +3562,8 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8429	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		9 July 2018
 8430	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		9 July 2018
 8431	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		9 July 2018
-8432	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8433	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8432	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466625323027529728/IMG_1008.JPG	11 July 2018
+8433	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466625808555966466/IMG_1004.JPG	11 July 2018
 8434	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8435	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8436	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3591,7 +3591,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8458	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8459	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8460	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8461	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8461	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466627917401817098/X6Vd9OrpZ8FFctqn4FP6yUCpEhECx8IxXrqxi7U5jlvZCVa-BUSry2ztDc98jj-K3RQ572EeMR2pOiBfIAkn6hkDqi98rW8Joh7I.png	11 July 2018
 8462	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8463	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8464	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3615,11 +3615,11 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8482	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8483	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8484	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8485	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8485	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://media.discordapp.net/attachments/466672200024588301/467000208497049600/IMG_20180304_214536_009.jpg	12 July 2018
 8486	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8487	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8488	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8489	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8488	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
+8489	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/351584615166902304/466672036287217675/SmartSelect_20180711-142756_Instagram.jpg	11 July 2018
 8490	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8491	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8492	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3630,7 +3630,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8497	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8498	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8499	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8500	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8500	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/455462907690352682/20180610_144557.jpg	11 July 2018
 8501	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8502	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8503	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3645,7 +3645,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8517	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8518	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8519	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8520	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8520	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466450357455814656/IMG_4552.JPG?width=500&height=300	10 July 2018
 8521	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8522	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8523	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3684,7 +3684,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8556	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8557	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8558	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8559	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8559	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466628337419157524/lXnH39sbxyAMPlO37ki8axuSrc5kEoN6SZKkryDaiGz90-JWlJFten7ge1A1dXgiI2T5LJnArMxsRHN4Y7U8dkbJ-rn4qC6JMSzU.png	11 July 2018
 8560	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8561	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8562	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3696,7 +3696,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8568	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8569	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8570	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8571	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8571	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466635640784551946/18447400_1346940022062595_2178435801905651090_n.jpg	11 July 2018
 8572	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8573	8510-8617	Nova Bus	2016 LFS IV	N/A	ISL9-B400R6	Retired - 2017		9 July 2018
 8574	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3707,17 +3707,17 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8579	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8580	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8581	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8582	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8582	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466607396178100226/IMG_00232.JPG	11 July 2018
 8583	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8584	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8585	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8586	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8586	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466635350568337409/J0N-Kb5WGV7hRUmZVfuula-Ul9HZnjntWMWYyExqXi6YwBTFm2qAByEU_q88hOKQdDjwByoiw4DXyAfYo3iXOWV8ogvCstHKhnaE.png?width=760&height=570	11 July 2018
 8587	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8588	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8589	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8590	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8591	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8592	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8592	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466626639074164737/lNLybN16fcsmn99r8QwbPrJNohUI6GU1ImZMPsut-_9Rx8i4BcD9P38gKCePJ0jYvzB_vMsQrZqDImVf7jS5n15ETvIrNIPklptu.png	11 July 2018
 8593	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8594	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8595	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3725,13 +3725,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8597	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8598	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8599	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8600	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8600	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	L9-B400R	Active		12 July 2018
 8601	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8602	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8603	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8604	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8605	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8606	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
+8606	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466608384011927562/IMG_9264.JPG?width=884&height=663	11 July 2018
 8607	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8608	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8609	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
@@ -3743,17 +3743,17 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8615	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8616	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
 8617	8510-8617	Nova Bus	2016 LFS IV	Arrow Rd	ISL9-B400R6	Active		9 July 2018
-8620	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8621	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8622	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8620	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466446339555983371/IMG_4223.JPG?width=500&height=300	12 July 2018
+8621	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8622	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466448451052503041/IMG_4414.JPG?width=500&height=300	12 July 2018
 8623	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8624	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8625	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8626	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8627	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8628	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8629	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8630	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8624	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8625	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8626	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8627	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466439915299930132/ef4f4eee3f7e642116403fc616938bb7.png?width=500&height=300	12 July 2018
+8628	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8629	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8630	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8631	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8632	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8633	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3761,7 +3761,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8635	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8636	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8637	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8638	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8638	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466630951888355338/IMG_1809.JPG	11 July 2018
 8639	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8640	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8641	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3777,32 +3777,32 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8651	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8652	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8653	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8654	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8655	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8654	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8655	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8656	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8657	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8657	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8658	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8659	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8660	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8660	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8661	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8662	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8662	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8663	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8664	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8665	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8666	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8667	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8668	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8669	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8670	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8664	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8665	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8666	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8667	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8668	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		14 July 2018
+8669	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8670	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8671	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8672	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8673	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8672	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8673	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466629039537258506/20180711_113451.jpg	11 July 2018
 8674	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8675	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8675	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8676	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8677	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8677	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8678	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8679	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8679	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8680	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8681	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8682	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3810,11 +3810,11 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8684	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8685	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8686	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8687	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8688	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8689	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8690	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8691	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8687	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466622632763326464/IMG_0371.JPG	11 July 2018
+8688	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8689	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8690	8620-8716	Nova Bus	2017 LFS IV	Eglinton	ISL9-B400R	Active		12 July 2018
+8691	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466670762908975104/IMG_5767.JPG?width=779&height=520	11 July 2018
 8692	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8693	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8694	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3823,43 +3823,43 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8697	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8698	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8699	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8700	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8701	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8700	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8701	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8702	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8703	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8704	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8705	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8706	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8707	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8708	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8708	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466638797669531658/IMG_20180117_221429_715.jpg	11 July 2018
 8709	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8710	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8711	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8712	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8713	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8713	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466628623487729684/CMXTsB13hpb6yLDKm29jThw8aFabaTpfWc17eAdjhrr3Zk02uknSua3iYD_DYnmqzxmWmjAy4Ipu75yqKanWJ9RC8LM5eAqpcDDa.png	11 July 2018
 8714	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8715	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8716	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8720	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8715	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466433691946582027/IMG_3267.JPG?width=500&height=300	10 July 2018
+8716	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8720	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8721	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8722	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8723	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8724	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8724	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466626815343984640/IMG_1218.JPG	12 July 2018
 8725	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8726	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8727	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8728	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8729	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8729	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8730	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8731	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8732	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8733	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8734	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8735	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8736	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8737	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8733	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8734	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8735	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8736	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8737	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8738	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8739	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8739	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8740	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8741	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8742	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3874,7 +3874,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8751	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8752	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8753	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8754	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8754	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8755	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8756	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8757	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3883,23 +3883,23 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8760	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8761	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8762	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8763	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8764	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8763	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8764	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8765	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8766	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8767	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8768	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8766	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8767	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8768	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8769	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8770	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8771	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8772	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8772	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466646782668177408/20180711_124702.jpg	12 July 2018
 8773	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8774	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8775	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8776	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8777	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8778	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8779	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8778	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8779	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8780	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8781	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8782	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3919,8 +3919,8 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8796	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8797	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8798	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8799	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8800	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8799	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8800	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8801	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8802	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8803	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3931,7 +3931,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8808	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8809	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8810	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8811	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8811	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466618411372249088/IMG_0787_Edited.JPG	11 July 2018
 8812	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8813	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8814	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3941,21 +3941,21 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8818	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8819	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8820	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8821	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8821	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8822	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8823	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8823	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8824	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8825	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8825	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8826	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8827	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8827	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466662927445917706/IMG_6153.JPG?width=779&height=520	12 July 2018
 8828	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8829	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8830	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8830	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8831	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8832	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8833	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8834	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8835	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8835	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8836	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8837	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8838	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3976,7 +3976,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8853	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8854	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8855	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8856	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8856	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8857	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8858	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8859	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3993,13 +3993,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8870	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8871	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8872	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8873	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8873	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/465595991341662208/20180708_141536.jpg	11 July 2018
 8874	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8875	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8876	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8877	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8877	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8878	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8879	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8879	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		13 July 2018
 8880	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8881	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8882	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -4008,18 +4008,18 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8885	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8886	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8887	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8888	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8889	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8890	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8891	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8892	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8888	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8889	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8890	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8891	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
+8892	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8893	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8894	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8895	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8895	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8896	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8897	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8898	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8899	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8899	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		12 July 2018
 8900	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8901	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8902	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -4050,7 +4050,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8927	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8928	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8929	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
-8930	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
+8930	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R	Active		12 July 2018
 8931	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8932	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8933	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
@@ -4062,31 +4062,31 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8939	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8940	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8941	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
-8942	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
+8942	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466612655587852289/IMG_8571.JPG	11 July 2018
 8943	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8944	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8945	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8946	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
-8947	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
+8947	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466678244234756097/IMG_5197.JPG?width=779&height=520	11 July 2018
 8948	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8949	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8950	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8951	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8952	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8953	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
-8954	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
+8954	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466631421025583110/IMG_1812.JPG	11 July 2018
 8955	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8956	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8957	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8958	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
 8959	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
-8960	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
+8960	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466589403406401546/IMG_0384.JPG	11 July 2018
 8961	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
-8962	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
+8962	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466589990038536202/IMG_68171.JPG	11 July 2018
 8963	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
-8964	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
+8964	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466632764582526976/IMG_1704.JPG	11 July 2018
 9000	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
-9001	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
+9001	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/467624171866947587/IMG_20180714_032900_489.jpg	14 July 2018
 9002	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
 9003	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
 9004	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
@@ -4127,7 +4127,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 9039	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
 9040	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
 9041	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
-9042	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
+9042	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active	https://media.discordapp.net/attachments/385830976879722499/466425415599390720/IMG_2922.JPG?width=500&height=300	10 July 2018
 9043	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
 9044	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
 9045	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
@@ -4140,7 +4140,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 9052	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
 9053	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
 9054	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
-9055	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
+9055	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466624458346463243/IMG_0497.JPG	11 July 2018
 9056	9027-9152	Nova Bus	2014 LFS Artic IV	Wilson	ISL9-B500R6	Active		9 July 2018
 9057	9027-9152	Nova Bus	2014 LFS Artic IV	Malvern	ISL9-B500R6	Active		9 July 2018
 9058	9027-9152	Nova Bus	2014 LFS Artic IV	Malvern	ISL9-B500R6	Active		9 July 2018
@@ -4188,7 +4188,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 9100	9027-9152	Nova Bus	2014 LFS Artic IV	Malvern	ISL9-B500R6	Active		9 July 2018
 9101	9027-9152	Nova Bus	2014 LFS Artic IV	Malvern	ISL9-B500R6	Active		9 July 2018
 9102	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
-9103	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
+9103	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466594215950811162/IMG_8244.JPG	11 July 2018
 9104	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9105	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9106	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
@@ -4209,12 +4209,12 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 9121	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9122	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9123	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
-9124	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
+9124	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow	ISL9-B500R6	Active		11 July 2018
 9125	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9126	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9127	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9128	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
-9129	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
+9129	9027-9152	Nova Bus	2014 LFS Artic IV	Hell	ISL9-B500R6	Active		9 July 2018
 9130	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9131	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9132	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
@@ -4227,7 +4227,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 9139	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
 9140	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
 9141	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
-9142	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
+9142	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active	https://media.discordapp.net/attachments/466672200024588301/467000658554257409/IMG_20180224_231013_877.jpg	12 July 2018
 9143	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
 9144	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
 9145	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
@@ -4238,43 +4238,43 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 9150	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
 9151	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
 9152	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		9 July 2018
-9200	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9201	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9202	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9203	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9204	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9205	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9206	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9207	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9208	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9209	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9210	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9211	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9212	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9213	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9214	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9215	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9216	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9217	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9218	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9219	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9220	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9221	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9222	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9223	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9224	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9225	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9226	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9227	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9228	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9229	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9230	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9231	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9232	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9233	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9234	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9235	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9236	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9237	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9238	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
-9239	9200-9239	Nova Bus	2018 LFS IV	Birchmount	ISL9-B500R6	Active		9 July 2018
+9200	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466611036615737345/IMG_8940.JPG	12 July 2018
+9201	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R	Active		12 July 2018
+9202	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R	Active		12 July 2018
+9203	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R	Active		12 July 2018
+9204	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R	Active		12 July 2018
+9205	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466669736604729394/IMG_5776.JPG?width=779&height=520	11 July 2018
+9206	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9207	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9208	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9209	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466448868842799104/IMG_4427.JPG?width=500&height=300	11 July 2018
+9210	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466678758288523284/IMG_5142.JPG?width=779&height=520	11 July 2018
+9211	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9212	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9213	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9214	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466676016924983296/image.jpg	11 July 2018
+9215	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9216	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9217	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9218	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9219	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466624037829869568/IMG_0495.JPG	11 July 2018
+9220	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9221	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9222	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9223	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9224	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9225	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9226	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9227	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R	Active	https://media.discordapp.net/attachments/385830976879722499/466673570945433600/image.jpg?width=692&height=519	12 July 2018
+9228	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9229	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9230	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9231	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9232	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9233	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9234	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9235	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9236	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9237	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9238	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
+9239	9200-9239	Nova Bus	2018 LFS IV	Birchmount	L9-B400R6	Active		11 July 2018
