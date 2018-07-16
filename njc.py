@@ -52,7 +52,23 @@ class njc:
             return
         elif stopID == 'alias':
             data = discord.Embed(title="StopID Alias",description="You can also type these in to get their bus stop.", colour=discord.Colour(value=13491480))
-            data.add_field(name='Alias',value="airportt3, dufferin_loop, triton", inline='false') # Alias
+
+            try:
+                fleetlist = open("cogs/njc/ttcalias.csv")
+                reader = csv.reader(fleetlist,delimiter=",")
+                line = []
+            except:
+                await self.bot.say("No alias file found... <@221493681075650560>")
+                stopID = stopID
+
+            for row in reader:
+                try:
+                    tosay=tosay + line[0]
+                    await self.bot.say(tosay)
+                except:
+                    stopID = stopID
+                    await self.bot.say("Test message 2")
+            data.add_field(name='Alias',value=tosay, inline='false') # Alias
             data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
             await self.bot.say(embed=data)
             return
