@@ -143,7 +143,7 @@ class njc:
                     else:
                         vehicle = vehicle + " UNKNOWN VEHICLE"
                     toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, seconds // 60, str(seconds % 60).zfill(2)] # Get the time value, vehicle and route name from the first one
-                    msg = "{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*toSay if toSay[-2] > 1 else [*toSay[:-2], "**" + str(toSay[-2]), str(toSay[-1]) + "**"]) # Say various pieces of information
+                    msg = "{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*toSay if seconds > 60 else [*toSay[:-2], "**" + str(toSay[-2]), str(toSay[-1]) + "**"]) # Say various pieces of information
                 
                     if msg1 == "No predictions found for this route.":
                         msg1 = msg
