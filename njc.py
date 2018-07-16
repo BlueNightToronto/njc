@@ -247,7 +247,7 @@ class njc:
         
         try:
             reader = None
-            fleetlist = open("njc/fleets/{}.csv".format(agency))
+            fleetlist = open("cogs/njc/fleets/{}.csv".format(agency))
             reader = csv.reader(fleetlist,delimiter="	")
         except:
             data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the fleet lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
@@ -279,7 +279,7 @@ class njc:
             await self.bot.say("Invalid field")
             return
         writer = None
-        with open("njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
+        with open("cogs/njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
             writer = csv.writer(fleetlist,delimiter="	")     
             for i in lines:
                 writer.writerow(i)
