@@ -73,13 +73,22 @@ class njc:
             await self.bot.say(embed=data)
             return
 
-        if stopID == 'airportt3': # ALIAS
-            stopID = '14278'
-        elif stopID == 'dufferin_loop':
-            stopID = '2032'
-        elif stopID == 'triton':
-            stopID = '9614'
+        try:
+            fleetlist = open("cogs/njc/ttcalias.csv")
+            reader = csv.reader(fleetlist,delimiter=",")
+            line = []
+        except:
+            await self.bot.say("No alias file found... <@221493681075650560>")
+            stopID = stopID
 
+        try:
+            for row in reader:
+                if str(row[0]) == stopID:
+                    line = row
+            fleetlist.close()
+            stopID=line[1]
+        except:
+            stopID = stopID
 
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&stopId=" + stopID
         raw = urlopen(url).read() # Get page and read data
