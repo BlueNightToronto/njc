@@ -60,12 +60,12 @@ class njc:
             except:
                 await self.bot.say("No alias file found... <@221493681075650560>")
                 stopID = stopID
-
+            tosay = ""
             for row in reader:
-                try:
-                    tosay=tosay + line[0]
+                if True:
+                    tosay=tosay + row[0]
                     await self.bot.say(tosay)
-                except:
+                else:
                     stopID = stopID
                     await self.bot.say("Test message 2")
             data.add_field(name='Alias',value=tosay, inline='false') # Alias
