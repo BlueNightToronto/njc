@@ -180,7 +180,7 @@ class njc:
         data = discord.Embed(title="Fleet Information",description="Vehicle not found.",colour=discord.Colour(value=12786604))
 
         if agency == "info":
-            data = discord.Embed(title="Sources",description="Most fleet information is from the CPTDB wiki, with data curated by NJC staff.\nhttps://cptdb.ca/wiki/index.php/Main_Page.\n\nNOTE: When a vehicle status is `Inactive`, this means the vehicle is currently not used for revenue service.",colour=discord.Colour(value=5))
+            data = discord.Embed(title="Sources",description="Most fleet information is from the CPTDB wiki, with data curated by NJC staff.\nhttps://cptdb.ca/wiki/index.php/Main_Page.\n\nNOTE: When a vehicle status is `Inactive`, this means the vehicle is currently not used for revenue service. ",colour=discord.Colour(value=5))
             await self.bot.say(embed=data)
             return
 
@@ -204,11 +204,11 @@ class njc:
             agencyname = ""
 
         try:
-            fleetlist = open("njc/fleets/{}.csv".format(agency))
+            fleetlist = open("cogs/njc/fleets/{}.csv".format(agency))
             reader = csv.reader(fleetlist,delimiter="	")
             line = []
-        except:
-            data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the fleet lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
+        except Exception as e:
+            data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the fleet lists. Contact <@300473777047994371>\n\nError: `" + str(e) + "`",colour=discord.Colour(value=5))
             await self.bot.say(embed=data)
             return
 
