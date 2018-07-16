@@ -21,13 +21,6 @@ class njc:
         self.bot = bot
 
     @commands.command()
-    async def brampton(self, ctx):
-        channel = ctx.message.channel
-        with open('njc/BramptonGatewayTerminal.wav', 'rb') as f:
-            await self.bot.send_file(channel, f)
-
-
-    @commands.command()
     async def langilles(self):
         data = discord.Embed(title="Langilles Scrap!")
         data.set_image(url="https://cdn.discordapp.com/attachments/369324229910593536/464974359417847828/b13212085e7fabe6719935f6ebac2c6f.png")
