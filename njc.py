@@ -109,7 +109,7 @@ class njc:
             await self.bot.say(embed=data)
             return
 
-        msg1 = "No predictions found for this route."
+        msg1 = ["No predictions found for this route."]
         data = discord.Embed(title="Next Vehicle Predictions",description="Stop ID: {}".format(stopID), colour=discord.Colour(value=11250603))
         routes = parsed.getElementsByTagName('predictions') # Get all tags called 'predictions'
         for i in routes: # Loop through these
@@ -163,23 +163,27 @@ class njc:
                     toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, seconds // 60, str(seconds % 60).zfill(2)] # Get the time value, vehicle and route name from the first one
                     msg = "{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*toSay if seconds > 60 else [*toSay[:-2], "**" + str(toSay[-2]), str(toSay[-1]) + "**"]) # Say various pieces of information
                 
-                    if msg1 == "No predictions found for this route.":
-                        msg1 = msg
+                    if msg1[0] == "No predictions found for this route.":
+                        msg1 = [msg]
                     else:
-                        msg1 = msg1 + "\n" + msg
+                        msg1.append(msg)
                 except:
                     try:
-                        msg1 = "No predictions found for this route."
+                        msg1 = ["No predictions found for this route."]
                         continue # And starting the next loop immediately
                     except:
                         msg1 = "Invalid Data recieved"
                         await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
-
-
-            data.add_field(name=routename,value=str(msg1), inline='false') # Say message
+            
+            dirtyMessages = [i.split(" ") for i in msg1] # Complex and hacky code to sort everything, ignore it for now
+            sortedDirtyMessages = sorted(dirtyMessages, key = lambda x:x[0])
+            cleanMessages = [" ".join(i) for i in sortedDirtyMessages]
+            string = "\n".join(cleanMessages)
+            
+            data.add_field(name=routename,value=string, inline='false') # Say message
             data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
             data.set_footer(text="About this command, use n!ttcnext info.")
-            msg1 = 'No predictions found for this route.'
+            msg1 = ['No predictions found for this route.']
 
         data.set_author(name=stopname, icon_url="http://ttc.ca/images/ttc-main-logo.gif")
         try:
