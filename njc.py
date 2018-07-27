@@ -63,8 +63,10 @@ class njc:
             tosay = ""
             for row in reader:
                 if True:
-                    tosay=tosay + row[0]
-                    await self.bot.say(tosay)
+                    if tosay != "":
+                        tosay=tosay + "; `" + row[0] + "`"
+                    else:
+                        tosay=row[0]
                 else:
                     stopID = stopID
                     await self.bot.say("Test message 2")
