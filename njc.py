@@ -161,11 +161,18 @@ class njc:
                     else:
                         vehicle = vehicle + " UNKNOWN VEHICLE"
 <<<<<<< HEAD
+<<<<<<< HEAD
                     toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, seconds // 60, str(seconds % 60).zfill(2), seconds] # Get the time value, vehicle and route name from the first one
                     
+=======
+                    toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, seconds // 60, str(seconds % 60).zfill(2)] # Get the time value, vehicle and route name from the first one
+                    msg = "{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*toSay if seconds > 60 else [*toSay[:-2], "**" + str(toSay[-2]), str(toSay[-1]) + "**"]) # Say various pieces of information
+                
+>>>>>>> parent of 490d58b... Aah I hate how unclean this code is
                     if msg1[0] == "No predictions found for this route.":
-                        msg1 = [toSay]
+                        msg1 = [msg]
                     else:
+<<<<<<< HEAD
                         msg1.append(toSay)
 =======
                     toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, seconds // 60, str(seconds % 60).zfill(2)] # Get the time value, vehicle and route name from the first one
@@ -176,6 +183,9 @@ class njc:
                     else:
                         msg1 = msg1 + "\n" + msg
 >>>>>>> parent of 3069768... Did a nice sorting thingy
+=======
+                        msg1.append(msg)
+>>>>>>> parent of 490d58b... Aah I hate how unclean this code is
                 except:
                     try:
                         msg1 = "No predictions found for this route."
@@ -185,8 +195,9 @@ class njc:
                         await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
 <<<<<<< HEAD
             
-            sortedMessageData = sorted(msg1, key = lambda x:x[5]) # All this bit is hacky as anything, it really needs a rewrite
-            cleanMessages = ["{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*i[:-1] if i[5] > 60 else [*i[:-3], "**" + str(i[-3]), str(i[-2]) + "**"]) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+            dirtyMessages = [i.split(" ") for i in msg1] # Complex and hacky code to sort everything, ignore it for now
+            sortedDirtyMessages = sorted(dirtyMessages, key = lambda x:x[0])
+            cleanMessages = [" ".join(i) for i in sortedDirtyMessages]
             string = "\n".join(cleanMessages)
             
             data.add_field(name=routename,value=string, inline='false') # Say message
