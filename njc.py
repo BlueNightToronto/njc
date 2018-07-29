@@ -6,6 +6,8 @@ from urllib.request import urlopen # Web library
 from xml.dom import minidom # Library for parsing XML stuff
 import os, asyncio, json, locale
 
+locale.setlocale(locale.LC_ALL, 'en_CA.UTF-8')
+
 class njc:
     """Bot for the NJC server!"""
 
@@ -45,7 +47,7 @@ class njc:
         """Obtains next vehicle predictions for TTC bus stop's SMS code. Enter a stopID, 'info', or 'alias'"""
 
         if stopID == 'info':
-            data = discord.Embed(title="Next Vehicle Predictions for Toronto Transit Commission",description="This bot was developed by <@281750712805883904> and <@221493681075650560>. When you submit a valid stop ID, the bot fetches data and displays it here. This information is to let users find departures for a selected bus stop efficiently, without wasting much data.\n\nOne prediction typically looks like this:\n`7:07 - #8844 on 25_1_25A*, run 25_52_182`\n\nThis means vehicle `#8844` is coming to the stop in 7 minutes. This can help you find internal branches. `25_1_25A*` means it is on route `25` going `1` outbound on internal branch `25A*`.\n\nWith the run information, you can find interesting run interlines. The run `25_52_82` lets you know if it interlines, and when it services. This is run `8` on route `25`, which operates in the `2` afternoon. The runbox number `52` does not match run `8`. This happens if a route interlines, or if it shares the corridor with another route, to prevent confusion to operators. For possible values of runs, use the command `n!ttcnext runs`\n\nFor daytime routes that fully interline with another route for the whole day, like 130 Middlefield and 132 Milner, the runbox number will not differ from the route run number.\n\nPlease report any bugs to <@221493681075650560>.\n\nThere may currently be more bugs than usual, as the code needs a major rewrite.\n\nAll prediction data is copyright Toronto Transit Commission 2018.", colour=discord.Colour(value=13491480))
+            data = discord.Embed(title="Next Vehicle Predictions for Toronto Transit Commission",description="This bot was developed by <@281750712805883904> and <@221493681075650560>. When you submit a valid stop ID, the bot fetches data and displays it here. This information is to let users find departures for a selected bus stop efficiently, without wasting much data.\n\nOne prediction typically looks like this:\n`00:07:07 - #8844 on 25_1_25A*, run 25_52_182`\n\nThis means vehicle `#8844` is coming to the stop in 7 minutes. This can help you find internal branches. `25_1_25A*` means it is on route `25` going `1` outbound on internal branch `25A*`.\n\nWith the run information, you can find interesting run interlines. The run `25_52_82` lets you know if it interlines, and when it services. This is run `8` on route `25`, which operates in the `2` afternoon. The runbox number `52` does not match run `8`. This happens if a route interlines, or if it shares the corridor with another route, to prevent confusion to operators. For possible values of runs, use the command `n!ttcnext runs`\n\nFor daytime routes that fully interline with another route for the whole day, like 130 Middlefield and 132 Milner, the runbox number will not differ from the route run number.\n\nPlease report any bugs to <@221493681075650560>.\n\nThere may currently be more bugs than usual, as the code needs a major rewrite.\n\nAll prediction data is copyright Toronto Transit Commission 2018.", colour=discord.Colour(value=13491480))
             data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
             await self.bot.say(embed=data)
             return
@@ -162,7 +164,7 @@ class njc:
                         vehicle = vehicle + " LFS"                    
                     else:
                         vehicle = vehicle + " UNKNOWN VEHICLE"
-                    toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, seconds // 60, str(seconds % 60).zfill(2), seconds] # Get the time value, vehicle and route name from the first one
+                    toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, str(seconds // 3600).zfill(2), str(seconds // 60 % 60).zfill(2), str(seconds % 60).zfill(2), seconds] # Get the time value, vehicle and route name from the first one
                     
                     if msg1[0] == "No predictions found for this route.":
                         msg1 = [toSay]
@@ -176,8 +178,8 @@ class njc:
                         msg1 = "Invalid Data recieved"
                         await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
             
-            sortedMessageData = sorted(msg1, key = lambda x:x[5]) # All this bit is hacky as anything, it really needs a rewrite
-            cleanMessagesBuffer = ["{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*i[:-1] if i[5] > 60 else (*i[:-3], "**" + str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+            sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
+            cleanMessagesBuffer = ["{3}:{4}:{5} - #{0} on `{1}`, Run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
             if cleanMessagesBuffer != []:
                 cleanMessages = cleanMessagesBuffer
             else:
@@ -185,7 +187,7 @@ class njc:
             string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
             data.add_field(name=routename,value=string, inline='false') # Say message
             data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
-            data.set_footer(text="Use `n!ttcnext info` for more info about this command.")
+            data.set_footer(text="Use 'n!ttcnext info' for more info about this command.")
             msg1 = ['No predictions found for this route.']
 
         data.set_author(name=stopname, icon_url="http://ttc.ca/images/ttc-main-logo.gif")
@@ -426,7 +428,12 @@ class njc:
         """Gets fare info for GO or something"""
         await self.bot.say("Getting info for journey {} to {}...".format(start, end))
         url = "https://transitfeeds-data.s3-us-west-1.amazonaws.com/public/feeds/go-transit/32/20180727/original/stops.txt"
-        raw = urlopen(url).readlines()
+        try:
+            raw = urlopen(url).readlines()
+        except Exception as e:
+            await self.bot.say("An error has occured, the servers are most likely not responding.\nPlease try again soon. See console log for error details.")
+            print("Error:", e)
+            return
         decoded = [i.decode().strip("\ufeff\r\n").split(",") for i in raw[1:]]
         start_id = None
         end_id = None
@@ -451,7 +458,6 @@ class njc:
         url = "https://api.gotransit.com/Api/farecalculator/cash?FromStop={}&ToStop={}&AdultCount={}&SeniorCount={}&StudentCount={}&ChildCount={}&ReturnTrip=false".format(start_id, end_id, adults, seniors, students, children, returnOrNot)
         raw = urlopen(url)
         jsonData = json.load(raw)
-        locale.setlocale(locale.LC_ALL, 'en_CA.UTF-8')
         cashString = locale.currency(jsonData['TotalCost'])
         await self.bot.say(cashString)        
 
