@@ -62,14 +62,15 @@ class njc:
                 stopID = stopID
             tosay = ""
             for row in reader:
-                if True:
+                try:
                     if tosay != "":
                         tosay=tosay + "; `" + row[0] + "`"
                     else:
-                        tosay=row[0]
-                else:
+                        tosay = "`" + row[0] + "`"
+                except Exception as e:
                     stopID = stopID
-                    await self.bot.say("Test message 2")
+                    await self.bot.say("Error, see console")
+                    print("Error:", e)
             data.add_field(name='Alias',value=tosay, inline='false') # Alias
             data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
             await self.bot.say(embed=data)
