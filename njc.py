@@ -185,7 +185,7 @@ class njc:
             string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
             data.add_field(name=routename,value=string, inline='false') # Say message
             data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
-            data.set_footer(text="About this command, use n!ttcnext info.")
+            data.set_footer(text="Use `n!ttcnext info` for more info about this command.")
             msg1 = ['No predictions found for this route.']
 
         data.set_author(name=stopname, icon_url="http://ttc.ca/images/ttc-main-logo.gif")
