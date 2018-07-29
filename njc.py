@@ -438,10 +438,10 @@ class njc:
         start_id = None
         end_id = None
         for i in decoded:
-            if start in i[1] or i[1] in start and not start_id:
+            if start.upper() in i[1].upper() or i[1].upper() in start.upper() and not start_id:
                 start_id = i[0]
                 continue
-            if end in i[1] or i[1] in end and not end_id:
+            if end.upper() in i[1].upper() or i[1].upper() in end.upper() and not end_id:
                 end_id = i[0]
                 continue	
             if start_id and end_id:
