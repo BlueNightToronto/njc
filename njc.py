@@ -4,8 +4,7 @@ from cogs.utils import checks
 
 from urllib.request import urlopen # Web library
 from xml.dom import minidom # Library for parsing XML stuff
-import os
-import asyncio
+import os, asyncio, json, locale
 
 class njc:
     """Bot for the NJC server!"""
@@ -421,6 +420,40 @@ class njc:
         """Sends requirements for downloads on NJC."""
         await self.bot.say("For further support on your OMSI problem, you must **upload your logfile.txt**.\n\nYou can find **logfile.txt** in the OMSI folder. Upload the file to this channel so we can diagnose for the issue.\n\nhttps://i.imgur.com/DxclO7c.png")
 
+    # Fare stuff
+    @commands.command()
+    async def farecalc(self, start, end, adults = 1, seniors = 0, students = 0, children = 0, returnTrip = False):
+        """Gets fare info for GO or something"""
+        await self.bot.say("Getting info for journey {} to {}...".format(start, end))
+        url = "https://transitfeeds-data.s3-us-west-1.amazonaws.com/public/feeds/go-transit/32/20180727/original/stops.txt"
+        raw = urlopen(url).readlines()
+        decoded = [i.decode().strip("\ufeff\r\n").split(",") for i in raw[1:]]
+        start_id = None
+        end_id = None
+        for i in decoded:
+            if start in i[1] or i[1] in start and not start_id:
+                start_id = i[0]
+                continue
+            if end in i[1] or i[1] in end and not end_id:
+                end_id = i[0]
+                continue	
+            if start_id and end_id:
+                break
+        if not start_id or not end_id:
+            await self.bot.say("Stop not found: {}".format(start if not start_id else end))
+            return
+        try:
+            returnOrNot = bool(returnTrip)
+        except Exception as e:
+            await self.bot.say("Invalid option for return-ness: {}\nSee console for error details".format(returnTrip))
+            print(e)
+            return
+        url = "https://api.gotransit.com/Api/farecalculator/cash?FromStop={}&ToStop={}&AdultCount={}&SeniorCount={}&StudentCount={}&ChildCount={}&ReturnTrip=false".format(start_id, end_id, adults, seniors, students, children, returnOrNot)
+        raw = urlopen(url)
+        jsonData = json.load(raw)
+        locale.setlocale(locale.LC_ALL, 'en_CA.UTF-8')
+        cashString = locale.currency(jsonData['TotalCost'])
+        await self.bot.say(cashString)        
 
     async def member_join(self, member):
         await self.bot.say('{0} joined at {0.joined_at}'.format(member))
