@@ -461,7 +461,7 @@ class njc:
             jsonData = json.load(raw)
         except Exception as e:
             await self.bot.say("Error with the URL or something, check logs")
-            print("Error:", e, "\nData:", raw)
+            print("Error:", e, "\nData:", raw.read())
         cashString = locale.currency(jsonData['TotalCost'])
         await self.bot.say(cashString)        
 
