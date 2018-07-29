@@ -177,9 +177,12 @@ class njc:
                         await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
             
             sortedMessageData = sorted(msg1, key = lambda x:x[5]) # All this bit is hacky as anything, it really needs a rewrite
-            cleanMessages = ["{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*i[:-1] if i[5] > 60 else [*i[:-3], "**" + str(i[-3]), str(i[-2]) + "**"]) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
-            string = "\n".join(cleanMessages)
-            
+            cleanMessagesBuffer = ["{3}:{4} - #{0} on `{1}`, Run `{2}`".format(*i[:-1] if i[5] > 60 else (*i[:-3], "**" + str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+            if cleanMessagesBuffer != []:
+                cleanMessages = cleanMessagesBuffer
+            else:
+                cleanMessages = [sortedMessageData[0]] # I didn't realise that if the 'if' statement 4 lines up failed, it would still write to the variable, but it wouldn't actually write any data, so the variable was empty, which caused bad things to happen.
+            string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
             data.add_field(name=routename,value=string, inline='false') # Say message
             data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
             data.set_footer(text="About this command, use n!ttcnext info.")
@@ -188,9 +191,11 @@ class njc:
         data.set_author(name=stopname, icon_url="http://ttc.ca/images/ttc-main-logo.gif")
         try:
             await self.bot.say(embed=data)
-        except discord.HTTPException:
+        except Exception as e:
             await self.bot.say("I need the `Embed links` permission "
-                               "to send this")
+                               "to send this."
+                               "Check console for error details.")
+            print("Error:", e, "\nData:", data, "\nString:", string)
 
     #Gets info for fleet
     @commands.command()
