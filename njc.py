@@ -457,7 +457,11 @@ class njc:
             return
         url = "https://api.gotransit.com/Api/farecalculator/cash?FromStop={}&ToStop={}&AdultCount={}&SeniorCount={}&StudentCount={}&ChildCount={}&ReturnTrip=false".format(start_id, end_id, adults, seniors, students, children, returnOrNot)
         raw = urlopen(url)
-        jsonData = json.load(raw)
+        try:
+            jsonData = json.load(raw)
+        except Exception as e:
+            await self.bot.say("Error with the URL or something, check logs")
+            print("Error:", e, "\nData:", raw)
         cashString = locale.currency(jsonData['TotalCost'])
         await self.bot.say(cashString)        
 
