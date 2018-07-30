@@ -462,8 +462,24 @@ class njc:
         except Exception as e:
             await self.bot.say("Error with the URL or something, check logs")
             print("Error:", e, "\nData:", raw.read())
+            return
         cashString = locale.currency(jsonData['TotalCost'])
-        await self.bot.say(cashString)        
+        await self.bot.say(cashString)  
+    
+    # Get stops for GO
+    @commands.command()
+    async def gostops(self):
+        """Get stops for GO"""
+        url = "https://transitfeeds-data.s3-us-west-1.amazonaws.com/public/feeds/go-transit/32/20180727/original/stops.txt"
+        try:
+            raw = urlopen(url).readlines()
+        except Exception as e:
+            await self.bot.say("An error has occured, the servers are most likely not responding.\nPlease try again soon. See console log for error details.")
+            print("Error:", e)
+            return
+        decoded = [i.decode().strip("\ufeff\r\n").split(",")[1] for i in raw[1:]]
+        for i in decoded[:10]:
+            await self.bot.say(i)        
 
     async def member_join(self, member):
         await self.bot.say('{0} joined at {0.joined_at}'.format(member))
