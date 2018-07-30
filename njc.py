@@ -481,7 +481,29 @@ class njc:
         decoded = [i.decode().strip("\ufeff\r\n").split(",")[1] for i in raw[1:]]
         await self.bot.say("Page {} of {}".format(page, math.ceil(len(decoded) / 10)))
         data = decoded[(page - 1) * 10:min(page * 10, len(decoded))]
-        await self.bot.say(data)        
+        await self.bot.say(data)
+        
+    # Get GO-specific stops
+    @commands.command()
+    async def gostn(self):
+        """Get GO-specific stops"""
+        await self.bot.say("Retrieving data...")
+        url = "https://transitfeeds-data.s3-us-west-1.amazonaws.com/public/feeds/go-transit/32/20180727/original/stops.txt"
+        try:
+            raw = urlopen(url).readlines()
+        except Exception as e:
+            await self.bot.say("An error has occured, the servers are most likely not responding.\nPlease try again soon. See console log for error details.")
+            print("Error:", e)
+            return
+        decoded = [i.decode().strip("\ufeff\r\n").split(",") for i in raw[1:]]
+        stops = []
+        for i in decoded:
+            try:
+                int(i[0])
+                break
+            except:
+                stops.append(i[1])
+        await self.bot.say(stops)
 
     async def member_join(self, member):
         await self.bot.say('{0} joined at {0.joined_at}'.format(member))
