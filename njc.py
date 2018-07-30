@@ -4,7 +4,7 @@ from cogs.utils import checks
 
 from urllib.request import urlopen # Web library
 from xml.dom import minidom # Library for parsing XML stuff
-import os, asyncio, json, locale
+import os, asyncio, json, locale, math
 
 locale.setlocale(locale.LC_ALL, 'en_CA.UTF-8')
 
@@ -468,8 +468,9 @@ class njc:
     
     # Get stops for GO
     @commands.command()
-    async def gostops(self):
+    async def gostops(self, page = 1):
         """Get stops for GO"""
+        await self.bot.say("Retrieving data...")
         url = "https://transitfeeds-data.s3-us-west-1.amazonaws.com/public/feeds/go-transit/32/20180727/original/stops.txt"
         try:
             raw = urlopen(url).readlines()
@@ -478,8 +479,9 @@ class njc:
             print("Error:", e)
             return
         decoded = [i.decode().strip("\ufeff\r\n").split(",")[1] for i in raw[1:]]
-        for i in decoded[:10]:
-            await self.bot.say(i)        
+        await self.bot.say("Page {} of {}".format(page, math.ceil(len(decoded) / 10)))
+        data = decoded[(page - 1) * 10:min(page * 10, len(decoded))]
+        await self.bot.say(data)        
 
     async def member_join(self, member):
         await self.bot.say('{0} joined at {0.joined_at}'.format(member))
