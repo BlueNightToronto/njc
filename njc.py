@@ -480,7 +480,8 @@ class njc:
             return
         decoded = [i.decode().strip("\ufeff\r\n").split(",")[1] for i in raw[1:]]
         await self.bot.say("Page {} of {}".format(page, math.ceil(len(decoded) / 10)))
-        data = decoded[(page - 1) * 10:min(page * 10, len(decoded))]
+        ordered = sorted(decoded, key = lambda x: x)
+        data = ordered[(page - 1) * 10:min(page * 10, len(ordered))]
         await self.bot.say(data)
         
     # Get GO-specific stops
@@ -503,7 +504,8 @@ class njc:
                 break
             except:
                 stops.append(i[1])
-        await self.bot.say(stops)
+        ordered = sorted(stops, key = lambda x: x)
+        await self.bot.say(ordered)
 
     async def member_join(self, member):
         await self.bot.say('{0} joined at {0.joined_at}'.format(member))
