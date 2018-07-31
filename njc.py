@@ -42,14 +42,17 @@ class njc:
 
     @commands.command()
     async def vehicle(self, veh):
-        """Checks if a selected TTC vehicle is currently in service."""
+        """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
 
-        if veh == '7884': #inside joke
+        if veh <= '1000':
+            await self.bot.say("Error")
+            return
+        elif veh == '7884': #inside joke
             await self.bot.say("Vehicle #" + veh + " was found operating on `" + "81_1_81*" + "`. Looks like this bus also has VISION now. Last updated " + "23" + " seconds ago")
             await self.bot.say("<@335904109003538432>")
             return
 
-        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc"
+        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
         raw = urlopen(url).read() # Get page and read data
         decoded = raw.decode("utf-8") # Decode from bytes object
         parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -59,17 +62,24 @@ class njc:
 
             service = i.attributes['id'].value # GETS VEHICLE
             if veh == service: # IF MATCHING VEHICLE FOUND
-                dirtag = i.attributes['dirTag'].value
-                updated = i.attributes['secsSinceReport'].value
-                lat = i.attributes['lat'].value
-                lon = i.attributes['lon'].value
+                dirtag = i.attributes['dirTag'].value # Direction Tag
+                heading = i.attributes['heading'].value # Compass Direction
+                updated = i.attributes['secsSinceReport'].value # Seconds since last updated
+                lat = i.attributes['lat'].value #latitude
+                lon = i.attributes['lon'].value # lon
+
+                data = discord.Embed(title="Vehicle Tracking for TTC {}".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+                data.add_field(name="Currently on Branch", value="{}".format(dirtag))
+                data.add_field(name="Compass", value="`Facing {}°`".format(heading))
                 try:
                     vision = i.attributes['speedKmHr'].value
-                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago.\n" + "https://www.google.com/maps/search/?api=1&query={},{}".format(lat, lon))
-                    await self.bot.say("https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=false&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+                    data.add_field(name="Vision Equipped?", value="Yes".format(heading))
                 except:
-                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago.\n" + "https://www.google.com/maps/search/?api=1&query={},{}".format(lat, lon))
-                    await self.bot.say("https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=false&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+                    data.add_field(name="Vision Equipped?", value="No".format(heading))
+
+                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=false&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+                data.set_footer(text="Last updated {} seconds ago.".format(updated))
+                await self.bot.say(embed=data)
                 return
         await self.bot.say("Couldn't find " + veh + " in service.")
 
