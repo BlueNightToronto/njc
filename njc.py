@@ -71,8 +71,8 @@ class njc:
                 lon = i.attributes['lon'].value # lon
 
                 data = discord.Embed(title="Vehicle Tracking for TTC {}".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
-                data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
-                data.add_field(name="Compass", value="Facing {}°".format(heading))
+                data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+                data.add_field(name="Compass", value="Facing {}".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360)]) if int(heading) in j])) # Obfuscation? Fun, either way
                 try:
                     vision = i.attributes['speedKmHr'].value
                     data.add_field(name="Vision Equipped?", value="**Yes**".format(heading))
@@ -239,9 +239,10 @@ class njc:
             await self.bot.say(embed=data)
         except Exception as e:
             await self.bot.say("I need the `Embed links` permission "
-                               "to send this."
-                               "Check console for error details.")
-            print("Error:", e, "\nData:", data, "\nString:", string)
+                               "to send this. "
+                               "Check console for error details. "
+                               "(There's a good chance that the error is that the data is too long)")
+            print("Error:", e, "\nData:", data.to_dict(), "\nString:", string)
 
     #Gets info for fleet
     @commands.command()
