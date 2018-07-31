@@ -47,7 +47,7 @@ class njc:
         if veh == '7884': #inside joke
             await self.bot.say("Vehicle #" + veh + " was found operating on `" + "81_1_81*" + "`. Looks like this bus also has VISION now. Last updated " + "23" + " seconds ago")
             await self.bot.say("<@335904109003538432>")
-        return
+            return
 
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc"
         raw = urlopen(url).read() # Get page and read data
