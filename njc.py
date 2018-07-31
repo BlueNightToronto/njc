@@ -41,6 +41,11 @@ class njc:
         await self.bot.say(embed=data)
 
     @commands.command()
+    async def vehrange(self, veh):
+        """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
+        await self.bot.say("You need the stars role to track a range of vehicles. Use `n!vehicle` for an individual vehicle.")
+
+    @commands.command()
     async def vehicle(self, veh):
         """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
 
@@ -70,7 +75,7 @@ class njc:
                 data.add_field(name="Compass", value="Facing {}°".format(heading))
                 try:
                     vision = i.attributes['speedKmHr'].value
-                    data.add_field(name="Vision Equipped?", value="Yes".format(heading))
+                    data.add_field(name="Vision Equipped?", value="**Yes**".format(heading))
                 except:
                     data.add_field(name="Vision Equipped?", value="No".format(heading))
 
@@ -78,7 +83,7 @@ class njc:
                 data.set_footer(text="Last updated {} seconds ago.".format(updated))
                 await self.bot.say(embed=data)
                 return
-        await self.bot.say("Vehicle " + veh + " is not currently in service.")
+        await self.bot.say("Vehicle #{} is not currently in service.".format(veh))
 
     @commands.command()
     # COMMAND FOR GETTING NEXT BUS <STOPID>
