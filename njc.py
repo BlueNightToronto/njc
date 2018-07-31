@@ -40,6 +40,28 @@ class njc:
         data.set_image(url="https://i.imgur.com/CRugTWf.png")
         await self.bot.say(embed=data)
 
+    @commands.command()
+    async def vehicle(self, veh):
+        """Checks if a selected TTC vehicle is currently in service."""
+        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc"
+        raw = urlopen(url).read() # Get page and read data
+        decoded = raw.decode("utf-8") # Decode from bytes object
+        parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+
+        vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+        for i in vehicles: # Loop through these
+
+            service = i.attributes['id'].value # GETS VEHICLE
+            if veh == service: # IF MATCHING VEHICLE FOUND
+                dirtag = i.attributes['dirTag'].value
+                updated = i.attributes['secsSinceReport'].value
+                try:
+                    vision = i.attributes['speedKmHr'].value
+                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago.")
+                except:
+                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago.")
+                return
+        await self.bot.say("Couldn't find anything.")
 
     @commands.command()
     # COMMAND FOR GETTING NEXT BUS <STOPID>
