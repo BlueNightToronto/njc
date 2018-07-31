@@ -57,11 +57,11 @@ class njc:
                 updated = i.attributes['secsSinceReport'].value
                 try:
                     vision = i.attributes['speedKmHr'].value
-                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago.")
+                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago")
                 except:
                     await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago.")
                 return
-        await self.bot.say("Couldn't find anything.")
+        await self.bot.say("Couldn't find " + veh + " in service.")
 
     @commands.command()
     # COMMAND FOR GETTING NEXT BUS <STOPID>
@@ -230,10 +230,16 @@ class njc:
 
         data = discord.Embed(title="Fleet Information",description="Vehicle not found.",colour=discord.Colour(value=12786604))
 
+        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc"
+        raw = urlopen(url).read() # Get page and read data
+        decoded = raw.decode("utf-8") # Decode from bytes object
+        parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+
         if agency == "info":
             data = discord.Embed(title="Sources",description="Most fleet information is from the CPTDB wiki, with data curated by NJC staff.\nhttps://cptdb.ca/wiki/index.php/Main_Page.\n\nNOTE: When a vehicle status is `Inactive`, this means the vehicle is currently not used for revenue service. ",colour=discord.Colour(value=5))
             await self.bot.say(embed=data)
             return
+
 
         # AGENCY NAME
         if agency == 'go':
@@ -263,6 +269,25 @@ class njc:
             await self.bot.say(embed=data)
             return
 
+
+        if agency =='ttc':
+            vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+            await self.bot.say("Yay")
+            for i in vehicles: # Loop through these
+                service = i.attributes['id'].value # GETS VEHICLE
+                if number == service: # IF MATCHING VEHICLE FOUND
+                    dirtag = i.attributes['dirTag'].value
+                    updated = i.attributes['secsSinceReport'].value
+                    try:
+                        vision = i.attributes['speedKmHr'].value
+                        saythis = ["Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago."]
+                        data.set_footer(text=saythis)
+                        await self.bot.say("Yay")
+                    except:
+                        saythis = ["Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago."]
+                        data.set_footer(text=saythis)
+                        await self.bot.say("Yay")
+            await self.bot.say("Yay")
         try:
             for row in reader:
                 if row[-1] != "thumbnail" and int(row[0]) == number:
@@ -275,7 +300,8 @@ class njc:
             data.add_field(name="Powertrain/Motor", value=line[5])
             data.add_field(name="Vehicle Group", value=line[1])
             data.add_field(name="Status", value=line[6])
-            data.set_footer(text="Last updated " + line[8] + " - {} ".format(agencyname) + 'is maintained by @{}'.format(curator))
+#            data.set_footer(text="Last updated " + line[8] + " - {} ".format(agencyname) + 'is maintained by @{}'.format(curator))
+            
 
             if number < 1000:
                 if agency == 'ttc':
