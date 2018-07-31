@@ -66,8 +66,10 @@ class njc:
                 try:
                     vision = i.attributes['speedKmHr'].value
                     await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago.\n" + "https://www.google.com/maps/search/?api=1&query={},{}".format(lat, lon))
+                    await self.bot.say("https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=false&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
                 except:
                     await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago.\n" + "https://www.google.com/maps/search/?api=1&query={},{}".format(lat, lon))
+                    await self.bot.say("https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=false&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
                 return
         await self.bot.say("Couldn't find " + veh + " in service.")
 
