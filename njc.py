@@ -61,11 +61,13 @@ class njc:
             if veh == service: # IF MATCHING VEHICLE FOUND
                 dirtag = i.attributes['dirTag'].value
                 updated = i.attributes['secsSinceReport'].value
+                lat = i.attributes['lat'].value
+                lon = i.attributes['lon'].value
                 try:
                     vision = i.attributes['speedKmHr'].value
-                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago")
+                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago.\n" + "https://www.google.com/maps/search/?api=1&query={},{}".format(lat, lon))
                 except:
-                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago.")
+                    await self.bot.say("Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago.\n" + "https://www.google.com/maps/search/?api=1&query={},{}".format(lat, lon))
                 return
         await self.bot.say("Couldn't find " + veh + " in service.")
 
