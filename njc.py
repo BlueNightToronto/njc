@@ -43,6 +43,12 @@ class njc:
     @commands.command()
     async def vehicle(self, veh):
         """Checks if a selected TTC vehicle is currently in service."""
+
+        if veh == '7884':
+            await self.bot.say("Vehicle #" + veh + " was found operating on `" + "81_1_81*" + "`. Looks like this bus also has VISION now. Last updated " + "23" + " seconds ago")
+            await self.bot.say("<@335904109003538432>")
+        return
+
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc"
         raw = urlopen(url).read() # Get page and read data
         decoded = raw.decode("utf-8") # Decode from bytes object
