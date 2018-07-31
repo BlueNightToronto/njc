@@ -16,7 +16,7 @@ def setup(bot):
  
  
 class njc:
-    """Components for NJC\nAll data copyright Toronto Transit Commission 2018."""
+    """Components for NJC\nRelevant data copyright Toronto Transit Commission 2018."""
 
     def __init__(self, bot):
         self.bot = bot
