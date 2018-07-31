@@ -44,7 +44,7 @@ class njc:
     async def vehicle(self, veh):
         """Checks if a selected TTC vehicle is currently in service."""
 
-        if veh == '7884':
+        if veh == '7884': #inside joke
             await self.bot.say("Vehicle #" + veh + " was found operating on `" + "81_1_81*" + "`. Looks like this bus also has VISION now. Last updated " + "23" + " seconds ago")
             await self.bot.say("<@335904109003538432>")
         return
