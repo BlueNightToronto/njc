@@ -78,7 +78,7 @@ class njc:
                 data.set_footer(text="Last updated {} seconds ago.".format(updated))
                 await self.bot.say(embed=data)
                 return
-        await self.bot.say("Couldn't find " + veh + " in service.")
+        await self.bot.say("Vehicle " + veh + " is not currently in service.")
 
     @commands.command()
     # COMMAND FOR GETTING NEXT BUS <STOPID>
