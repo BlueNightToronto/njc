@@ -44,10 +44,7 @@ class njc:
     async def vehicle(self, veh):
         """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
 
-        if veh <= '1000':
-            await self.bot.say("Error")
-            return
-        elif veh == '7884': #inside joke
+        if veh == '7884': #inside joke
             await self.bot.say("Vehicle #" + veh + " was found operating on `" + "81_1_81*" + "`. Looks like this bus also has VISION now. Last updated " + "23" + " seconds ago")
             await self.bot.say("<@335904109003538432>")
             return
@@ -69,15 +66,15 @@ class njc:
                 lon = i.attributes['lon'].value # lon
 
                 data = discord.Embed(title="Vehicle Tracking for TTC {}".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
-                data.add_field(name="Currently on Branch", value="{}".format(dirtag))
-                data.add_field(name="Compass", value="`Facing {}°`".format(heading))
+                data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
+                data.add_field(name="Compass", value="Facing {}°".format(heading))
                 try:
                     vision = i.attributes['speedKmHr'].value
                     data.add_field(name="Vision Equipped?", value="Yes".format(heading))
                 except:
                     data.add_field(name="Vision Equipped?", value="No".format(heading))
 
-                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=false&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
                 data.set_footer(text="Last updated {} seconds ago.".format(updated))
                 await self.bot.say(embed=data)
                 return
