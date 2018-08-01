@@ -49,11 +49,6 @@ class njc:
     async def vehicle(self, veh):
         """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
 
-        if veh == '7884': #inside joke
-            await self.bot.say("Vehicle #" + veh + " was found operating on `" + "81_1_81*" + "`. Looks like this bus also has VISION now. Last updated " + "23" + " seconds ago")
-            await self.bot.say("<@335904109003538432>")
-            return
-
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
         raw = urlopen(url).read() # Get page and read data
         decoded = raw.decode("utf-8") # Decode from bytes object
@@ -81,9 +76,36 @@ class njc:
 
                 data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
                 data.set_footer(text="Last updated {} seconds ago.".format(updated))
+
+                try: # TRIES FETCHING DATA
+                    fleetlist = open("cogs/njc/dirTag.csv")
+                    reader = csv.reader(fleetlist,delimiter="	")
+                    line = []
+                except Exception as errer:
+                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+                    await self.bot.say(embed=data)
+                    return
+
+                try:
+                    for row in reader:
+                        if str(row[0]) == dirtag:
+                            line = row
+                    fleetlist.close()
+                    data.add_field(name="Starts from", value=line[2])
+                    data.add_field(name="Ends at", value=line[3])
+                    data.add_field(name="Sign", value=line[4])
+                    data.add_field(name="Branch Notes", value=line[5])
+                except Exception as errer:
+#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+                    data.add_field(name="Starts from", value="Unknown")
+                    data.add_field(name="Ends at", value="Unknown")
+                    data.add_field(name="Sign", value="Unknown")
+                    data.add_field(name="Branch Notes", value="Unknown")
+
                 await self.bot.say(embed=data)
                 return
         await self.bot.say("Vehicle #{} is not currently in service.".format(veh))
+
 
     @commands.command()
     # COMMAND FOR GETTING NEXT BUS <STOPID>
@@ -292,25 +314,6 @@ class njc:
             await self.bot.say(embed=data)
             return
 
-
-        if agency =='ttc':
-            vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
-            await self.bot.say("Yay")
-            for i in vehicles: # Loop through these
-                service = i.attributes['id'].value # GETS VEHICLE
-                if number == service: # IF MATCHING VEHICLE FOUND
-                    dirtag = i.attributes['dirTag'].value
-                    updated = i.attributes['secsSinceReport'].value
-                    try:
-                        vision = i.attributes['speedKmHr'].value
-                        saythis = ["Vehicle #" + veh + " was found operating on `" + dirtag + "`. Looks like this bus also has VISION now. Last updated " + updated + " seconds ago."]
-                        data.set_footer(text=saythis)
-                        await self.bot.say("Yay")
-                    except:
-                        saythis = ["Vehicle #" + veh + " was found operating on `" + dirtag + "`. Last updated " + updated + " seconds ago."]
-                        data.set_footer(text=saythis)
-                        await self.bot.say("Yay")
-            await self.bot.say("Yay")
         try:
             for row in reader:
                 if row[-1] != "thumbnail" and int(row[0]) == number:
@@ -323,7 +326,7 @@ class njc:
             data.add_field(name="Powertrain/Motor", value=line[5])
             data.add_field(name="Vehicle Group", value=line[1])
             data.add_field(name="Status", value=line[6])
-#            data.set_footer(text="Last updated " + line[8] + " - {} ".format(agencyname) + 'is maintained by @{}'.format(curator))
+            data.set_footer(text="Last updated " + line[8] + " - {} ".format(agencyname) + 'is maintained by @{}'.format(curator))
             
 
             if number < 1000:

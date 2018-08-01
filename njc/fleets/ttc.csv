@@ -979,7 +979,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3000	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466605321003991040/IMG_6348.JPG	11 July 2018
 3001	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466603475703300116/IMG_0447.JPG	11 July 2018
 3002	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3003	3000-3027	ICTS	1982 Mark I	McCowan	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466293957375295498/20180710_123052.jpg	12 July 2018
+3003	3000-3027	ICTS	1982 Mark I	McCowan	3 phase linear	Active	https://images-ext-1.discordapp.net/external/	1 August 2018
 3004	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://media.discordapp.net/attachments/385830976879722499/466433802999431178/IMG_20180708_203131_576.jpg?width=500&height=300	10 July 2018
 3005	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active	https://cdn.discordapp.com/attachments/385830976879722499/466677568951681024/IMG_0141.JPG	11 July 2018
 3006	3000-3027	ICTS	1982 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
@@ -1051,7 +1051,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3144	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3145	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3146	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 July 2018
-3147	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
+3147	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Inactive		31 July 2018
 3148	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3149	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3150	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1061,9 +1061,9 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3154	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/468956532697071637/IMG_6696v2.jpg?width=779&height=520	27 July 2018
 3155	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3156	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
-3157	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3157	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		31 July 2018
 3158	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		27 July 2018
-3159	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3159	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		31 July 2018
 3160	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		12 July 2018
 3161	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 July 2018
 3162	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -1093,7 +1093,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3186	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Unavailable		13 July 2018
 3187	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		27 July 2018
 3188	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 July 2018
-3189	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	inactive		27 July 2018
+3189	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Active		31 July 2018
 3190	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3191	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3192	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
@@ -3239,7 +3239,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8023	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8024	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8025	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
-8026	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
+8026	8000-8099	Orion	2007 VII	Wilson	ISL-B400R	Active		1 August 2018
 8027	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8028	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
 8029	8000-8099	Orion	2007 VII	Queensway	ISL-B400R	Active		9 July 2018
@@ -3529,7 +3529,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8393	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8394	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
 8395	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active		9 July 2018
-8396	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466309872669949954/20180710_140831.jpg	12 July 2018
+8396	8335-8396	Orion	2012 VII NG EPA10	Wilson	ISL9-B400R6	Active	https://images-ext-1.discordapp.net/external/	1 August 2018
 8400	8400-8504	Nova Bus	2014 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
 8401	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
 8402	8400-8504	Nova Bus	2015 LFS IV	Arrow Rd	ISL9-B400R	Active		12 July 2018
@@ -3892,7 +3892,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8769	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8770	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		16 July 2018
 8771	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8772	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466646782668177408/20180711_124702.jpg	12 July 2018
+8772	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://images-ext-1.discordapp.net/external/	1 August 2018
 8773	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8774	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8775	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3992,7 +3992,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 8869	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8870	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8871	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8872	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8872	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active	https://images-ext-1.discordapp.net/external/	1 August 2018
 8873	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/465595991341662208/20180708_141536.jpg	11 July 2018
 8874	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8875	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R	Active		17 July 2018
