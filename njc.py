@@ -66,7 +66,50 @@ class njc:
                 lon = i.attributes['lon'].value # lon
 
                 data = discord.Embed(title="Vehicle Tracking for TTC {}".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
-                data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+
+                try: # TRIES FETCHING DATA
+                    fleetlist = open("cogs/njc/dirTag.csv")
+                    reader = csv.reader(fleetlist,delimiter="	")
+                    line = []
+                except Exception as errer:
+#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+                    data.add_field(name="On Route", value="Branch")  
+                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+                    data.add_field(name="Starts from", value="Unknown")
+                    data.add_field(name="Ends at", value="Unknown")
+                    data.add_field(name="Sign", value="Unknown")
+                    data.add_field(name="Branch Notes", value="Unknown")
+                    await self.bot.say(embed=data)
+                    return
+
+                try: # GETS INFO FROM FILE
+                    for row in reader:
+                        if str(row[0]) == dirtag:
+                            line = row
+
+                    # IF OK, THIS IS WHAT IS OUTPUTTED
+                    fleetlist.close()
+                    data.add_field(name="On Route", value=line[1])  
+                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+                    data.add_field(name="Starts from", value=line[2])
+                    data.add_field(name="Ends at", value=line[3])
+                    data.add_field(name="Sign", value=line[4])
+                    try:
+                        data.add_field(name="Branch Notes", value=line[5])
+                    except:
+                        data.add_field(name="Branch Notes", value="N/A")
+                except Exception as errer:
+#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+                    data.add_field(name="On Route", value="Branch")  
+                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+                    data.add_field(name="Starts from", value="Unknown")
+                    data.add_field(name="Ends at", value="Unknown")
+                    data.add_field(name="Sign", value="Unknown")
+                    data.add_field(name="Branch Notes", value="Unknown")
+
+
+
+
                 data.add_field(name="Compass", value="Facing {}".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360)]) if int(heading) in j])) # Obfuscation? Fun, either way
                 try:
                     vision = i.attributes['speedKmHr'].value
@@ -77,30 +120,6 @@ class njc:
                 data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
                 data.set_footer(text="Last updated {} seconds ago.".format(updated))
 
-                try: # TRIES FETCHING DATA
-                    fleetlist = open("cogs/njc/dirTag.csv")
-                    reader = csv.reader(fleetlist,delimiter="	")
-                    line = []
-                except Exception as errer:
-                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-                    await self.bot.say(embed=data)
-                    return
-
-                try:
-                    for row in reader:
-                        if str(row[0]) == dirtag:
-                            line = row
-                    fleetlist.close()
-                    data.add_field(name="Starts from", value=line[2])
-                    data.add_field(name="Ends at", value=line[3])
-                    data.add_field(name="Sign", value=line[4])
-                    data.add_field(name="Branch Notes", value=line[5])
-                except Exception as errer:
-#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-                    data.add_field(name="Starts from", value="Unknown")
-                    data.add_field(name="Ends at", value="Unknown")
-                    data.add_field(name="Sign", value="Unknown")
-                    data.add_field(name="Branch Notes", value="Unknown")
 
                 await self.bot.say(embed=data)
                 return
