@@ -94,10 +94,7 @@ class njc:
                     data.add_field(name="Starts from", value=line[2])
                     data.add_field(name="Ends at", value=line[3])
                     data.add_field(name="Sign", value=line[4])
-                    try:
-                        data.add_field(name="Branch Notes", value=line[5])
-                    except:
-                        data.add_field(name="Branch Notes", value="N/A")
+                    data.add_field(name="Branch Notes", value=line[5])
                 except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
                     data.add_field(name="On Route", value="Branch")  
@@ -106,7 +103,7 @@ class njc:
                     data.add_field(name="Ends at", value="Unknown")
                     data.add_field(name="Sign", value="Unknown")
                     data.add_field(name="Branch Notes", value="Unknown")
-
+                    await self.bot.say("<@221493681075650560> Yo, it looks like a new branch")
 
 
 

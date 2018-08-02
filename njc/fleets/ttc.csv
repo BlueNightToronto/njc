@@ -1004,7 +1004,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 3025	3000-3027	ICTS	1986 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3026	3000-3027	ICTS	1986 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
 3027	3000-3027	ICTS	1986 Mark I	TTC 3 Line	3 phase linear	Active		9 July 2018
-3100	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R	Unavailable		13 July 2018
+3100	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Unavailable		1 August 2018
 3101	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		13 July 2018
 3102	3100-3369	Nova Bus	2018 LFS IV	N/A	L9-B400R6	Unavailable		9 July 2018
 3103	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		16 July 2018
@@ -4209,7 +4209,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 9121	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9122	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9123	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
-9124	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow	ISL9-B500R6	Active		17 July 2018
+9124	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow-Rd	ISL9-B500R6	Active		1 August 2018
 9125	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9126	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9127	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018

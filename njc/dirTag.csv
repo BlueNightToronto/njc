@@ -1,22 +1,65 @@
-5_0_5A
-5_0_5B
-9_1_9rush
-25_0_25A	Don Mills	Pape Stn	Freshmeadow/Don Mills (Steeles)	25A Steeles	via Don Mills Stn
-25_0_25A*	Don Mills	Pape Stn	Freshmeadow/Don Mills (Steeles)	25A Steeles	bypassing Don Mills Stn
-25_0_25B
-25_0_25C
-25_1_25FEFM
-25_1_dm25
-33_0_33	Forest Hill	Roselawn/Bathurst	St Clair Stn	33 St Clair Stn	N/A
-33_1_33	Forest Hill	St Clair Stn	Roselawn/Bathurst	33 Eglinton	N/A
-33_1_33roch	Forest Hill	St Clair Stn	Roselawn/Chaplin	33 Eglinton	Last trip of 33
-36_0_36FWES
-42_0_42A
-42_0_42C
-42_0_42mfs
-42_0_42MCVP
+5_0_5A	5 Avenue Rd	Eglinton Stn	Queen's Park	5A Queen's Park	N/A
+5_1_5A	5 Avenue Rd	Queen's Park	Eglinton Stn	5 Eglinton Stn	N/A
+5_0_5B	5 Avenue Rd	Eglinton Stn	Queen's Park	5B Gerrard	N/A
+5_1_5B	5 Avenue Rd	Queen's Park	Eglinton Stn	5 Eglinton Stn	N/A
+6_0_6A	6 Bay	Davenport/Dupont 	Dockside/Queens Quay East	6 Dockside/Queens Quay East	
+6_1_6A	6 Bay	Dockside/Queens Quay East	Davenport/Dupont 	6 Davenport/Dupont 	
+7_0_DUBA	7 Bathurst	Duncan Shops (Hillcrest)	Bathurst Stn	7 Bathurst Stn	142 Avenue Rd Express
+8_0_8	8 Broadview	Coxwell Av	Broadview Stn	8 Broadview Stn	N/A
+8_1_8	8 Broadview	Broadview Stn	Coxwell Av	8 Coxwell	N/A
+9_0_9	9 Bellamy	Scarborough Centre	Warden	9 Warden Stn	N/A
+9_1_9	9 Bellamy	Warden Stn	Scarborough Centre	9 Scarborough Ctr	N/A
+9_1_9rush	9 Bellamy	Warden Stn	Scarborough Centre	9 Scarborough Ctr	bypasses Neilson Av
+10_0_10	10 Van Horne	Don Mills Stn	Van Horne Rd/Clipper Rd	10 Victoria Park	N/A
+10_1_10	10 Van Horne	Van Horne Rd/Clipper Rd	Don Mills Stn	10 Don Mills Stn	N/A
+11_0_11A 	11 Bayview 	Steeles Loop/Bayview 	Davisville Stn	11 Davisville Stn	
+11_1_11A	11 Bayview 	Davisville Stn	Steeles Loop/Bayview 	11 Steeles	
+25_1_25A	25 Don Mills	Pape Stn	Freshmeadow/Don Mills (Steeles)	25A Steeles	via Don Mills Stn
+25_1_25A*	25 Don Mills	Pape Stn	Freshmeadow/Don Mills (Steeles)	25/A/C Steeles	bypassing Don Mills Stn
+25_0_25B	25 Don Mills	Don Mills Stn	Pape Stn	25B Pape Stn	N/A
+25_0_25C	25 Don Mills	Freshmeadow/Don Mills (Steeles)	Don Mills Stn	25C Don Mills Stn	N/A
+25_1_25C	25 Don Mills	Don Mills Stn	Freshmeadow/Don Mills (Steeles)	25C Steeles	N/A
+25_1_25FEFM	25 Don Mills				N/A
+25_0_dm25	25 Don Mills	Duncan Mill Rd	Pape Stn	25B Pape Stn	N/A
+33_0_33	33 Forest Hill	Roselawn/Bathurst	St Clair Stn	33 St Clair Stn	N/A
+33_1_33	33 Forest Hill	St Clair Stn	Roselawn/Bathurst	33 Eglinton	N/A
+33_1_33roch	33 Forest Hill	St Clair Stn	Roselawn/Chaplin	33 Eglinton	Last trip of 33
+36_0_36FWES	36 Finch West				N/A
+42_0_42A	42 Cummer	Finch Stn			N/A
+42_0_42C	42 Cummer				N/A
+42_0_42mfs	42 Cummer				N/A
+42_0_42MCVP	42 Cummer				N/A
 52_0_WELS	52 Lawrence West	Weston Rd	Lawrence Stn	52 Lawrence Stn	via Lawrence West stn
 52_1_WELS	52 Lawrence West	Lawrence Stn	Weston Rd	52S Weston Rd	via Lawrence West stn
+52_0_52F	52 Lawrence West	Royal York Rd	Lawrence Stn	52F Lawrence Stn	via Lawrence West stn
 52_1_52F	52 Lawrence West	Lawrence Stn	Royal York Rd	52F Royal York	via Lawrence West stn
+76_0_76A	76 Royal York	Bloor/Royal York Rd	Lake Shore/Mimico	76A Lake Shore	N/A
+76_1_76A	76 Royal York	Lake Shore/Mimico	Bloor/Royal York Rd	76 Royal York Stn	N/A
+85_0_85H	85 Sheppard East	Sheppard-Yonge Stn	Rouge Hill GO Stn	85A Rouge Hill GO	via Don Mills Stn and Toronto Zoo
+86_0_86A	86 Scarborough 	Kennedy Stn	Toronto Zoo	86A Toronto Zoo	N/A
+86_1_86A	86 Scarborough 	Toronto Zoo	Kennedy Stn	86 Kennedy Stn	N/A
+86_0_86B	86 Scarborough 	Kennedy Stn	Highland Creek	86B Highland Creek	N/A
+86_1_86B	86 Scarborough 	Highland Creek	Kennedy Stn	86 Kennedy Stn	N/A
+86_0_86C	86 Scarborough 	Kennedy Stn	Meadowvale/Sheppard	86C Sheppard	N/A
+86_1_86C	86 Scarborough 	Meadowvale/Sheppard	Kennedy Stn	86 Kennedy Stn	N/A
+86_0_86D	86 Scarborough 	Kennedy Stn	Wallsend/Coronation	86D Beechgrove	N/A
+86_1_86D	86 Scarborough 	Wallsend/Coronation	Kennedy Stn	86 Kennedy Stn	N/A
+86_0_86E	86 Scarborough 	Kennedy Stn	Meadowvale/Sheppard	86E Sheppard	Express
+86_1_86E	86 Scarborough 	Meadowvale/Sheppard	Kennedy Stn	86E Kennedy Stn	Express
+100_0_100A	100 Flemingdon Park	Don Mills/Wynford	Broadview Stn	100A Broadview Stn	N/A
+100_A_100A	100 Flemingdon Park	Broadview Stn	Don Mills/Wynford	100A Broadview Stn	N/A
+143_0_143	143 Beaches Express	Simcoe/Adelaide	Neville Park Blvd	143 Neville Park	N/A
+143_1_143	143 Downtown Express	Neville Park Blvd	Simcoe/Adelaide	143 Downtown	N/A
+143_1_SHAS	143 Beaches Express	Sherbourne/Richmond	Simcoe/Adelaide	143 Neville Park	N/A
+144_0_144	144 Downtown Express	Victoria Park/Ellesmere	Simcoe/Adelaide	144 Downtown	N/A
+144_1_144	144 Don Valley Express	Simcoe/Adelaide	Victoria Park/Ellesmere	144 York Mills	N/A
+144_0_JVAS	144 Don Valley Express	Jarvis/Richmond	Simcoe/Adelaide	144 York Mills	N/A
 190_0_190	190 Rocket	Don Mills Stn	Scarborough Centre	190 Scarborough Centre	N/A
 190_1_190	190 Rocket	Scarborough Centre	Don Mills Stn	190 Don Mills Stn	N/A
+198_0_198	198 UfTS Rocket 	Kennedy Stn	U of T Scarborough 	198 U of T Scarborough 	N/A
+198_1_198	198 UfTS Rocket 	U of T Scarborough 	Kennedy Stn	198 Kennedy	N/A
+300_0_300Ake	300 Bloor-Danforth	Pearson Airport	Kennedy Stn	300B Kennedy Stn	N/A
+354_0_354B	354 Lawrence East	Eglinton Stn	Starspray 	354B Starspray	N/A
+354_1_354B	354 Lawrence East	Starspray 	Eglinton Stn	354B Eglinton Stn	N/A
+354_1_354C	354S Lawrence East	Starspray 	Rouge Hill GO Stn	354C Rouge Hill GO	N/A
+354_1_354D	354 Lawrence East	Starspray	Yonge	354 Yonge 	N/A
