@@ -6,7 +6,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 305	0301-0344	New Flyer	2003 D40LF	N/A	ISL-D864.3E	Retired - 2014		9 July 2018
 306	0301-0344	New Flyer	2003 D40LF	Central Parkway	ISL-D864.3E	Active		9 July 2018
 307	0301-0344	New Flyer	2003 D40LF	Central Parkway	ISL-D864.3E	Active	https://media.discordapp.net/attachments/466672200024588301/466750437547311116/IMG_20180331_013517_877.jpg	11 July 2018
-308	0301-0344	New Flyer	2003 D40LF	Central Parkway	ISL-D864.3E	Active		9 July 2018
+308	0301-0344	New Flyer	2003 D40LF	Central Parkway	ISL-D864.3E	Retired		10 October 2018
 309	0301-0344	New Flyer	2003 D40LF	Central Parkway	ISL-D864.3E	Active		9 July 2018
 310	0301-0344	New Flyer	2003 D40LF	Central Parkway	ISL-D864.3E	Active	https://cdn.discordapp.com/attachments/385830976879722499/466679560088584192/IMG_0299.JPG	11 July 2018
 311	0301-0344	New Flyer	2003 D40LF	Central Parkway	ISL-D864.3E	Active		9 July 2018
@@ -152,7 +152,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 635	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Active		9 July 2018
 636	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Active		9 July 2018
 637	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Active		9 July 2018
-638	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Active		9 July 2018
+638	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Inactive		24 September 2018
 639	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Active		9 July 2018
 640	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Active		9 July 2018
 641	0601-0653	New Flyer	2006 D40LFR	Malton	ISL-D864.3E	Active		9 July 2018
@@ -228,40 +228,40 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 843	0801-0844	New Flyer	2008 D40LFR	Central Parkway	ISL-D864.5	Active		9 July 2018
 844	0801-0844	New Flyer	2008 D40LFR	Central Parkway	ISL-D864.5	Active		9 July 2018
 851	0851-0885	New Flyer	2007 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-852	0851-0885	New Flyer	2007 D60LFR	Malton	ISM-B500R	Active		9 July 2018
+852	0851-0885	New Flyer	2007 D60LFR	Malton	ISM-B500R	Retired		21 September 2018
 853	0851-0885	New Flyer	2007 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-854	0851-0885	New Flyer	2007 D60LFR	Malton	ISM-B500R	Active		9 July 2018
+854	0851-0885	New Flyer	2007 D60LFR	Malton	ISM-B500R	Retired		21 September 2018
 855	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
 856	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-857	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
-858	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
-859	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
-860	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
-861	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
+857	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Retired		21 September 2018
+858	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Retired		21 September 2018
+859	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Retired		21 September 2018
+860	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Retired		21 September 2018
+861	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Retired		21 September 2018
 862	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
-863	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active		9 July 2018
-864	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-865	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-866	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active		9 July 2018
-867	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active		9 July 2018
-868	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active	https://media.discordapp.net/attachments/385830976879722499/466457889196736522/IMG_4959.JPG?width=500&height=300	11 July 2018
+863	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired		21 September 2018
+864	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired		21 September 2018
+865	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired		21 September 2018
+866	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired		21 September 2018
+867	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired		21 September 2018
+868	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired	https://media.discordapp.net/attachments/385830976879722499/466457889196736522/IMG_4959.JPG?width=500&height=300	21 September 2018
 869	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-870	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active		9 July 2018
-871	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-872	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active		9 July 2018
-873	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active	https://media.discordapp.net/attachments/385830976879722499/466667087180333056/IMG_5904.JPG?width=779&height=520	11 July 2018
-874	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active	https://cdn.discordapp.com/attachments/385830976879722499/466423473447632896/IMG_2811.JPG?width=500&height=300	10 July 2018
+870	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired		21 September 2018
+871	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired		21 September 2018
+872	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired		21 September 2018
+873	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired	https://media.discordapp.net/attachments/385830976879722499/466667087180333056/IMG_5904.JPG?width=779&height=520	21 September 2018
+874	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Retired	https://cdn.discordapp.com/attachments/385830976879722499/466423473447632896/IMG_2811.JPG?width=500&height=300	28 September 2018
 875	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
 876	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
 877	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
 878	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
 879	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2017		9 July 2018
 880	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
-881	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
-882	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired - 2018		9 July 2018
+881	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired		21 September 2018
+882	0851-0885	New Flyer	2008 D60LFR	N/A	ISM-B500R	Retired		21 September 2018
 883	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
 884	0851-0885	New Flyer	2008 D60LFR	Malton	ISM-B500R	Active		9 July 2018
-885	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Active	https://media.discordapp.net/attachments/385830976879722499/466458177408598017/IMG_4966.JPG?width=500&height=300	11 July 2018
+885	0851-0885	New Flyer	2008 D60LFR	Central Parkway	ISM-B500R	Retired	https://media.discordapp.net/attachments/385830976879722499/466458177408598017/IMG_4966.JPG?width=500&height=300	21 September 2018
 901	0901-0925	New Flyer	2008 D40LFR	Central Parkway	ISL-D864.5	Active		9 July 2018
 902	0901-0925	New Flyer	2008 D40LFR	Central Parkway	ISL-D864.5	Active		9 July 2018
 903	0901-0925	New Flyer	2008 D40LFR	Central Parkway	ISL-D864.5	Active		9 July 2018
@@ -360,7 +360,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1114	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		9 July 2018
 1115	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		9 July 2018
 1116	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		9 July 2018
-1117	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		9 July 2018
+1117	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		4 October 2018
 1118	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		9 July 2018
 1119	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		9 July 2018
 1120	1101-1143	New Flyer	2011 XD40	Central Parkway	ISL9-D864.5	Active		9 July 2018
@@ -523,7 +523,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail
 1793	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Active		9 July 2018
 1794	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Active		9 July 2018
 1795	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Active		9 July 2018
-1796	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Active		9 July 2018
+1796	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Inactive		15 October 2018
 1797	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Active		9 July 2018
 1798	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Active		9 July 2018
 1799	1770-1799	NovaBus	2017 LFS-Artic	Central Parkway	ISL9-B500R	Active		9 July 2018

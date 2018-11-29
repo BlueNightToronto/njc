@@ -1,0 +1,1154 @@
+Route Number	Route Name	Division(s)	All Interlines	Internal Branches
+5	Avenue Rd	Wilson	320 Yonge	"5_0_5A
+5_1_5A
+5_0_5B
+5_1_5B"
+6	Bay	Mount Dennis	None	"6_0_6A
+6_1_6A
+6_0_6B
+6_1_6B"
+7	Bathurst	Wilson	142 Avenue Rd/Downtown Express, 307 Bathurst, 320 Yonge	"7_0_7
+7_1_7
+7_0_BWBA
+7_0_DUBA
+7_0_HIBA
+7_1_BWVL
+7_1_BADU
+7_1_BABW"
+8	Broadview	Birchmount	None	"8_0_8
+8_1_8"
+9	Bellamy	Birchmount	20 Cliffside	"9_0_9
+9_1_9
+9_1_9rush"
+10	Van Horne	Wilson	None	"10_0_10
+10_1_10
+10_0_VHBR"
+11	Bayview	Wilson	320 Yonge	"11_0_11A
+11_1_11A
+11_0_11C
+11_1_11C
+11_1_11Apm"
+12	Kingston Rd	Birchmount	22 Coxwell, 24 Victoria Park, 70 O'Connor, 87 Cosburn, 302 Kingston-McCowan, 322 Coxwell, 324 Victoria Park	"12_0_12A
+12_1_12A
+12_0_12B
+12_1_12B
+12_0_12C
+12_1_12C
+12_0_12D
+12_1_12D
+12_0_12Apeak
+12_0_NMVI
+12_1_NMVI
+12_1_cd12C
+12_1_BAKR
+12_0_VIBI"
+14	Glencairn	Mount Dennis	None	"14_0_14
+14_1_14"
+15	Evans	Queensway	48 Rathburn, 111 East Mall, 937 Islington Express	"15_0_15
+15_1_15
+15_1_ESRY"
+16	McCowan	Birchmount, Eglinton	70 O'Connor, 300 Bloor-Danforth	"16_0_16
+16_1_16
+16_0_16dd"
+17	Birchmount	Birchmount	320 Yonge, 902 Markham Rd Express	"17_0_17A
+17_1_17A
+17_0_17B
+17_1_17B
+17_0_17C
+17_1_17C
+17_0_ke17S
+17_1_BIRO"
+20	Cliffside	Birchmount	9 Bellamy	"20_0_20
+20_1_20
+20_0_st20"
+21	Brimley	Malvern	302 Kingston-McCowan	"21_0_21A
+21_1_21A
+21_0_21B
+21_1_21B
+21_0_21C
+21_1_21C"
+22	Coxwell	Birchmount	12 Kingston Rd, 322 Coxwell, 324 Victoria Park	"22_0_22A
+22_1_22A
+22_0_22B
+22_1_22B"
+23	Dawes	Birchmount	None	"23_0_23
+23_1_23"
+24	Victoria Park	Birchmount	12 Kingston Rd, 300 Bloor-Danforth, 302 Kingston-McCowan, 322 Coxwell, 324 Victoria Park, 924 Victoria Park	"24_0_24A
+24_1_24A
+24_0_24B
+24_1_24B
+24_0_24da
+24_1_24da
+24_0_24DABI
+24_0_SOVI
+24_1_biv24
+24_1_CSDO
+24_1_dav24
+24_1_SOST
+24_0_24vda
+24_0_DABI"
+25	Don Mills	Eglinton	70 O'Connor, 300 Bloor-Danforth, 320 Yonge, 325 Don Mills, 925 Don Mills	"25_0_25A
+25_0_25A*
+25_0_25B
+25_0_25C
+25_0_dm25
+25_0_feps
+25_1_25A
+25_1_25A*
+25_1_25B
+25_1_25C
+25_1_do25*
+25_1_DODO
+25_1_FEFM"
+26	Dupont	Mount Dennis	300 Bloor-Danforth, 312 St Clair-Junction	"26_0_26
+26_1_26"
+28	Bayview South	Wilson	None	"28_0_28
+28_1_28"
+29	Dufferin	Mount Dennis	320 Yonge, 329 Dufferin	"29_0_29A
+29_1_29A
+29_0_29C
+29_1_29C
+29_1_29Cdlaw
+29_0_29D
+29_1_29D
+29_0_29dm
+29_1_29dm"
+30	Lambton	Queensway	40 Bloor West, 300 Bloor Danforth	"30_0_30A
+30_1_30A
+30_0_30B
+30_1_30B
+30_0_HPCL
+30_1_CLHP"
+31	Greenwood	Birchmount	None	"31_0_31A
+31_1_31A
+31_0_31B
+31_1_31B"
+32	Eglinton West	Wilson	320 Yonge, 332 Eglinton West	"32_0_32A
+32_1_32A
+32_0_32C
+32_1_32C
+32_0_32D
+32_1_32D
+32_0_HOJA
+32_0_MPEWsch
+32_0_mp32sch
+32_1_MMEWsch"
+33	Forest Hill	Wilson	None	"33_0_33
+33_1_33
+33_1_33roch"
+34	Eglinton East	Eglinton	300 Bloor-Danforth, 320 Yonge, 334 Eglinton East, 354 Lawrence East	"34_0_34A
+34_1_34A
+34_0_34Aam
+34_0_34B
+34_1_34B
+34_0_34C
+34_1_34C
+34_1_34Akes
+34_1_EGES"
+35	Jane	Arrow Rd	46 Martin Grove, 927 Highway 27 Express, 935 Jane Express	"35_0_35A
+35_0_35Apv
+35_0_35Arush
+35_0_35B
+35_0_35Brush
+35_1_35A
+35_1_35Apv
+35_1_35Arush
+35_1_35B
+35_1_35Brush
+35_1_35fj
+35_1_JAFJ
+35_1_PVST
+35_1_PVSTpv"
+36	Finch West	Arrow Rd	35 Jane, 60 Steeles West, 96 Wilson, 186 Wilson Rocket, 336 Finch West, 339 Finch East	"36_0_36A
+36_1_36A
+36_0_36B
+36_1_36B
+36_0_36D
+36_1_36D
+36_0_36F
+36_1_36F
+36_0_36J
+36_1_36J
+36_0_36FWES
+36_0_MPWE
+36_0_fa36c
+36_0_fa36c
+36_1_36Dpv
+36_0_36Jpv
+36_1_36Jpv
+36_1_BAFW
+36_1_36fac
+36_1_KE36B
+36_1_FHWH"
+37	Islington	Queensway	50 Queensway, 123 Sherway	"37_0_37A
+37_1_37A
+37_0_37B
+37_1_37B
+37_0_IS37B
+37_1_IWST"
+38	Highland Creek	Malvern	None	"38_0_38A
+38_1_38A
+38_0_38B
+38_1_38B
+38_0_RHMK"
+39	Finch East	Malvern	53 Steeles East, 302 Kingston-McCowan, 336 Finch West, 339 Finch East	"39_0_39A
+39_1_39A
+39_0_39B
+39_1_39B
+39_0_39C
+39_1_39C
+39_0_FSMA
+39_0_MCVP"
+40	Junction	Queensway	None	"40_0_40
+40_1_40
+40_1_40edna"
+41	Keele	Mount Dennis	300 Bloor-Danforth, 329 Dufferin, 341 Keele	"41_0_41A
+41_1_41A
+41_0_41Apv
+41_0_41E
+41_1_41E
+41_1_41Apv"
+42	Cummer	Wilson	320 Yonge	"42_0_42A
+42_1_42A
+42_0_42Acon
+42_1_42Acon
+42_0_42C
+42_1_42C
+42_0_MCVP
+42_1_VPTE
+42_1_42mfs"
+43	Kennedy	Eglinton	57 Midland, 300 Bloor-Danforth, 343 Kennedy	"43_0_43A
+43_1_43A
+43_0_43B
+43_1_43B
+43_1_PAMI
+43_0_MIMC
+43_0_mc43A
+43_0_MIPA"
+44	Kipling South	Queensway	45 Kipling	"44_0_44
+44_1_44
+44_1_KPEV
+44_1_EVKP"
+45	Kipling 	Queensway	15 Evans, 44 Kipling South, 46 Martin Grove, 48 Rathburn, 112 West Mall, 300 Bloor-Danforth (more)	"45_0_45A
+45_1_45A
+45_0_45B
+45_1_45B
+45_0_45E
+45_1_45E
+45_0_45Acon
+45_1_45Acon
+45_0_45ACon
+45_1_45ACon
+45_0_45Bcon
+45_1_45Bcon
+45_0_45BCon
+45_1_45BCon
+45_0_45Econ
+45_1_45Econ
+45_0_45ECon
+45_1_45ECon"
+46	Martin Grove	Arrow Rd, Queensway	35 Jane, 45 Kipling, 60 Steeles West, 396 Wilson	"46_0_46
+46_1_46
+46_0_46con
+46_1_46con
+46_0_mr46
+46_0_NTKP
+46_1_NTSL"
+47	Lansdowne	Wilson	312 St Clair-Junction, 320 Yonge, 329 Dufferin	"47_0_47A
+47_1_47A
+47_0_47A Cons
+47_1_47A Cons
+47_0_47B
+47_1_47B
+47_1_47BCons
+47_1_47BCons
+47_0_47C
+47_1_47C
+47_0_47ASun
+47_1_47ASun
+47_0_47ASun Con
+47_1_47ASun Con"
+48	Rathburn	Queensway	15 Evans, 45 Kipling	"48_0_48
+48_1_48
+48_0_48A
+48_1_48A
+48_0_MMRY"
+49	Bloor West	Queensway	300 Bloor-Danforth	"49_0_49
+49_1_49"
+50	Burnhamthrope	Queensway	300 Bloor-Danforth	"50_0_50
+50_1_50
+50_0_MMIS"
+51	Leslie	Wilson	320 Yonge	"51_0_51
+51_1_51
+51_1_FIST"
+52	Lawrence West	Wilson	352 Lawrence West	"52_0_52A
+52_1_52A
+52_0_52B
+52_1_52B
+52_0_52D
+52_1_52D
+52_0_52F
+52_1_52F
+52_0_52G
+52_1_52G
+52_0_52Gcon
+52_1_52Gcon
+52_0_ch52G
+52_0_ch52Gcon
+52_1_ba52B
+52_1_yg52D
+52_0_TOLS
+52_0_WELS
+52_1_WELS
+52_1_dl52A
+52_0_WMT3
+52_1_MGTO
+52_0_TOYG
+52_0_52Ayg
+51_1_ba52
+52_1_T1T3"
+53	Steeles East	Malvern	39 Finch East, 133 Neilson, 353 Steeles	"53_0_53A
+53_1_53A
+53_0_53B
+53_1_53B
+53_0_53Bpm
+53_1_53Bpm
+53_0_53E
+53_1_53E
+53_0_53F
+53_1_53F
+53_0_53Epm
+53_1_53Epm
+53_1_53Epm*
+53_0_53Fpm
+53_1_53Fpm
+53_1_SYON
+53_1_BSFS
+53_0_BRMK"
+54	Lawrence East	Eglinton	320 Yonge, 354 Lawrence East	"54_0_54A
+54_1_54A
+54_0_54B
+54_1_54B
+54_0_54Bpm
+54_1_54Bpm
+54_1_54Br
+54_1_OTBR
+54_1_STRH
+54_1_RH54
+54_0_54rst
+54_1_RH54r
+54_0_rt54A"
+55	Warren Park	Wilson	None	"55_0_55
+55_1_55
+55_0_VAOL"
+56	Leaside	Wilson	None	"56_0_56A
+56_1_56A
+56_0_56B
+56_1_56B"
+57	Midland	Eglinton	43 Kennedy	"57_0_57
+57_1_57
+57_1_57am"
+59	Maple Leaf	Arrow Rd		"59_0_59A/Ccon
+59_1_59A/Ccon
+59_0_59B/Ccon
+59_1_59B/Ccon
+59_0_59A/C
+59_1_59A/C
+59_0_59B/C
+59_1_59B/C
+59_0_59Ach
+59_0_59Bch
+59_1_ch59A
+59_1_ch59B"
+60	Steeles West	Arrow Rd	35 Jane, 36 Finch West, 46 Martin Grove, 96 Wilson, 396 Wilson	"60_0_60A
+60_1_60A
+60_0_60B
+60_0_60Bpv
+60_1_60B
+60_0_si60c
+60_0_pk60c
+60_0_si60
+60_0_60D
+60_1_60D"
+61	Avenue Road North	Wilson	320 Yonge	"61_0_61
+61_1_61
+61_1_61aros"
+62	Mortimer	Birchmount	87 Cosburn	"62_0_62
+62_1_62"
+63	Ossington	Wilson	320 Yonge, 363 Ossington	"63_0_63A
+63_1_63A
+63_0_63B
+63_1_63B
+63_0_63Apm
+63_1_63Apm
+63_0_63AamSun
+63_1_63AamSun
+63_1_LBKI"
+64	Main	Birchmount	87 Cosburn	"64_0_64
+64_1_64"
+65	Parliament	Birchmount	365 Parliament	"65_0_65
+65_1_65"
+66	Prince Edward	Queensway	73 Royal York, 76 Royal York South	"66_0_66A
+66_1_66A
+66_0_66B
+66_1_66B"
+67	Pharmacy 	Eglinton	68 Warden	"67_0_67A
+67_1_67A
+67_0_67B
+67_1_67B
+67_1_DA67
+67_0_67Awx
+67_0_wx67A"
+68	Warden	Birchmount	67 Pharmacy, 144 Don Valley/Downtown Express	"68_0_68A
+68_1_68A
+68_0_68B
+68_1_68B
+68_0_68Adaly
+68_1_68Adaly
+68_1_wd68B"
+69	Warden South	Birchmount	None	"69_0_69A
+69_0_69b
+69_0_DAKR
+69_1_69A
+69_1_69b
+69_1_KRWD
+69_1_KRDA"
+70	O'Connor	Birchmount, Eglinton	12 Kingston Rd, 16 McCowan, 25 Don Mills, 87 Cosburn, 135 Gerrard, 325 Don Mills	"70_0_70A
+70_1_70A
+70_0_70B
+70_1_70B
+70_0_70C
+70_1_70C
+70_0_EYCS"
+71	Runnymede	Mount Dennis	300 Bloor-Danforth	"71_0_71A
+71_1_71A
+71_0_71B
+71_1_71B"
+72	Pape	Birchmount	None	"72_0_72A
+72_1_72A
+72_0_72B
+72_1_72B
+72_0_72C
+72_1_72C
+72_0_72B_pk
+72_1_72B_pk"
+73	Royal York	Queensway	66 Prince Edward, 76 Royal York South	"73_0_73B
+73_1_73B
+73_0_73Cp
+73_1_73Cp
+73_0_73D
+73_1_73D"
+74	Mount Pleasant	Wilson	None	"74_0_74
+74_1_74"
+75	Sherbourne	Wilson	82 Rosedale, 320 Yonge	"75_0_75
+75_1_75
+75_0_75A
+75_1_75A
+75_0_bl75
+75_1_JVBL"
+76	Royal York South	Queensway	66 Prince Edward, 73 Royal York	"76_0_76A
+76_1_76A
+76_0_76B
+76_1_76B
+76_0_76C
+76_1_76C
+76_0_76D
+76_0_ev76
+76_1_LAEV"
+77	Swansea	Mount Dennis	300 Bloor-Danforth	"77_0_77
+77_1_77
+77_1_77RB"
+78	St. Andrews	Wilson	None	"77_1_77RB
+78_0_78
+78_1_78"
+79	Scarlett Rd	Mount Dennis	300 Bloor-Danforth, 312 St Clair-Junction	"79_0_79A
+79_1_79A
+79_0_79B
+79_1_79B
+79_0_PILW"
+80	Queensway	Queensway	None	"80_0_80
+80_1_80
+80_1_WDSH"
+81	Thorncliffe Park	Birchmount	None	"81_0_81
+81_1_81
+81_0_81*
+81_1_81*
+81_0_DSTH
+81_1_THDS"
+82	Rosedale	Wilson	75 Sherbourne, 320 Yonge	"82_0_82
+82_1_82"
+83	Jones	Birchmount	300 Bloor-Danforth, 322 Coxwell, 324 Victoria Park	"83_0_83
+83_1_83"
+84	Sheppard West	Arrow Rd	99 Arrow Rd	"84_0_84A
+84_1_84A
+84_0_84C
+84_1_84C
+84_0_84Ca
+84_1_84Ca
+84_0_84Cp
+84_0_84D
+84_1_84D
+84_1_FASR
+84_0_RIWE
+84_0_WERI
+84_0_sa84
+84_1_84sa
+84_0_ba84
+84_0_badn84
+84_1_SRFE"
+85	Sheppard East	Malvern	None	"85_0_85A
+85_0_85B
+85_0_85C
+85_0_85D
+85_0_85F
+85_0_85Gd
+85_0_85H
+85_0_85J
+85_1_sld85
+85_1_85J
+85_1_85A
+85_1_85B
+85_1_85C
+85_1_85D
+85_1_85F"
+86	Scarborough	Eglinton	334 Eglinton East, 300 Bloor-Danforth	"86_0_86A
+86_1_86A
+86_0_86B
+86_1_86B
+86_0_86C
+86_1_86C
+86_0_86D
+86_1_86D
+86_0_86E
+86_1_86E
+86_0_MACO
+86_0_CNKG
+86_0_KGSL
+86_0_kn86"
+87	Cosburn	Birchmount	12 Kingston Rd, 62 Mortimer, 300 Bloor-Danforth	"87_0_87A
+87_1_87A
+87_0_87C
+87_0_87 C
+87_1_87C
+87_1_cc87"
+88	South Leaside	Wilson		"88_0_88A
+88_1_88A
+88_0_88B
+88_1_88B
+88_0_LVTH*
+88_0_LDvTH
+88_1_88B"
+89	Weston	Mount Dennis	312 St Clair-Junction	"89_0_89
+89_1_89
+89_0_89sch"
+90	Vaughan	Wilson		"90_0_90A
+90_1_90A"
+91	Woodbine	Birchmount	12 Kingston Rd	"91_0_91C
+91_1_91C
+91_0_91Cam
+91_1_91Cam
+91_1_91Dam
+91_0_91Dpm"
+92	Woodbine South	Birchmount		"92_0_92
+92_1_92"
+93	Parkview Hills	Birchmount		"93_0_93
+93_1_93"
+94	Wellesley	Wilson	320 Yonge	"94_0_94A
+94_1_94A
+94_0_94C
+94_1_94C"
+95	York Mills	Malvern	85 Sheppard East, 395 York Mills	"95_0_95A
+95_0_YOCE
+95_0_YOCE
+95_1_95A
+95_0_95B
+95_1_95B
+95_0_95C
+95_1_95C
+95_0_95E
+95_1_95E
+95_1_PJYK
+95_1_YOCI"
+96	Wilson	Arrow Rd	35 Jane, 36 Finch West, 60 Steeles West, 119 Torbarrie	"96_0_96
+96_0_96A
+96_1_96A
+96_0_96B
+96_1_96B
+96_1_wi96B
+96_0_96Bp
+96_0_96D
+96_1_96D
+96_1_MDJA
+96_0_96Ap
+96_0_96Aja
+96_0_FIHU"
+97	Yonge	Wilson	320 Yonge	"97_0_97A
+97_1_97A
+97_0_97B
+97_1_97B
+97_1_yk97B
+97_0_yk97BvFRcn
+97_1_yk97BvFR
+97_0yk97Bcon
+97_0_97BvFR
+97_0_97Ccon
+97_1_97Ccon
+97_0_97C
+97_1_97C
+97_0_97D
+97_1_97D
+97_0_97F
+97_1_97F"
+98	Willowdale-Senlac	Wilson	320 Yonge	"98_0_98A
+98_1_98A
+98_0_98C
+98_1_98C
+98_0_PEGO"
+99	Arrow Rd	Arrow Rd	84 Sheppard West	"99_0_99
+99_1_99"
+100	Flemingdon Park	Eglinton	300 Bloor-Danforth, 320 Yonge, 334 Eglinton East	"100_0_100A
+100_1_100A"
+101	Downsview Park	Arrow Rd	None	"101_0_101
+101_1_101"
+102	Markham Rd	Birchmount, Eglinton	86 Scarborough, 144 Don Valley/Downtown Express, 300 Bloor-Danforth, 302 Kingston-McCowan	"102_0_102A
+102_1_102A
+102_0_102B
+102_1_102B
+102_0_102Bpm
+102_1_102Bpm
+102_1_102Bam
+102_0_102D
+102_1_102D
+102_0_MPWA
+102_1_WAMP
+102_1_CNCC
+102_1_CDHS"
+104	Faywood	Wilson	None	"104_0_104
+104_1_104"
+105	Dufferin North	Wilson	106 Sentinel	"105_0_105A
+105_1_105A
+105_1_WIDU"
+106	Sentinel	Wilson	105 Dufferin North, 117 Alness-Chesswod	"106_0_106
+106_1_106
+106_1_SEDO
+106_1_106pv"
+107	St Regis	Wilson	None	"107_0_107
+107_1_107
+107_0_107wi
+107_1_wi107"
+108	Driftwood	Arrow Rd	None	"108_0_108A
+108_1_108A
+108_0_108B
+108_1_108B
+108_0_108Cpv
+108_1_108C
+108_0_PVFI
+108_1_STPVc
+108_0_FDSH"
+109	Ranee	Wilson	320 Yonge	"109_0_109B
+109_0_109C
+109_0_LAEW
+109_0_RALA
+109_1_109
+109_1_109A
+109_1_109B
+109_1_109C"
+110	Islington South	Queensway	337 Islington	"110_0_110A
+110_1_110A
+110_0_110B
+110_1_110B
+110_0_110C
+110_1_110C
+110_0_110Cpm
+110_1_110Cpm"
+111	East Mall	Queensway	15 Evans, 192 Airport Rocket, 300 Bloor-Danforth	"111_0_111
+111_1_111
+111_0_REKP
+111_1_MGMG
+111_0_RAEM"
+112	West Mall	Queensway	45 Kipling	"112_0_112B
+112_1_112B
+112_0_112Ca
+112_1_112Ca
+112_0_112Cp
+112_1_112Cp
+112_0_112E"
+113	Danforth	Birchmount	300 Bloor-Danforth	"113_0_113
+113_1_113"
+115	Silver Hills	Wilson	122 Graydon Hall	"115_0_115
+115_1_115"
+116	Morningside	Eglinton	300 Bloor-Danforth, 334 Eglinton East	"116_0_116A
+116_1_116A
+116_0_116B
+116_1_116B
+116_0_116C
+116_0_kn116C
+116_1_116C
+116_1_116C
+116_1_pj116
+116_0_mons
+116_0_gu116
+116_0_mo116"
+117	Alness-Chesswood	Wilson	106 Sentinel	"117_0_117
+117_1_117"
+118	Thistle Down	Arrow Rd	None	"118_0_118a
+118_1_118a
+118_0_118p
+118_1_118p"
+119	Torbarrie	Arrow Rd	96 Wilson	"119_0_119a
+119_1_119a
+119_0_119p
+119_1_119p"
+120	Calvington	Arrow Rd	None	"120_0_120
+120_1_120
+120_0_NRGI"
+121	Fort-York Esplanade	Birchmount	None	"121_0_121A
+121_1_121A
+121_0_121C
+121_1_121C
+121_0_121D
+121_1_121D"
+122	Graydon Hall	Wilson	115 Silver Hills, 320 Yonge	"122_0_122
+122_0_122*
+122_0_ROUP
+122_1_122
+122_1_122*
+122_1_fe122"
+123	Sherway	Queensway	37 Islington, 300 Bloor-Danforth	"123_0_123B
+123_1_123B
+123_0_123C
+123_1_123C
+123_0_123D
+123_1_123D
+123_0_123F
+123_1_123F
+123_1_EMKP
+123_0_SHLO"
+124	Sunnybrook	Wilson	None	"124_0_124
+124_1_124"
+125	Drewry	Wilson	320 Yonge	"125_0_125
+125_1_125
+125_1_TOBA
+125_0_ANBA"
+126	Christie	Mount Dennis	None	"126_0_126
+126_1_126"
+127	Davenport	Mount Dennis	29 Dufferin, 320 Yonge, 329 Dufferin	"127_0_127
+127_1_127"
+129	McCowan North	Malvern	385 Sheppard East, 939 Finch Express	"129_0_129A
+129_1_129A
+129_0_129B
+129_1_129B
+129_1_129SHST"
+130	Middlefield 	Malvern	132 Milner	"130_0_130A
+130_1_130A
+130_0_130B
+130_1_130B"
+131	Nugget	Malvern	939 Finch Express	"131_0_131A
+131_1_131A
+131_0_131Ar
+131_1_131Ar
+131_0_MVMOr
+131_0_131E
+131_1_131E
+131_0_131Er
+131_1_131Er"
+132	Milner	Malvern	130 Middlefield	"132_0_132
+132_1_132
+132_0_HPSE"
+133	Neilson	Malvern	53 Steeles East, 353 Steeles	"133_0_133
+133_1_133"
+134	Progress	Malvern	913 Progress Express	"134_0_134A
+134_1_134A
+134_0_134Ar
+134_1_134Ar
+134_0_134Bam
+134_1_134Bam
+134_0_134Bpm
+134_1_134Bpm
+134_0_134C
+134_1_134C
+134_1_TAFD*"
+135	Gerrard	Birchmount	70 O'Connor	"135_0_135
+135_1_135"
+141	Downtown/Mt.Pleasant	Mount Dennis	32 Eglinton West	"141_0_141am
+141_1_141am
+141_0_141pm
+141_1_141pm"
+142	Downtown/Avenue Rd	Wilson	7 Bathurst	"142_0_142
+142_1_142
+142_0_SICH"
+143	Downtown/Beach	Birchmount	None	"143_0_143
+143_1_143
+143_1_SHAS
+143_0_143pm
+143_1_143pm"
+144	Downtown/Don Valley	Eglinton	68 Warden, 102 Markham Rd	"144_0_144
+144_0_144A
+144_0_144B
+144_1_144
+144_1_144A
+144_1_144B
+144_0_JVAS"
+145	Downtown/Humber Bay Express	Queensway	None	"145_0_145A
+145_1_145A
+145_0_145Aam
+145_1_145Aam
+145_0_145Apm
+145_1_145Apm
+145_0_145B1
+145_0_145B2
+145_0_145B3
+145_0_145B
+145_1_145B
+145_0_ADRM"
+160	Bathurst North	Wilson	None	"160_0_160
+160_1_160
+160_0_CLST"
+161	Rogers Rd	Mount Dennis	329 Dufferin	"161_0_BAFW
+161_0_161
+161_1_161
+161_0_ljro"
+162	Lawrence-Donway	Wilson	None	"162_0_162
+162_0_DWDE
+162_1_162"
+165	Weston Rd North	Arrow Rd	None	"165_0_165AAM
+165_1_165AAM
+165_0_si165
+165_0_165Apm
+165_0_165A
+165_1_165A
+165_0_BAFW
+165_0_BAYM"
+167	Pharmacy North	Birchmount	None	"167_0_167A
+167_1_167A
+167_0_167B
+167_1_167B"
+168	Symington	Mount Dennis	None	"168_0_168
+168_1_168"
+169	Huntingwood	Wilson	None	"169_0_169A
+169_1_169A
+169_0_169B
+169_1_169B
+169_1_MCDO"
+171	Mt.Dennis	Mount Dennis	None	"171_0_171
+171_1_171"
+175	Bluffer's Park	Birchmount	None	"175_0_175
+175_1_175"
+176	Mimico GO	Queensway	None	"176_0_176am
+176_1_176am
+176_0_176pm
+176_1_176pm"
+186	Wilson Rocket	Arrow Rd	36 Finch West	"186_0_186
+186_1_186"
+188	Kipling South 	Queensway	300 Bloor-Danforth	"188_0_188am
+188_1_188am
+188_0_188
+188_1_188
+188_0_188pm
+188_1_188pm"
+192	Airport Rocket	Queensway	300 Bloor-Danforth, 111 East Mall	"192_0_192
+192_1_192
+192_0_192AM
+192_1_192AM"
+300	Bloor-Danforth	Birchmount, Eglinton, Mount Dennis, Malvern, Queensway	16 McCowan, 20 Cliffside, 24 Victoria Park, 25 Don Mills, 26 Dupont, 30 Lambton, 32 Eglinton West, 34 Eglinton East, 40 Junction, 41 Keele, 43 Kennedy, 44 Kipling South, 45 Kipling, 49 Bloor West, 50 Burnhamthorpe, 73 Royal York, 77 Swansea, 79 Scarlett Rd, 81 Thorncliffe Park, 87 Cosburn, 100 Flemingdon Park, 102 Markham Rd, 111 East Mall, 112 West Mall, 113 Danforth, 116 Morningside, 123 Shorncliffe, 188 Kipling South, 192 Airport Rocket, 353 Lawrence West, 985 Sheppard East Express	"300_0_300A
+300_0_300A*
+300_0_300Ake
+300_0_300B
+300_0_300B*
+300_0_300Bstn
+300_0_300Bdd
+300_0_ba300
+300_0_ba300B
+300_0_EMKP
+300_0_MSKE
+300_0_MSDD
+300_0_LSPS
+300_0_kp300
+300_0_kp300ps
+300_0_300cs
+300_1_300A
+300_1_300A*
+300_1_300B
+300_1_300B*
+300_1_300baB
+300_1_300bsB
+300_1_300Bkp
+300_1_300la
+300_1_300kp
+300_1_bs300
+300_1_bs300*
+300_1_BSKP
+300_1_CSDW
+300_1_CSJN
+300_1_KEPS
+300_1_KPEM
+300_1_PSJN
+300_1_T1T3"
+301	Queen	Russel, Leslie	501 Queen	"301_0_301
+301_1_301
+301_1_NECQ
+301_0_LOCQ"
+302	Kingston Rd-McCowan	Birchmount, Malvern	12 Kingston Rd, 21 Brimley, 22 Coxwell, 24 Victoria Park,  39 Finch East, 102 Markham Rd	"302_0_302
+302_1_302
+302_0_BIDA"
+304	King	Leslie, Russell	None	"304_0_304
+304_1_304
+304_1_BSBR
+304_0_304br
+304_1_br304
+304_0_304le
+304_0_BRBS
+304_0_304am"
+306	Carlton	Russell, Leslie	506 Carlton	"306_0_306
+306_1_306
+306_0_306bus
+306_1_306bus
+306_0_306buscon
+306_1_306buscon
+306_1_MSCX
+306_0_306cx"
+307	Bathurst	Wilson	7 Bathurst	"307_0_307
+307_1_307"
+310	Spadina	Leslie	510 Spadina	"310_0_310
+310_1_310"
+312	St. Clair-Junction	Mount Dennis	79 Scarlett Rd, 89 Weston, 47 Lansdowne 	"312_0_312
+312_1_312"
+315	Evans-Brown's Line	Queensway	15 Evans, 37 Islington, 45 Kipling, 73 Royal York, 110 Islington South, 123 Sherway	"315_0_315
+315_1_315
+315_0_315con
+315_1_315con"
+320	Yonge	Birchmount, Eglinton, Malvern, Mount Dennis, Wilson	5 Avenue Rd, 7 Bathurst, 11 Bayview, 17 Birchmount, 25 Don Mills, 29 Dufferin, 32 Eglinton West, 34 Eglinton East, 47 Lansdowne, 51 Leslie, 54 Lawrence East, 56 Leaside, 61 Avenue Rd North, 63 Ossington, 70 O'Connor, 75 Sherbourne, 82 Rosedale, 88 South Leaside, 89 Weston, 90 Vaughan,   94 Wellesley, 98 Willowdale-Senlac, 97 Yonge, 100 Flemingdon Park, 109 Ranee, 122 Graydon Hall, 127 Davenport,  925 Don Mills Express, 985 Sheppard East Express	"320_0_320
+320_0_320A
+320_0_SYFS
+320_0_YEQQ
+320_1_320
+320_1_320*fs
+320_1_DVSY
+320_1_QQDV
+320_1_QQES
+320_1_QQYE
+320_1_QQYM
+320_1_YESY"
+322	Coxwell	Birchmount	12 Kingston Rd, 24 Kingston Rd, 83 Jones, 87 Cosburn, 324 Victoria Park	"322_0_322
+322_1_322
+322_0_BIWD"
+324	Victoria Park	Birchmount	12 Kingston Rd, 24 Kingston Rd, 83 Jones, 87 Cosburn, 322 Coxwell	"324_0_324
+324_1_324
+324_1_324v"
+325	Don Mills	Eglinton	25 Don Mills, 70 O'Connor	"325_0_325
+325_1_325
+325_0_325ps
+325_1_325ps"
+329	Dufferin	Mount Dennis	29 Dufferin, 41 Keele, 47 Lansdowne, 127 Davenport	"329_0_329
+329_1_329
+329_1_exwl329
+329_1_329old"
+332	Eglinton West	Mount Dennis	32 Eglinton West	"332_0_332
+332_1_332
+332_0_sk332"
+334	Eglinton East	Eglinton	34 Eglinton East, 54 Lawrence East, 86 Scarborough, 100 Flemingdon Park, 116 Morningside	"334_0_334
+334_1_334
+334_0_334*
+334_1_334*
+334_0_FDNW
+334_1_NWFD"
+335	Jane	Arrow Rd	35 Jane 	"335_0_335
+335_1_335"
+336	Finch West	Arrow Rd, Malvern	36 Finch West, 39 Finch East, 339 Finch East, 939 Finch Express	"336_0_336
+336_1_336
+336_0_336fs
+336_1_336fs"
+337	Islington	Queensway	37 Islington, 45 Kipling	"337_0_337
+337_1_337
+337_0_SLST
+337_1_337ISTN"
+339	Finch East	Arrow Rd, Malvern	36 Finch West, 39 Finch East, 336 Finch West, 939 Finch Express	"339_0_339
+339_1_339
+339_0_fs339
+339_1_ne339
+339_1_NWTA"
+341	Keele	Mount Dennis	41 Keele	"341_0_341
+341_1_341"
+343	Kennedy	Eglinton	43 Kennedy	"343_0_343
+343_0_MIPA
+343_1_343"
+352	Lawrence West	Mount Dennis	52 Lawrence West	"352_0_352
+352_1_352
+352_1_SUKE
+352_1_LWSU"
+353	Steeles East	Malvern	39 Finch East, 53 Steeles East, 133 Neilson	"353_0_c353
+353_1_353c
+353_0_FDNW"
+354	Lawrence East	Eglinton	54 Lawrence East, 100 Flemingdon Park	"354_0_354B
+354_1_354B
+354_1_354c
+354_1_354d"
+363	Ossington	Wilson	63 Ossington	"363_0_363
+363_1_363
+363_0_363ca
+363_1_ki363"
+365	Parliament	Birchmount	65 Parliament	"365_0_365
+365_1_365"
+384	Sheppard West	Arrow Rd	84 Sheppard West	"384_0_384
+384_1_384
+384_0_WERI"
+385	Sheppard East	Malvern	85 Sheppard East	"385_0_385
+385_1_385"
+395	York Mills	Malvern	95 York Mills	"395_0_395
+395_1_395
+395_0_SLPM"
+396	Wilson	Arrow Rd	46 Martin Grove, 60 Steeles West, 96 Wilson	"396_0_396
+396_1_396
+396_0_396*
+396_1_396*"
+501	Queen	Leslie, Russell	301 Queen	"501_0_501
+501_1_501
+501_0_501A
+501_1_501A
+501_0_501L
+501_1_501L
+501_1_CQLO
+501_0_HUCQ
+501_0_CQNE"
+502	Downtowner	Birchmount	Unknown	"502_0_502
+502_1_502
+502_0_CQBI
+502_0_KGBI
+502_0_502Bus
+502_1_502Bus
+502_1_BICQ
+502_1_cq502mc"
+503	Kingston Rd	Russell	Unknown	"503_0_503
+503_1_503
+503_0_CQBI"
+504	King	Leslie, Russell	304 King	"504_0_504A
+504_1_504A
+504_1_504A
+504_0_504B
+504_1_504B
+504_1_br504
+504_1_br504ex
+504_0_504br
+504_0_504am
+504_1_504rush
+504_1_504Brush
+504_0_BRBS
+504_0_EXBR"
+505	Dundas	Birchmount, Wilson, Mount Dennis	Unknown	"505_0_505
+505_1_505
+505_0_505bus
+505_1_505bus
+505_0_505rushbus
+505_1_505rushbus"
+506	Carlton	Leslie, Russell, Eglinton, Queensway	306 Carlton	"506_0_506
+506_1_506
+506_0_506bus
+506_0_506con
+506_0_506buscon
+506_1_506bus
+506_1_506con
+506_0_506cx
+506_1_506buscon
+506_0_hp506buscn
+506_0_506cxBus
+506_1_506hp
+506_1_hp506bus
+506_1_cx506
+506_0_CXMS
+506_1_MSCX
+506_0_hp506bus"
+509	Harbourfront	Leslie	Unknown	"509_0_509
+509_1_509
+509_1_BAEX"
+510	Spadina	Leslie	310 Spadina	"510_0_510A
+510_1_510A
+510_0_510B
+510_1_510B
+510_1_kg510"
+511	Bathurst	Mount Dennis	Unknown	"511_0_511
+511_1_511
+511_0_511bus
+511_1_511bus
+511_1_BKBA
+511_0_BKEX"
+512	St Clair	Leslie	Unknown	"512_0_512
+512_1_512
+512_0_512*
+512_1_512*
+512_0_512bus
+512_1_512bus
+512_0_GUVS
+512_1_SCVS
+512_1_bs512
+512_0_BSSS*
+512_0_512sc
+512_1_SSVS*
+512_1_sc512"
+900	Airport Express	Queensway	111 East Mall, 300 Bloor-Danforth	"900_0_900
+900_1_900"
+902	Markham Rd Express	Birchmount	17 Birchmount	"902_0_902
+902_1_902"
+905	Eglinton East Express	Eglinton	None	"905_0_905
+905_1_905"
+913	Progress Express	Malvern	134 Progress	"913_0_913
+913_1_913"
+924	Victoria Park Express	Birchmount	24 Victoria Park	"924_0_924
+924_1_924"
+925	Don Mills Express	Eglinton	25 Don Mills	"925_0_925
+925_1_925
+925_0_do925"
+927	Highway 27 Express	Arrow Rd	35 Jane	"927_0_927A
+927_1_927A
+927_0_927B
+927_1_927B
+927_0_927C
+927_1_927C
+927_0_927Dam
+927_1_927Dam
+927_0_927Dpm
+927_1_927Dpm
+927_1_MGHY
+927_0_927be"
+929	Dufferin Express	Mount Dennis	29 Dufferin, 329 Dufferin 	"929_0_929
+929_1_929
+929_0_929dlaw
+929_1_929dlaw
+929_1_929wils"
+935	Jane Express	Arrow Rd	35 Jane	"935_0_935
+935_1_935
+935_0_js935"
+937	Islington Express	Queensway	37 Islington	"937_0_937
+937_1_937"
+939	Finch Express	Malvern, Arrow Rd	131 Nugget, 336 Finch West, 339 Finch East	"939_0_939A
+939_1_939A
+939_0_939B
+939_1_939B
+939_0_939C
+939_1_939C"
+941	Keele Express	Mount Dennis	None	"941_0_941
+941_1_941"
+952	Lawrence West Express	Wilson	None	"952_0_952
+952_1_952"
+954	Lawrence East Express	Eglinton	None	"954_0_954
+954_1_954
+954_0_954pm
+954_1_954pm"
+960	Steeles West Express	Arrow Rd, Mount Dennis	None	"960_0_960
+960_1_960"
+984	Sheppard West Express	Arrow Rd	84 Sheppard West	"984_0_984
+984_1_984
+984_0_984A
+984_1_984A
+984_1_RIWE"
+985	Sheppard East Express	Malvern	300 Bloor-Danforth, 320 Yonge	"985_0_985A
+985_1_985A
+985_0_985B
+985_1_985B"
+986	Scarborough Express	Eglinton		"986_0_986
+986_1_986"
+989	Weston Express	Mount Dennis	undefined	"989_0_989
+989_1_989"
+995	York Mills Express	Malvern	undefined	"995_0_995
+995_1_995"
+996	Wilson Express	Arrow Rd	36 Finch West	"996_0_996
+996_1_996"

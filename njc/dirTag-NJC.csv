@@ -1,0 +1,198 @@
+Branch ID	Route Name	Starting Point	Ending Point	Sign	Notes	Division	Long Description
+88_0_88A	88 Brandonville	Maple Arena	Sheppard-Yonge Stn	88 Brandonville - Sheppard Stn	N/A	Yorkwoods	
+88_0_88Aam	88 Brandonville	Brandon Av	Sheppard-Yonge Stn	88 Brandonville - Sheppard Stn	N/A	Yorkwoods	This branch starts at Brandon avenue so there is continuous travel to Sheppard-Yonge stn.
+88_0_88Apm	88 Brandonville	Aura Lea Blvd	Sheppard-Yonge Stn	88 Brandonville - Sheppard Stn	N/A	Yorkwoods	
+88_0_YWJO	88 Brandonville	Yorkwoods Bus Garage	Pebble Byway	NOT IN SERVICE	Not In Service	Yorkwoods	
+88_0_YWSH	88 Brandonville	Yorkwoods Bus Garage	Yonge Stn R-88	NOT IN SERVICE	Not In Service	Yorkwoods	
+88_0_YWYS	88 Brandonville	Yorkwoods Bus Garage	Sheppard Stn - Layover 01	NOT IN SERVICE	Not In Service	Yorkwoods	
+88_1_88A	88 Brandonville	Sheppard-Yonge Stn	Maple Arena	88 Brandonville - Maple Arena	N/A	Yorkwoods	
+88_1_88Aam	88 Brandonville	Sheppard-Yonge Stn	Brandon Av	88 Brandonville - Brandonville	N/A	Yorkwoods	
+88_1_88Apm	88 Brandonville	Sheppard-Yonge Stn	Aura Lea Blvd	88 Brandonville - Brandonville	N/A	Yorkwoods	
+88_1_JOML	88 Brandonville	Pebble Byway	Maple Arena	88 Brandonville - via Maple Arena	First trip	Yorkwoods	This is typically the first trip of 88 Brandonville runs that start at the Brandonville side. This branch starts at the beginning of the western looping, so passengers don't miss out on the bus.
+88_1_sy88	88 Brandonville	Yonge Street	Maple Arena	88 Brandonville - Maple Arena	While subway closed	Yorkwoods	
+88_1_YWSH	88 Brandonville	Sheppard-Yonge Stn	Yorkwoods Bus Garage	NOT IN SERVICE	Not In Service	Yorkwoods	
+88_1_YWYS	88 Brandonville	Yonge Street	Yorkwoods Bus Garage	NOT IN SERVICE	Not In Service	Yorkwoods	
+97_0_97A	97 Yonge	Colossus Centre	Sheppard Stn R-97	97 Yonge - Sheppard Stn	N/A	Yorkwoods	
+97_1_97A	97 Yonge	Sheppard Stn R-97	Colossus Centre	97A Yonge - Colossus	N/A	Yorkwoods	
+97_1_yg97A	97 Yonge	Yonge Blvd	Colossus Centre	97A Yonge - Colossus	N/A	Yorkwoods	
+97_0_97B	97 Yonge	Pioneer Village Stn R-97	Sheppard Stn R-97	97 Yonge - Sheppard Stn	N/A	Yorkwoods	
+97_1_97B	97 Yonge	Sheppard Stn R-97	Pioneer Village Stn R-97	97B Yonge - Pioneer Village Stn	N/A	Yorkwoods	
+97_0_97C	97 Yonge	Humber College	Sheppard Stn R-97	97 Yonge - Sheppard Stn	N/A	Yorkwoods	
+97_1_97C	97 Yonge	Sheppard Stn R-97	Humber College	97C Yonge - Humber College	N/A	Yorkwoods	
+97_1_br97C	97 Yonge	Brandon Av (School stop)	Humber College	97C Yonge - Humber College	School trip	Yorkwoods	
+132_0_br132E	132 Hillside	Brandon Av (School stop)	Yonge Stn R-88	132E Hillside - Sheppard Stn	School trip	Yorkwoods	There is only one trip of this branch, and that trip's run is interlined with 88 Brandonville
+132_0_YWBR	132 Hillside	Yorkwoods Bus Garage	Brandon Av (School stop)	132S Hillside - Brandon	School trip	Yorkwoods	
+191_0_191	191 Highway 27 Rocket	Pioneer Village Stn	Sheppard Stn R-191	191B Highway 27 Rocket - Sheppard Stn	via Humber College	Yorkwoods	
+191_0_191A	191 Highway 27 Rocket	Humber College	Sheppard Stn R-191	191A Highway 27 Rocket - Sheppard Stn	N/A	Yorkwoods	
+191_0_191F	191 Highway 27 Rocket	Pioneer Village Stn	Humber College	191A Highway 27 Rocket - Humber College	Last trip	Yorkwoods	
+191_0_191sun	191 Highway 27 Rocket	Pioneer Village Stn	Yonge Stn R-88	191B Highway 27 Rocket - Sheppard Stn	Interlined with 88	Yorkwoods	This trip ends at the 88 bus bay because the next trip is 88 Brandonville
+191_0_HCYW	191 Highway 27 Rocket	Pioneer Village Stn	Yorkwoods Bus Garage	NOT IN SERVICE	Not In Service	Yorkwoods	
+191_1_191	191 Highway 27 Rocket	Sheppard Stn R-191	Pioneer Village Stn	191B Highway 27 Rocket - Pioneer Village	via Humber College	Yorkwoods	
+191_1_191A	191 Highway 27 Rocket	Sheppard Stn R-191	Humber College	191A Highway 27 Rocket - Humber College	N/A	Yorkwoods	
+191_1_HCYW	191 Highway 27 Rocket	Yorkwoods Bus Garage	Humber College	NOT IN SERVICE	Not In Service	Yorkwoods	
+191_1_PIYW	191 Highway 27 Rocket	Yorkwoods Bus Garage	Pioneer Village Stn	NOT IN SERVICE	Not In Service	Yorkwoods	
+191_1_yw191F	191 Highway 27 Rocket	Yorkwoods Bus Garage	Pioneer Village Stn	191B Highway 27 Rocket - Pioneer Village	via Humber College	Yorkwoods	
+388_0_388A	388 Brandonville	Maple Arena	Yonge Street	388 Yonge/Sheppard	N/A	Yorkwoods	
+388_1_388	388 Brandonville	Yonge Street	Maple Arena	388 Brandonville - Yonge	N/A	Yorkwoods	
+388_1_JOML	388 Brandonville	Pebble Byway	Maple Arena	388A Brandonville - Maple Arena	First trip	Yorkwoods	
+388_1_sy388	388 Brandonville	Sheppard-Yonge Stn	Maple Arena	388A Brandonville - Maple Arena	First trip for 388	Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	
+						Yorkwoods	

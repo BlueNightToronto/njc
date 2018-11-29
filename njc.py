@@ -41,12 +41,208 @@ class njc:
         await self.bot.say(embed=data)
 
     @commands.command()
-    async def vehrange(self, veh):
+    async def airport(self, code : str):
+        """Checks for interesting information about a run."""
+
+        try:
+            airport = open("cogs/njc/airports.csv")
+            reader = csv.reader(airport,delimiter="	")
+            line = []
+        except:
+            await self.bot.say(embed="Could not load file!".format(code))
+            return
+
+        try:
+            for row in reader:
+                if str(row[0]) == code or str(row[1]) == code:
+                    line = row
+
+            # IF OK, THIS IS WHAT IS OUTPUTTED
+            airport.close()
+            data = discord.Embed(title="Airport information for {}".format(code))
+            data.set_author(name=line[2])
+            data.add_field(name="Location", value=line[3], inline='false') 
+            try:
+                if line[6] == "" or line[7] == "":
+                    data.add_field(name="Latitude", value="Unknown", inline='false') 
+                    data.add_field(name="Longitude", value="Unknown", inline='false') 
+                else:
+                    data.add_field(name="Latitude", value=line[6], inline='false') 
+                    data.add_field(name="Longitude", value=line[7], inline='false') 
+                    data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=11&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true".format(line[6], line[7]))
+            except:
+                data.add_field(name="Latitude", value="Unknown", inline='false') 
+                data.add_field(name="Longitude", value="Unknown", inline='false') 
+            data.set_footer(text="Airport information. Still being tested :) ")
+            await self.bot.say(embed=data)
+            return
+
+        except Exception as errer:
+            await self.bot.say("Couldn't find information for {}. Case senstive.\n`{}`".format(code, errer))
+
+    @commands.command()
+    async def routeveh(self, rte):
         """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
-        await self.bot.say("You need the stars role to track a range of vehicles. Use `n!vehicle` for an individual vehicle.")
+        data = discord.Embed(title="Vehicles on Route " + rte, description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+
+        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
+        raw = urlopen(url).read() # Get page and read data
+        decoded = raw.decode("utf-8") # Decode from bytes object
+        parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+        service = ""
+        vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+        for i in vehicles: # Loop through these
+            service = service + i.attributes['id'].value + ", " # GETS VEHICLE
+
+        data.add_field(name="Vehicles", value=service)
+        try:
+            #await self.bot.say("**The following vehicles are on route {}:** ".format(rte) + service)
+            await self.bot.say(embed=data)
+        except:
+            await self.bot.say("No vehicles could be found on route {}.".format(rte))
+            return
 
     @commands.command()
     async def vehicle(self, veh):
+        """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
+
+#        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
+        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocation&a=ttc&v=" + veh
+        raw = urlopen(url).read() # Get page and read data
+        decoded = raw.decode("utf-8") # Decode from bytes object
+        parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+
+        vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+        for i in vehicles: # Loop through these
+
+            service = i.attributes['id'].value # GETS VEHICLE
+            if veh == service: # IF MATCHING VEHICLE FOUND
+                try:
+                    dirtag = i.attributes['dirTag'].value # Direction Tag
+                except:
+                    dirtag = str("N/A")
+                heading = i.attributes['heading'].value # Compass Direction
+                updated = i.attributes['secsSinceReport'].value # Seconds since last updated
+                lat = i.attributes['lat'].value #latitude
+                lon = i.attributes['lon'].value # lon
+                
+                try:
+                    vision = i.attributes['speedKmHr'].value
+                except:
+                    lon = i.attributes['lon'].value # lon
+
+                try:
+                    find = i.attributes['routeTag'].value #routetag
+                    url5 = "http://webservices.nextbus.com/service/publicXMLFeed?command=routeList&a=ttc"
+                    raw5 = urlopen(url5).read() # Get page and read data
+                    decoded5 = raw5.decode("utf-8") # Decode from bytes object
+                    parsed5 = minidom.parseString(decoded5) # Parse with minidom to get XML stuffses
+                    route = parsed5.getElementsByTagName('route') # Get all tags called 'vehicle'
+
+                    for i in route: # Loop through these
+                        routag = i.attributes['tag'].value
+                        if routag == find: # IF MATCHING VEHICLE FOUND
+                            offroute = i.attributes['title'].value
+                except:
+                    offroute = str("No Route")
+
+
+                #LOADS FLEET INFO
+                try:
+                    listfleet = open("cogs/njc/fleets/ttc.csv")
+                    readerfleet = csv.reader(listfleet,delimiter="	")
+                    linefleet = []
+                except:
+                    await self.bot.say("I couldn't find the file.")
+                    return
+
+                vehicle = "Test object"
+                try:
+                    for row in readerfleet:
+                        if str(row[0]) == veh:
+                            linefleet = row
+
+                        # IF OK, THIS IS WHAT IS OUTPUTTED
+                    listfleet.close()
+
+                    data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+                except Exception as errer:
+                    data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+
+
+
+                try: # TRIES FETCHING DATA
+                    taglist = open("cogs/njc/dirTag.csv")
+                    reader = csv.reader(taglist,delimiter="	")
+                    line = []
+                except Exception as errer:
+                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+                    data.add_field(name="On Route", value="No route")  
+                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+                    data.add_field(name="Starts from", value="Unknown")
+                    data.add_field(name="Ends at", value="Unknown")
+                    data.add_field(name="Sign", value="Unknown")
+                    data.add_field(name="Branch Notes", value="Unknown")
+                    await self.bot.say(embed=data)
+                    return
+
+                try: # GETS INFO FROM FILE
+                    for row in reader:
+                        if str(row[0]) == dirtag:
+                            line = row
+
+                    # IF OK, THIS IS WHAT IS OUTPUTTED
+                    taglist.close()
+                    if dirtag == str("N/A"):
+                        try:
+                            data.add_field(name="Off Route", value=offroute)
+                        except:
+                            data.add_field(name="Off Route", value="*Not in service?*") 
+                    else:
+                        data.add_field(name="On Route", value=line[1])  
+                        data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+                        data.add_field(name="Starts from", value=line[2])
+                        data.add_field(name="Ends at", value=line[3])
+                        data.add_field(name="Sign", value=line[4])
+                        data.add_field(name="Branch Notes", value=line[5])
+                        data.add_field(name="Branch Divisions", value=line[6])
+                    try:
+                        data.add_field(name="Vehicle Division", value=linefleet[4])
+                    except:
+                        data.add_field(name="Vehicle Division", value="Unknown")
+                except Exception as errer:
+#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+                    data.add_field(name="On Route", value="No route")  
+                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+                    data.add_field(name="Starts from", value="Unknown")
+                    data.add_field(name="Ends at", value="Unknown")
+                    data.add_field(name="Sign", value="Unknown")
+                    data.add_field(name="Branch Notes", value="Unknown")
+                    await self.bot.say("<@254473130393731073> - Unknown branch, add it to the database. `{}`".format(errer))
+
+
+
+                data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(heading) in j],heading)) # Obfuscation? Fun, either way
+                try:
+                    vision = vision
+                    data.add_field(name="Vision Equipped?", value="**Yes!**".format(heading))
+                except:
+                    data.add_field(name="Vision Equipped?", value="No".format(heading))
+
+                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+#                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+                data.set_footer(text="Last updated {} seconds ago. Division information is from n!fleet".format(updated))
+
+                try:
+                    await self.bot.say(embed=data)
+                    return
+                except:
+                    await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
+                    return
+        await self.bot.say("Vehicle not found! #{}".format(veh))
+
+    @commands.command()
+    async def veh(self, veh):
         """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
 
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
@@ -65,7 +261,49 @@ class njc:
                 lat = i.attributes['lat'].value #latitude
                 lon = i.attributes['lon'].value # lon
 
-                data = discord.Embed(title="Vehicle Tracking for TTC {}".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+                if veh >= '1000' and veh <= '1149':
+                    vehicle = "Orion VII Hybrid"                    
+                elif veh >= '1200' and veh <= '1423':
+                    vehicle = "Orion VII NG Hybrid"                    
+                elif veh >= '1500' and veh <= '1689':
+                    vehicle = "Orion VII NG Hybrid"                    
+                elif veh >= '1700' and veh <= '1829':
+                    vehicle = "Orion VII NG Hybrid"                    
+                elif veh >= '3100' and veh <= '3369':
+                    vehicle = "Novabus LFS IV VISION"                    
+                elif veh >= '4000' and veh <= '4199':
+                    vehicle = "CLRV"                    
+                elif veh >= '4200' and veh <= '4251':
+                    vehicle = "ALRV"                    
+                elif veh >= '4400' and veh <= '4999':
+                    vehicle = "Bombardier Flexity"                    
+                elif veh >= '7500' and veh <= '7883':
+                    vehicle = "Orion VII"                    
+                elif veh >= '7900' and veh <= '7979':
+                    vehicle = "Orion VII"                    
+                elif veh >= '8000' and veh <= '8011':
+                    vehicle = "Orion VII-Airport"                    
+                elif veh >= '8012' and veh <= '8099':
+                    vehicle = "Orion VII"                    
+                elif veh >= '8100' and veh <= '8219':
+                    vehicle = "Orion VII NG"         
+                elif veh >= '8300' and veh <= '8396':
+                    vehicle = "Orion VII 3G"         
+                elif veh >= '8400' and veh <= '8504':
+                    vehicle = "Novabus LFS IV"                    
+                elif veh >= '8510' and veh <= '8617':
+                    vehicle = "Novabus LFS IV"                    
+                elif veh >= '8620' and veh <= '8964':
+                    vehicle = "Novabus LFS IV"                    
+                elif veh >= '9000' and veh <= '9026':
+                    vehicle = "LFS III-Artic"
+                elif veh >= '9027' and veh <= '9152':
+                    vehicle = "LFS IV-Artic"
+                elif veh >= '9200' and veh <= '9239':
+                    vehicle = "Novabus LFS IV"                    
+                else:
+                    vehicle = vehicle + " UNKNOWN VEHICLE"
+                data = discord.Embed(title="Vehicle Tracking for TTC {} {}".format(veh, vehicle), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
 
                 try: # TRIES FETCHING DATA
                     fleetlist = open("cogs/njc/dirTag.csv")
@@ -103,28 +341,29 @@ class njc:
                     data.add_field(name="Ends at", value="Unknown")
                     data.add_field(name="Sign", value="Unknown")
                     data.add_field(name="Branch Notes", value="Unknown")
-                    await self.bot.say("<@221493681075650560> Yo, it looks like a new branch")
-
-
+                    await self.bot.say("<@254473130393731073> Yo, it looks like a new branch")
+                    await self.bot.say("<@254473130393731073> Add it!")
 
                 data.add_field(name="Compass", value="Facing {}".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360)]) if int(heading) in j])) # Obfuscation? Fun, either way
                 try:
                     vision = i.attributes['speedKmHr'].value
-                    data.add_field(name="Vision Equipped?", value="**Yes**".format(heading))
+                    data.add_field(name="Vision Equipped?", value="**Yes!**".format(heading))
                 except:
                     data.add_field(name="Vision Equipped?", value="No".format(heading))
 
                 data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
                 data.set_footer(text="Last updated {} seconds ago.".format(updated))
 
-
-                await self.bot.say(embed=data)
-                return
+                try:
+                    await self.bot.say(embed=data)
+                    return
+                except:
+                    await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
+                    return
         await self.bot.say("Vehicle #{} is not currently in service.".format(veh))
 
-
-    @commands.command()
     # COMMAND FOR GETTING NEXT BUS <STOPID>
+    @commands.command()
     async def ttcnext(self, stopID):
         """Obtains next vehicle predictions for TTC bus stop's SMS code. Enter a stopID, 'info', or 'alias'"""
 
@@ -358,7 +597,6 @@ class njc:
 
         await self.bot.say(embed=data)
 
-
     # Allows users to edit file
     @commands.command()
     async def fleetedit(self, agency : str, number : int, field: str, newvalue: str):
@@ -405,7 +643,6 @@ class njc:
         fleetlist.close()
         data = discord.Embed(title="'{}' has been updated for ".format(field) + agency + " " + str(number),description="New value for {}: ".format(field) + newvalue,colour=discord.Colour(value=34633))
         await self.bot.say(embed=data)
-
 
     # Gets schedules
     @commands.command()
@@ -455,7 +692,7 @@ class njc:
         maptitle = [agency , line]
         if agency.lower() in ['ttc']: # TTC
             data = discord.Embed(description="NJC Map Fetcher", title="Toronto Transit Commission - Route {1}".format(*maptitle), colour=discord.Colour(value=2130939))
-            if line < 515:
+            if line < 999:
                 if line < 10:
                     line1 = str("00" + str(line))
                 elif line < 100:
@@ -488,14 +725,226 @@ class njc:
 
     # Gets profile for TTC route
     @commands.command()
+    async def route(self, rte):
+        """Gets information about a TTC route."""
+
+        try:
+            list = open("cogs/njc/ttcroute.csv")
+            reader = csv.reader(list,delimiter="	")
+            line = []
+        except:
+            await self.bot.say("I couldn't find the route information file.")
+            return
+
+        try: # GETS INFO FROM FILE
+            for row in reader:
+                if str(row[0]) == rte:
+                    line = row
+                    data = discord.Embed(title="**{} {}** - **Route Information**".format(rte, line[1]),colour=discord.Colour(value=15801115))
+
+
+                    try:
+# BRANCHES
+                        if line[4] == "":
+                            data.add_field(name="Internal Branches:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Internal Branches:", value="`{}`".format(line[4]),inline='false')
+
+# INTERLINES
+                        if line[3] == "":
+                            data.add_field(name="Interlined with", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Interlined with", value=line[3],inline='false')
+
+# DIVISIONS
+                        if line[2] == "":
+                            data.add_field(name="Divisions", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Divisions", value=line[2],inline='false')
+
+
+                        data.set_footer(text="Learn about the branch by doing `n!branch <internal branch>`. Information last updated <future information>")
+
+                    except Exception as errer:
+                        await self.bot.say(errer)
+                    await self.bot.say(embed=data)
+
+        except Exception as errer:
+            await self.bot.say(errer)
+
+
+    # Gets profile for TTC branch
+    @commands.command()
+    async def branch(self, branch):
+        """Gets information about a TTC internal branch."""
+
+        try:
+            list = open("cogs/njc/dirTag.csv")
+            reader = csv.reader(list,delimiter="	")
+            line = []
+        except:
+            await self.bot.say("I couldn't find the branch information file.")
+            return
+
+        try: # GETS INFO FROM FILE
+            for row in reader:
+                if str(row[0]) == branch:
+                    line = row
+                    data = discord.Embed(title="Branch Information for `{}`".format(branch),colour=discord.Colour(value=15801115))
+
+
+                    try:
+# ROUTE
+                        if line[1] == "":
+                            data.add_field(name="Route:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Route:", value=line[1],inline='false')
+
+# STARTS
+                        if line[2] == "":
+                            data.add_field(name="Starts from:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Starts from:", value=line[2],inline='false')
+
+# ENDS
+                        if line[3] == "":
+                            data.add_field(name="Ends at:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Ends at:", value=line[3],inline='false')
+
+# BRANCHES
+                        if line[4] == "":
+                            data.add_field(name="Sign:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Sign:", value="{}".format(line[4]),inline='false')
+
+# NOTES
+                        if line[5] == "":
+                            data.add_field(name="Notes:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Notes:", value="{}".format(line[5]),inline='false')
+
+# Division
+                        if line[6] == "":
+                            data.add_field(name="Branch divisions:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Branch divisions:", value="{}".format(line[6]),inline='false')
+
+# Long Description
+                        if line[7] == "":
+                            data.add_field(name="Long description:", value="Not available.",inline='false')
+                        else:
+                            data.add_field(name="Long description:", value="{}".format(line[7]),inline='false')
+
+
+                        data.set_footer(text="Information last updated <future information>")
+
+                    except Exception as errer:
+                        await self.bot.say(errer)
+                    await self.bot.say(embed=data)
+
+        except Exception as errer:
+            await self.bot.say(errer)
+
+
+    # Gets profile for NJC branch
+    @commands.command()
+    async def nbranch(self, branch):
+        """Gets information about a NJC internal branch."""
+
+        try:
+            list = open("cogs/njc/dirTag-NJC.csv")
+            reader = csv.reader(list,delimiter="	")
+            line = []
+        except:
+            await self.bot.say("I couldn't find the branch information file.")
+            return
+
+        try: # GETS INFO FROM FILE
+            for row in reader:
+                if str(row[0]) == branch:
+                    line = row
+                    data = discord.Embed(title="Branch Information for `{}`".format(branch),colour=discord.Colour(value=15801115))
+
+
+                    try:
+# ROUTE
+                        if line[1] == "":
+                            data.add_field(name="Route:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Route:", value=line[1],inline='false')
+
+# STARTS
+                        if line[2] == "":
+                            data.add_field(name="Starts from:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Starts from:", value=line[2],inline='false')
+
+# ENDS
+                        if line[3] == "":
+                            data.add_field(name="Ends at:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Ends at:", value=line[3],inline='false')
+
+# BRANCHES
+                        if line[4] == "":
+                            data.add_field(name="Sign:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Sign:", value="{}".format(line[4]),inline='false')
+
+# NOTES
+                        if line[5] == "":
+                            data.add_field(name="Notes:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Notes:", value="{}".format(line[5]),inline='false')
+
+# Division
+                        if line[6] == "":
+                            data.add_field(name="Branch divisions:", value="undefined",inline='false')
+                        else:
+                            data.add_field(name="Branch divisions:", value="{}".format(line[6]),inline='false')
+
+# Long Description
+                        if line[7] == "":
+                            data.add_field(name="Long description:", value="Not available.",inline='false')
+                        else:
+                            data.add_field(name="Long description:", value="{}".format(line[7]),inline='false')
+
+
+                        data.set_footer(text="Information last updated <future information>")
+
+                    except Exception as errer:
+                        await self.bot.say(errer)
+                    await self.bot.say(embed=data)
+
+        except Exception as errer:
+            await self.bot.say(errer)
+
+
+    # Gets profile for TTC route
+    @commands.command()
     async def route1(self):
         """Gets information about TTC route"""
+        await self.bot.say("**Test command to see how the route command would look!**")
         data = discord.Embed(title="169 HUNTINGWOOD",description="169A DON MILLS STN to SCARBOROUGH CTR via VAN HORNE\n169B DON MILLS STN to SCARBOROUGH CTR",colour=discord.Colour(value=15801115))
         data.add_field(name="Division", value="Wilson, all trips, all days",inline='false')
         data.add_field(name="Operation", value="169A - Except weekday rush and late weekend evening\n169B - During weekday rush",inline='false')
         data.add_field(name="Interlines", value="None",inline='false')
         data.add_field(name="Internal Branches", value="169A - For 169A trips\n169B - For 169B trips\nMCDO - McCowan/Commander to Don Mills Stn, one trip only",inline='false')
         data.add_field(name="Signs", value="169A HUNTINGWOOD TO DON MILLS STN via VAN HORNE\n169A HUNTINGWOOD TO SCARBOROUGH CTR via VAN HORNE\n169B HUNTINGWOOD TO DON MILS STN\n169B HUNTINGWOOD TO SCARBOROUGH CTR",inline='false')
+        data.set_footer(text="Page 1 of 2")
+        await self.bot.say(embed=data)
+
+    @commands.command()
+    async def route2(self):
+        """Gets information about TTC route"""
+        await self.bot.say("**Test command to see how the route command would look!**")
+        data = discord.Embed(title="119 TORBARRIE",description="119 WILSON STN to CLAYSON and TORBARRIE\n119 WILSON STN to TORBARRIE and CLAYSON",colour=discord.Colour(value=15801115))
+        data.add_field(name="Division", value="Arrow Rd, all trips, all days",inline='false')
+        data.add_field(name="Operation", value="119 - Rush hours only.",inline='false')
+        data.add_field(name="Interlines", value="96 Wilson - one run, one trip.",inline='false')
+        data.add_field(name="Internal Branches", value="119a - Morning rush, operates terminus clockwise\n119p - Afternoon rush, operates terminus counterclockwise",inline='false')
+        data.add_field(name="Signs", value="119 TORBARRIE TO WILSON STN\n119 TORBARRIE TO TORBARRIE and CLAYSON",inline='false')
         data.set_footer(text="Page 1 of 2")
         await self.bot.say(embed=data)
 
@@ -511,6 +960,12 @@ class njc:
     async def logfile(self):
         """Sends requirements for downloads on NJC."""
         await self.bot.say("For further support on your OMSI problem, you must **upload your logfile.txt**.\n\nYou can find **logfile.txt** in the OMSI folder. Upload the file to this channel so we can diagnose for the issue.\n\nhttps://i.imgur.com/DxclO7c.png")
+
+		# Sends message you need logfile
+    @commands.command()
+    async def logfile2(self):
+        """Sends requirements for downloads on NJC."""
+        await self.bot.say("For further support on your openBVE problem, you must **upload your log.txt**.\n\nYou can find **log.txt** in the Userdata/Settings folder. Upload the file to this channel so we can diagnose for the issue.\n\nhttps://i.imgur.com/CPySvL1.png")
 
     # Fare stuff
     @commands.command()
