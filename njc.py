@@ -22,67 +22,15 @@ class njc:
         self.bot = bot
 
     @commands.command()
-    async def langilles(self):
-        data = discord.Embed(title="Langilles Scrap!")
-        data.set_image(url="https://cdn.discordapp.com/attachments/369324229910593536/464974359417847828/b13212085e7fabe6719935f6ebac2c6f.png")
-        await self.bot.say(embed=data)
-
-    @commands.command()
     async def kirby(self):
         data = discord.Embed(title="Join NJC")
         data.set_image(url="https://i.imgur.com/CRugTWf.png")
         await self.bot.say(embed=data)
 
-    @commands.command()
-    async def blockinfo(self, day, runID):
-        """Checks for interesting information about a run."""
-        data = discord.Embed(title="Join NJC")
-        data.set_image(url="https://i.imgur.com/CRugTWf.png")
-        await self.bot.say(embed=data)
-
-    @commands.command()
-    async def airport(self, code : str):
-        """Checks for interesting information about a run."""
-
-        try:
-            airport = open("cogs/njc/airports.csv")
-            reader = csv.reader(airport,delimiter="	")
-            line = []
-        except:
-            await self.bot.say(embed="Could not load file!".format(code))
-            return
-
-        try:
-            for row in reader:
-                if str(row[0]) == code or str(row[1]) == code:
-                    line = row
-
-            # IF OK, THIS IS WHAT IS OUTPUTTED
-            airport.close()
-            data = discord.Embed(title="Airport information for {}".format(code))
-            data.set_author(name=line[2])
-            data.add_field(name="Location", value=line[3], inline='false') 
-            try:
-                if line[6] == "" or line[7] == "":
-                    data.add_field(name="Latitude", value="Unknown", inline='false') 
-                    data.add_field(name="Longitude", value="Unknown", inline='false') 
-                else:
-                    data.add_field(name="Latitude", value=line[6], inline='false') 
-                    data.add_field(name="Longitude", value=line[7], inline='false') 
-                    data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=11&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true".format(line[6], line[7]))
-            except:
-                data.add_field(name="Latitude", value="Unknown", inline='false') 
-                data.add_field(name="Longitude", value="Unknown", inline='false') 
-            data.set_footer(text="Airport information. Still being tested :) ")
-            await self.bot.say(embed=data)
-            return
-
-        except Exception as errer:
-            await self.bot.say("Couldn't find information for {}. Case senstive.\n`{}`".format(code, errer))
 
     @commands.command()
     async def routeveh(self, rte):
-        """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
+        """Checks vehicles on a route."""
         data = discord.Embed(title="Vehicles on Route " + rte, description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
 
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
@@ -104,7 +52,7 @@ class njc:
 
     @commands.command()
     async def vehicle(self, veh):
-        """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
+        """Checks information for a selected TTC vehicle."""
 
 #        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocation&a=ttc&v=" + veh
@@ -221,6 +169,11 @@ class njc:
                     data.add_field(name="Branch Notes", value="Unknown")
                     await self.bot.say("<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(errer))
 
+                if str(linefleet[4]) in str(line[6]):
+#               "apple" in "apple, oranges, pear"
+                    await self.bot.say("**DEBUG MESSAGE:** Branch divisions match vehicle division!")
+                else:
+                    await self.bot.say("<@&536303913868197898> - Branch divisions don't match vehicle division!")
 
 
                 data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(heading) in j],heading)) # Obfuscation? Fun, either way
