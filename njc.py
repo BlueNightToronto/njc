@@ -167,6 +167,7 @@ class njc:
 
                     data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
                 except Exception as errer:
+                    await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
                     data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
 
 
@@ -218,7 +219,7 @@ class njc:
                     data.add_field(name="Ends at", value="Unknown")
                     data.add_field(name="Sign", value="Unknown")
                     data.add_field(name="Branch Notes", value="Unknown")
-                    await self.bot.say("<@254473130393731073> - Unknown branch, add it to the database. `{}`".format(errer))
+                    await self.bot.say("<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(errer))
 
 
 
