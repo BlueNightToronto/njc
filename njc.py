@@ -204,7 +204,7 @@ class njc:
 		await self.bot.say("This is no longer a command. Use `n!vehicle <number>`")
 
 	#Scans all active vehicles automatically
-	@commands.command
+	@commands.command()
 	async def vehcheck(self):
 		"""Checks all vehicles in service if they match their branch"""
 		await self.bot.send_message(discord.Object(id = self.channelID), ":mag_right: **Scanning...**\nThis command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
@@ -973,7 +973,7 @@ class njc:
 		ordered = sorted(stops, key = lambda x: x)
 		await self.bot.say(ordered)
 
-	@commands.command
+	@commands.command()
 	async def loopvehcheck(self):
 		"""Start automatically checking vehicles"""
 		if self.looping:
