@@ -116,8 +116,8 @@
 29_1_29C	29 Dufferin	Exhibtion (Princes Gate Loop)	Wilson Stn	29C Wilson Stn	N/A	Mount Dennis	
 29_1_29Cdlaw	29 Dufferin	Dufferin/Lawrence	Exhibition (Dufferin Gate Loop)	29C Exhibition (Dufferin Gate)	N/A	Mount Dennis	
 29_1_29D	29 Dufferin	Exhibition (Princes Gate Loop)	Dufferin Stn	29D Dufferin Stn	N/A	Mount Dennis	
-29_1_dm29	29 Dufferin 	Dufferin Mall	Wilson Stn	29A Wilson Stn	N/A	Mount Dennis	
 29_1_29wils	29 Dufferin 	Dufferin/Lawrence	Wilson Stn	29A Wilson Stn	first trip	Mount Dennis	
+29_1_dm29	29 Dufferin 	Dufferin Mall	Wilson Stn	29A Wilson Stn	N/A	Mount Dennis	
 30_0_30A	30 Lambton	Kipling Stn	High Park Stn	30A High Park Stn	N/A	Queensway	
 30_1_30A	30 Lambton	High Park Stn	Kipling Stn	30 Kipling Stn	N/A	Queensway	
 30_0_30B	30 Lambton	Kipling Stn	Colborne Lodge Drive	30B High Park 	via High Park Stn	Queensway	
@@ -287,6 +287,7 @@
 52_0_52Ayg	52 Lawrence West	Pearson Airport (Terminal 3)	Lorindale Ave (Yonge Street)	52 Lawrence Stn	Last trip/When subway closed	Wilson	
 52_0_52B	52 Lawrence West 	Westwood Mall	Lawrence Stn	52B Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52D	52 Lawrence West 	Victory Crescent/McNaughton	Lawrence Stn	52D Lawrence Stn	via Lawrence West Stn	Wilson	
+52_0_52Dyg	52 Lawrence West 	Victory Crescent/McNaughton	Lorindale Ave (Yonge Street)	52D Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52F	52 Lawrence West	Royal York Road	Lawrence Stn	52F Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52G	52 Lawrence West 	Martin Grove/Tollington	Lawrence West Stn	52G Lawrence West Stn	via The Westway	Wilson	
 52_0_52Gcon	52 Lawrence West 	Martin Grove/Tollington	Lawrence West Stn	52G Lawrence West Stn	via The Westway	Wilson	
@@ -638,6 +639,7 @@
 102_1_WAMP	102 Markham Rd	Warden Stn	Sheppard Avenue East	102 Sheppard	Short Turn	Birchmount	
 102_1_CNCC	102 Markham Rd	2665 Kingston Rd	Centennial College	102A Progress/Centennial College	School Trip, Cardinal Newman HS	Eglinton	
 102_1_CDHS	102 Markham Rd	Cardinal Newman High School	Centennial College	102A Progress/Centennial College	School Trip	Eglinton 	
+102_0_SEMK	102 Markham Rd	Markham / Select	Markham / Steeles	102B Steeles	Final trip	Birchmount	
 104_0_104	104 Faywood 	Sheppard West Stn	Wilson Stn	104 Wilson Stn	N/A	Wilson	
 104_1_104	104 Faywood 	Wilson Stn	Sheppard West Stn	104 Sheppard West Stn	N/A	Wilson	
 105_0_105A	105 Dufferin North	Steeles Avenue West	Sheppard West Stn	105A Sheppard West Stn	N/A	Wilson	
@@ -1070,6 +1072,7 @@
 504_1_br504	504 King	Broadview/Queen	Dundas West Stn	504 Dundas West Stn	N/A	TTC Streetcar (Leslie)	
 504_1_br504A	504 King	Broadview/Queen	Dundas West Stn	504A Dundas West Stn	N/A	TTC Streetcar (Leslie)	
 504_1_br504ex	504 King	Broadview/Queen	Exhibition West Loop	504 Exhibition	N/A	TTC Streetcar (Leslie)	
+501_1_BSBR	504 King	Broadview Stn	Broadview/Queen	504S Queen	Final Trip	TTC Streetcar (Leslie)	
 505_0_505	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
 505_1_505	505 Dundas	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
 505_0_505bus	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson	
@@ -1088,13 +1091,16 @@
 509_0_509	509 Harbourfront 	Exhibtion Loop	Union Stn	509 Union Stn	N/A	TTC Streetcar (Leslie)	
 509_1_509	509 Harbourfront 	Union Stn	Exhibition Loop	509 Exhibition 	N/A	TTC Streetcar (Leslie)	
 509_1_BAEX	509 Harbourfrount	Bathurst/Fleet Street	Exhibition Loop	509 Exhibition	First Trip	TTC Streetcar (Leslie)	
+509_0_EXBA	509 Harbourfrount	Exhibition Loop	Bathurst/Fleet Street	509S Short Turn	Last Trip	TTC Streetcar (Leslie)	
 510_0_510A	510 Spadina	Spadina Stn	Union Stn	510 Union Stn	N/A	TTC Streetcar (Leslie)	
 510_1_510A	510 Spadina 	Union Stn	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_0_510B	510 Spadina	Spadina Stn	Queen's Quay	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
-510_0_510C	510 Spadina	Spadina Stn	King	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
-510_1_510C	510 Spadina	King	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
+510_1_510B	510 Spadina	Queen's Quay	Spadina Stn	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
+510_0_510C	510 Spadina	Spadina Stn	King Street	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
+510_1_510C	510 Spadina	King Street	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_1_kg510	510 Spadina 	King/Spadina 	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_1_SQCH	510 Spadina 	Queen's Quay	Charlottes Loop	510C King	Final Trip	TTC Streetcar (Leslie)	
+510_0_SQUS	510 Spadina 	Spadina / Queen	Union Stn	510 Union Stn	First Trip	TTC Streetcar (Leslie)	
 510_1_USCH	510 Spadina 	Union Stn	Charlottes Loop	510C King	Final Trip	TTC Streetcar (Leslie)	
 510_1_USSQ	510 Spadina 	Union Stn	Queen and Spadina	510S Queen	Final Trip	TTC Streetcar (Leslie)	
 511_0_511	511 Bathurst 	Bathurst Stn	Exhibition Loop	511 Exhibition 	N/A	TTC Streetcar (Russell/Leslie)	
@@ -1117,11 +1123,12 @@
 512_1_512bus	512 St Clair	St Clair Stn	Gunns Loop	512 Keele	bypasses St Clair West Stn	Arrow Rd	
 512_0_GUVS	512 St Clair	Gunns Loop	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
 512_1_SCVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
+512_1_SSVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
+512_1_SSVS*	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
 512_1_bs512	512 St Clair	Bathurst/St Clair	Wynchwood Ave	512S Short Turn	N/A	Wilson/Mount Dennis	
 512_0_BSSS*	512 St Clair	Bathurst/St Clair	Gunns Loop	512 Gunns Loop	N/A	Wilson/Mount Dennis	
 512_0_512sc	512 St Clair	Gunns Loop	St Clair West Stn	512 St Clair West Stn	N/A	TTC Streetcar (Leslie)	
-512_1_SSVS*	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
-512_1_sc512	512 St Clair	St Clair West Station 	Gunns Loop	512 Gunns Loop	Second trip after it does the BSSC trip	TTC Streetcar (Leslie)	
+512_1_sc512	512 St Clair	St Clair West Stn 	Gunns Loop	512 Gunns Loop	Second trip after it does the BSSC trip	TTC Streetcar (Leslie)	
 512_0_BSSC	512 St Clair	Bathurst/St Clair	St Clair West Stn	512 St Clair West Stn	First trip when entering service 	TTC Streetcar (Leslie)	
 514_0_514	514 Cherry	Exhibition (Dufferin Gate)	Distillery Loop	514 Distillery	via King	TTC Streetcar (Leslie)	
 514_1_514	514 Cherry	Distillery Loop	Exhibition Loop (Dufferin Gate)	514 Dufferin Gate	via King	TTC Streetcar (Leslie)	

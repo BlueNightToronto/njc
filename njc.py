@@ -204,7 +204,7 @@ class njc:
     @commands.command()
     async def vehcheck(self):
         """Checks all vehicles in service if they match their branch"""
-        await self.bot.say("This command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
+        await self.bot.say("This command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. *To try and find new branches, use this command around 5am EST, 9am EST, 3pm EST, 7pm EST, 10pm EST, or 1am EST.*\nPlease don't spam the command.")
         service = ""
         service5 = ""
         time.sleep(1)
