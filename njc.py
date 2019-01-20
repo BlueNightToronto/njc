@@ -22,7 +22,7 @@ class njc:
 		self.bot = bot
 		self.channelID = 536472876480462848
 		self.backupID = 506520464592732161
-		self.scanInterval = 120
+		self.scanInterval = 300
 		self.looping = False
 
 	@commands.command()
