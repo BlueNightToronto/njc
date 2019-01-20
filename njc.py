@@ -974,7 +974,10 @@ class njc:
 		await self.bot.say(ordered)
 
 	@commands.command()
-	async def loopvehcheck(self):
+	async def startloop(self):
+		await self.loopVehCheck()
+	# Spaghetti to make this all work
+	async def loopVehCheck(self):
 		"""Start automatically checking vehicles"""
 		if self.looping:
 			return
@@ -985,4 +988,4 @@ class njc:
 
 	async def on_ready(self):
 		await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
-		await self.bot.loop.create_task(self.loopvehcheck())
+		await self.bot.loop.create_task(self.loopVehCheck())
