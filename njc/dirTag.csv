@@ -913,7 +913,7 @@
 300_1_KPEM	300 Bloor-Danforth 	Kipling Stn	West Mall	300B West Mall	N/A	Queensway	This branch operates when the subway is about to open.
 300_1_KEPS	300 Bloor-Danforth 	Kennedy Stn	Lansdowne Stn	300S Lansdowne Stn	N/A	Null	For routes that end at Kipling stn and go onto 300, this is branch is often the first trip. 
 300_1_PSJN	300 Bloor-Danforth	Pape Stn	Jane Stn	300S Jane Stn	N/A	Null	This branch operates when the subway is about to open. Monday-Saturday.
-300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Null	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
+300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Birchmount, Eglinton	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
 301_0_301	301 Queen	Neville Park Loop	Long Branch Loop	301 Long Branch	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_301	301 Queen	Long Branch Loop	Neville Park Loop	301 Neville Park	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_NECQ	301 Queen	Neville Park Loop	Connaught & Queen	301S Connaught 	Last Trip 	TTC Streetcar (Leslie, Russell)	
@@ -1129,8 +1129,8 @@
 512_1_SCVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
 512_1_SSVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
 512_1_SSVS*	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
-512_1_bs512	512 St Clair	Bathurst/St Clair	Wynchwood Ave	512S Short Turn	N/A	Wilson/Mount Dennis	
-512_0_BSSS*	512 St Clair	Bathurst/St Clair	Gunns Loop	512 Gunns Loop	N/A	Wilson/Mount Dennis	
+512_1_bs512	512 St Clair	Bathurst/St Clair	Wynchwood Ave	512S Short Turn	N/A	TTC Streetcar (Leslie)	
+512_0_BSSS*	512 St Clair	Bathurst/St Clair	Gunns Loop	512 Gunns Loop	N/A	TTC Streetcar (Leslie)	
 512_0_512sc	512 St Clair	Gunns Loop	St Clair West Stn	512 St Clair West Stn	N/A	TTC Streetcar (Leslie)	
 512_1_sc512	512 St Clair	St Clair West Stn 	Gunns Loop	512 Gunns Loop	Second trip after it does the BSSC trip	TTC Streetcar (Leslie)	
 512_0_BSSC	512 St Clair	Bathurst/St Clair	St Clair West Stn	512 St Clair West Stn	First trip when entering service 	TTC Streetcar (Leslie)	

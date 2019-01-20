@@ -20,8 +20,8 @@ class njc:
 
 	def __init__(self, bot):
 		self.bot = bot
-		self.channelID = 506520464592732161
-		self.scanInterval = 300
+		self.channelID = 536472876480462848
+		self.scanInterval = 120
 
 	@commands.command()
 	async def kirby(self):
