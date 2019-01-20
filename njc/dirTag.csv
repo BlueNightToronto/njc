@@ -541,7 +541,7 @@
 87_0_87A	87 Cosburn	Broadview Stn	Main Street Stn	87A Main Street Stn	via East York Acres	Birchmount	
 87_1_87A	87 Cosburn	Main Street Stn	Broadview Stn	87A Broadview Stn	via East York Acres	Birchmount	
 87_0_87C	87 Cosburn	Broadview Stn	Main Street Stn	87C Main Street Stn	bypasses East York Acres	Birchmount	
-87_0_87 C	87 Cosburn	Broadview Stn	Main Street Stn	87C Main Street Stn	bypasses East York Acres	Birchmount	This Branch is a glitch duplicate of 87_0_87C but for some reason the letter C is space out in the internal branch
+87_0_87 C	87 Cosburn	Broadview Stn	Main Street Stn	87C Main Street Stn	bypasses East York Acres	Birchmount	This Branch is a glitch duplicate of 87_0_87C and the information stay the same
 87_1_87C	87 Cosburn	Main Street Stn	Broadview Stn	87C Broadview Stn	bypasses East York Acres	Birchmount	
 87_1_cc87	87 Cosburn	Coxwell/Cosburn	Broadview Stn	87C Broadview Stn	Goes on 62 Mortimer after this trip.	Birchmount	
 88_0_88A	88 South Leaside	St Clair Stn	Beth Nealson/Wicksteed	88A Thorncliffe	via Overlea	Wilson	
@@ -610,8 +610,6 @@
 97_1_97BvFR	97 Yonge	Queen's Quay	York Mills Stn	97B York Mills Stn	via Yonge Blvd	Wilson	
 97_0_97Ccon	97 Yonge	Steeles 	Lawrence Stn	97C Lawrence Stn	N/A	Wilson	
 97_1_97Ccon	97 Yonge	Lawrence Stn	Steeles 	97C Steeles	N/A	Wilson	
-97_0_97C	97 Yonge	Steeles	Lawrence Stn	97C Lawrence Stn	N/A	Wilson	
-97_1_97C	97 Yonge 	Lawrence Stn	Steeles	97C Steeles	N/A	Wilson	
 97_0_97D	97 Yonge	St Clair Stn	Sheppard-Yonge Stn	97D Sheppard-Yonge Stn	N/A	Wilson	
 97_1_97D	97 Yonge	Sheppard-Yonge Stn	St Clair Stn	97D St Clair Stn	via Yonge Blvd	Wilson	
 97_0_97F	97 Yonge	Steeles 	Davisville Stn	97F Davisville Stn	N/A	Wilson	
@@ -649,7 +647,7 @@
 105_1_WIDU	105 Dufferin North	Wilson Stn	Dufferin/Steeles Av West	105A Steeles 	N/A	Wilson	
 106_0_106	106 Sentinel	Pioneer Village Stn	Sheppard West Stn	106 Sheppard West Stn	N/A	Wilson	
 106_1_106	106 Sentinel	Sheppard West Stn	Pioneer Village Stn	106 Pioneer Village Stn	N/A	Wilson	
-106_1_SEDO	106 Sentinel	Finch/Sentinel	Sheppard West Stn	106 Sheppard West Stn	School trip, CW Jeffreys	Wilson	
+106_1_SEDO	106 Sentinel	Finch/Sentinel	Sheppard West Stn	106 Sheppard West Stn	School trip, CW Jeffreys	Wilson	This branch has not been updated since Downsview station was renamed to Sheppard West station
 106_1_106pv	106 Sentinel	Sheppard West Stn	Northwest Gate (Pioneer Village Stn)	106 Pioneer Village Stn	N/A	Wilson	
 107_0_107	107 St Regis	Pioneer Village Stn	Sheppard West Stn	107 Sheppard West Stn	N/A	Arrow Rd	
 107_1_107	107 St Regis	Sheppard West Stn	Pioneer Village Stn	107 Pioneer Village Stn	via Petrolia	Arrow Rd	
@@ -1093,10 +1091,12 @@
 510_0_510A	510 Spadina	Spadina Stn	Union Stn	510 Union Stn	N/A	TTC Streetcar (Leslie)	
 510_1_510A	510 Spadina 	Union Stn	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_0_510B	510 Spadina	Spadina Stn	Queen's Quay	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
-510_1_510B	510 Spadina	Queen's Quay	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
+510_0_510C	510 Spadina	Spadina Stn	King	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
+510_1_510C	510 Spadina	King	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_1_kg510	510 Spadina 	King/Spadina 	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_1_SQCH	510 Spadina 	Queen's Quay	Charlottes Loop	510C King	Final Trip	TTC Streetcar (Leslie)	
-510_1_USSQ	510 Spadina 	Union Stn	Queen and Spadina	501S Queen	Final Trip	TTC Streetcar (Leslie)	
+510_1_USCH	510 Spadina 	Union Stn	Charlottes Loop	510C King	Final Trip	TTC Streetcar (Leslie)	
+510_1_USSQ	510 Spadina 	Union Stn	Queen and Spadina	510S Queen	Final Trip	TTC Streetcar (Leslie)	
 511_0_511	511 Bathurst 	Bathurst Stn	Exhibition Loop	511 Exhibition 	N/A	TTC Streetcar (Russell/Leslie)	
 511_1_511	511 Bathurst 	Exhibition Loop	Bathurst Stn	511 Bathurst Stn	N/A	TTC Streetcar (Russell/Leslie)	
 511_0_511bus	511 Bathurst	Bathurst Stn	Exhibition Loop	511 Exhibition	N/A	Mount Dennis	

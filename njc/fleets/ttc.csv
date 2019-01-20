@@ -1025,7 +1025,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3118	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		13 November 2018
 3119	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		17 September 2018
 3120	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 September 2018
-3121	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		12 September 2018
+3121	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		19 January 2019
 3122	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		27 July 2018
 3123	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		30 October 2018
 3124	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		24 December 2018
@@ -1052,7 +1052,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3145	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
 3146	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 July 2018
 3147	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		9 October 2018
-3148	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3148	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		19 January 2019
 3149	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		28 October 2018
 3150	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		6 October 2018
 3151	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		25 August 2018
@@ -1086,7 +1086,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3179	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Unavailable		9 July 2018
 3180	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		2 August 2018
 3181	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		2 August 2018
-3182	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3182	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		19 January 2019
 3183	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Unavailable		9 July 2018
 3184	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		16 August 2018
 3185	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		25 August 2018
@@ -1143,7 +1143,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3236	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		17 September 2018
 3237	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Unavailable		9 July 2018
 3238	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		22 December 2018
-3239	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		9 July 2018
+3239	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		19 January 2019
 3240	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		12 September 2018
 3241	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Unavailable		9 July 2018
 3242	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		16 November 2018
@@ -1775,8 +1775,8 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 4480	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		6 August 2018
 4481	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		6 August 2018
 4482	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		6 August 2018
-4483	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Inactive		6 August 2018
-4484	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Inactive		6 August 2018
+4483	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		19 January 2019
+4484	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		19 January 2019
 4485	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Inactive		6 August 2018
 4486	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Inactive		6 August 2018
 4487	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Inactive		6 August 2018
@@ -3045,7 +3045,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8214	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		14 October 2018
 8215	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		14 October 2018
 8216	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		14 October 2018
-8217	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Inactive		14 October 2018
+8217	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		19 January 2019
 8218	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		14 October 2018
 8219	8100-8219	Orion	2010 VII NG	Wilson	ISL-B400R6	Active		14 October 2018
 8300	8300-8334	Orion	2011 VII NG EPA10	Wilson	ISL9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466447707733622787/image.jpg	11 July 2018

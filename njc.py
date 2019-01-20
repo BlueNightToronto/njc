@@ -204,9 +204,10 @@ class njc:
     @commands.command()
     async def vehcheck(self):
         """Checks all vehicles in service if they match their branch"""
-        await self.bot.say("This command checks all vehicles in service if the vehicle division matches the branch division. Please don't spam the command.")
+        await self.bot.say("This command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
         service = ""
-        time.sleep(5.5)
+        service5 = ""
+        time.sleep(1)
         await self.bot.say("**Scanning...**")
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=0"
         raw = urlopen(url).read() # Get page and read data
@@ -255,8 +256,15 @@ class njc:
 
                     try:
                         if str(linefleet[4]) not in str(line[6]):
-                            service1 = (":rotating_light: <@&536303913868197898> - {} does not match `{}` :rotating_light:".format(veh,dirtag))
+                            service1 = (":rotating_light: <@&536303913868197898> - {} does not match `{}`! :rotating_light:".format(veh,dirtag))
                             service = service + service1 + "\n"
+                    except Exception as errer:
+                        await self.bot.say("**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
+
+                    try:
+                        if str(linefleet[6]) == "Inactive":
+                            service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is in service! :question:".format(veh))
+                            service5 = service5 + service2 + "\n"
                     except Exception as errer:
                         await self.bot.say("**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
@@ -264,16 +272,19 @@ class njc:
             await self.bot.say("**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
         try:
-            if service == "":
-                await self.bot.say("Nothing unusual! **Scan complete.**")
+            await self.bot.say(service)
+            try:
+                await self.bot.say(service5)
+            except:
+                await self.bot.say("**Scan complete.**")
                 return
-            else:
-                await self.bot.say(service)
-        except Exception as errer:
-            await self.bot.say("**Error occured:** {}".format(errer))
+        except:
+            try:
+                await self.bot.say(service5)
+            except:
+                await self.bot.say("**Scan complete. Nothing found.**")
+                return
         await self.bot.say("**Scan complete.**")
-
-
 
     # COMMAND FOR GETTING NEXT BUS <STOPID>
     @commands.command()
