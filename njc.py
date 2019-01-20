@@ -261,7 +261,7 @@ class njc:
 
 					try: #compares
 						if str(linefleet[4]) not in str(line[6]):
-							service1 = (":rotating_light: <@&536303913868197898> - {} does not match `{}`!".format(veh,dirtag))
+							service1 = (":rotating_light: <@&536303913868197898> - {} is on `{}`, divisions don't match!".format(veh,dirtag))
 #                            await self.bot.send_message(discord.Object(id = self.channelID), service1)
 							service = service + service1 + "\n"
 					except Exception as errer:
@@ -269,7 +269,7 @@ class njc:
 
 					try: #checks if vehicle in service is marked as inactive
 						if str(linefleet[6]) == "Inactive":
-							service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is on {}!".format(veh,dirtag))
+							service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is on `{}`!".format(veh,dirtag))
 #                            await self.bot.send_message(discord.Object(id = self.channelID), service2)
 							service5 = service5 + service2 + "\n"
 					except Exception as errer:
