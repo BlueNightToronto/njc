@@ -969,6 +969,3 @@ class njc:
                 stops.append(i[1])
         ordered = sorted(stops, key = lambda x: x)
         await self.bot.say(ordered)
-
-    async def member_join(self, member):
-        await self.bot.say('{0} joined at {0.joined_at}'.format(member))
