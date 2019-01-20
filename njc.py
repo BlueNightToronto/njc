@@ -18,17 +18,11 @@ def setup(bot):
 class njc:
 	"""Components for NJC\nRelevant data copyright Toronto Transit Commission 2018."""
 
-	async def __new__(cls, *a, **kw):
-		instance = super().__new__(cls)
-		await instance.__init__(*a, **kw)
-		return instance
-
-	async def __init__(self, bot):
+	def __init__(self, bot):
 		self.bot = bot
 		self.channelID = 506520464592732161
 		self.scanInterval = 120
-		await asyncio.sleep(10)
-		await self.bot.loop.create_task(self.loopVehCheck())
+		self.looping = False
 
 	@commands.command()
 	async def kirby(self):
@@ -979,10 +973,16 @@ class njc:
 		ordered = sorted(stops, key = lambda x: x)
 		await self.bot.say(ordered)
 
-	async def loopVehCheck(self):
+	@commands.command
+	async def loopvehcheck(self):
+		"""Start automatically checking vehicles"""
+		if self.looping:
+			return
+		self.looping = True
 		while True:
 			await self.vehcheck()
 			await asyncio.sleep(self.scanInterval)		
 
 	async def on_ready(self):
 		await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
+		await self.loopvehcheck()
