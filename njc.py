@@ -238,12 +238,9 @@ class njc:
 					except Exception as errer:
 						await self.bot.send_message(channel, "fleets/ttc.csv not found!\n`" + str(errer) + "`")
 
-					try:
-						for row in readerfleet:
-							if str(row[0]) == veh:
-								linefleet = row
-					except Exception as errer:
-						await self.bot.send_message(channel, "<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(str(errer)))
+					for row in readerfleet:
+						if str(row[0]) == veh:
+							linefleet = row
 
 					try: # TRIES FETCHING DATA
 						taglist = open("cogs/njc/dirTag.csv")
@@ -252,12 +249,9 @@ class njc:
 					except Exception as errer:
 						await self.bot.send_message(channel, "dirTag.csv not found!\n`" + str(errer) + "`")
 
-					try:
-						for row in reader:
-							if str(row[0]) == dirtag:
-								line = row
-					except Exception as errer:
-						await self.bot.send_message(channel, "<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(str(errer)))
+					for row in reader:
+						if str(row[0]) == dirtag:
+							line = row
 
 					try: #checks if vehicle in service is marked as inactive
 						if str(linefleet[6]) == "Inactive":
