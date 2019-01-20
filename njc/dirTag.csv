@@ -883,7 +883,7 @@
 300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Eglinton, Mount Dennis, Queensway	This is the standard branch for 300A.
 300_0_300A*	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	via Kipling Stn	Null	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
 300_0_300Ake	300 Bloor-Danforth	Pearson Airport (Terminal 3)	Kennedy Stn	300B Kennedy Stn 	bypass Kipling Stn	Null	On Sundays starting at 5:50am, this branch runs the whole way from Pearson Airport to Kennedy Stn.
-300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount	This is the standard branch for 300B.
+300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300B.
 300_0_300B*	300 Bloor-Danforth 	The East Mall/Bloor Street	Kennedy Stn	300B Kennedy Stn	via Kipling Stn	Queensway	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
 300_0_300Bstn	300 Bloor-Danforth 	West Mall	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Queensway	This branch actually enters Kennedy Stn
 300_0_300Bdd	300 Bloor-Danforth 	East Mall	Warden Ave/Danforth Rd	300A Warden	N/A	Null	This branch terminates at the eastern end of 300A, usually during the start of the operating day..
@@ -904,7 +904,7 @@
 300_1_300bsB	300 Bloor-Danforth	Kennedy Stn	Broadview Stn	300S Broadview Stn	N/A	Null	When the subway has opened. Used on Sunday mornings
 300_1_300Bkp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway is about to open.
 300_1_300la	300 Bloor-Danforth 	Warden Avenue	Lansdowne Stn	300S Lansdowne Stn	N/A	Null	Run by buses from route 25, this branch runs when the subway begins to open. After this branch, vehicles return to pape stn
-300_1_300kp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway has closed.
+300_1_300kp	300 Bloor-Danforth 	Warden Avenue	Kipling Stn	300S Kipling Stn	N/A	Queensway	This branch operates when the subway has closed.
 300_1_bs300	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall	N/A	Mount Dennis, Queensway	This branch operates when the subway has closed.
 300_1_bs300*	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall 	via Kipling Stn	Mount Dennis	This branch operates starting from Broadview as trips starting earlier are impossible for passengers to board.
 300_1_BSKP	300 Bloor-Danforth 	Broadview Stn	Kipling Stn	300S Pape Stn	N/A	Null	This branch operates when the subway has opened.
