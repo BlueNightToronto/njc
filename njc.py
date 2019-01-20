@@ -975,8 +975,13 @@ class njc:
 
 	@commands.command()
 	async def startloop(self):
+		if self.looping:
+			await self.bot.send_message(discord.Object(id = self.channelID), "Loop already running!")
+			return
+		self.looping = True
 		await self.bot.loop.create_task(self.vehcheck())
 
 	async def on_ready(self):
 		await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
+		self.looping = True
 		await self.bot.loop.create_task(self.vehcheck())
