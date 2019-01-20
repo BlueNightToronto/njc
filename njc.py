@@ -979,7 +979,7 @@ class njc:
 	@commands.command()
 	async def vehcheck(self):
 		if self.looping:
-			await self.vehcheck()
+			await self.check()
 			return
 		self.looping = True
 		await self.bot.loop.create_task(self.autoscan())
