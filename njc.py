@@ -1,4 +1,4 @@
-import discord, csv, datetime
+import discord, csv, datetime, time
 from discord.ext import commands
 from cogs.utils import checks
 
@@ -169,12 +169,12 @@ class njc:
                     data.add_field(name="Branch Notes", value="Unknown")
                     await self.bot.say("<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(errer))
 
-                if str(linefleet[4]) in str(line[6]):
-#               "apple" in "apple, oranges, pear"
-                    await self.bot.say("**DEBUG MESSAGE:** Branch divisions match vehicle division!")
-                else:
-                    await self.bot.say("<@&536303913868197898> - Branch divisions don't match vehicle division!")
-
+                try:
+                    if str(linefleet[4]) not in str(line[6]):
+                        await self.bot.say("<@&536303913868197898> - Branch divisions don't match vehicle division!")
+                except Exception as errer:
+                    if dirtag != str("N/A"):
+                        await self.bot.say("**ERROR MESSAGE:** `{}`".format(errer))
 
                 data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(heading) in j],heading)) # Obfuscation? Fun, either way
                 try:
@@ -196,125 +196,84 @@ class njc:
         await self.bot.say("Vehicle not found! #{}".format(veh))
 
     @commands.command()
-    async def veh(self, veh):
+    async def veh(self):
         """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
+        await self.bot.say("This is no longer a command. Use `n!vehicle <number>`")
 
-        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
+    #Gets info for fleet
+    @commands.command()
+    async def vehcheck(self):
+        """Checks all vehicles in service if they match their branch"""
+        await self.bot.say("This command checks all vehicles in service if the vehicle division matches the branch division. Please don't spam the command.")
+        service = ""
+        time.sleep(5.5)
+        await self.bot.say("**Scanning...**")
+        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=0"
         raw = urlopen(url).read() # Get page and read data
         decoded = raw.decode("utf-8") # Decode from bytes object
         parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
-
         vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
-        for i in vehicles: # Loop through these
 
-            service = i.attributes['id'].value # GETS VEHICLE
-            if veh == service: # IF MATCHING VEHICLE FOUND
-                dirtag = i.attributes['dirTag'].value # Direction Tag
-                heading = i.attributes['heading'].value # Compass Direction
+
+        try:
+            for i in vehicles: # Loop through these
+                veh = i.attributes['id'].value # GETS VEHICLE
                 updated = i.attributes['secsSinceReport'].value # Seconds since last updated
-                lat = i.attributes['lat'].value #latitude
-                lon = i.attributes['lon'].value # lon
-
-                if veh >= '1000' and veh <= '1149':
-                    vehicle = "Orion VII Hybrid"                    
-                elif veh >= '1200' and veh <= '1423':
-                    vehicle = "Orion VII NG Hybrid"                    
-                elif veh >= '1500' and veh <= '1689':
-                    vehicle = "Orion VII NG Hybrid"                    
-                elif veh >= '1700' and veh <= '1829':
-                    vehicle = "Orion VII NG Hybrid"                    
-                elif veh >= '3100' and veh <= '3369':
-                    vehicle = "Novabus LFS IV VISION"                    
-                elif veh >= '4000' and veh <= '4199':
-                    vehicle = "CLRV"                    
-                elif veh >= '4200' and veh <= '4251':
-                    vehicle = "ALRV"                    
-                elif veh >= '4400' and veh <= '4999':
-                    vehicle = "Bombardier Flexity"                    
-                elif veh >= '7500' and veh <= '7883':
-                    vehicle = "Orion VII"                    
-                elif veh >= '7900' and veh <= '7979':
-                    vehicle = "Orion VII"                    
-                elif veh >= '8000' and veh <= '8011':
-                    vehicle = "Orion VII-Airport"                    
-                elif veh >= '8012' and veh <= '8099':
-                    vehicle = "Orion VII"                    
-                elif veh >= '8100' and veh <= '8219':
-                    vehicle = "Orion VII NG"         
-                elif veh >= '8300' and veh <= '8396':
-                    vehicle = "Orion VII 3G"         
-                elif veh >= '8400' and veh <= '8504':
-                    vehicle = "Novabus LFS IV"                    
-                elif veh >= '8510' and veh <= '8617':
-                    vehicle = "Novabus LFS IV"                    
-                elif veh >= '8620' and veh <= '8964':
-                    vehicle = "Novabus LFS IV"                    
-                elif veh >= '9000' and veh <= '9026':
-                    vehicle = "LFS III-Artic"
-                elif veh >= '9027' and veh <= '9152':
-                    vehicle = "LFS IV-Artic"
-                elif veh >= '9200' and veh <= '9239':
-                    vehicle = "Novabus LFS IV"                    
-                else:
-                    vehicle = vehicle + " UNKNOWN VEHICLE"
-                data = discord.Embed(title="Vehicle Tracking for TTC {} {}".format(veh, vehicle), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
-
-                try: # TRIES FETCHING DATA
-                    fleetlist = open("cogs/njc/dirTag.csv")
-                    reader = csv.reader(fleetlist,delimiter="	")
-                    line = []
-                except Exception as errer:
-#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-                    data.add_field(name="On Route", value="Branch")  
-                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-                    data.add_field(name="Starts from", value="Unknown")
-                    data.add_field(name="Ends at", value="Unknown")
-                    data.add_field(name="Sign", value="Unknown")
-                    data.add_field(name="Branch Notes", value="Unknown")
-                    await self.bot.say(embed=data)
-                    return
-
-                try: # GETS INFO FROM FILE
-                    for row in reader:
-                        if str(row[0]) == dirtag:
-                            line = row
-
-                    # IF OK, THIS IS WHAT IS OUTPUTTED
-                    fleetlist.close()
-                    data.add_field(name="On Route", value=line[1])  
-                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-                    data.add_field(name="Starts from", value=line[2])
-                    data.add_field(name="Ends at", value=line[3])
-                    data.add_field(name="Sign", value=line[4])
-                    data.add_field(name="Branch Notes", value=line[5])
-                except Exception as errer:
-#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-                    data.add_field(name="On Route", value="Branch")  
-                    data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-                    data.add_field(name="Starts from", value="Unknown")
-                    data.add_field(name="Ends at", value="Unknown")
-                    data.add_field(name="Sign", value="Unknown")
-                    data.add_field(name="Branch Notes", value="Unknown")
-                    await self.bot.say("<@254473130393731073> Yo, it looks like a new branch")
-                    await self.bot.say("<@254473130393731073> Add it!")
-
-                data.add_field(name="Compass", value="Facing {}".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360)]) if int(heading) in j])) # Obfuscation? Fun, either way
                 try:
-                    vision = i.attributes['speedKmHr'].value
-                    data.add_field(name="Vision Equipped?", value="**Yes!**".format(heading))
+                    dirtag = i.attributes['dirTag'].value # Direction Tag
                 except:
-                    data.add_field(name="Vision Equipped?", value="No".format(heading))
+                    dirtag = "N/A"
 
-                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
-                data.set_footer(text="Last updated {} seconds ago.".format(updated))
+                if dirtag != "N/A":
+                    try:
+                        listfleet = open("cogs/njc/fleets/ttc.csv")
+                        readerfleet = csv.reader(listfleet,delimiter="	")
+                        linefleet = []
+                    except Exception as errer:
+                            await self.bot.say("fleets/ttc.csv not found!\n`" + str(errer) + "`")
 
-                try:
-                    await self.bot.say(embed=data)
-                    return
-                except:
-                    await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
-                    return
-        await self.bot.say("Vehicle #{} is not currently in service.".format(veh))
+                    try:
+                        for row in readerfleet:
+                            if str(row[0]) == veh:
+                                linefleet = row
+                    except Exception as errer:
+                            await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(str(errer)))
+
+                    try: # TRIES FETCHING DATA
+                        taglist = open("cogs/njc/dirTag.csv")
+                        reader = csv.reader(taglist,delimiter="	")
+                        line = []
+                    except Exception as errer:
+                        await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+
+                    try:
+                        for row in reader:
+                            if str(row[0]) == dirtag:
+                                line = row
+                    except Exception as errer:
+                        await self.bot.say("<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(str(errer)))
+
+                    try:
+                        if str(linefleet[4]) not in str(line[6]):
+                            service1 = (":rotating_light: <@&536303913868197898> - {} does not match `{}` :rotating_light:".format(veh,dirtag))
+                            service = service + service1 + "\n"
+                    except Exception as errer:
+                        await self.bot.say("**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
+
+        except Exception as errer:
+            await self.bot.say("**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
+
+        try:
+            if service == "":
+                await self.bot.say("Nothing unusual! **Scan complete.**")
+                return
+            else:
+                await self.bot.say(service)
+        except Exception as errer:
+            await self.bot.say("**Error occured:** {}".format(errer))
+        await self.bot.say("**Scan complete.**")
+
+
 
     # COMMAND FOR GETTING NEXT BUS <STOPID>
     @commands.command()
@@ -498,19 +457,14 @@ class njc:
         # AGENCY NAME
         if agency == 'go':
             agencyname = "GO Transit "
-            curator = "BlueKnight17#3042"
         elif agency =='ttc':
             agencyname = "TTC "
-            curator = "BlueKnight17#3042"
         elif agency =='yrt':
             agencyname = "YRT "
-            curator = "Hexagonal10#4418"
         elif agency =='miway':
             agencyname = "MiWay "
-            curator = "The Sauce Boss#1403"
         elif agency =='ddot':
             agencyname = "DDOT "
-            curator = "TheYoshiState#3721"
         else:
             agencyname = ""
 
@@ -525,7 +479,7 @@ class njc:
 
         try:
             for row in reader:
-                if row[-1] != "thumbnail" and int(row[0]) == number:
+                if row[0] != "vehicle" and int(row[0]) == number:
                     line = row
             fleetlist.close()
             data = discord.Embed( colour=discord.Colour(value=474494))
@@ -535,7 +489,7 @@ class njc:
             data.add_field(name="Powertrain/Motor", value=line[5])
             data.add_field(name="Vehicle Group", value=line[1])
             data.add_field(name="Status", value=line[6])
-            data.set_footer(text="Last updated " + line[8] + " - {} ".format(agencyname) + 'is maintained by @{}'.format(curator))
+            data.set_footer(text="Last updated " + line[8])
             
 
             if number < 1000:

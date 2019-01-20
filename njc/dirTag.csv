@@ -9,7 +9,7 @@
 7_0_7	7 Bathurst 	Greenwin Village/Bathurst (Steeles) 	Bathurst Stn	7 Bathurst Stn	N/A	Wilson	
 7_0_BWBA	7 Bathurst	Wilson Ave/Bathurst	Bathurst Stn	7 Bathurst Stn	First trip for run	Wilson	
 7_0_DUBA	7 Bathurst	Duncan Shops (Hillcrest)	Bathurst Stn	7 Bathurst Stn	142 Avenue Rd Express	Wilson	This is one of the special branches to bring the employees at TTC Hillcrest division home. Buses may not display as 7 Bathurst.
-7_0_GRBW	7 Bathurst	Greenwin Village/Bathurst (Steeles) 	Wilson Ave/Bathurst	7S Wilson	First trip for run	Wilson	
+7_0_GRBW	7 Bathurst	Greenwin Village/Bathurst (Steeles) 	Wilson Ave/Bathurst	7S Wilson	Final trip for run	Wilson	
 7_0_HIBA	7 Bathurst	Hillcrest 	Bathurst Stn	7 Bathurst Stn	142 Avenue Rd Express	Wilson	This is one of the special branches to bring the employees at TTC Hillcrest division home. Buses may not display as 7 Bathurst.
 7_1_7	7 Bathurst 	Bathurst Stn	Greenwin Village/Bathurst (Steeles) 	7 Steeles 	N/A	Wilson	
 7_1_BABW	7 Bathurst	Bathurst Stn	Bathurst/Wilson Ave	7S Wilson	Final Trip	Wilson	The route division is located near the end point of this branch. After this trip is completed, buses will deadhead to Wilson division.
@@ -78,19 +78,19 @@
 23_1_23	23 Dawes	Main Street Stn	St Clair Avenue East	23 St Clair 	N/A	Birchmount	
 23_0_DRSC	23 Dawes	195 Rexleigh Drive	St Clair/Victoria Park 	23S Short Turn	Last run 	Birchmount	
 24_0_24A	24 Victoria Park	Steeles	Victoria Park Stn	24 Victoria Park Stn	N/A	Birchmount	
-24_1_24A	24 Victoria Park	Victoria Park Stn	Steeles	24A Steeles	N/A	Birchmount	
 24_0_24B	24 Victoria Park	Don Mills Stn	Victoria Park Stn	24B Victoria Park Stn	via Consumers Rd	Birchmount	
-24_1_24B	24 Victoria Park	Victoria Park Stn	Don Mills Stn	24B Don Mills Stn	via Consumers Rd	Birchmount	
 24_0_24da	24 Victoria Park	Steeles Loop	Danforth/Victoria Park	24 Danforth	N/A	Birchmount	
-24_1_24da	24 Victoria Park 	Danforth/Victoria Park 	Steeles 	24A Steeles	N/A	Birchmount	
 24_0_24DABI	24 Victoria Park 	Danforth/Victoria Park	Bingham Loop	24 Bingham	N/A	Birchmount	
+24_0_DABI	24 Victoria Park	Danforth Ave/Victoria Park	Bingham Loop	24 Bingham	2nd Last trip before trip to Bingham Loop	Birchmount	
 24_0_SOVI	24 Victoria Park 	Rowena Drive/Victoria Park	Victoria Park Stn	24 Victoria Park Stn	School trip, Senator O'Connor	Birchmount	
+24_0_24vda	24 Victoria Park	Steeles Loop	Danforth Ave/Victoria Park	24 Bingham	Trip to Bingham Loop 1st	Birchmount	
+24_1_24A	24 Victoria Park	Victoria Park Stn	Steeles	24A Steeles	N/A	Birchmount	
+24_1_24B	24 Victoria Park	Victoria Park Stn	Don Mills Stn	24B Don Mills Stn	via Consumers Rd	Birchmount	
+24_1_24da	24 Victoria Park 	Danforth/Victoria Park 	Steeles 	24A Steeles	N/A	Birchmount	
 24_1_biv24	24 Victoria Park 	Bingham Loop	Steeles Loop	24A Steeles	bypasses Victoria Park Stn	Birchmount	
 24_1_CSDO	24 Victoria Park 	Consumers/Victoria Park	Don Mills Stn	24B Don Mills Stn	N/A	Birchmount	
 24_1_dav24	24 Victoria Park 	Danforth/Victoria Park	Steeles Loop/Victoria Park	24A Steeles 	N/A	Birchmount	
 24_1_SOST	24 Victoria Park 	Rowena Drive/Victoria Park	Steeles Loop/Victoria Park 	24A Steeles 	N/A	Birchmount	
-24_0_24vda	24 Victoria Park	Steeles Loop	Danforth Ave/Victoria Park	24 Bingham	Trip to Bingham Loop 1st	Birchmount	
-24_0_DABI	24 Victoria Park	Danforth Ave/Victoria Park	Bingham Loop	24 Bingham	2nd Last trip before trip to Bingham Loop	Birchmount	
 25_0_25A	25 Don Mills	Freshmeadow/Don Mills (Steeles)	Pape Stn	25A Pape Stn	via Don Mills Stn	Eglinton	
 25_0_25A*	25 Don Mills	Freshmeadow/Don Mills (Steeles)	Pape Stn	25/A/B Pape Stn	bypasses Don Mills Stn	Eglinton	While the subway is closed, this branch runs instead of the regular 25A. The difference is this branch bypasses Don Mills Stn. There isn't a sign programmed for this branch, so any sign can be used.
 25_0_25B	25 Don Mills	Don Mills Stn	Pape Stn	25B Pape Stn	N/A	Eglinton	
@@ -158,6 +158,7 @@
 35_0_35Arush	35 Jane	Pioneer Village Stn	Jane Stn	35 Jane Stn	unknown differences	Arrow Rd	
 35_0_35B	35 Jane	Pionner Village Stn	Jane Stn	35 Jane Stn	via Hullmar	Arrow Rd	
 35_0_35Brush	35 Jane	Pioneer Village Stn	Jane Stn	35 Jane Stn	via Hullmar	Arrow Rd	
+35_0_fj35	35 Jane	Finch/Jane	Jane Stn	35 Jane Stn	First trip	Arrow Rd	
 35_1_35A	35 Jane	Jane Stn	Pioneer Village Stn	35A Pioneer Village Stn	N/A	Arrow Rd	
 35_1_35Apv	35 Jane	Jane Stn	Northwest Gate (Pioneer Village Stn)	35A/C Pioneer Village Stn	does not enter Pioneer Village Stn	Arrow Rd	
 35_1_35Arush	35 Jane	Jane Stn	Pioneer Village Stn	35A Pioneer Village Stn	bypass Bloor St stop	Arrow Rd	
@@ -180,6 +181,7 @@
 36_1_36B	36 Finch West	Finch Stn	Finch West Stn	36A Finch West Stn	N/A	Arrow Rd	
 36_1_36D	36 Finch West	Finch Stn	Weston Road	36D Weston Rd and Milvan	N/A	Arrow Rd	
 36_1_36F	36 Finch West	Finch West Stn	Weston Road	36F Weston Rd and Milvan	via Fenmar	Arrow Rd	
+36_1_36fa	36 Finch West	Finch Stn	Signet Drive	36S Arrow Rd	via Finch West stn	Arrow Rd	
 36_1_36fac	36 Finch West	Finch Stn	Signet Drive	36S Arrow Rd	Last trip	Arrow Rd	
 36_1_36J	36 Finch West	Finch Stn	Humberwood Loop	36A Humberwood	via Finch West Stn	Arrow Rd	
 36_1_36Dpv	36 Finch West	Yonge Street	Weston Road	36D Weston Rd and Milvan	bypass Finch West Stn	Arrow Rd	
@@ -254,11 +256,11 @@
 45_1_45BCon	45 Kipling 	Kipling Stn	Attwell/Disco Road	45B Carlingview	via Belfield 	Queensway	
 45_0_45Aexmile	45 Kipling 	Steeles 	Kipling Stn	45 Kipling Stn	N/A	Queensway	
 46_0_46	46 Martin Grove	Steeles/Martin Grove	Kipling Stn	46 Kipling Stn	N/A	Arrow Rd	
-46_1_46	46 Martin Grove	Kipling Stn	Steeles/Martin Grove	46 Steeles 	N/A	Arrow Rd	
+46_1_46	46 Martin Grove	Kipling Stn	Steeles/Martin Grove	46 Steeles 	N/A	Arrow Rd, Queensway	
 46_0_46con	46 Martin Grove	Steeles/Martin Grove	Kipling Stn	46 Kipling Stn	N/A	Arrow Rd	
-46_1_46con	46 Martin Grove	Kipling Stn	Steeles/Martin Grove	46 Steeles 	N/A	Arrow Rd	
-46_0_mr46	46 Martin Grove	Finch Avenue West/Martin Grove	Kipling Stn	46 Kipling Stn	School Trip	Arrow Rd	
-46_0_NTKP	46 Martin Grove	Nottinghill Gate/Martin Grove	Kipling Stn	46 Kipling Stn	Shown as 46E, School Trip	Queensway	
+46_1_46con	46 Martin Grove	Kipling Stn	Steeles/Martin Grove	46 Steeles 	N/A	Arrow Rd, Queensway	
+46_0_mr46	46 Martin Grove	Finch Avenue West/Martin Grove	Kipling Stn	46 Kipling Stn	School Trip	Queensway	
+46_0_NTKP	46 Martin Grove	Nottinghill Gate/Martin Grove	Kipling Stn	46 Kipling Stn	Shown as 46E, School Trip	Arrow Rd	
 46_1_NTSL	46 Martin Grove	Nottinghill Gate/Martin Grove	Steeles	46 Steeles	School Trip	Arrow Rd	
 47_0_47A	47 Lansdowne	St Clair Avenue West	Queen Street	47A Queen	bypass Bloor Street	Mount Dennis	
 47_0_47ASun	47 Lansdowne	Earlscourt Loop	Queen Street	47A Queen	Stopping at Bloor Street	Mount Dennis	
@@ -268,8 +270,8 @@
 47_1_47ASun	47 Lansdowne	Queen Street	Earlscourt Loop	47A Earlscourt	Stopping at Bloor Street	Mount Dennis	
 47_1_47B	47 Lansdowne	Queen Street	Yorkdale Stn	47B Yorkdale Stn	via Bridgeland bypassing Bloor Street	Mount Dennis	
 47_1_47C	47 Lansdowne	Queen Street 	Yorkdale Stn	47C Yorkdale Stn	via Orfus bypassing Bloor Street	Mount Dennis	
-48_0_48	48 Rathburn	Mill Rd/Rathburn Loop	Royal York Stn	48 Royal York Stn	N/A	Queensway	
-48_1_48	48 Rathburn	Royal York Stn	Mill Rd/Rathburn Loop	48 Mill Rd	N/A	Queensway	
+48_0_48	48 Rathburn	Mill Road/Rathburn Loop	Royal York Stn	48 Royal York Stn	N/A	Queensway	
+48_1_48	48 Rathburn	Royal York Stn	Mill Road/Rathburn Loop	48 Mill Rd	N/A	Queensway	
 48_0_48A	48 Rathburn	Renforth/Eringate	Royal York Stn	48 Royal York Stn	N/A	Queensway	
 48_1_48A	48 Rathburn	Royal York Stn	Renforth/Eringate	48A Renforth & Eringate	N/A	Queensway	
 48_0_MMRY	48 Rathburn	Silverthorn C.I	Royal York Stn	48 Royal York Stn	School Trip	Queensway	
@@ -280,7 +282,7 @@
 50_0_MMIS	50 Burnhamthrope 	Silverthrone C.I	Islington Stn	50 Islington Stn	School Trip	Queensway	
 51_0_51	51 Leslie	Freshmeadow Dr/Don Mills (Steeles)	Eglinton Stn	51 Eglinton Stn	N/A	Wilson	
 51_1_51	51 Leslie 	Eglinton Stn	Freshmeadow Dr/Don Mills (Steeles)	51 Steeles	N/A	Wilson	
-51_1_FIST	51 Leslie	Eglinton Avenue East	Freshmeadow Dr/Don Mills (Steeles)	51 Steeles	School Trip	Wilson	
+51_1_FIST	51 Leslie	Eglinton Stn	Freshmeadow Dr/Don Mills (Steeles)	51 Steeles	School Trip	Wilson	
 52_0_52A	52 Lawrence West 	Pearson Airport (Terminal 3)	Lawrence Stn	52A Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52Ayg	52 Lawrence West	Pearson Airport (Terminal 3)	Lorindale Ave (Yonge Street)	52 Lawrence Stn	Last trip/When subway closed	Wilson	
 52_0_52B	52 Lawrence West 	Westwood Mall	Lawrence Stn	52B Lawrence Stn	via Lawrence West Stn	Wilson	
@@ -325,7 +327,7 @@
 54_0_MRST	54 Lawrence East	Morningside Avenue	Starspray Loop	54 Starspray Blvd	Bypasses Lawrence East RT Stn	Eglinton	
 54_0_LSOT	54 Lawrence East	Lawrence/Scarborough Golf Club	Orton Park/Brimorton	54B Orton Park	First trip	Eglinton	
 54_0_LMOT	54 Lawrence East	Lawrence/Markham Rd	Orton Park/Brimorton	54B Orton Park	First trip	Eglinton	
-54_0_rt54A	54 Lawrence East	Lawrence East RT Stn	Starspray Loop	54A Starspray Blvd	First PM Trip	Eglinton	
+54_0_rt54A	54 Lawrence East	Lawrence East RT Stn	Starspray Blvd (Starspray Loop)	54A Starspray Blvd	First PM Trip	Eglinton	
 54_1_54A	54 Lawrence East	Starspray Blvd (Starspray Loop)	Eglinton Stn	54 Eglinton Stn	via Lawrence East Stn	Eglinton	
 54_1_54B	54 Lawrence East	Orton Park/Brimorton	Eglinton Stn	54 Eglinton Stn	Before 3pm, clockwise looping/via Lawrence East Stn	Eglinton	
 54_1_54Bpm	54 Lawrence East	Scarborough Golf Club Rd/Lawrence 	Eglinton Stn	54 Eglinton Stn	After 3pm, clockwise looping/via Lawrence East Stn	Eglinton	
@@ -338,9 +340,9 @@
 54_1_RH54r	54 Lawrence East	East Avenue (Rouge Hill GO Stn)	Eglinton Stn	54 Eglinton Stn	bypasses Lawrence East RT Stn	Eglinton	
 54_1_STRH	54 Lawrence East	Starspray Blvd (Starspray Loop)	East Avenue (Rouge Hill GO Stn)	54 Eglinton Stn	then continues as RH54	Eglinton	Instead of laying over at Starspray Loop, this branch allows buses to continue to Rouge Hill GO and turn off their buses. It is likely this is to reduce noise pollution at Starspray Loop.
 54_1_54Bpmr	54 Lawrence East	Scarborough Golf Club Rd/Lawrence 	Eglinton Stn	54 Eglinton Stn	bypasses Lawrence East RT Stn	Eglinton	
-55_0_55	55 Warren Park	Underwood Avenue/Varsity Rd	Jane Stn	55 Jane Stn	N/A	Wilson	
-55_1_55	55 Warren Park	Jane Stn	Underwood Avenue/Varsity Rd	55 Warren Park	N/A	Wilson	
-55_0_VAOL	55 Warren Park	Underwood Avenue/Varsity Road	Humber Hill	55 Warren Park	Last trip	Wilson	
+55_0_55	55 Warren Park	Underwood Avenue/Varsity Rd	Jane Stn	55 Jane Stn	N/A	Mount Dennis	
+55_0_VAOL	55 Warren Park	Underwood Avenue/Varsity Road	Humber Hill	55 Warren Park	Last trip	Mount Dennis	
+55_1_55	55 Warren Park	Jane Stn	Underwood Avenue/Varsity Rd	55 Warren Park	N/A	Mount Dennis	
 56_0_56A	56 Leaside	Eglinton Stn	Donlands Stn	56 Donlands Stn	N/A	Wilson	
 56_1_56A	56 Leaside	Donlands Stn	Eglinton Stn	56A Eglinton Stn	N/A	Wilson	
 56_0_56B	56 Leaside	Brentcliffe/Eglinton 	Donlands Stn	56 Donlands Stn	N/A	Wilson	
@@ -356,10 +358,10 @@
 59_1_59A/C	59 Maple Leaf	Lawrence Stn	Oak Street/Weston Road	59A Weston Rd	via Benton Culford and Gary	Arrow Rd	
 59_0_59B/C	59 Maple Leaf	Weston Road	Lawrence Stn	59 Lawrence Stn	via Culford and Benton	Arrow Rd	
 59_1_59B/C	59 Maple Leaf	Lawrence Stn	Weston Road	59B Weston Rd	via Culford, Benton and Church	Arrow Rd	
-59_0_59Ach	59 Maple Leaf	Oak Street/Weston Road	Church/Jane Street	59S Short Turn	Last Trip	Arrow Rd	
-59_0_59Bch	59 Maple Leaf	Weston Road	Church Street	59B Weston Rd	Last Trip	Arrow Rd	
-59_1_ch59A	59 Maple Leaf	Jane Street	Weston Road	59 Lawrence Stn	First Trip via Gary	Arrow Rd	
-59_1_ch59B	59 Maple Leaf	Jane Street	Weston Road	59 Lawrence Stn	First Trip via Church	Arrow Rd	
+59_0_59Ach	59 Maple Leaf	Oak Street/Weston Road	Church/Jane Street	59S Short turn	Last Trip	Arrow Rd	
+59_0_59Bch	59 Maple Leaf	Weston Road	Church Street	59S Short turn	Last Trip	Arrow Rd	
+59_1_ch59A	59 Maple Leaf	Church Street	Weston Road	59A Weston Rd	First Trip via Gary	Arrow Rd	
+59_1_ch59B	59 Maple Leaf	Church Street	Weston Road	59B Weston Rd	First Trip via Church	Arrow Rd	
 60_0_60A	60 Steeles West	Pioneer Village Stn	Finch Stn	60 Finch Stn	N/A	Arrow Rd	
 60_0_60B	60 Steeles West	Martin Grove Road	Finch Stn	60 Finch Stn	via Pioneer Village Stn	Arrow Rd	
 60_0_60Bpv	60 Steeles West	Martin Grove Road	Finch Stn	60 Finch Stn	bypasses Pioneer Village Stn	Arrow Rd	
@@ -421,9 +423,9 @@
 70_1_70A	70 O'Connor	Coxwell Stn	Craigton Dr/Pharmacy Avenue	70A Eglinton 	N/A	Eglinton	
 70_0_70B	70 O'Connor	Victoria Park/O'Connor Drive	Coxwell Stn	70 Coxwell Stn	N/A	Eglinton	
 70_1_70B	70 O'Connor	Coxwell Stn	Victoria Park/O'Connor Drive	70B Victoria Park	N/A	Eglinton	
-70_0_70C	70 O'Connor	Warden Stn	Coxwell Stn	70 Coxwell Stn	N/A	Eglinton/Birchmount	
-70_1_70C	70 O'Connor	Coxwell Stn	Warden Stn	70C Warden Stn	N/A	Eglinton/Birchmount	
-70_0_EYCS	70 O'Connor	Cosburn/Coxwell	Coxwell Stn	70 Coxwell Stn	School trip, East York CI	Eglinton/Birchmount	
+70_0_70C	70 O'Connor	Warden Stn	Coxwell Stn	70 Coxwell Stn	N/A	Birchmount, Eglinton	
+70_1_70C	70 O'Connor	Coxwell Stn	Warden Stn	70C Warden Stn	N/A	Birchmount, Eglinton	
+70_0_EYCS	70 O'Connor	Cosburn/Coxwell	Coxwell Stn	70 Coxwell Stn	School trip, East York CI	Birchmount, Eglinton	
 71_0_71A	71 Runnymede	Gunns Loop	Runnymede Stn	71 Runnymede Stn	N/A	Mount Dennis	
 71_1_71A	71 Runnymede	Runnymede Stn	Gunns Loop	71A St Clair & Gunns	N/A	Mount Dennis	
 71_0_71B	71 Runnymede	Mount Dennis Garage	Runnymede Stn	71 Runnymede Stn	N/A	Mount Dennis	
@@ -449,20 +451,23 @@
 75_0_75	75 Sherbourne 	South Drive	Queen's Quay	75 Queens Quay	N/A	Wilson	
 75_1_75	75 Sherbourne	Queen's Quay	South Drive	75 South Drive	N/A	Wilson	
 75_0_75A	75 Sherbourne	South Drive/Summerhill	Queen's Quay	75 Queens Quay	N/A	Wilson	
-75_1_75A	75 Sherbourne	Queen's Quay	South Drive/Summerhill	75A South Dr and Summerhill	N/A	Wilson	
 75_0_bl75	75 Sherbourne 	Bloor Street/Sherbourne Street	Lower Jarvis/Queen's Quay	75 Queen's Quay	N/A	Wilson	
+75_0_SDBL	75 Sherbourne 	South Drive/Summerhill	Bloor Street/Sherbourne Street	75S Sherbourne Stn	N/A	Wilson	
+75_1_75A	75 Sherbourne	Queen's Quay	South Drive/Summerhill	75A South Dr and Summerhill	N/A	Wilson	
 75_1_JVBL	75 Sherbourne	Lower Jarvis/Queen's Quay	Bloor Street/Sherbourne Street	75 Bloor Street	N/A	Wilson	
 76_0_76A	76 Royal York	Bloor St/Royal York Rd (Royal York Stn)	Lake Shore/Mimico	76A Lake Shore	N/A	Queensway	
-76_1_76A	76 Royal York	Lake Shore/Mimico	Bloor St/Royal York Rd (Royal York Stn)	76 Royal York Stn	N/A	Queensway	
 76_0_76B	76 Royal York	Bloor St/Royal York Rd (Royal York Stn)	Royal York/Portland	76B Queensway and Grande Avenue	N/A	Queensway	
-76_1_76B	76 Royal York	Royal York/Portland	Bloor St/Royal York Rd (Royal York Stn)	76 Royal York Stn	N/A	Queensway	
 76_0_76C	76 Royal York	Bloor/Royal York Rd (Royal York Stn)	The Queensway	76C Queensway	N/A	Queensway	
-76_1_76C	76 Royal York 	The Queensway	Bloor St/Royal York Rd (Royal York Stn)	76 Royal York Stn	N/A	Queensway	
+76_0_76Cev	76 Royal York	Bloor/Royal York Rd (Royal York Stn)	Evans Avenue	76S Evans	N/A	Queensway	
 76_0_ev76	76 Royal York 	Evans Avenue	Lake Shore/Mimico	76A Lake Shore	N/A	Queensway	
+76_1_76A	76 Royal York	Lake Shore/Mimico	Bloor St/Royal York Rd (Royal York Stn)	76 Royal York Stn	N/A	Queensway	
+76_1_76B	76 Royal York	Royal York/Portland	Bloor St/Royal York Rd (Royal York Stn)	76 Royal York Stn	N/A	Queensway	
+76_1_76C	76 Royal York 	The Queensway	Bloor St/Royal York Rd (Royal York Stn)	76 Royal York Stn	N/A	Queensway	
 76_1_ev76	76 Royal York	Lake Shore/Mimico	Evans Avenue	76S Evans	N/A	Queensway	
 76_1_LAEV	76 Royal York	Lake Shore/Mimico	Evans Avenue	76S Evans	N/A	Queensway	
 77_0_77	77 Swansea	The Queensway	Runnymede Stn	77 Runnymede Stn	N/A	Mount Dennis	
 77_1_77	77 Swansea	Runnymede Stn	The Queensway	77 Queensway	N/A	Mount Dennis	
+77_0_RB77	77 Swansea	Bloor Street/Runnymede 	The Queensway	77 Queensway	First trip while subway closed	Mount Dennis	
 77_1_77RB	77 Swansea	The Queensway	Bloor Street/Runnymede 	77S Bloor St	Last Trip before 300	Mount Dennis	
 78_0_78	78 St. Andrews	York Mills Stn	Fifeshire Road (Bayview) 	78 Bayview	N/A	Wilson	
 78_1_78	78 St. Andrews	Fifeshire Road (Bayview) 	York Mills Stn 	78 York Mills	N/A	Wilson	
@@ -491,7 +496,7 @@
 84_1_84C	84 Sheppard West	Sheppard-Yonge Stn	Steeles Avenue West	84C Steeles	via Signet/Arrow	Arrow Rd	
 84_0_84Ca	84 Sheppard West	Steeles Avenue West	Sheppard-Yonge Stn	84 Sheppard-Yonge Stn	via Sheppard West Stn	Arrow Rd	
 84_1_84Ca	84 Sheppard West	Sheppard-Yonge Stn	Steeles Avenue West	84C Steeles	via Sheppard West Stn	Arrow Rd	
-84_0_84Cp	84 Sheppard West	Arrow Rd/Finch	Rossdean/Steeles	84C Steeles	First trip off to 99 Arrow Rd	Arrow Rd	
+84_0_84Cp	84 Sheppard West	Arrow Road/Finch Avenue West	Rossdean/Steeles	84C Steeles	First trip off to 99 Arrow Rd	Arrow Rd	
 84_0_84D	84 Sheppard West	Pionner Village Stn	Sheppard-Yonge Stn	84 Sheppard-Yonge Stn	via Oakdale/Norfinch	Arrow Rd	
 84_1_84D	84 Sheppard West	Sheppard-Yonge Stn	Pionner Village Stn	84D Pionner Village Stn	via Norfinch/Oakdale	Arrow Rd	
 84_1_FASR	84 Sheppard West	Finch Ave West/Signet Drive	Rossdean/Steeles	84 Sheppard-Yonge Stn	N/A	Arrow Rd	
@@ -529,8 +534,6 @@
 86_1_86C	86 Scarborough 	Meadowvale/Sheppard	Kennedy Stn	86 Kennedy Stn	N/A	Eglinton	
 86_0_86D	86 Scarborough 	Kennedy Stn	Beechgrove/Coronation	86D Beechgrove	via Lawrence	Eglinton	
 86_1_86D	86 Scarborough 	Beechgrove/Coronation	Kennedy Stn	86 Kennedy Stn	N/A	Eglinton	
-86_0_86E	86 Scarborough 	Kennedy Stn	Meadowvale/Sheppard	86E Sheppard	Express	Eglinton	
-86_1_86E	86 Scarborough 	Meadowvale/Sheppard	Kennedy Stn	86E Kennedy Stn	Express	Eglinton	
 86_0_MACO	86 Scarborough 	Manse/Lawrence 	Coronation/Beechgrove	86 Beechgrove	N/A	Eglinton	
 86_0_CNKG	86 Scarborough	2665 Kingston Rd	Lawrence Avenue East	86S Lawrence 	School Trip, Turns into a 986	Eglinton	
 86_0_KGSL	86 Scarborough	Lawrence Avenue East	Sheppard Avenue East	86C Sheppard	School Trip, Turns into a 986	Eglinton	
@@ -538,7 +541,7 @@
 87_0_87A	87 Cosburn	Broadview Stn	Main Street Stn	87A Main Street Stn	via East York Acres	Birchmount	
 87_1_87A	87 Cosburn	Main Street Stn	Broadview Stn	87A Broadview Stn	via East York Acres	Birchmount	
 87_0_87C	87 Cosburn	Broadview Stn	Main Street Stn	87C Main Street Stn	bypasses East York Acres	Birchmount	
-87_0_87 C	87 Cosburn	Broadview Stn	Main Street Stn	87C Main Street Stn	bypasses East York Acres	Birchmount	
+87_0_87 C	87 Cosburn	Broadview Stn	Main Street Stn	87C Main Street Stn	bypasses East York Acres	Birchmount	This Branch is a glitch duplicate of 87_0_87C but for some reason the letter C is space out in the internal branch
 87_1_87C	87 Cosburn	Main Street Stn	Broadview Stn	87C Broadview Stn	bypasses East York Acres	Birchmount	
 87_1_cc87	87 Cosburn	Coxwell/Cosburn	Broadview Stn	87C Broadview Stn	Goes on 62 Mortimer after this trip.	Birchmount	
 88_0_88A	88 South Leaside	St Clair Stn	Beth Nealson/Wicksteed	88A Thorncliffe	via Overlea	Wilson	
@@ -547,7 +550,8 @@
 88_1_88B	88 South Leaside	Beth Nealson/Wicksteed	St Clair Stn	88 St Clair Stn	via Overlea	Wilson	
 88_0_LVTH*	88 South Leaside	Mcrae Dr at Laird Dr	Beth Nealson/Wicksteed	88 St Clair Stn	via Wicksteed	Wilson	
 88_0_LDvTH	88 South Leaside	Mcrae Dr at Laird Dr	Beth Nealson/Wicksteed	88 St Clair Stn	via Overlea	Wilson	
-88_1_88B	88 South Leaside	Beth Nealson/Wicksteed	Overlea/Thorncliffe Park	88B Thorncliffe	last trip	Wilson	
+88_1_88B	88 South Leaside	Beth Nealson/Wicksteed	Overlea/Thorncliffe Park	88B Thorncliffe	Last trip	Wilson	
+88_1_BEOV*88A	88 South Leaside	Overlea/Thorncliffe Park	Overlea At Shoppers Drug Mart	88S Short Turn	Last Trip	Wilson	
 89_0_89	89 Weston	Albion Road	Keele Stn	89 Keele Stn	N/A	Mount Dennis	
 89_1_89	89 Weston	Keele Stn	Albion Road	89 Albion Rd	N/A	Mount Dennis	
 89_0_89sch	89 Weston	St Basil The Great College School	Keele Stn	89 Keele Stn	School Trip	Mount Dennis	
@@ -580,11 +584,12 @@
 95_1_YOCI	95 York Mills 	Sandfield Road	York Mills Stn	95 York Mills Stn	School trip	Malvern	
 96_0_96	96 Wilson	Humberline/Finch	York Mills Stn	96 York Mills Stn	First trip for the run	Arrow Rd	
 96_0_96A	96 Wilson 	Carrier Drive	York Mills Stn 	96A York Mills Stn	via John Garland and Kipling	Arrow Rd	
-96_0_96Ap	96 Wilson	Carrier Drive	York Mills Stn	96 York Mills Stn	via John Garland and Kipling	Arrow Rd	
 96_0_96Aja	96 Wilson	Carrier Drive	Jane/Wilson	96S Jane	via John Garland and Kipling	Arrow Rd	
+96_0_96Ap	96 Wilson	Carrier Drive	York Mills Stn	96 York Mills Stn	via John Garland and Kipling	Arrow Rd	
 96_0_96B	96 Wilson	Humberline/Albion	York Mills Stn	96B York Mills Stn	via Westhumber and Martin Grove	Arrow Rd	
 96_0_96Bp	96 Wilson	Humberline/Albion	York Mills Stn	96B York Mills Stn	via Westhumber and Martin Grove	Arrow Rd	
 96_0_96D	96 Wilson	Carrier Drive/Westmore 	York Mills Stn	96D York Mills Stn	via John Garland and Kipling	Arrow Rd	
+96_0_96Dja	96 Wilson	Carrier Drive	Jane/Wilson	96S Jane	via Westmore, John Garland and Kipling	Arrow Rd	
 96_0_FIHU	96 Wilson	Humberline/Albion	Humberline/Finch	96S Finch	Final Trip	Arrow Rd	
 96_1_96A	96 Wilson	York Mills Stn	Carrier Drive	96A Carrier Drive	via Kipling and John Garland	Arrow Rd	
 96_1_96B	96 Wilson	York Mills Stn	Humberline/Albion	96B Humberline/Albion	N/A	Arrow Rd	
@@ -638,9 +643,9 @@
 104_0_104	104 Faywood 	Sheppard West Stn	Wilson Stn	104 Wilson Stn	N/A	Wilson	
 104_1_104	104 Faywood 	Wilson Stn	Sheppard West Stn	104 Sheppard West Stn	N/A	Wilson	
 105_0_105A	105 Dufferin North	Steeles Avenue West	Sheppard West Stn	105A Sheppard West Stn	N/A	Wilson	
+105_1_105A	105 Dufferin North	Sheppard West Stn	Steeles Avenue West	105A Steeles	N/A	Wilson	
 105_0_105D	105 Dufferin North	Steeles Avenue West	Wilson Stn	105D Wilson Stn	bypass Sheppard West Stn	Wilson	
 105_0_DUWI	105 Dufferin North	Steeles Avenue West	Wilson Stn	105D Wilson Stn	Glitched duplicate branch	Wilson	This branch is glitched by the TTC. It is a duplicate of 105_0_105D but with incorrect information.
-105_1_105A	105 Dufferin North	Sheppard West Stn	Steeles Avenue West	105A Steeles	N/A	Wilson	
 105_1_WIDU	105 Dufferin North	Wilson Stn	Dufferin/Steeles Av West	105A Steeles 	N/A	Wilson	
 106_0_106	106 Sentinel	Pioneer Village Stn	Sheppard West Stn	106 Sheppard West Stn	N/A	Wilson	
 106_1_106	106 Sentinel	Sheppard West Stn	Pioneer Village Stn	106 Pioneer Village Stn	N/A	Wilson	
@@ -728,8 +733,8 @@
 120_0_120	120 Calvington 	Sheppard Avenue West	Wilson Stn	120 Wilson Stn	via De Havilland	Arrow Rd	
 120_1_120	120 Calvington 	Wilson Stn	Sheppard Avenue West	120 Sheppard & Jane	via De Havilland	Arrow Rd	
 120_0_NRGI	120 Calvington 	Giltspur/Magellan	Northover/Sheppard 	120 Sheppard & Jane	last trip	Arrow Rd	
-121_0_121A	121 Fort York-Esplanade 	Exhibition (Princess Gate Loop)	Distillery 	121A Distillery	via Union Stn	Birchmount	
-121_1_121A	121 Fort York-Esplanade 	Distillery	Exhibition (Princess Gate Loop)	121A Exhibition (Princess Gate)	via Union Stn	Birchmount	
+121_0_121A	121 Fort York-Esplanade 	Exhibition (Princess Gate Loop)	Distillery/Front Street	121A Distillery	via Union Stn	Birchmount	
+121_1_121A	121 Fort York-Esplanade 	Distillery/Front Street	Exhibition (Princess Gate Loop)	121A Exhibition (Princess Gate)	via Union Stn	Birchmount	
 121_0_121C	121 Fort York-Esplande	Princess Gate Loop	Cherry Beach	121C Cherry Beach	via Union Stn	Birchmount	
 121_1_121C	121 Fort York-Esplande	Cherry Beach	Princess Gate Loop	121C Exhibition	via Union Stn	Birchmount	
 121_0_121D	121 Fort York-Esplanade 	Ontario Place	Cherry Beach	121D Cherry Beach	via Union Stn	Birchmount	
@@ -847,6 +852,7 @@
 165_0_165Apm	165 Weston Rd North	Steeles Avenue West	York Mills Stn	165 York Mills Stn	via Wilson Stn	Arrow Rd	
 165_0_165A	165 Weston Rd North	Steeles Avenue West	York Mills Stn	165 York Mills Stn	via Wilson Stn	Arrow Rd	
 165_1_165A	165 Weston Rd North	York Mills Stn	Steeles Avenue West	165 Steeles	via Wilson Stn	Arrow Rd	
+165_1_wi165G	165 Weston Rd North	York Mills Stn	Steeles Avenue West	165 Steeles	First trip	Arrow Rd	
 165_0_BAFW	165 Weston Rd North	Steeles Ave West/Barmac Road	Finch Avenue West	165S Finch	N/A	Arrow Rd	
 165_0_BAYM	165 Weston Rd North	St Basil The Great College School	York Mills Stn	165 York Mills Stn	School trip, St Basil College	Arrow Rd	
 167_0_167A	167 Pharmacy North 	Esna Park Loop/Steeles	Don Mills Stn	167A Don Mills Stn	via Consumers Rd	Birchmount	
@@ -870,78 +876,70 @@
 176_1_176pm	176 Mimico GO	Parklawn Loop	Newcastle/Windsor (Mimico GO) 	176 Mimico GO 	N/A	Queensway	
 186_0_186	186 Wilson Rocket 	Humber College Bus Terminal 	York Mills Stn	186 York Mills Stn	via Wilson Stn	Arrow Rd	
 186_1_186	186 Wilson Rocket 	York Mills Stn 	Humber College Bus Terminal 	186 Humber College 	via Wilson Stn	Arrow Rd	
-192_0_192	192 Airport Rocket 	Pearson Airport (Terminal 3)	Kipling Stn	192 Kipling Stn	Express	Queensway	
-192_1_192	192 Airport Rocket 	Kipling Stn	Pearson Airport (Terminal 3)	192 Pearson Airport 	Express	Queensway	
-192_0_192AM	192 Airport Rocket 	Pearson Airport (Terminal 3)	Dundas/Aukland	192 Kipling Stn	Express, while subway closed	Queensway	While the subway is closed, passengers are forced off at Dundas and Aukland, instead of Kipling Stn
-192_1_192AM	192 Airport Rocket 	Dundas/Acorn	Pearson Airport (Terminal 3)	192 Pearson Airport 	Express, while subway closed	Queensway	This trip starts at Dundas/Acorn instead of Kipling Stn.
 193_0_193	193 Exhibition Rocket	CNE Dufferin Gates	Dundas West Stn	193 Dundas West Stn	Express	Various	
 193_1_193	193 Exhibition Rocket	Dundas West Stn 	CNE Dufferin Gates	193 West Entrance	Express	Various	
-300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This is the standard branch for 300A.
-300_0_300A*	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	via Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
+300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300A.
+300_0_300A*	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	via Kipling Stn	Queensway	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
 300_0_300Ake	300 Bloor-Danforth	Pearson Airport (Terminal 3)	Kennedy Stn	300B Kennedy Stn 	bypass Kipling Stn	Eglinton, Birchmount, Mount Dennis	On Sundays starting at 5:50am, this branch runs the whole way from Pearson Airport to Kennedy Stn.
-300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This is the standard branch for 300B.
-300_0_300B*	300 Bloor-Danforth 	The East Mall/Bloor Street	Kennedy Stn	300B Kennedy Stn	via Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
-300_0_300Bstn	300 Bloor-Danforth 	West Mall	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch actually enters Kennedy Stn
-300_0_300Bdd	300 Bloor-Danforth 	East Mall	Warden Ave/Danforth Rd	300A Warden	N/A	Queensway, Malvern, Eglinton, Birchmount Mount Dennis	This branch terminates at the eastern end of 300A, usually during the start of the operating day..
-300_0_ba300	300 Bloor-Danforth	Bathurst Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	When the subway has closed.
-300_0_ba300B	300 Bloor-Danforth 	Bathurst Stn	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	When the subway has closed.
-300_0_EMKP	300 Bloor-Danforth 	East Mall	Kipling Stn	300S Kipling Stn	Last Trip	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	
+300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300B.
+300_0_300B*	300 Bloor-Danforth 	The East Mall/Bloor Street	Kennedy Stn	300B Kennedy Stn	via Kipling Stn	Mount Dennis, Queensway	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
+300_0_300Bstn	300 Bloor-Danforth 	West Mall	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch actually enters Kennedy Stn
+300_0_300Bdd	300 Bloor-Danforth 	East Mall	Warden Ave/Danforth Rd	300A Warden	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch terminates at the eastern end of 300A, usually during the start of the operating day..
+300_0_ba300	300 Bloor-Danforth	Bathurst Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has closed.
+300_0_ba300B	300 Bloor-Danforth 	Bathurst Stn	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has closed.
+300_0_EMKP	300 Bloor-Danforth 	East Mall	Kipling Stn	300S Kipling Stn	Last Trip	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	
 300_0_LSPS	300 Bloor-Danforth	Lansdowne Stn	Pape Stn	300S Pape Stn	N/A	Eglinton	This branch is usually done by runs from 25 Don Mills. Buses that ended at Lansdowne station do this run and head back to Pape station.
-300_0_MSDD	300 Bloor-Danforth 	Main Street Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	When the subway has closed.
-300_0_MSKE	300 Bloor-Danforth 	Main Street Stn	Kennedy Stn	300B Kennedy Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	When the subway has opened. Used on Saturdays.
+300_0_MSDD	300 Bloor-Danforth 	Main Street Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has closed.
+300_0_MSKE	300 Bloor-Danforth 	Main Street Stn	Kennedy Stn	300B Kennedy Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has opened. Used on Saturdays.
 300_0_kp300	300 Bloor-Danforth 	Kipling Stn	Coxwell Stn	300S Coxwell Stn	N/A	Mount Dennis	This branch operates when the subway is about to open.
-300_0_kp300ps	300 Bloor-Danforth	Kipling Stn	Pape Stn	300S Pape Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway is about to open.
+300_0_kp300ps	300 Bloor-Danforth	Kipling Stn	Pape Stn	300S Pape Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
 300_0_300cs	300 Bloor-Danforth	Kipling Stn	Coxwell Stn	300S Kipling Stn	N/A	Queensway	This branch operates when the subway is about to open.
-300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This is the standard branch for 300A.
-300_1_300A*	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	While Kipling stn is still open, this branch runs to enter Kipling stn.
-300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This is the standard branch for 300B.
-300_1_300B*	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall 	via Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	While Kipling stn is still open, this branch runs to enter Kipling stn.
+300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300A.
+300_1_300A*	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
+300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300B.
+300_1_300B*	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall 	via Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
 300_1_300baB	300 Bloor-Danforth	Kennedy Stn	Bathurst Stn	300S Bathurst Stn	N/A	Mount Dennis	When the subway has opened. Used on Sunday mornings
 300_1_300bsB	300 Bloor-Danforth	Kennedy Stn	Broadview Stn	300S Broadview Stn	N/A	Birchmount	When the subway has opened. Used on Sunday mornings
-300_1_300Bkp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway is about to open.
-300_1_300la	300 Bloor-Danforth 	Warden Avenue	Lansdowne Stn	300S Lansdowne Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	Not enough information about this branch. It may operate when the operating day has concluded.
-300_1_300kp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway has closed.
-300_1_bs300	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway has closed.
-300_1_bs300*	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall 	via Kipling Stn	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates starting from Broadview as trips starting earlier are impossible for passengers to board.
-300_1_BSKP	300 Bloor-Danforth 	Broadview Stn	Kipling Stn	300S Pape Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway has opened.
+300_1_300Bkp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
+300_1_300la	300 Bloor-Danforth 	Warden Avenue	Lansdowne Stn	300S Lansdowne Stn	N/A	Eglinton	Run by buses from route 25, this branch runs when the subway begins to open. After this branch, vehicles return to pape stn
+300_1_300kp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway has closed.
+300_1_bs300	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway has closed.
+300_1_bs300*	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall 	via Kipling Stn	Birchmount, Eglinton, Mount Dennis, Queensway	This branch operates starting from Broadview as trips starting earlier are impossible for passengers to board.
+300_1_BSKP	300 Bloor-Danforth 	Broadview Stn	Kipling Stn	300S Pape Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway has opened.
 300_1_CSDW	300 Bloor-Danforth	Coxwell Stn	Dundas West Stn	300S Dundas West Stn	N/A	Queensway	This branch operates when the subway has opened.
-300_1_CSJN	300 Bloor-Danforth	Coxwell Stn	Jane Stn	300S Jane Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway is about to open.
-300_1_KPEM	300 Bloor-Danforth 	Kipling Stn	West Mall	300B West Mall	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway is about to open.
-300_1_KEPS	300 Bloor-Danforth 	Kennedy Stn	Lansdowne Stn	300S Lansdowne Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	For routes that end at Kipling stn and go onto 300, this is branch is often the first trip. 
-300_1_PSJN	300 Bloor-Danforth	Pape Stn	Jane Stn	300S Jane Stn	N/A	Queensway, Malvern, Eglinton, Birchmount, Mount Dennis	This branch operates when the subway is about to open. Monday-Saturday.
-300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Eglinton, Birchmount, Mount Dennis, Queensway	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
-301_0_301	301 Queen	Neville Park Loop	Long Branch Loop	301 Long Branch	N/A	Russell	
-301_1_301	301 Queen	Long Branch Loop	Neville Park Loop	301 Neville Park	N/A	Russell	
-301_1_NECQ	301 Queen	Neville Park Loop	Connaught & Queen	301S Connaught 	Last Trip 	Russell	
-301_0_LOCQ	301 Queen	Long Branch Loop	Connaught & Queen	301S Connaught 	Last trip	Russell	
-302_0_302	302 Kingston Rd-McCowan	Steeles/McCowan Loop	Bingham Loop	302 Bingham	N/A	Birchmount/Malvern	
-302_1_302	302 Kingston Rd-McCowan	Bingham Loop	Steeles/McCowan Loop	302 Steeles	N/A	Birchmount/Malvern	
-302_0_BIDA	302 Kingston Rd-McCowan	Bingham Loop	Danforth Avenue	302S Danforth	final trip	Birchmount/Malvern	This trip runs from Bingham Loop to Danforth to ensure passenger connections.
-304_0_304	304 King	Dundas West Stn	Broadview Stn	304 Broadview Stn	N/A	Russell/Leslie	
-304_1_304	304 King	Broadview Stn	Dundas West Stn	304 Dundas West Stn	N/A	Russell/Leslie	
-304_1_BSBR	304 King	Broadview Stn	Broadview/Queen	304S Queen	Final Trip	Russell/Leslie	
-304_0_304br	304 King	Dundas West Stn	Broadview/Queen	304S Queen	Final Trip	Russell/Leslie	
-304_1_br304	304 King	Broadview/Queen	Dundas West Stn	304 Dundas West Stn	First trip that starts with Blue night service	Russell/Leslie	
-304_0_304le	304 King	Broadview Stn	Dundas West Stn	304 Dundas West Stn	First Blue night trip (Only trip that boards in the station?)	Russell/Leslie	
-304_1_304le	304 King	Dundas West Stn	Broadview Stn	304 Broadview Stn	First Blue night trip (Only trip that boards in the station?)	Russell/Leslie	
-304_0_BRBS	304 King	Broadview/Queen	Broadview Stn	304 Broadview Stn	First Trip	Russell/Leslie	
-304_0_304am	304 King	Broadview Stn	Dundas West Stn	304 Dundas West Stn	First Morning Trip	Russell/Leslie	
-306_0_306	306 Carlton 	Dundas West Stn	Main Street Stn	306 Main Street Stn	N/A	Russell	
-306_1_306	306 Carlton	Main Street Stn	Dundas West Stn	306 Dundas West Stn	N/A	Russell	
-306_0_306bus	306 Carlton	Dundas West Stn	Main Street Stn	306 Main Street Stn	N/A	Russell	
-306_1_306bus	306 Carlton	Main Street Stn	Dundas West Stn	306 Dundas West Stn	N/A	Russell	
-306_0_306buscon	306 Carlton	Dundas West Stn	Main Street Stn	306 Main Street Stn	N/A	Wilson/Birchmount	
-306_1_306buscon	306 Carlton	Main Street Stn	Dundas West Stn	306 Dundas West Stn	N/A	Wilson/Birchmount	
-306_1_MSCX	306 Carlton	Main Street Stn	Coxwell/Queen	306 Coxwell and Queen	Last trip	Russell	
-306_0_306cx	306 Carlton	Dundas West Stn	Coxwell/Queen	306 Coxwell and Queen	Last trip	Russell	
+300_1_CSJN	300 Bloor-Danforth	Coxwell Stn	Jane Stn	300S Jane Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
+300_1_KPEM	300 Bloor-Danforth 	Kipling Stn	West Mall	300B West Mall	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
+300_1_KEPS	300 Bloor-Danforth 	Kennedy Stn	Lansdowne Stn	300S Lansdowne Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	For routes that end at Kipling stn and go onto 300, this is branch is often the first trip. 
+300_1_PSJN	300 Bloor-Danforth	Pape Stn	Jane Stn	300S Jane Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open. Monday-Saturday.
+300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Birchmount, Eglinton, Mount Dennis, Queensway	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
+301_0_301	301 Queen	Neville Park Loop	Long Branch Loop	301 Long Branch	N/A	TTC Streetcar (Leslie, Russell)	
+301_1_301	301 Queen	Long Branch Loop	Neville Park Loop	301 Neville Park	N/A	TTC Streetcar (Leslie, Russell)	
+301_1_NECQ	301 Queen	Neville Park Loop	Connaught & Queen	301S Connaught 	Last Trip 	TTC Streetcar (Leslie, Russell)	
+301_0_LOCQ	301 Queen	Long Branch Loop	Connaught & Queen	301S Connaught 	Last trip	TTC Streetcar (Leslie, Russell)	
+302_0_302	302 Kingston Rd-McCowan	Steeles/McCowan Loop	Bingham Loop	302 Bingham	N/A	Birchmount, Malvern	
+302_1_302	302 Kingston Rd-McCowan	Bingham Loop	Steeles/McCowan Loop	302 Steeles	N/A	Birchmount, Malvern	
+302_0_BIDA	302 Kingston Rd-McCowan	Bingham Loop	Danforth Avenue	302S Danforth	final trip	Birchmount, Malvern	This trip runs from Bingham Loop to Danforth to ensure passenger connections.
+304_0_304	304 King	Dundas West Stn	Broadview Stn	304 Broadview Stn	N/A	TTC Streetcar (Russell/Leslie)	
+304_1_304	304 King	Broadview Stn	Dundas West Stn	304 Dundas West Stn	N/A	TTC Streetcar (Russell/Leslie)	
+304_1_BSBR	304 King	Broadview Stn	Broadview/Queen	304S Queen	Final Trip	TTC Streetcar (Russell/Leslie)	
+304_0_304br	304 King	Dundas West Stn	Broadview/Queen	304S Queen	Final Trip	TTC Streetcar (Russell/Leslie)	
+304_1_br304	304 King	Broadview/Queen	Dundas West Stn	304 Dundas West Stn	First trip that starts with Blue night service	TTC Streetcar (Russell/Leslie)	
+304_0_304le	304 King	Broadview Stn	Dundas West Stn	304 Dundas West Stn	First Blue night trip (Only trip that boards in the station?)	TTC Streetcar (Russell/Leslie)	
+304_1_304le	304 King	Dundas West Stn	Broadview Stn	304 Broadview Stn	First Blue night trip (Only trip that boards in the station?)	TTC Streetcar (Russell/Leslie)	
+304_0_BRBS	304 King	Broadview/Queen	Broadview Stn	304 Broadview Stn	First Trip	TTC Streetcar (Russell/Leslie)	
+304_0_304am	304 King	Broadview Stn	Dundas West Stn	304 Dundas West Stn	First Morning Trip	TTC Streetcar (Russell/Leslie)	
+306_0_306	306 Carlton 	Dundas West Stn	Main Street Stn	306 Main Street Stn	N/A	TTC Streetcar (Russell)	
+306_1_306	306 Carlton	Main Street Stn	Dundas West Stn	306 Dundas West Stn	N/A	TTC Streetcar (Russell)	
+306_1_MSCX	306 Carlton	Main Street Stn	Coxwell/Queen	306 Coxwell and Queen	Last trip	TTC Streetcar (Russell)	
+306_0_306cx	306 Carlton	Dundas West Stn	Coxwell/Queen	306 Coxwell and Queen	Last trip	TTC Streetcar (Russell)	
 307_0_307	307 Bathurst	Greenwin Village (Steeles)	Exhibition Loop	307 Exhibition	N/A	Wilson	
 307_0_VLBL	307 Bathurst	Greenwin Village (Steeles)	Bloor Street	307S Bloor 	N/A	Wilson	
 307_1_307	307 Bathurst	Exhibition Loop	Greenwin Village (Steeles)	307 Steeles	N/A	Wilson	
 307_1_307EXBL	307 Bathurst	Exhibition Loop	Bloor/Bathurst	307S Bloor	N/A	Wilson	
-310_0_310	310 Spadina	Spadina Stn	Union Stn	310 Spadina Stn	N/A	Leslie	
-310_0_SPCH	310 Spadina	Spadina Stn	King/Spadina	310S King	Last trip	Leslie	CH stands for carhouse.
-310_1_310	310 Spadina	Union Stn	Spadina Stn	310 Union Stn	N/A	Leslie	
-310_1_USCH	310 Spadina	Union Stn	King/Spadina	310S King	Last trip	Leslie	CH stands for carhouse.
+310_0_310	310 Spadina	Spadina Stn	Union Stn	310 Spadina Stn	N/A	TTC Streetcar (Leslie)	
+310_0_SPCH	310 Spadina	Spadina Stn	King/Spadina	310S King	Last trip	TTC Streetcar (Leslie)	CH stands for carhouse.
+310_1_310	310 Spadina	Union Stn	Spadina Stn	310 Union Stn	N/A	TTC Streetcar (Leslie)	
+310_1_USCH	310 Spadina	Union Stn	King/Spadina	310S King	Last trip	TTC Streetcar (Leslie)	CH stands for carhouse.
 312_0_312	312 St Clair	Yonge St (St Clair Stn)	Edna Avenue (Dundas West Stn)	312 St Clair Stn	N/A	Mount Dennis	
 312_1_312	312 St Clair	Edna Avenue (Dundas West Stn)	Yonge St (St Clair Stn)	312 Dundas West Stn	N/A	Mount Dennis	
 315_0_315	315 Evans-Brown's Line	Royal York Stn	Long Branch Loop	315 Long Branch	N/A	Queensway	
@@ -960,6 +958,7 @@
 320_1_QQYE	320 Yonge 	Queen's Quay	Yonge/Eglinton	320S Eglinton Stn	N/A	Wilson, Malvern, Birchmount, Eglinton, Mount Dennis	This branch runs when the subway is about to open. It is oddly duplicated with `320_1_QQYE` as it is likely vehicles enter Eglinton Stn instead of on street.
 320_1_QQYM	320 Yonge 	Queen's Quay	York Mills/Yonge Street	320A York Mills Stn	First Trip	Wilson, Eglinton	This branch is for Old Eglinton division trips. It is likely the TTC forgot to remove this.
 320_1_YESY	320 Yonge	Yonge/Eglinton	Steeles/Yonge Loop	320 Steeles	N/A	Eglinton	This branch runs when the subway has closed.
+320_1_YEYK	320 Yonge	Yonge/Eglinton	York Mills/Yonge Street	320A York Mills Stn	N/A	Eglinton	
 322_0_322	322 Coxwell	Erindale Avenue (Broadview Stn)	Bingham Loop	322 Victoria Park	N/A	Birchmount	
 322_0_BIWD	322 Coxwell	Bingham Loop	Warden Avenue	322S Warden	Final trip	Birchmount	
 322_1_322	322 Coxwell	Bingham Loop	Erindale Avenue (Broadview Stn)	322 Broadview Stn	N/A	Birchmount	
@@ -1036,16 +1035,17 @@
 396_1_396	396 Wilson	York Mills/Yonge Street	Steeles Loop/Martin Grove 	396 Steeles	bypass Wilson Stn	Arrow Rd	
 396_0_396*	396 Wilson	Steeles Loop/Martin Grove 	York Mills/Yonge Street	396A York Mills Stn	via Wilson Stn	Arrow Rd	
 396_1_396*	396 Wilson	York Mills/Yonge Street	Steeles Loop/Martin Grove 	396 Steeles	via Wilson Stn	Arrow Rd	
-501_0_501	501 Queen	Long Branch Loop	Neville Park Loop	501 Neville Park	N/A	Russell/Leslie	
-501_0_501A	501 Queen	Humber Loop	Neville Park Loop	501 Neville Park	N/A	Russell/Leslie	
-501_0_501L	501 Queen	Long Branch Loop	Humber Loop	501 Humber	N/A	Russell/Leslie	
-501_0_CQNE	501 Queen	Connaught/Queen 	Neville Park Loop	501 Neville Park	N/A	Russell/Leslie	
-501_0_HUCQ	501 Queen	Humber Loop	Connaught/Queen 	501 Connaught	Last trip	Russell/Leslie	
-501_1_501	501 Queen	Neville Park Loop	Long Branch Loop	501 Long Branch 	N/A	Russell/Leslie	
-501_1_501A	501 Queen	Neville Park Loop	Humber Loop	501 Humber 	N/A	Russell/Leslie	
-501_1_501L	501 Queen	Humber Loop	Long Branch Loop	501 Long Branch 	N/A	Russell/Leslie	
-501_1_CQHU	501 Queen	Connaught/Queen 	Humber Loop	501 Humber 	N/A	Russell/Leslie	
-501_1_CQLO	501 Queen	Connaught/Queen 	Long Branch Loop	501 Long Branch 	N/A	Russell/Leslie	
+501_0_501	501 Queen	Long Branch Loop	Neville Park Loop	501 Neville Park	N/A	TTC Streetcar (Russell/Leslie)	
+501_0_501A	501 Queen	Humber Loop	Neville Park Loop	501 Neville Park	N/A	TTC Streetcar (Russell/Leslie)	
+501_0_501L	501 Queen	Long Branch Loop	Humber Loop	501 Humber	N/A	TTC Streetcar (Russell/Leslie)	
+501_0_CQNE	501 Queen	Connaught/Queen 	Neville Park Loop	501 Neville Park	N/A	TTC Streetcar (Russell/Leslie)	
+501_0_HUCQ	501 Queen	Humber Loop	Connaught/Queen 	501 Connaught	Last trip	TTC Streetcar (Russell/Leslie)	
+501_1_501	501 Queen	Neville Park Loop	Long Branch Loop	501 Long Branch 	N/A	TTC Streetcar (Russell/Leslie)	
+501_1_501A	501 Queen	Neville Park Loop	Humber Loop	501 Humber 	N/A	TTC Streetcar (Russell/Leslie)	
+501_1_501L	501 Queen	Humber Loop	Long Branch Loop	501 Long Branch 	N/A	TTC Streetcar (Russell/Leslie)	
+501_1_CQHU	501 Queen	Connaught/Queen 	Humber Loop	501 Humber 	N/A	TTC Streetcar (Russell/Leslie)	
+501_1_CQLO	501 Queen	Connaught/Queen 	Long Branch Loop	501 Long Branch 	N/A	TTC Streetcar (Russell/Leslie)	
+501_1_NECQ	501 Queen	Neville Park Loop	Connaught/Queen 	501 Connaught	N/A	TTC Streetcar (Russell/Leslie)	
 502_0_502	502 Downtowner	McCaul/Queen	Bingham Loop	502 Bingham	N/A	Birchmount	
 502_1_502	502 Downtowner	Bingham Loop	McCaul/Queen	502 McCaul	N/A	Birchmount	
 502_0_CQBI	502 Downtowner	Connaught/Queen 	Bingham Loop	502 Bingham	N/A	Birchmount	
@@ -1055,87 +1055,79 @@
 502_1_BICQ	502 Downtowner	Bingham Loop	Connaught/Queen	502 Connaught	N/A	Birchmount	
 502_1_cq502mc	502 Downtowner	Connaught/Queen 	McCaul/Queen	502 McCaul	N/A	Birchmount	
 502_1_BIKG	502 Downtowner	Bingham Loop	Queen/King	502S Queen St	Final Trip	Birchmount	
-503_0_503	503 Kingston Rd	York Street	Bingham Loop	503 Victoria Park	via King	Russell	
-503_1_503	503 Kingston Rd	Bingham Loop	York Street	503 York	via King	Russell	
-503_0_CQBI	503 Kingston Rd	Connaught/Queen 	Bingham Loop	503 Victoria Park	First Trip	Russell	
+503_0_503	503 Kingston Rd	York Street	Bingham Loop	503 Victoria Park	via King	TTC Streetcar (Russell)	
+503_1_503	503 Kingston Rd	Bingham Loop	York Street	503 York	via King	TTC Streetcar (Russell)	
+503_0_CQBI	503 Kingston Rd	Connaught/Queen 	Bingham Loop	503 Victoria Park	First Trip	TTC Streetcar (Russell)	
 503_0_KGBI	503 Kingston Rd	King Stn	Bingham Loop	503 Victoria Park	N/A	Birchmount	
-504_0_504A	504 King	Distillery Loop	Dundas West Stn	504A Dundas West Stn	N/A	Leslie	
-504_1_504A	504 King	Dundas West Stn	Distillery Loop	504A Distillery	N/A	Leslie	
-504_1_504A	504 King	Dundas West Stn	Broadview Stn	504A Broadview Stn	N/A	Leslie	
-504_0_504B	504 King	Broadview Stn	Dufferin Gate Loop	504B Dufferin Gate	N/A	Leslie	
-504_1_504B	504 King	Dufferin Gate Loop	Broadview Stn	504B Broadview Stn	N/A	Leslie	
-504_1_br504	504 King	Broadview/Queen	Dundas West Stn	504 Dundas West Stn	N/A	Leslie	
-504_1_br504A	504 King	Broadview/Queen	Dundas West Stn	504A Dundas West Stn	N/A	Leslie	
-504_1_br504ex	504 King	Broadview/Queen	Exhibition West Loop	504 Exhibition	N/A	Leslie	
-504_0_504br	504 King	Dundas West Stn	Broadview/Queen	504S Queen	Last Trip	Leslie	
-504_0_504am	504 King	Edna Ave/Dundas 	Broadview Stn	504 Broadview Stn	N/A	Leslie	
-504_1_504rush	504 King	Dundas West Stn	Broadview Stn	504 Dundas West Stn	bypasses Danforth Avenue Stop	Leslie	During rush hours, this branch is used. Streetcars do not stop at Danforth Avenue
-504_1_504Brush	504 King	Broadview Stn	Dufferin Gate Loop	504B Dufferin Gate	bypasses Danforth Avenue Stop	Leslie	During rush hours, this branch is used. Streetcars do not stop at Danforth Avenue
-504_0_BRBS	504 King	Broadview/Queen	Broadview Stn	504B Broadview Stn	First Trip	Leslie	
-504_0_EXBR	504 King	Dufferin Gate Loop	Broadview/Queen	504S Queen	Last Trip	Leslie	
-505_0_505	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Wilson/Birchmount	
-505_1_505	505 Dundas	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Wilson/Birchmount	
-505_0_505bus	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Wilson/Birchmount	
-505_1_505bus	505 Dundas 	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Wilson/Birchmount	
-505_0_505rushbus	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Wilson/Birchmount	
-505_1_505rushbus	505 Dundas	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Wilson/Birchmount	
-506_0_506	506 Carlton	High Park Loop	Main Street Stn	506 Main Street Stn	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_506	506 Carlton	Main Street Stn	High Park Loop	506 High Park	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_506bus	506 Carlton	High Park Stn	Main Street Stn	506 Main Street Stn	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_506con	506 Carlton	High Park Loop	Main Street Stn	506 Main St Stn	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_506buscon	506 Carlton	High Park Stn	Victoria Park Stn	506 Victoria Park 	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_506bus	506 Carlton	Main Street Stn	High Park Stn	506 High Park 	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_506con	506 Carlton	Victoria Park Stn	High Park Loop	506 High Park 	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_506cx	506 Carlton	High Park Loop	Coxwell/Lower Gerrard 	506 Coxwell	Last run	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_506buscon	506 Carlton	Howard Park/Roncesvalles	High Park Loop	506 High Park	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_hp506buscn	506 Carlton	High Park Loop	Victoria Park Stn	506 Victoria Park Stn	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_506cxBus	506 Carlton	Howard Park/Roncesvalles	Coxwell/Lower Gerrard 	506 Coxwell	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_506hp	506 Carlton	Main Street Stn	Howard Park/Roncesvalles	506 Roncesvalles	N/A	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_hp506bus	506 Carlton	Main Street Stn	Howard Park/Roncesvalles	506 Roncesvalles	Morning Bus Trip 	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_cx506	506 Carlton	Coxwell/Lower Gerrard 	High Park Loop	506 High Park	First Trip 	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_CXMS	506 Carlton	Gerrard/Coxwell	Main Street Stn	506 Main Street Stn	First Trip	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_1_MSCX	506 Carlton	Main Street Stn	Gerrard/Coxwell	506 Coxwell	Final Trip	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-506_0_hp506bus	506 Carlton	Howard Park/Roncesvalles	Main Street Stn	506 Main Street Stn	Morning Bus Trip 	Birchmount, Malvern, Eglinton, Queensway, Mt Dennis 	
-509_0_509	509 Harbourfront 	Exhibtion Loop	Union Stn	509 Union Stn	N/A	Leslie	
-509_1_509	509 Harbourfront 	Union Stn	Exhibition Loop	509 Exhibition 	N/A	Leslie	
-509_1_BAEX	509 Harbourfrount	Bathurst/Fleet Street	Exhibition Loop	509 Exhibition	First Trip	Leslie	
-510_0_510A	510 Spadina	Spadina Stn	Union Stn	510 Union Stn	N/A	Leslie	
-510_1_510A	510 Spadina 	Union Stn	Spadina Stn	510 Spadina Stn	N/A	Leslie	
-510_0_510B	510 Spadina	Spadina Stn	Queen's Quay	510 Queen's Quay	N/A	Leslie	
-510_1_510B	510 Spadina	Queen's Quay	Spadina Stn	510 Spadina Stn	N/A	Leslie	
-510_1_kg510	510 Spadina 	King/Spadina 	Spadina Stn	510 Spadina Stn	N/A	Leslie	
-510_1_SQCH	510 Spadina 	Queen's Quay	Charlottes Loop	510C King	Final Trip	Leslie	
-510_1_USSQ	510 Spadina 	Union Stn	Queen and Spadina	501S Queen	Final Trip	Leslie	
-511_0_511	511 Bathurst 	Bathurst Stn	Exhibition Loop	511 Exhibition 	N/A	Russell/Leslie	
-511_1_511	511 Bathurst 	Exhibition Loop	Bathurst Stn	511 Bathurst Stn	N/A	Russell/Leslie	
+504_0_504A	504 King	Dundas West Stn	Distillery Loop	504A Dundas West Stn	N/A	TTC Streetcar (Leslie)	
+504_0_504Abr	504 King	Dundas West Stn	Broadview/Queen	504 Broadview	Last trip	TTC Streetcar (Leslie)	
+504_0_504am	504 King	Edna Ave/Dundas 	Broadview Stn	504 Broadview Stn	N/A	TTC Streetcar (Leslie)	
+504_0_504B	504 King	Broadview Stn	Dufferin Gate Loop	504B Dufferin Gate	N/A	TTC Streetcar (Leslie)	
+504_0_504br	504 King	Dundas West Stn	Broadview/Queen	504S Queen	Last Trip	TTC Streetcar (Leslie)	
+504_0_BRBS	504 King	Broadview/Queen	Broadview Stn	504B Broadview Stn	First Trip	TTC Streetcar (Leslie)	
+504_0_EXBR	504 King	Dufferin Gate Loop	Broadview/Queen	504S Queen	Last Trip	TTC Streetcar (Leslie)	
+504_1_504A	504 King	Dundas West Stn	Distillery Loop	504A Distillery	N/A	TTC Streetcar (Leslie)	
+504_1_504B	504 King	Dufferin Gate Loop	Broadview Stn	504B Broadview Stn	N/A	TTC Streetcar (Leslie)	
+504_1_504Brush	504 King	Broadview Stn	Dufferin Gate Loop	504B Dufferin Gate	bypasses Danforth Avenue Stop	TTC Streetcar (Leslie)	During rush hours, this branch is used. Streetcars do not stop at Danforth Avenue
+504_1_br504	504 King	Broadview/Queen	Dundas West Stn	504 Dundas West Stn	N/A	TTC Streetcar (Leslie)	
+504_1_br504A	504 King	Broadview/Queen	Dundas West Stn	504A Dundas West Stn	N/A	TTC Streetcar (Leslie)	
+504_1_br504ex	504 King	Broadview/Queen	Exhibition West Loop	504 Exhibition	N/A	TTC Streetcar (Leslie)	
+505_0_505	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
+505_1_505	505 Dundas	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
+505_0_505bus	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson	
+505_1_505bus	505 Dundas 	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Birchmount, Wilson	
+505_0_505rushbus	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson	
+505_1_505rushbus	505 Dundas	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Birchmount, Wilson	
+506_0_506	506 Carlton	High Park Loop	Main Street Stn	506 Main Street Stn	N/A	TTC Streetcar (Russell)	
+506_1_506	506 Carlton	Main Street Stn	High Park Loop	506 High Park	N/A	TTC Streetcar (Russell)	
+506_0_506bus	506 Carlton	High Park Stn	Main Street Stn	506 Main Street Stn	N/A	TTC Streetcar (Russell)	
+506_1_506bus	506 Carlton	Main Street Stn	High Park Stn	506 High Park 	N/A	TTC Streetcar (Russell)	
+506_0_506cx	506 Carlton	High Park Loop	Coxwell/Lower Gerrard 	506 Coxwell	Last run	TTC Streetcar (Russell)	
+506_1_cx506	506 Carlton	Coxwell/Lower Gerrard 	High Park Loop	506 High Park	First Trip 	TTC Streetcar (Russell)	
+506_0_CXMS	506 Carlton	Gerrard/Coxwell	Main Street Stn	506 Main Street Stn	First Trip	TTC Streetcar (Russell)	
+506_1_MSCX	506 Carlton	Main Street Stn	Gerrard/Coxwell	506 Coxwell	Final Trip	TTC Streetcar (Russell)	
+506_0_hp506bus	506 Carlton	Howard Park/Roncesvalles	Main Street Stn	506 Main Street Stn	Morning Bus Trip 	TTC Streetcar (Russell)	
+509_0_509	509 Harbourfront 	Exhibtion Loop	Union Stn	509 Union Stn	N/A	TTC Streetcar (Leslie)	
+509_1_509	509 Harbourfront 	Union Stn	Exhibition Loop	509 Exhibition 	N/A	TTC Streetcar (Leslie)	
+509_1_BAEX	509 Harbourfrount	Bathurst/Fleet Street	Exhibition Loop	509 Exhibition	First Trip	TTC Streetcar (Leslie)	
+510_0_510A	510 Spadina	Spadina Stn	Union Stn	510 Union Stn	N/A	TTC Streetcar (Leslie)	
+510_1_510A	510 Spadina 	Union Stn	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
+510_0_510B	510 Spadina	Spadina Stn	Queen's Quay	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
+510_1_510B	510 Spadina	Queen's Quay	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
+510_1_kg510	510 Spadina 	King/Spadina 	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
+510_1_SQCH	510 Spadina 	Queen's Quay	Charlottes Loop	510C King	Final Trip	TTC Streetcar (Leslie)	
+510_1_USSQ	510 Spadina 	Union Stn	Queen and Spadina	501S Queen	Final Trip	TTC Streetcar (Leslie)	
+511_0_511	511 Bathurst 	Bathurst Stn	Exhibition Loop	511 Exhibition 	N/A	TTC Streetcar (Russell/Leslie)	
+511_1_511	511 Bathurst 	Exhibition Loop	Bathurst Stn	511 Bathurst Stn	N/A	TTC Streetcar (Russell/Leslie)	
 511_0_511bus	511 Bathurst	Bathurst Stn	Exhibition Loop	511 Exhibition	N/A	Mount Dennis	
 511_1_511bus	511 Bathurst	Exhibition Loop	Bathurst Stn	511 Bathurst Stn	N/A	Mount Dennis	
-511_1_BKBA	511 Bathurst 	Bathurst/King	Exhibtion Loop	511 Bathurst 	N/A	Leslie	
-511_0_BKEX	511 Bathurst 	Bathurst/King	Exhibition Loop	511 Exhibition 	N/A	Leslie	
+511_1_BKBA	511 Bathurst 	Bathurst/King	Exhibtion Loop	511 Bathurst 	N/A	TTC Streetcar (Leslie)	
+511_0_BKEX	511 Bathurst 	Bathurst/King	Exhibition Loop	511 Exhibition 	N/A	TTC Streetcar (Leslie)	
 511_0_511Abus	511 Bathurst 	Bathurst Stn	Exhibition Loop	511A Exhibition	N/A	Mount Dennis	
 511_1_511Abus	511 Bathurst 	Exhibition Loop	Bathurst Stn	511A Bathurst Stn	N/A	Mount Dennis	
 511_0_511Bbus	511 Bathurst 	Bathurst Stn	Niagara/Bathurst (Front St)	511B Fleet St	N/A	Mount Dennis	
 511_1_511Bbus	511 Bathurst 	Niagara/Bathurst (Front St)	Bathurst Stn	511B Bathurst Stn	N/A	Mount Dennis	
 511_0_511Cbus	511 Bathurst	Bathurst Stn	King Street	511C King 	N/A	Mount Dennis	
 511_1_511Cbus	511 Bathurst	King Street	Bathurst Stn	511C Bathurst Stn	N/A	Mount Dennis	
-512_0_512	512 St Clair 	Gunns Loop	St Clair Stn	512 St Clair Stn	via St Clair West Stn	Leslie	
-512_1_512	512 St Clair	St Clair Stn	Gunns Loop	512 Keele	via St Clair West Stn	Leslie	
-512_0_512*	512 St Clair	Gunns Loop	St Clair Stn	512 St Clair Stn	bypasses St Clair West Stn	Leslie	
-512_1_512*	512 St Clair	St Clair Stn	Gunns Loop	512 Keele	bypasses St Clair West Stn	Leslie	
+512_0_512	512 St Clair 	Gunns Loop	St Clair Stn	512 St Clair Stn	via St Clair West Stn	TTC Streetcar (Leslie)	
+512_1_512	512 St Clair	St Clair Stn	Gunns Loop	512 Keele	via St Clair West Stn	TTC Streetcar (Leslie)	
+512_0_512*	512 St Clair	Gunns Loop	St Clair Stn	512 St Clair Stn	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
+512_1_512*	512 St Clair	St Clair Stn	Gunns Loop	512 Keele	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
 512_0_512bus	512 St Clair	Gunns Loop	St Clair Stn	512 St Clair Stn	bypasses St Clair West Stn	Arrow Rd	
 512_1_512bus	512 St Clair	St Clair Stn	Gunns Loop	512 Keele	bypasses St Clair West Stn	Arrow Rd	
-512_0_GUVS	512 St Clair	Gunns Loop	Vaughan Rd	512 Roncesvalles	last trip	Russell/Leslie	
-512_1_SCVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	Wilson/Mount Dennis	
+512_0_GUVS	512 St Clair	Gunns Loop	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
+512_1_SCVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
 512_1_bs512	512 St Clair	Bathurst/St Clair	Wynchwood Ave	512S Short Turn	N/A	Wilson/Mount Dennis	
 512_0_BSSS*	512 St Clair	Bathurst/St Clair	Gunns Loop	512 Gunns Loop	N/A	Wilson/Mount Dennis	
-512_0_512sc	512 St Clair	Gunns Loop	St Clair West Stn	512 St Clair West Stn	N/A	Wilson/Mount Dennis	
-512_1_SSVS*	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	bypasses St Clair West Stn	Leslie	
-512_1_sc512	512 St Clair	Bathurst/St Clair	St Clair West Stn	512 St Clair West Stn	First evening trip	Leslie	
-514_0_514	514 Cherry	Exhibition (Dufferin Gate)	Distillery Loop	514 Distillery	via King	Leslie	
-514_1_514	514 Cherry	Distillery Loop	Exhibition Loop (Dufferin Gate)	514 Dufferin Gate	via King	Leslie	
+512_0_512sc	512 St Clair	Gunns Loop	St Clair West Stn	512 St Clair West Stn	N/A	TTC Streetcar (Leslie)	
+512_1_SSVS*	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
+512_1_sc512	512 St Clair	St Clair West Station 	Gunns Loop	512 Gunns Loop	Second trip after it does the BSSC trip	TTC Streetcar (Leslie)	
+512_0_BSSC	512 St Clair	Bathurst/St Clair	St Clair West Stn	512 St Clair West Stn	First trip when entering service 	TTC Streetcar (Leslie)	
+514_0_514	514 Cherry	Exhibition (Dufferin Gate)	Distillery Loop	514 Distillery	via King	TTC Streetcar (Leslie)	
+514_1_514	514 Cherry	Distillery Loop	Exhibition Loop (Dufferin Gate)	514 Dufferin Gate	via King	TTC Streetcar (Leslie)	
 900_0_900	900 Airport Express	Pearson Airport (Terminal 3)	Kipling Stn	900 Kipling Stn	Express Network	Queensway	
-900_0_900AM	900 Airport Express	Pearson Airport (Terminal 3)	Dundas St West at Aukland Rd	900 Kipling Stn	Express Network, while subway closed	Queensway	
 900_1_900	900 Airport Express	Kipling Stn	Pearson Airport (Terminal 3)	900 Pearson Airport	Express Network	Queensway	
+900_0_900AM	900 Airport Express	Pearson Airport (Terminal 3)	Dundas St West at Aukland Rd	900 Kipling Stn	Express Network, while subway closed	Queensway	
 900_1_900AM	900 Airport Express	Dundas St West at Acorn Ave	Pearson Airport (Terminal 3)	900 Pearson Airport	Express Network, while subway closed	Queensway	
 902_0_902	902 Markham Rd Express	Sheppard Avenue East	Warden Stn	902 Warden Stn	Express Network, via Centennial College	Birchmount 	
 902_1_902	902 Markham Rd Express	Warden Stn	Sheppard Avenue East	902 Sheppard	Express Network, via Centennial College	Birchmount 	
@@ -1170,7 +1162,7 @@
 935_0_935	935 Jane Express	Pioneer Village Stn	Jane Stn	935 Jane Stn	Express Network	Arrow Rd	
 935_0_js935	935 Jane Express	Steeles/Jane	Jane Stn	935 Jane Stn	Express Network	Arrow Rd	
 935_1_935	935 Jane Express	Jane Stn	Pioneer Village Stn	935 Pioneer Village Stn	Express Network	Arrow Rd	
-935_1_fj935	935 Jane Express	Jane Stn	Jane/Finch	935S Jane 	Express Network	Arrow Rd	
+935_1_935fj	935 Jane Express	Jane Stn	Jane/Finch	935S Jane 	Express Network	Arrow Rd	
 937_0_937	937 Islington Express	Steeles Avenue West	Islington Stn	937 Islington Stn	Express Network	Queensway	
 937_1_937	937 Islington Express	Islington Stn	Steeles Avenue West	937 Steeles 	Express Network	Queensway	
 939_0_939A	939 Finch Express	Finch Stn	Scarborough Centre 	939A Scarborough Centre Stn	Express Network	Malvern	
@@ -1214,9 +1206,9 @@
 984_1_984A	984 Sheppard West Express	Sheppard-Yonge Stn	Weston Road	984A Weston Road	Express via Sheppard West Stn	Arrow Rd	
 984_1_984B	984 Sheppard West Express	Sheppard-Yonge Stn	Sheppard West Stn	984B Sheppard West Stn	Express Network	Arrow Rd	
 984_1_RIWE	984 Sheppard West Express	Rivalda Rd/Sheppard Ave West	Bradstock/Weston Road	984 Sheppard West Stn	Express Network	Arrow Rd	
-985_0_985A	985 Sheppard East Express	Don Mills Stn	Scarborough Centre 	985A Scarborough Centre Stn	Express Network	Malvern, Queensway	
+985_0_985A	985 Sheppard East Express	Don Mills Stn	Scarborough Centre 	985A Scarborough Centre Stn	Express Network	Malvern	
 985_0_985B	985 Sheppard East Express	Don Mills Stn	Meadowvale/Sheppard	985B Meadowvale	Express Network	Malvern	
-985_1_985A	985 Sheppard East Express	Scarborough Centre	Don Mills Stn	985 Don Mills Stn	Express Network	Malvern, Queensway	
+985_1_985A	985 Sheppard East Express	Scarborough Centre	Don Mills Stn	985 Don Mills Stn	Express Network	Malvern	
 985_1_985B	985 Sheppard East Express	Meadowvale/Sheppard	Don Mills Stn	985 Don Mills Stn	Express Network	Malvern	
 986_0_986	986 Scarborough Express	Kennedy Stn	Meadowvale/Sheppard	986 Sheppard	Express Network	Eglinton	
 986_1_986	986 Scarborough Express	Meadowvale/Sheppard	Kennedy Stn	986 Kennedy Stn	Express Network	Eglinton	

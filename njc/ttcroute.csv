@@ -450,13 +450,14 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 75_0_bl75
 75_1_JVBL"
 76	Royal York South	Queensway	66 Prince Edward, 73 Royal York	"76_0_76A
-76_1_76A
 76_0_76B
-76_1_76B
 76_0_76C
-76_1_76C
-76_0_76D
+76_0_76Cev
 76_0_ev76
+76_1_76A
+76_1_76B
+76_1_76C
+76_1_ev76
 76_1_LAEV"
 77	Swansea	Mount Dennis	300 Bloor-Danforth	"77_0_77
 77_1_77
@@ -544,7 +545,8 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 88_1_88B
 88_0_LVTH*
 88_0_LDvTH
-88_1_88B"
+88_1_88B
+88_1_BEOV*88A"
 89	Weston	Mount Dennis	312 St Clair-Junction, 320 Yonge	"89_0_89
 89_1_89
 89_0_89sch"
@@ -634,9 +636,9 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 104	Faywood	Wilson	None	"104_0_104
 104_1_104"
 105	Dufferin North	Wilson	106 Sentinel	"105_0_105A
+105_1_105A
 105_0_105D
 105_0_DUWI
-105_1_105A
 105_1_WIDU"
 106	Sentinel	Wilson	105 Dufferin North, 117 Alness-Chesswod	"106_0_106
 106_1_106
@@ -857,7 +859,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 176_1_176pm"
 186	Wilson Rocket	Arrow Rd	36 Finch West	"186_0_186
 186_1_186"
-300	Bloor-Danforth	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	6 Bay, 16 McCowan, 20 Cliffside, 24 Victoria Park, 25 Don Mills, 26 Dupont, 30 Lambton, 32 Eglinton West, 34 Eglinton East, 40 Junction, 41 Keele, 43 Kennedy, 44 Kipling South, 45 Kipling, 47 Lansdowne, 49 Bloor West, 50 Burnhamthorpe, 68 Warden, 73 Royal York, 77 Swansea, 79 Scarlett Rd, 81 Thorncliffe Park, 87 Cosburn, 100 Flemingdon Park, 102 Markham Rd, 111 East Mall, 112 West Mall, 113 Danforth, 116 Morningside, 123 Sherway, 135 Gerrard,302 Kingston-McCowan, 332 Eglinton West, 900 Airport Express, 985 Sheppard East Express	"300_0_300A
+300	Bloor-Danforth	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	6 Bay, 16 McCowan, 20 Cliffside, 24 Victoria Park, 25 Don Mills, 26 Dupont, 30 Lambton, 32 Eglinton West, 34 Eglinton East, 40 Junction, 41 Keele, 43 Kennedy, 44 Kipling South, 45 Kipling, 47 Lansdowne, 49 Bloor West, 50 Burnhamthorpe, 68 Warden, 73 Royal York, 77 Swansea, 79 Scarlett Rd, 81 Thorncliffe Park, 87 Cosburn, 100 Flemingdon Park, 102 Markham Rd, 111 East Mall, 112 West Mall, 113 Danforth, 116 Morningside, 123 Sherway, 135 Gerrard, 302 Kingston-McCowan, 332 Eglinton West, 900 Airport Express, 985 Sheppard East Express	"300_0_300A
 300_0_300A*
 300_0_300Ake
 300_0_300B
@@ -935,7 +937,8 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 320_1_QQES
 320_1_QQYE
 320_1_QQYM
-320_1_YESY"
+320_1_YESY
+320_1_YEYK"
 322	Coxwell	Birchmount	12 Kingston Rd, 16 McCowan, 24 Victoria Park, 31 Greenwood, 83 Jones, 87 Cosburn, 92 Woodbine South, 324 Victoria Park	"322_0_322
 322_1_322
 322_0_BIWD"
@@ -1094,8 +1097,8 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 512_1_SSVS*
 512_1_sc512"
 900	Airport Express	Queensway	111 East Mall, 300 Bloor-Danforth	"900_0_900
-900_0_900AM
 900_1_900
+900_0_900AM
 900_1_900AM"
 902	Markham Rd Express	Birchmount	17 Birchmount	"902_0_902
 902_1_902"
