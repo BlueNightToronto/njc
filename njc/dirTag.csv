@@ -880,7 +880,7 @@
 186_1_186	186 Wilson Rocket 	York Mills Stn 	Humber College Bus Terminal 	186 Humber College 	via Wilson Stn	Arrow Rd	
 193_0_193	193 Exhibition Rocket	CNE Dufferin Gates	Dundas West Stn	193 Dundas West Stn	Express	Various	
 193_1_193	193 Exhibition Rocket	Dundas West Stn 	CNE Dufferin Gates	193 West Entrance	Express	Various	
-300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Mount Dennis, Queensway	This is the standard branch for 300A.
+300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Eglinton, Mount Dennis, Queensway	This is the standard branch for 300A.
 300_0_300A*	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	via Kipling Stn	Null	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
 300_0_300Ake	300 Bloor-Danforth	Pearson Airport (Terminal 3)	Kennedy Stn	300B Kennedy Stn 	bypass Kipling Stn	Null	On Sundays starting at 5:50am, this branch runs the whole way from Pearson Airport to Kennedy Stn.
 300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount	This is the standard branch for 300B.
@@ -896,7 +896,7 @@
 300_0_kp300	300 Bloor-Danforth 	Kipling Stn	Coxwell Stn	300S Coxwell Stn	N/A	Null	This branch operates when the subway is about to open.
 300_0_kp300ps	300 Bloor-Danforth	Kipling Stn	Pape Stn	300S Pape Stn	N/A	Null	This branch operates when the subway is about to open.
 300_0_300cs	300 Bloor-Danforth	Kipling Stn	Coxwell Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway is about to open.
-300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Mount Dennis, Queensway	This is the standard branch for 300A.
+300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Eglinton, Mount Dennis, Queensway	This is the standard branch for 300A.
 300_1_300A*	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Birchmount	While Kipling stn is still open, this branch runs to enter Kipling stn.
 300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount, Eglinton, Queensway	This is the standard branch for 300B.
 300_1_300B*	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall 	via Kipling Stn	Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
@@ -913,7 +913,7 @@
 300_1_KPEM	300 Bloor-Danforth 	Kipling Stn	West Mall	300B West Mall	N/A	Queensway	This branch operates when the subway is about to open.
 300_1_KEPS	300 Bloor-Danforth 	Kennedy Stn	Lansdowne Stn	300S Lansdowne Stn	N/A	Null	For routes that end at Kipling stn and go onto 300, this is branch is often the first trip. 
 300_1_PSJN	300 Bloor-Danforth	Pape Stn	Jane Stn	300S Jane Stn	N/A	Null	This branch operates when the subway is about to open. Monday-Saturday.
-300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Birchmount, Eglinton	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
+300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Birchmount, Eglinton, Queensway	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
 301_0_301	301 Queen	Neville Park Loop	Long Branch Loop	301 Long Branch	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_301	301 Queen	Long Branch Loop	Neville Park Loop	301 Neville Park	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_NECQ	301 Queen	Neville Park Loop	Connaught & Queen	301S Connaught 	Last Trip 	TTC Streetcar (Leslie, Russell)	
