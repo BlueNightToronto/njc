@@ -880,7 +880,7 @@
 186_1_186	186 Wilson Rocket 	York Mills Stn 	Humber College Bus Terminal 	186 Humber College 	via Wilson Stn	Arrow Rd	
 193_0_193	193 Exhibition Rocket	CNE Dufferin Gates	Dundas West Stn	193 Dundas West Stn	Express	Various	
 193_1_193	193 Exhibition Rocket	Dundas West Stn 	CNE Dufferin Gates	193 West Entrance	Express	Various	
-300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300A.
+300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Mount Dennis, Queensway	This is the standard branch for 300A.
 300_0_300A*	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	via Kipling Stn	Null	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
 300_0_300Ake	300 Bloor-Danforth	Pearson Airport (Terminal 3)	Kennedy Stn	300B Kennedy Stn 	bypass Kipling Stn	Null	On Sundays starting at 5:50am, this branch runs the whole way from Pearson Airport to Kennedy Stn.
 300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount	This is the standard branch for 300B.
@@ -896,9 +896,9 @@
 300_0_kp300	300 Bloor-Danforth 	Kipling Stn	Coxwell Stn	300S Coxwell Stn	N/A	Null	This branch operates when the subway is about to open.
 300_0_kp300ps	300 Bloor-Danforth	Kipling Stn	Pape Stn	300S Pape Stn	N/A	Null	This branch operates when the subway is about to open.
 300_0_300cs	300 Bloor-Danforth	Kipling Stn	Coxwell Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway is about to open.
-300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300A.
+300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Mount Dennis, Queensway	This is the standard branch for 300A.
 300_1_300A*	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Birchmount	While Kipling stn is still open, this branch runs to enter Kipling stn.
-300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300B.
+300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount, Eglinton, Queensway	This is the standard branch for 300B.
 300_1_300B*	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall 	via Kipling Stn	Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
 300_1_300baB	300 Bloor-Danforth	Kennedy Stn	Bathurst Stn	300S Bathurst Stn	N/A	Null	When the subway has opened. Used on Sunday mornings
 300_1_300bsB	300 Bloor-Danforth	Kennedy Stn	Broadview Stn	300S Broadview Stn	N/A	Null	When the subway has opened. Used on Sunday mornings
@@ -1031,6 +1031,7 @@
 385_0_385	385 Sheppard East	Yonge St/Sheppard 	Meadowvale Loop	385 Meadowvale 	N/A	Malvern	
 385_1_385	385 Sheppard East	Meadowvale Loop	Yonge St/Sheppard 	385 Yonge Street	N/A	Malvern	
 395_0_395	395 York Mills	Old York Mills Rd	Meadowvale Loop	395 York Mills Stn	N/A	Malvern	
+395_0_SLPM	395 York Mills	Markham Rd/Ellesmere Rd	Meadowvale Loop	395 Meadowvale	first trip	Malvern	
 395_1_395	395 York Mills	Meadowvale Loop	Old York Mills Rd	395 Meadowvale	N/A	Malvern	
 395_1_MSLP	395 York Mills	Meadowvale Loop	Markham Rd/Ellesmere Rd	395S Markham Rd	last trip	Malvern	
 396_0_396	396 Wilson	Steeles Loop/Martin Grove 	York Mills/Yonge Street	396A York Mills Stn	bypass Wilson Stn	Arrow Rd	
@@ -1074,7 +1075,8 @@
 504_1_br504	504 King	Broadview/Queen	Dundas West Stn	504 Dundas West Stn	N/A	TTC Streetcar (Leslie)	
 504_1_br504A	504 King	Broadview/Queen	Dundas West Stn	504A Dundas West Stn	N/A	TTC Streetcar (Leslie)	
 504_1_br504ex	504 King	Broadview/Queen	Exhibition West Loop	504 Exhibition	N/A	TTC Streetcar (Leslie)	
-501_1_BSBR	504 King	Broadview Stn	Broadview/Queen	504S Queen	Final Trip	TTC Streetcar (Leslie)	
+504_1_BSBR	504 King	Broadview Stn	Broadview/Queen	504S Queen	Final Trip	TTC Streetcar (Leslie)	
+504_1_BREX	504 King	Broadview/Queen	Exhibition West Loop	504 Exhibition	First trip	TTC Streetcar (Leslie)	
 505_0_505	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
 505_1_505	505 Dundas	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
 505_0_505bus	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson	
