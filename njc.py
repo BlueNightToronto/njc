@@ -441,9 +441,9 @@ class njc:
 			await self.bot.say(embed=data)
 		except Exception as e:
 			await self.bot.say("I need the `Embed links` permission "
-                               "to send this. "
-                               "Check console for error details. "
-                               "(There's a good chance that the error is that the data is too long)")
+			                   "to send this. "
+			                   "Check console for error details. "
+			                   "(There's a good chance that the error is that the data is too long)")
 			print("Error:", e, "\nData:", data.to_dict(), "\nString:", string)
 
 	#Gets info for fleet
@@ -971,7 +971,7 @@ class njc:
 				stops.append(i[1])
 		ordered = sorted(stops, key = lambda x: x)
 		await self.bot.say(ordered)
-	
+
 	async def on_ready(self):
 		await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
 		await self.bot.loop.create_task(self.vehcheck())
