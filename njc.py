@@ -985,4 +985,4 @@ class njc:
 
 	async def on_ready(self):
 		await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
-		await self.loopvehcheck()
+		await self.bot.loop.create_task(self.loopvehcheck())
