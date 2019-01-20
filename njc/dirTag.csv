@@ -237,8 +237,8 @@
 43_1_43B	43 Kennedy	Kennedy Stn	Scarborough Centre 	43B Scarborough Centre 	via Progress	Eglinton	
 43_1_PAMI	43 Kennedy	Passmore/Kennedy Road	Midland Avenue/Steeles Ave East	43 Kennedy Stn	First trip	Eglinton	
 44_0_44	44 Kipling South	Kipling Stn	Colonel Samuel Smith Park Loop	44 Lakeshore	N/A	Queensway	
-44_1_44	44 Kipling South	Colonel Samuel Smith Park Loop	Kipling Stn	44 Kipling Stn	N/A	Queensway	
 44_0_KPEV	44 Kipling South	Kipling Stn	Evans Avenue	44S Evans	Final trip	Queensway	
+44_1_44	44 Kipling South	Colonel Samuel Smith Park Loop	Kipling Stn	44 Kipling Stn	N/A	Queensway	
 44_1_EVKP	44 Kipling South	Evans Avenue	Kipling Stn	44 Kipling Stn	First trip	Queensway	
 45_0_45A	45 Kipling 	Steeles 	Kipling Stn	45 Kipling Stn	N/A	Queensway	
 45_1_45A	45 Kipling 	Kipling Stn	Steeles	45A Steeles	N/A	Queensway	
@@ -885,7 +885,7 @@
 300_0_300Ake	300 Bloor-Danforth	Pearson Airport (Terminal 3)	Kennedy Stn	300B Kennedy Stn 	bypass Kipling Stn	Null	On Sundays starting at 5:50am, this branch runs the whole way from Pearson Airport to Kennedy Stn.
 300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300B.
 300_0_300B*	300 Bloor-Danforth 	The East Mall/Bloor Street	Kennedy Stn	300B Kennedy Stn	via Kipling Stn	Queensway	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
-300_0_300Bstn	300 Bloor-Danforth 	West Mall	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Queensway	This branch actually enters Kennedy Stn
+300_0_300Bstn	300 Bloor-Danforth 	West Mall	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Eglinton, Queensway	This branch actually enters Kennedy Stn
 300_0_300Bdd	300 Bloor-Danforth 	East Mall	Warden Ave/Danforth Rd	300A Warden	N/A	Null	This branch terminates at the eastern end of 300A, usually during the start of the operating day..
 300_0_ba300	300 Bloor-Danforth	Bathurst Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Eglinton, Queensway	When the subway has closed.
 300_0_ba300B	300 Bloor-Danforth 	Bathurst Stn	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Mount Dennis	When the subway has closed.
@@ -960,7 +960,7 @@
 320_1_QQYE	320 Yonge 	Queen's Quay	Yonge/Eglinton	320S Eglinton Stn	N/A	null	This branch runs when the subway is about to open. It is oddly duplicated with `320_1_QQYE` as it is likely vehicles enter Eglinton Stn instead of on street.
 320_1_QQYM	320 Yonge 	Queen's Quay	York Mills/Yonge Street	320A York Mills Stn	First Trip	null	This branch is for Old Eglinton division trips. It is likely the TTC forgot to remove this.
 320_1_YESY	320 Yonge	Yonge/Eglinton	Steeles/Yonge Loop	320 Steeles	N/A	Eglinton	This branch runs when the subway has closed.
-320_1_YEYK	320 Yonge	Yonge/Eglinton	York Mills/Yonge Street	320A York Mills Stn	N/A	null	
+320_1_YEYK	320 Yonge	Yonge/Eglinton	York Mills/Yonge Street	320A York Mills Stn	N/A	Eglinton	
 322_0_322	322 Coxwell	Erindale Avenue (Broadview Stn)	Bingham Loop	322 Victoria Park	N/A	Birchmount	
 322_0_BIWD	322 Coxwell	Bingham Loop	Warden Avenue	322S Warden	Final trip	Birchmount	
 322_1_322	322 Coxwell	Bingham Loop	Erindale Avenue (Broadview Stn)	322 Broadview Stn	N/A	Birchmount	

@@ -20,7 +20,7 @@ class njc:
 
 	def __init__(self, bot):
 		self.bot = bot
-		self.channelID = 506520464592732161
+		self.channelID = 536472876480462848
 		self.scanInterval = 120
 		self.looping = False
 
@@ -264,7 +264,7 @@ class njc:
 	
 						try: #checks if vehicle in service is marked as inactive
 							if str(linefleet[6]) == "Inactive":
-								service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is in service!".format(veh))
+								service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is on {}!".format(veh,dirtag))
 	#                            await self.bot.send_message(discord.Object(id = self.channelID), service2)
 								service5 = service5 + service2 + "\n"
 						except Exception as errer:
