@@ -20,9 +20,13 @@ class njc:
 
 	def __init__(self, bot):
 		self.bot = bot
-		self.channelID = 536472876480462848
-		self.backupID = 506520464592732161
-		self.scanInterval = 300
+		self.channelID = 536472876480462848 #out-of-divisions
+		self.channelID1 = 536638769722425344 #unknown-vehicles
+		self.channelID2 = 536640286248402974 #unknown-branches
+		self.channelID3 = 536640345530957844 #active-vehicles
+		self.channelID4 = 536650685618585600 #vehicle-checker
+		self.backupID = 506520464592732161 #bot-lab
+		self.scanInterval = 600
 		self.looping = False
 
 	@commands.command()
@@ -254,9 +258,16 @@ class njc:
 							line = row
 
 					try: #checks if vehicle in service is marked as inactive
-						if str(linefleet[6]) == "Inactive":
-							service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is on `{}`!".format(veh,dirtag))
-							await self.bot.send_message(discord.Object(id = self.channelID), service2)
+						if ("Active" not in str(linefleet[6])):
+							if ("TRACK" in str(linefleet[6])):
+								service2 = (":white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
+								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
+							if ("Retired" in str(linefleet[6])):
+								service2 = (":x: :x: :x: :x: <@&536303913868197898> - {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
+								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
+							else:
+								service2 = (":question: <@&536303913868197898> - {} is not marked active and is on `{}`!".format(veh,dirtag))
+								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							service5 = service5 + service2 + "\n"
 
 						try: #compares fleet division to branch division
@@ -265,10 +276,10 @@ class njc:
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
-							await self.bot.send_message(channel, ":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
+							await self.bot.send_message(discord.Object(id = self.channelID2), ":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
 
 					except Exception as errer:
-						await self.bot.send_message(channel, ":minibus: **UNKNOWN VEHICLE #{}** is on `{}`".format(veh,dirtag,errer))
+						await self.bot.send_message(discord.Object(id = self.channelID1), ":minibus: **UNKNOWN VEHICLE #{}** is on `{}`".format(veh,dirtag,errer))
 
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
