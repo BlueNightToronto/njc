@@ -167,11 +167,11 @@ class njc:
                     data.add_field(name="Ends at", value="Unknown")
                     data.add_field(name="Sign", value="Unknown")
                     data.add_field(name="Branch Notes", value="Unknown")
-                    await self.bot.say("<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(errer))
+                    await self.bot.say(":question: <@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(errer))
 
                 try:
                     if str(linefleet[4]) not in str(line[6]):
-                        await self.bot.say("<@&536303913868197898> - Branch divisions don't match vehicle division!")
+                        await self.bot.say(":rotating_light: <@&536303913868197898> - Branch divisions don't match vehicle division!")
                 except Exception as errer:
                     if dirtag != str("N/A"):
                         await self.bot.say("**ERROR MESSAGE:** `{}`".format(errer))
@@ -204,11 +204,9 @@ class njc:
     @commands.command()
     async def vehcheck(self):
         """Checks all vehicles in service if they match their branch"""
-        await self.bot.say("This command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
+        await self.bot.say(":mag_right: **Scanning...**\nThis command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
         service = ""
         service5 = ""
-        time.sleep(1)
-        await self.bot.say("**Scanning...**")
         url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=0"
         raw = urlopen(url).read() # Get page and read data
         decoded = raw.decode("utf-8") # Decode from bytes object
@@ -254,16 +252,18 @@ class njc:
                     except Exception as errer:
                         await self.bot.say("<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(str(errer)))
 
-                    try:
+                    try: #compares
                         if str(linefleet[4]) not in str(line[6]):
-                            service1 = (":rotating_light: <@&536303913868197898> - {} does not match `{}`! :rotating_light:".format(veh,dirtag))
+                            service1 = (":rotating_light: <@&536303913868197898> - {} does not match `{}`!".format(veh,dirtag))
+#                            await self.bot.say(service1)
                             service = service + service1 + "\n"
                     except Exception as errer:
                         await self.bot.say("**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-                    try:
+                    try: #checks if vehicle in service is marked as inactive
                         if str(linefleet[6]) == "Inactive":
-                            service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is in service! :question:".format(veh))
+                            service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is in service!".format(veh))
+#                            await self.bot.say(service2)
                             service5 = service5 + service2 + "\n"
                     except Exception as errer:
                         await self.bot.say("**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
@@ -272,19 +272,18 @@ class njc:
             await self.bot.say("**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
         try:
-            await self.bot.say(service)
-            try:
+            if service != "":
+                await self.bot.say(service)
+        except Exception as errer:
+            await self.bot.say("**Error,** there may be too many vehicles that don't match: `{}`".format(errer))
+
+        try:
+            if service5 != "":
                 await self.bot.say(service5)
-            except:
-                await self.bot.say("**Scan complete.**")
-                return
-        except:
-            try:
-                await self.bot.say(service5)
-            except:
-                await self.bot.say("**Scan complete. Nothing found.**")
-                return
-        await self.bot.say("**Scan complete.**")
+        except Exception as errer:
+            await self.bot.say("**Error 5:** `{}`".format(errer))
+
+        await self.bot.say("**:white_check_mark: Scan complete. Results listed above.**")
 
     # COMMAND FOR GETTING NEXT BUS <STOPID>
     @commands.command()

@@ -116,8 +116,8 @@
 29_1_29C	29 Dufferin	Exhibtion (Princes Gate Loop)	Wilson Stn	29C Wilson Stn	N/A	Mount Dennis	
 29_1_29Cdlaw	29 Dufferin	Dufferin/Lawrence	Exhibition (Dufferin Gate Loop)	29C Exhibition (Dufferin Gate)	N/A	Mount Dennis	
 29_1_29D	29 Dufferin	Exhibition (Princes Gate Loop)	Dufferin Stn	29D Dufferin Stn	N/A	Mount Dennis	
-29_1_dm29	29 Dufferin 	Dufferin Mall	Wilson Stn	29A Wilson Stn	N/A	Mount Dennis	
 29_1_29wils	29 Dufferin 	Dufferin/Lawrence	Wilson Stn	29A Wilson Stn	first trip	Mount Dennis	
+29_1_dm29	29 Dufferin 	Dufferin Mall	Wilson Stn	29A Wilson Stn	N/A	Mount Dennis	
 30_0_30A	30 Lambton	Kipling Stn	High Park Stn	30A High Park Stn	N/A	Queensway	
 30_1_30A	30 Lambton	High Park Stn	Kipling Stn	30 Kipling Stn	N/A	Queensway	
 30_0_30B	30 Lambton	Kipling Stn	Colborne Lodge Drive	30B High Park 	via High Park Stn	Queensway	
@@ -238,7 +238,7 @@
 43_1_PAMI	43 Kennedy	Passmore/Kennedy Road	Midland Avenue/Steeles Ave East	43 Kennedy Stn	First trip	Eglinton	
 44_0_44	44 Kipling South	Kipling Stn	Colonel Samuel Smith Park Loop	44 Lakeshore	N/A	Queensway	
 44_1_44	44 Kipling South	Colonel Samuel Smith Park Loop	Kipling Stn	44 Kipling Stn	N/A	Queensway	
-44_1_KPEV	44 Kipling South	Kipling Stn	Evans Avenue	44S Evans	First trip	Queensway	
+44_0_KPEV	44 Kipling South	Kipling Stn	Evans Avenue	44S Evans	Final trip	Queensway	
 44_1_EVKP	44 Kipling South	Evans Avenue	Kipling Stn	44 Kipling Stn	First trip	Queensway	
 45_0_45A	45 Kipling 	Steeles 	Kipling Stn	45 Kipling Stn	N/A	Queensway	
 45_1_45A	45 Kipling 	Kipling Stn	Steeles	45A Steeles	N/A	Queensway	
@@ -287,6 +287,7 @@
 52_0_52Ayg	52 Lawrence West	Pearson Airport (Terminal 3)	Lorindale Ave (Yonge Street)	52 Lawrence Stn	Last trip/When subway closed	Wilson	
 52_0_52B	52 Lawrence West 	Westwood Mall	Lawrence Stn	52B Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52D	52 Lawrence West 	Victory Crescent/McNaughton	Lawrence Stn	52D Lawrence Stn	via Lawrence West Stn	Wilson	
+52_0_52Dyg	52 Lawrence West 	Victory Crescent/McNaughton	Lorindale Ave (Yonge Street)	52D Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52F	52 Lawrence West	Royal York Road	Lawrence Stn	52F Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52G	52 Lawrence West 	Martin Grove/Tollington	Lawrence West Stn	52G Lawrence West Stn	via The Westway	Wilson	
 52_0_52Gcon	52 Lawrence West 	Martin Grove/Tollington	Lawrence West Stn	52G Lawrence West Stn	via The Westway	Wilson	
@@ -311,6 +312,7 @@
 52_1_yg52A	52 Lawrence West 	Lawrence Stn	Pearson Airport (Terminal 3)	52A Pearson Airport	via Lawrence West Stn and Dixon Rd	Wilson	
 52_1_yg52D	52 Lawrence West	Lorindale Ave (Yonge Street)	Victory Crescent/McNaughton 	52D McNaughton 	bypasses Lawrence West Stn	Wilson	
 52_1_T1T3	52 Lawrence West	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	52A Pearson Airport	First AM and PM Trip	Wilson	
+52_0_52Dyg	52 Lawrence West	Victory Crescent/McNaughton 	Lorindale Ave (Yonge Street)	52 Lawrence Stn	Last Trip	Wilson	
 53_0_53A	53 Steeles East	Finch Stn	Finch/Morningside	53A Staines	N/A	Malvern	
 53_1_53A	53 Steeles East	Finch/Morningside	Finch Stn	53 Finch Stn	N/A	Malvern	
 53_0_53B	53 Steeles East	Finch Stn	Markham Road	53B Markham Rd	N/A	Malvern	
@@ -551,7 +553,8 @@
 88_0_LVTH*	88 South Leaside	Mcrae Dr at Laird Dr	Beth Nealson/Wicksteed	88 St Clair Stn	via Wicksteed	Wilson	
 88_0_LDvTH	88 South Leaside	Mcrae Dr at Laird Dr	Beth Nealson/Wicksteed	88 St Clair Stn	via Overlea	Wilson	
 88_1_88B	88 South Leaside	Beth Nealson/Wicksteed	Overlea/Thorncliffe Park	88B Thorncliffe	Last trip	Wilson	
-88_1_BEOV*88A	88 South Leaside	Overlea/Thorncliffe Park	Overlea At Shoppers Drug Mart	88S Short Turn	Last Trip	Wilson	
+88_1_BEOV*88	88 South Leaside	Overlea/Thorncliffe Park East	Overlea At Shoppers Drug Mart	88S Short Turn	Last Trip	Wilson	
+88_1_BEOV*88A	88 South Leaside	Overlea/Thorncliffe Park East	Overlea At Shoppers Drug Mart	88S Short Turn	Last Trip	Wilson	
 89_0_89	89 Weston	Albion Road	Keele Stn	89 Keele Stn	N/A	Mount Dennis	
 89_1_89	89 Weston	Keele Stn	Albion Road	89 Albion Rd	N/A	Mount Dennis	
 89_0_89sch	89 Weston	St Basil The Great College School	Keele Stn	89 Keele Stn	School Trip	Mount Dennis	
@@ -638,6 +641,7 @@
 102_1_WAMP	102 Markham Rd	Warden Stn	Sheppard Avenue East	102 Sheppard	Short Turn	Birchmount	
 102_1_CNCC	102 Markham Rd	2665 Kingston Rd	Centennial College	102A Progress/Centennial College	School Trip, Cardinal Newman HS	Eglinton	
 102_1_CDHS	102 Markham Rd	Cardinal Newman High School	Centennial College	102A Progress/Centennial College	School Trip	Eglinton 	
+102_0_SEMK	102 Markham Rd	Markham / Select	Markham / Steeles	102B Steeles	Final trip	Birchmount	
 104_0_104	104 Faywood 	Sheppard West Stn	Wilson Stn	104 Wilson Stn	N/A	Wilson	
 104_1_104	104 Faywood 	Wilson Stn	Sheppard West Stn	104 Sheppard West Stn	N/A	Wilson	
 105_0_105A	105 Dufferin North	Steeles Avenue West	Sheppard West Stn	105A Sheppard West Stn	N/A	Wilson	
@@ -876,40 +880,40 @@
 186_1_186	186 Wilson Rocket 	York Mills Stn 	Humber College Bus Terminal 	186 Humber College 	via Wilson Stn	Arrow Rd	
 193_0_193	193 Exhibition Rocket	CNE Dufferin Gates	Dundas West Stn	193 Dundas West Stn	Express	Various	
 193_1_193	193 Exhibition Rocket	Dundas West Stn 	CNE Dufferin Gates	193 West Entrance	Express	Various	
-300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300A.
-300_0_300A*	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	via Kipling Stn	Queensway	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
-300_0_300Ake	300 Bloor-Danforth	Pearson Airport (Terminal 3)	Kennedy Stn	300B Kennedy Stn 	bypass Kipling Stn	Eglinton, Birchmount, Mount Dennis	On Sundays starting at 5:50am, this branch runs the whole way from Pearson Airport to Kennedy Stn.
-300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300B.
-300_0_300B*	300 Bloor-Danforth 	The East Mall/Bloor Street	Kennedy Stn	300B Kennedy Stn	via Kipling Stn	Mount Dennis, Queensway	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
-300_0_300Bstn	300 Bloor-Danforth 	West Mall	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch actually enters Kennedy Stn
-300_0_300Bdd	300 Bloor-Danforth 	East Mall	Warden Ave/Danforth Rd	300A Warden	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch terminates at the eastern end of 300A, usually during the start of the operating day..
-300_0_ba300	300 Bloor-Danforth	Bathurst Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has closed.
-300_0_ba300B	300 Bloor-Danforth 	Bathurst Stn	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has closed.
-300_0_EMKP	300 Bloor-Danforth 	East Mall	Kipling Stn	300S Kipling Stn	Last Trip	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	
-300_0_LSPS	300 Bloor-Danforth	Lansdowne Stn	Pape Stn	300S Pape Stn	N/A	Eglinton	This branch is usually done by runs from 25 Don Mills. Buses that ended at Lansdowne station do this run and head back to Pape station.
-300_0_MSDD	300 Bloor-Danforth 	Main Street Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has closed.
-300_0_MSKE	300 Bloor-Danforth 	Main Street Stn	Kennedy Stn	300B Kennedy Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	When the subway has opened. Used on Saturdays.
-300_0_kp300	300 Bloor-Danforth 	Kipling Stn	Coxwell Stn	300S Coxwell Stn	N/A	Mount Dennis	This branch operates when the subway is about to open.
-300_0_kp300ps	300 Bloor-Danforth	Kipling Stn	Pape Stn	300S Pape Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
-300_0_300cs	300 Bloor-Danforth	Kipling Stn	Coxwell Stn	300S Kipling Stn	N/A	Queensway	This branch operates when the subway is about to open.
-300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300A.
-300_1_300A*	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
-300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This is the standard branch for 300B.
-300_1_300B*	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall 	via Kipling Stn	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
-300_1_300baB	300 Bloor-Danforth	Kennedy Stn	Bathurst Stn	300S Bathurst Stn	N/A	Mount Dennis	When the subway has opened. Used on Sunday mornings
-300_1_300bsB	300 Bloor-Danforth	Kennedy Stn	Broadview Stn	300S Broadview Stn	N/A	Birchmount	When the subway has opened. Used on Sunday mornings
-300_1_300Bkp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
-300_1_300la	300 Bloor-Danforth 	Warden Avenue	Lansdowne Stn	300S Lansdowne Stn	N/A	Eglinton	Run by buses from route 25, this branch runs when the subway begins to open. After this branch, vehicles return to pape stn
-300_1_300kp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway has closed.
-300_1_bs300	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway has closed.
-300_1_bs300*	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall 	via Kipling Stn	Birchmount, Eglinton, Mount Dennis, Queensway	This branch operates starting from Broadview as trips starting earlier are impossible for passengers to board.
-300_1_BSKP	300 Bloor-Danforth 	Broadview Stn	Kipling Stn	300S Pape Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway has opened.
-300_1_CSDW	300 Bloor-Danforth	Coxwell Stn	Dundas West Stn	300S Dundas West Stn	N/A	Queensway	This branch operates when the subway has opened.
-300_1_CSJN	300 Bloor-Danforth	Coxwell Stn	Jane Stn	300S Jane Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
-300_1_KPEM	300 Bloor-Danforth 	Kipling Stn	West Mall	300B West Mall	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open.
-300_1_KEPS	300 Bloor-Danforth 	Kennedy Stn	Lansdowne Stn	300S Lansdowne Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	For routes that end at Kipling stn and go onto 300, this is branch is often the first trip. 
-300_1_PSJN	300 Bloor-Danforth	Pape Stn	Jane Stn	300S Jane Stn	N/A	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	This branch operates when the subway is about to open. Monday-Saturday.
-300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Birchmount, Eglinton, Mount Dennis, Queensway	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
+300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300A.
+300_0_300A*	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Ave/Danforth Rd	300A Warden	via Kipling Stn	Null	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
+300_0_300Ake	300 Bloor-Danforth	Pearson Airport (Terminal 3)	Kennedy Stn	300B Kennedy Stn 	bypass Kipling Stn	Null	On Sundays starting at 5:50am, this branch runs the whole way from Pearson Airport to Kennedy Stn.
+300_0_300B	300 Bloor-Danforth 	West Mall	Transway (Kennedy Stn)	300B Kennedy Stn	bypass Kipling Stn	Birchmount	This is the standard branch for 300B.
+300_0_300B*	300 Bloor-Danforth 	The East Mall/Bloor Street	Kennedy Stn	300B Kennedy Stn	via Kipling Stn	Queensway	While Kipling Stn is still open, this branch runs to enter Kipling Stn.
+300_0_300Bstn	300 Bloor-Danforth 	West Mall	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Null	This branch actually enters Kennedy Stn
+300_0_300Bdd	300 Bloor-Danforth 	East Mall	Warden Ave/Danforth Rd	300A Warden	N/A	Null	This branch terminates at the eastern end of 300A, usually during the start of the operating day..
+300_0_ba300	300 Bloor-Danforth	Bathurst Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Eglinton, Queensway	When the subway has closed.
+300_0_ba300B	300 Bloor-Danforth 	Bathurst Stn	Kennedy Stn	300B Kennedy Stn	bypass Kipling Stn	Birchmount, Mount Dennis	When the subway has closed.
+300_0_EMKP	300 Bloor-Danforth 	East Mall	Kipling Stn	300S Kipling Stn	Last Trip	Null	
+300_0_LSPS	300 Bloor-Danforth	Lansdowne Stn	Pape Stn	300S Pape Stn	N/A	Null	This branch is usually done by runs from 25 Don Mills. Buses that ended at Lansdowne station do this run and head back to Pape station.
+300_0_MSDD	300 Bloor-Danforth 	Main Street Stn	Warden Ave/Danforth Rd	300A Warden	N/A	Null	When the subway has closed.
+300_0_MSKE	300 Bloor-Danforth 	Main Street Stn	Kennedy Stn	300B Kennedy Stn	N/A	Birchmount	When the subway has opened. Used on Saturdays.
+300_0_kp300	300 Bloor-Danforth 	Kipling Stn	Coxwell Stn	300S Coxwell Stn	N/A	Null	This branch operates when the subway is about to open.
+300_0_kp300ps	300 Bloor-Danforth	Kipling Stn	Pape Stn	300S Pape Stn	N/A	Null	This branch operates when the subway is about to open.
+300_0_300cs	300 Bloor-Danforth	Kipling Stn	Coxwell Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway is about to open.
+300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300A.
+300_1_300A*	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Birchmount	While Kipling stn is still open, this branch runs to enter Kipling stn.
+300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount	This is the standard branch for 300B.
+300_1_300B*	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall 	via Kipling Stn	Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
+300_1_300baB	300 Bloor-Danforth	Kennedy Stn	Bathurst Stn	300S Bathurst Stn	N/A	Null	When the subway has opened. Used on Sunday mornings
+300_1_300bsB	300 Bloor-Danforth	Kennedy Stn	Broadview Stn	300S Broadview Stn	N/A	Null	When the subway has opened. Used on Sunday mornings
+300_1_300Bkp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway is about to open.
+300_1_300la	300 Bloor-Danforth 	Warden Avenue	Lansdowne Stn	300S Lansdowne Stn	N/A	Null	Run by buses from route 25, this branch runs when the subway begins to open. After this branch, vehicles return to pape stn
+300_1_300kp	300 Bloor-Danforth 	Kennedy Stn	Kipling Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway has closed.
+300_1_bs300	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall	N/A	Mount Dennis, Queensway	This branch operates when the subway has closed.
+300_1_bs300*	300 Bloor-Danforth 	Broadview Stn	West Mall	300B West Mall 	via Kipling Stn	Mount Dennis	This branch operates starting from Broadview as trips starting earlier are impossible for passengers to board.
+300_1_BSKP	300 Bloor-Danforth 	Broadview Stn	Kipling Stn	300S Pape Stn	N/A	Null	This branch operates when the subway has opened.
+300_1_CSDW	300 Bloor-Danforth	Coxwell Stn	Dundas West Stn	300S Dundas West Stn	N/A	Null	This branch operates when the subway has opened.
+300_1_CSJN	300 Bloor-Danforth	Coxwell Stn	Jane Stn	300S Jane Stn	N/A	Null	This branch operates when the subway is about to open.
+300_1_KPEM	300 Bloor-Danforth 	Kipling Stn	West Mall	300B West Mall	N/A	Queensway	This branch operates when the subway is about to open.
+300_1_KEPS	300 Bloor-Danforth 	Kennedy Stn	Lansdowne Stn	300S Lansdowne Stn	N/A	Null	For routes that end at Kipling stn and go onto 300, this is branch is often the first trip. 
+300_1_PSJN	300 Bloor-Danforth	Pape Stn	Jane Stn	300S Jane Stn	N/A	Null	This branch operates when the subway is about to open. Monday-Saturday.
+300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Null	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
 301_0_301	301 Queen	Neville Park Loop	Long Branch Loop	301 Long Branch	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_301	301 Queen	Long Branch Loop	Neville Park Loop	301 Neville Park	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_NECQ	301 Queen	Neville Park Loop	Connaught & Queen	301S Connaught 	Last Trip 	TTC Streetcar (Leslie, Russell)	
@@ -944,19 +948,19 @@
 315_1_315	315 Evans-Brown's Line	Long Branch Loop	Islington Stn	315 Islington Stn	N/A	Queensway	
 315_0_315con	315 Evans-Brown's Line	Royal York Stn	Long Branch Loop	315 Long Branch	N/A	Queensway	
 315_1_315con	315 Evans-Brown's Line	Long Branch Loop	Islington Stn	315 Islington Stn	N/A	Queensway	
-320_0_320	320 Yonge	Yonge/Steeles Loop	Queen's Quay	320 Queen's Quay	N/A	Wilson, Malvern, Birchmount, Eglinton, Mount Dennis	The standard branch for 320.
-320_0_320A	320 Yonge	York Mills/Yonge Street	Queen's Quay	320 Queen's Quay	N/A	Wilson, Eglinton	This branch starts at York Mills Stn. 320A originally used to be a branch, and is now internal.
-320_0_SYFS	320 Yonge	Yonge/Steeles Loop	Finch Stn	320 Finch Stn	N/A	Wilson, Malvern, Birchmount, Eglinton, Mount Dennis	This branch ends at Finch Stn, likely when the subway is about to open.
-320_0_YEQQ	320 Yonge	2190 Yonge Street	Queen's Quay	320 Queen's Quay	N/A	Wilson, Birchmount, Eglinton, Mount Dennis	This branch starts at 2190 Yonge Street (Eglinton) for routes that are near the area.
-320_1_320	320 Yonge	Queen's Quay	Yonge/Steeles Loop	320 Steeles	N/A	Wilson, Malvern, Birchmount, Eglinton, Mount Dennis	The standard branch for 320.
-320_1_320*fs	320 Yonge	Queen's Quay	Yonge/Steeles Loop	320 Steeles 	via Finch Stn	Wilson, Birchmount, Eglinton, Mount Dennis	This branch enters via Finch Stn, when Finch Station has opened.
-320_1_DVSY	320 Yonge	Davisville Stn	Yonge/Steeles Loop	320 Steeles	First Trip	Wilson	This branch starts at Davisville stn for routes that were from the area.
-320_1_QQDV	320 Yonge	Queen's Quay	Davisville Stn	320S Davisville Stn	N/A	Wilson, Malvern, Birchmount, Eglinton, Mount Dennis	This branch runs when the subway is about to open. Usually interlined with routes at Eglinton Stn. Oddly duplicated with `320_1_QQES`
-320_1_QQES	320 Yonge 	Queen's Quay	Eglinton Stn	320S Eglinton Stn	N/A	Wilson, Malvern, Birchmount, Eglinton, Mount Dennis	This branch runs when the subway is about to open.
-320_1_QQYE	320 Yonge 	Queen's Quay	Yonge/Eglinton	320S Eglinton Stn	N/A	Wilson, Malvern, Birchmount, Eglinton, Mount Dennis	This branch runs when the subway is about to open. It is oddly duplicated with `320_1_QQYE` as it is likely vehicles enter Eglinton Stn instead of on street.
-320_1_QQYM	320 Yonge 	Queen's Quay	York Mills/Yonge Street	320A York Mills Stn	First Trip	Wilson, Eglinton	This branch is for Old Eglinton division trips. It is likely the TTC forgot to remove this.
+320_0_320	320 Yonge	Yonge/Steeles Loop	Queen's Quay	320 Queen's Quay	N/A	Eglinton, Malvern, Mount Dennis, Wilson	The standard branch for 320.
+320_0_320A	320 Yonge	York Mills/Yonge Street	Queen's Quay	320 Queen's Quay	N/A	Eglinton, Mount Dennis, Wilson	This branch starts at York Mills Stn. 320A originally used to be a branch, and is now internal.
+320_0_SYFS	320 Yonge	Yonge/Steeles Loop	Finch Stn	320 Finch Stn	N/A	null	This branch ends at Finch Stn, likely when the subway is about to open.
+320_0_YEQQ	320 Yonge	2190 Yonge Street	Queen's Quay	320 Queen's Quay	N/A	Eglinton, Wilson	This branch starts at 2190 Yonge Street (Eglinton) for routes that are near the area.
+320_1_320	320 Yonge	Queen's Quay	Yonge/Steeles Loop	320 Steeles	N/A	Eglinton, Malvern, Mount Dennis, Wilson	The standard branch for 320.
+320_1_320*fs	320 Yonge	Queen's Quay	Yonge/Steeles Loop	320 Steeles 	via Finch Stn	null	This branch enters via Finch Stn, when Finch Station has opened.
+320_1_DVSY	320 Yonge	Davisville Stn	Yonge/Steeles Loop	320 Steeles	First Trip	null	This branch starts at Davisville stn for routes that were from the area.
+320_1_QQDV	320 Yonge	Queen's Quay	Davisville Stn	320S Davisville Stn	N/A	null	This branch runs when the subway is about to open. Usually interlined with routes at Eglinton Stn. Oddly duplicated with `320_1_QQES`
+320_1_QQES	320 Yonge 	Queen's Quay	Eglinton Stn	320S Eglinton Stn	N/A	null	This branch runs when the subway is about to open.
+320_1_QQYE	320 Yonge 	Queen's Quay	Yonge/Eglinton	320S Eglinton Stn	N/A	null	This branch runs when the subway is about to open. It is oddly duplicated with `320_1_QQYE` as it is likely vehicles enter Eglinton Stn instead of on street.
+320_1_QQYM	320 Yonge 	Queen's Quay	York Mills/Yonge Street	320A York Mills Stn	First Trip	null	This branch is for Old Eglinton division trips. It is likely the TTC forgot to remove this.
 320_1_YESY	320 Yonge	Yonge/Eglinton	Steeles/Yonge Loop	320 Steeles	N/A	Eglinton	This branch runs when the subway has closed.
-320_1_YEYK	320 Yonge	Yonge/Eglinton	York Mills/Yonge Street	320A York Mills Stn	N/A	Eglinton	
+320_1_YEYK	320 Yonge	Yonge/Eglinton	York Mills/Yonge Street	320A York Mills Stn	N/A	null	
 322_0_322	322 Coxwell	Erindale Avenue (Broadview Stn)	Bingham Loop	322 Victoria Park	N/A	Birchmount	
 322_0_BIWD	322 Coxwell	Bingham Loop	Warden Avenue	322S Warden	Final trip	Birchmount	
 322_1_322	322 Coxwell	Bingham Loop	Erindale Avenue (Broadview Stn)	322 Broadview Stn	N/A	Birchmount	
@@ -1070,6 +1074,7 @@
 504_1_br504	504 King	Broadview/Queen	Dundas West Stn	504 Dundas West Stn	N/A	TTC Streetcar (Leslie)	
 504_1_br504A	504 King	Broadview/Queen	Dundas West Stn	504A Dundas West Stn	N/A	TTC Streetcar (Leslie)	
 504_1_br504ex	504 King	Broadview/Queen	Exhibition West Loop	504 Exhibition	N/A	TTC Streetcar (Leslie)	
+501_1_BSBR	504 King	Broadview Stn	Broadview/Queen	504S Queen	Final Trip	TTC Streetcar (Leslie)	
 505_0_505	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
 505_1_505	505 Dundas	Broadview Stn	Dundas West Stn	505 Dundas West Stn	via Dundas	Birchmount, Wilson (TTC Streetcar)	
 505_0_505bus	505 Dundas	Dundas West Stn	Broadview Stn	505 Broadview Stn	via Dundas	Birchmount, Wilson	
@@ -1088,13 +1093,16 @@
 509_0_509	509 Harbourfront 	Exhibtion Loop	Union Stn	509 Union Stn	N/A	TTC Streetcar (Leslie)	
 509_1_509	509 Harbourfront 	Union Stn	Exhibition Loop	509 Exhibition 	N/A	TTC Streetcar (Leslie)	
 509_1_BAEX	509 Harbourfrount	Bathurst/Fleet Street	Exhibition Loop	509 Exhibition	First Trip	TTC Streetcar (Leslie)	
+509_0_EXBA	509 Harbourfrount	Exhibition Loop	Bathurst/Fleet Street	509S Short Turn	Last Trip	TTC Streetcar (Leslie)	
 510_0_510A	510 Spadina	Spadina Stn	Union Stn	510 Union Stn	N/A	TTC Streetcar (Leslie)	
 510_1_510A	510 Spadina 	Union Stn	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_0_510B	510 Spadina	Spadina Stn	Queen's Quay	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
-510_0_510C	510 Spadina	Spadina Stn	King	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
-510_1_510C	510 Spadina	King	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
+510_1_510B	510 Spadina	Queen's Quay	Spadina Stn	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
+510_0_510C	510 Spadina	Spadina Stn	King Street	510 Queen's Quay	N/A	TTC Streetcar (Leslie)	
+510_1_510C	510 Spadina	King Street	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_1_kg510	510 Spadina 	King/Spadina 	Spadina Stn	510 Spadina Stn	N/A	TTC Streetcar (Leslie)	
 510_1_SQCH	510 Spadina 	Queen's Quay	Charlottes Loop	510C King	Final Trip	TTC Streetcar (Leslie)	
+510_0_SQUS	510 Spadina 	Spadina / Queen	Union Stn	510 Union Stn	First Trip	TTC Streetcar (Leslie)	
 510_1_USCH	510 Spadina 	Union Stn	Charlottes Loop	510C King	Final Trip	TTC Streetcar (Leslie)	
 510_1_USSQ	510 Spadina 	Union Stn	Queen and Spadina	510S Queen	Final Trip	TTC Streetcar (Leslie)	
 511_0_511	511 Bathurst 	Bathurst Stn	Exhibition Loop	511 Exhibition 	N/A	TTC Streetcar (Russell/Leslie)	
@@ -1117,11 +1125,12 @@
 512_1_512bus	512 St Clair	St Clair Stn	Gunns Loop	512 Keele	bypasses St Clair West Stn	Arrow Rd	
 512_0_GUVS	512 St Clair	Gunns Loop	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
 512_1_SCVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
+512_1_SSVS	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	last trip	TTC Streetcar (Leslie)	
+512_1_SSVS*	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
 512_1_bs512	512 St Clair	Bathurst/St Clair	Wynchwood Ave	512S Short Turn	N/A	Wilson/Mount Dennis	
 512_0_BSSS*	512 St Clair	Bathurst/St Clair	Gunns Loop	512 Gunns Loop	N/A	Wilson/Mount Dennis	
 512_0_512sc	512 St Clair	Gunns Loop	St Clair West Stn	512 St Clair West Stn	N/A	TTC Streetcar (Leslie)	
-512_1_SSVS*	512 St Clair	St Clair Stn	Vaughan Rd	512 Roncesvalles	bypasses St Clair West Stn	TTC Streetcar (Leslie)	
-512_1_sc512	512 St Clair	St Clair West Station 	Gunns Loop	512 Gunns Loop	Second trip after it does the BSSC trip	TTC Streetcar (Leslie)	
+512_1_sc512	512 St Clair	St Clair West Stn 	Gunns Loop	512 Gunns Loop	Second trip after it does the BSSC trip	TTC Streetcar (Leslie)	
 512_0_BSSC	512 St Clair	Bathurst/St Clair	St Clair West Stn	512 St Clair West Stn	First trip when entering service 	TTC Streetcar (Leslie)	
 514_0_514	514 Cherry	Exhibition (Dufferin Gate)	Distillery Loop	514 Distillery	via King	TTC Streetcar (Leslie)	
 514_1_514	514 Cherry	Distillery Loop	Exhibition Loop (Dufferin Gate)	514 Dufferin Gate	via King	TTC Streetcar (Leslie)	
