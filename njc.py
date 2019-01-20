@@ -265,13 +265,13 @@ class njc:
 							await self.bot.send_message(discord.Object(id = self.channelID), service2)
 							service5 = service5 + service2 + "\n"
 
-							try: #compares fleet division to branch division
-								if str(linefleet[4]) not in str(line[6]):
-									service1 = (":rotating_light: {} is on `{}`, divisions don't match!".format(veh,dirtag))
-									await self.bot.send_message(discord.Object(id = self.channelID), service1)
-									service = service + service1 + "\n"
-							except Exception as errer:
-								await self.bot.send_message(channel, ":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
+						try: #compares fleet division to branch division
+							if str(linefleet[4]) not in str(line[6]):
+								service1 = (":rotating_light: {} is on `{}`, divisions don't match!".format(veh,dirtag))
+								await self.bot.send_message(discord.Object(id = self.channelID), service1)
+								service = service + service1 + "\n"
+						except Exception as errer:
+							await self.bot.send_message(channel, ":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
 
 					except Exception as errer:
 						await self.bot.send_message(channel, ":minibus: **UNKNOWN VEHICLE #{}** is on `{}`".format(veh,dirtag,errer))
