@@ -898,7 +898,7 @@
 300_0_300cs	300 Bloor-Danforth	Kipling Stn	Coxwell Stn	300S Kipling Stn	N/A	Null	This branch operates when the subway is about to open.
 300_1_300A	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300A.
 300_1_300A*	300 Bloor-Danforth 	Warden Ave/Danforth Rd	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Birchmount	While Kipling stn is still open, this branch runs to enter Kipling stn.
-300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount	This is the standard branch for 300B.
+300_1_300B	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall	bypass Kipling Stn	Birchmount, Queensway	This is the standard branch for 300B.
 300_1_300B*	300 Bloor-Danforth 	Transway (Kennedy Stn)	West Mall	300B West Mall 	via Kipling Stn	Queensway	While Kipling stn is still open, this branch runs to enter Kipling stn.
 300_1_300baB	300 Bloor-Danforth	Kennedy Stn	Bathurst Stn	300S Bathurst Stn	N/A	Null	When the subway has opened. Used on Sunday mornings
 300_1_300bsB	300 Bloor-Danforth	Kennedy Stn	Broadview Stn	300S Broadview Stn	N/A	Null	When the subway has opened. Used on Sunday mornings

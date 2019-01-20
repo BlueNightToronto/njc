@@ -200,7 +200,7 @@ class njc:
         """Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
         await self.bot.say("This is no longer a command. Use `n!vehicle <number>`")
 
-    #Gets info for fleet
+    #Scans all active vehicles
     @commands.command()
     async def vehcheck(self):
         """Checks all vehicles in service if they match their branch"""
