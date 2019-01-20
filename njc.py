@@ -204,89 +204,92 @@ class njc:
 		await self.bot.say("This is no longer a command. Use `n!vehicle <number>`")
 
 	#Scans all active vehicles automatically
-	async def vehcheck(self):
+	async def autoscan(self):
 		while True:
-			await self.bot.send_message(discord.Object(id = self.channelID), ":mag_right: **Scanning...**\nThis command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
-			service = ""
-			service5 = ""
-			url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=0"
-			raw = urlopen(url).read() # Get page and read data
-			decoded = raw.decode("utf-8") # Decode from bytes object
-			parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
-			vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
-	
-	
-			try:
-				for i in vehicles: # Loop through these
-					veh = i.attributes['id'].value # GETS VEHICLE
-					updated = i.attributes['secsSinceReport'].value # Seconds since last updated
-					try:
-						dirtag = i.attributes['dirTag'].value # Direction Tag
-					except:
-						dirtag = "N/A"
-	
-					if dirtag != "N/A":
-						try:
-							listfleet = open("cogs/njc/fleets/ttc.csv")
-							readerfleet = csv.reader(listfleet,delimiter="	")
-							linefleet = []
-						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID), "fleets/ttc.csv not found!\n`" + str(errer) + "`")
-	
-						try:
-							for row in readerfleet:
-								if str(row[0]) == veh:
-									linefleet = row
-						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID), "<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(str(errer)))
-	
-						try: # TRIES FETCHING DATA
-							taglist = open("cogs/njc/dirTag.csv")
-							reader = csv.reader(taglist,delimiter="	")
-							line = []
-						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID), "dirTag.csv not found!\n`" + str(errer) + "`")
-	
-						try:
-							for row in reader:
-								if str(row[0]) == dirtag:
-									line = row
-						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID), "<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(str(errer)))
-	
-						try: #compares
-							if str(linefleet[4]) not in str(line[6]):
-								service1 = (":rotating_light: <@&536303913868197898> - {} is on `{}`, does not match!".format(veh,dirtag))
-	#                            await self.bot.send_message(discord.Object(id = self.channelID), service1)
-								service = service + service1 + "\n"
-						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID), "**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
-	
-						try: #checks if vehicle in service is marked as inactive
-							if str(linefleet[6]) == "Inactive":
-								service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is on {}!".format(veh,dirtag))
-	#                            await self.bot.send_message(discord.Object(id = self.channelID), service2)
-								service5 = service5 + service2 + "\n"
-						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID), "**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
-	
-			except Exception as errer:
-				await self.bot.send_message(discord.Object(id = self.channelID), "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
-	
-			try:
-				if service != "":
-					await self.bot.send_message(discord.Object(id = self.channelID), service)
-			except Exception as errer:
-				await self.bot.send_message(discord.Object(id = self.channelID), "**Error,** there may be too many vehicles that don't match: `{}`".format(errer))
-	
-			try:
-				if service5 != "":
-					await self.bot.send_message(discord.Object(id = self.channelID), service5)
-			except Exception as errer:
-				await self.bot.send_message(discord.Object(id = self.channelID), "**Error 5:** `{}`".format(errer))
-	
-			await self.bot.send_message(discord.Object(id = self.channelID), "**:white_check_mark: Scan complete. Results listed above.**")
+			await self.check()
 			await asyncio.sleep(self.scanInterval)
+
+	async def check(self):
+		await self.bot.send_message(discord.Object(id = self.channelID), ":mag_right: **Scanning...**\nThis command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
+		service = ""
+		service5 = ""
+		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=0"
+		raw = urlopen(url).read() # Get page and read data
+		decoded = raw.decode("utf-8") # Decode from bytes object
+		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+		vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+
+
+		try:
+			for i in vehicles: # Loop through these
+				veh = i.attributes['id'].value # GETS VEHICLE
+				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
+				try:
+					dirtag = i.attributes['dirTag'].value # Direction Tag
+				except:
+					dirtag = "N/A"
+
+				if dirtag != "N/A":
+					try:
+						listfleet = open("cogs/njc/fleets/ttc.csv")
+						readerfleet = csv.reader(listfleet,delimiter="	")
+						linefleet = []
+					except Exception as errer:
+						await self.bot.send_message(discord.Object(id = self.channelID), "fleets/ttc.csv not found!\n`" + str(errer) + "`")
+
+					try:
+						for row in readerfleet:
+							if str(row[0]) == veh:
+								linefleet = row
+					except Exception as errer:
+						await self.bot.send_message(discord.Object(id = self.channelID), "<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(str(errer)))
+
+					try: # TRIES FETCHING DATA
+						taglist = open("cogs/njc/dirTag.csv")
+						reader = csv.reader(taglist,delimiter="	")
+						line = []
+					except Exception as errer:
+						await self.bot.send_message(discord.Object(id = self.channelID), "dirTag.csv not found!\n`" + str(errer) + "`")
+
+					try:
+						for row in reader:
+							if str(row[0]) == dirtag:
+								line = row
+					except Exception as errer:
+						await self.bot.send_message(discord.Object(id = self.channelID), "<@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(str(errer)))
+
+					try: #compares
+						if str(linefleet[4]) not in str(line[6]):
+							service1 = (":rotating_light: <@&536303913868197898> - {} does not match `{}`!".format(veh,dirtag))
+#                            await self.bot.send_message(discord.Object(id = self.channelID), service1)
+							service = service + service1 + "\n"
+					except Exception as errer:
+						await self.bot.send_message(discord.Object(id = self.channelID), "**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
+
+					try: #checks if vehicle in service is marked as inactive
+						if str(linefleet[6]) == "Inactive":
+							service2 = (":question: <@&536303913868197898> - {} is marked as inactive but is on {}!".format(veh,dirtag))
+#                            await self.bot.send_message(discord.Object(id = self.channelID), service2)
+							service5 = service5 + service2 + "\n"
+					except Exception as errer:
+						await self.bot.send_message(discord.Object(id = self.channelID), "**An error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
+
+		except Exception as errer:
+			await self.bot.send_message(discord.Object(id = self.channelID), "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
+
+		try:
+			if service != "":
+				await self.bot.send_message(discord.Object(id = self.channelID), service)
+		except Exception as errer:
+			await self.bot.send_message(discord.Object(id = self.channelID), "**Error,** there may be too many vehicles that don't match: `{}`".format(errer))
+
+		try:
+			if service5 != "":
+				await self.bot.send_message(discord.Object(id = self.channelID), service5)
+		except Exception as errer:
+			await self.bot.send_message(discord.Object(id = self.channelID), "**Error 5:** `{}`".format(errer))
+
+		await self.bot.send_message(discord.Object(id = self.channelID), "**:white_check_mark: Scan complete. Results listed above.**")
 
 	# COMMAND FOR GETTING NEXT BUS <STOPID>
 	@commands.command()
@@ -974,14 +977,14 @@ class njc:
 		await self.bot.say(ordered)
 
 	@commands.command()
-	async def startloop(self):
+	async def vehcheck(self):
 		if self.looping:
-			await self.bot.send_message(discord.Object(id = self.channelID), "Loop already running!")
+			await self.vehcheck()
 			return
 		self.looping = True
-		await self.bot.loop.create_task(self.vehcheck())
+		await self.bot.loop.create_task(self.autoscan())
 
 	async def on_ready(self):
 		await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
 		self.looping = True
-		await self.bot.loop.create_task(self.vehcheck())
+		await self.bot.loop.create_task(self.autoscan())
