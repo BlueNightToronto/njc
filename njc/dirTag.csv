@@ -433,7 +433,7 @@
 70_1_70A	70 O'Connor	Coxwell Stn	Craigton Dr/Pharmacy Avenue	70A Eglinton 	N/A	Eglinton	
 70_1_70B	70 O'Connor	Coxwell Stn	Victoria Park/O'Connor Drive	70B Victoria Park	N/A	Eglinton	
 70_1_70C	70 O'Connor	Coxwell Stn	Warden Stn	70C Warden Stn	N/A	Birchmount, Eglinton	
-70_1_70C	70 O'Connor	Danforth/Coxwell	Warden Stn	70C Warden Stn	First trip	Eglinton	
+70_1_dc70C	70 O'Connor	Danforth/Coxwell	Warden Stn	70C Warden Stn	First trip	Eglinton	
 71_0_71A	71 Runnymede	Gunns Loop	Runnymede Stn	71 Runnymede Stn	N/A	Mount Dennis	
 71_0_71B	71 Runnymede	Mount Dennis Garage	Runnymede Stn	71 Runnymede Stn	N/A	Mount Dennis	
 71_1_71A	71 Runnymede	Runnymede Stn	Gunns Loop	71A St Clair & Gunns	N/A	Mount Dennis	
@@ -1064,11 +1064,12 @@
 501_0_501L	501 Queen	Long Branch Loop	Humber Loop	501 Humber	N/A	TTC Streetcar (Russell/Leslie)	
 501_0_CQNE	501 Queen	Connaught/Queen 	Neville Park Loop	501 Neville Park	N/A	TTC Streetcar (Russell/Leslie)	
 501_0_HUCQ	501 Queen	Humber Loop	Connaught/Queen 	501 Connaught	Last trip	TTC Streetcar (Russell/Leslie)	
+501_0_LOCQ	501 Queen	Long Branch Loop	Connaught/Queen 	501 Connaught	Last trip via Humber Loop	TTC Streetcar (Russell/Leslie)	
 501_1_501	501 Queen	Neville Park Loop	Long Branch Loop	501 Long Branch 	N/A	TTC Streetcar (Russell/Leslie)	
 501_1_501A	501 Queen	Neville Park Loop	Humber Loop	501 Humber 	N/A	TTC Streetcar (Russell/Leslie)	
 501_1_501L	501 Queen	Humber Loop	Long Branch Loop	501 Long Branch 	N/A	TTC Streetcar (Russell/Leslie)	
 501_1_CQHU	501 Queen	Connaught/Queen 	Humber Loop	501 Humber 	N/A	TTC Streetcar (Russell/Leslie)	
-501_1_CQLO	501 Queen	Connaught/Queen 	Long Branch Loop	501 Long Branch 	N/A	TTC Streetcar (Russell/Leslie)	
+501_1_CQLO	501 Queen	Connaught/Queen 	Long Branch Loop	501 Long Branch 	via Humber Loop	TTC Streetcar (Russell/Leslie)	
 501_1_NECQ	501 Queen	Neville Park Loop	Connaught/Queen 	501 Connaught	N/A	TTC Streetcar (Russell/Leslie)	
 502_0_502	502 Downtowner	McCaul/Queen	Bingham Loop	502 Bingham	N/A	Birchmount	
 502_1_502	502 Downtowner	Bingham Loop	McCaul/Queen	502 McCaul	N/A	Birchmount	
