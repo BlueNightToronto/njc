@@ -35,6 +35,46 @@ class njc:
 		data.set_image(url="https://i.imgur.com/CRugTWf.png")
 		await self.bot.say(embed=data)
 
+	@commands.command()
+	async def routeveh1(self, rte):
+		"""Checks vehicles on a route."""
+		data = discord.Embed(title="Vehicles on Route " + rte, description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+
+		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
+		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo"
+		raw = urlopen(url).read() # Get page and read data
+		decoded = raw.decode("utf-8") # Decode from bytes object
+		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+		service = ""
+		vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+
+		for i in vehicles: # For each vehicle found
+			veh = i.attributes['id'].value # GETS VEHICLE
+			lat = i.attributes['lat'].value # GETS LAT
+			lon = i.attributes['lon'].value # GETS LONG
+			hea = i.attributes['heading'].value # GETS COMPASS
+			service = service + veh + ", " # GETS VEHICLE
+
+			if hea == ('-4'): #label based on compass
+				mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+			elif hea >= ('315') and hea < ('45'):
+				mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
+			elif hea >= ('45') and hea < ('135'):
+				mapurl = mapurl + "&markers=size:mid%7Ccolor:0x00ff00%7Clabel:E%7C{},{}".format(lat, lon)
+			elif hea >= ('135') and hea < ('225'):
+				mapurl = mapurl + "&markers=size:mid%7Ccolor:0x0000ff%7Clabel:S%7C{},{}".format(lat, lon)
+			else:
+				mapurl = mapurl + "&markers=size:mid%7Ccolor:0xcc00cc%7Clabel:W%7C{},{}".format(lat, lon)
+
+		data.add_field(name="Vehicles", value=service)
+		data.set_image(url=mapurl)
+
+
+		if service == "":
+			await self.bot.say("No vehicles could be found on route {}.".format(rte))
+		else:
+			await self.bot.say(embed=data)
+			return
 
 	@commands.command()
 	async def routeveh(self, rte):
@@ -165,8 +205,10 @@ class njc:
 						data.add_field(name="Branch Divisions", value=line[6])
 					try:
 						data.add_field(name="Vehicle Division", value=linefleet[4])
+						data.add_field(name="Vehicle Status", value=linefleet[6])
 					except:
 						data.add_field(name="Vehicle Division", value="Unknown")
+						data.add_field(name="Vehicle Status", value="Unknown")
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
 					data.add_field(name="On Route", value="No route")  
@@ -191,7 +233,16 @@ class njc:
 				except:
 					data.add_field(name="Vision Equipped?", value="No".format(heading))
 
-				data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+				if heading == ('-4'): #label based on compass
+					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:O%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
+				elif heading >= ('315') and heading < ('45'):
+					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
+				elif heading >= ('45') and heading < ('135'):
+					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:E%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
+				elif heading >= ('135') and heading < ('225'):
+					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:S%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
+				else:
+					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:←%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
 #                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
 				data.set_footer(text="Last updated {} seconds ago. Division information is from n!fleet".format(updated))
 
@@ -202,11 +253,6 @@ class njc:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
 		await self.bot.say("Vehicle not found! #{}".format(veh))
-
-	@commands.command()
-	async def veh(self):
-		"""Checks if a selected TTC vehicle is currently in service. For values under 1000, lists vehicles on the route."""
-		await self.bot.say("This is no longer a command. Use `n!vehicle <number>`")
 
 	#Scans all active vehicles automatically
 	async def autoscan(self):

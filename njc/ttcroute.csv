@@ -303,7 +303,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 52_1_yg52A
 52_1_yg52D
 52_1_T1T3"
-53	Steeles East	Malvern	39 Finch East, 85 Sheppard East, 133 Neilson, 353 Steeles	"53_0_53A
+53	Steeles East	Malvern	39 Finch East, 85 Sheppard East, 116 Morningside, 133 Neilson, 353 Steeles	"53_0_53A
 53_1_53A
 53_0_53B
 53_1_53B
@@ -406,11 +406,11 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 67_0_67Awx
 67_0_wx67A"
 68	Warden	Birchmount	67 Pharmacy, 144 Don Valley/Downtown Express, 300 Bloor-Danforth	"68_0_68A
-68_1_68A
-68_0_68B
-68_1_68B
 68_0_68Adaly
-68_1_68Adaly
+68_0_68B
+68_1_68A
+68_1_68B
+68_1_wd68A
 68_1_wd68B"
 69	Warden South	Birchmount	17 Birchmount	"69_0_69A
 69_0_69b
@@ -700,7 +700,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 113_1_113"
 115	Silver Hills	Wilson	122 Graydon Hall	"115_0_115
 115_1_115"
-116	Morningside	Eglinton	300 Bloor-Danforth, 334 Eglinton East	"116_0_116A
+116	Morningside	Eglinton	53 Steeles East, 300 Bloor-Danforth, 334 Eglinton East, 353 Steeles	"116_0_116A
 116_1_116A
 116_0_116B
 116_1_116B
@@ -723,8 +723,10 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 119_0_119p
 119_1_119p"
 120	Calvington	Arrow Rd	None	"120_0_120
+120_0_gi120
+120_0_NRGI
 120_1_120
-120_0_NRGI"
+120_1_SHNR"
 121	Fort-York Esplanade	Birchmount	None	"121_0_121A
 121_1_121A
 121_0_121C
@@ -869,6 +871,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 186_1_186"
 300	Bloor-Danforth	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	6 Bay, 16 McCowan, 20 Cliffside, 24 Victoria Park, 25 Don Mills, 26 Dupont, 30 Lambton, 32 Eglinton West, 34 Eglinton East, 40 Junction, 41 Keele, 43 Kennedy, 45 Kipling, 47 Lansdowne, 49 Bloor West, 50 Burnhamthorpe, 68 Warden, 73 Royal York, 76 Royal York South, 77 Swansea, 79 Scarlett Rd, 81 Thorncliffe Park, 87 Cosburn, 100 Flemingdon Park, 102 Markham Rd, 111 East Mall, 112 West Mall, 113 Danforth, 116 Morningside, 123 Sherway, 135 Gerrard, 302 Kingston-McCowan, 332 Eglinton West, 900 Airport Express, 944 Kipling South Express, 985 Sheppard East Express	"300_0_300A
 300_0_300A*
+300_0_300Abs
 300_0_300Ake
 300_0_300B
 300_0_300B*
@@ -972,6 +975,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 329_1_329old"
 332	Eglinton West	Mount Dennis	32 Eglinton West, 300 Bloor-Danforth	"332_0_332
 332_1_332
+332_1_332Con
 332_0_sk332"
 334	Eglinton East	Eglinton	34 Eglinton East, 43 Kennedy, 54 Lawrence East, 86 Scarborough, 100 Flemingdon Park, 116 Morningside	"334_0_334
 334_1_334
@@ -1003,7 +1007,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 352_1_352
 352_1_SUKE
 352_1_LWSU"
-353	Steeles	Malvern	39 Finch East, 53 Steeles East, 85 Sheppard East, 95 York Mills, 133 Neilson	"353_0_c353
+353	Steeles	Malvern	39 Finch East, 53 Steeles East, 85 Sheppard East, 95 York Mills, 116 Morningside, 133 Neilson	"353_0_c353
 353_0_FDNW
 353_1_353c
 353_1_NWFD"
