@@ -36,7 +36,7 @@ class njc:
 		await self.bot.say(embed=data)
 
 	@commands.command()
-	async def routeveh1(self, rte):
+	async def routeveh(self, rte):
 		"""Checks vehicles on a route."""
 		data = discord.Embed(title="Vehicles on Route " + rte, description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
 
@@ -74,28 +74,6 @@ class njc:
 			await self.bot.say("No vehicles could be found on route {}.".format(rte))
 		else:
 			await self.bot.say(embed=data)
-			return
-
-	@commands.command()
-	async def routeveh(self, rte):
-		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on Route " + rte, description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
-
-		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-		raw = urlopen(url).read() # Get page and read data
-		decoded = raw.decode("utf-8") # Decode from bytes object
-		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
-		service = ""
-		vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
-		for i in vehicles: # Loop through these
-			service = service + i.attributes['id'].value + ", " # GETS VEHICLE
-
-		data.add_field(name="Vehicles", value=service)
-		try:
-			#await self.bot.say("**The following vehicles are on route {}:** ".format(rte) + service)
-			await self.bot.say(embed=data)
-		except:
-			await self.bot.say("No vehicles could be found on route {}.".format(rte))
 			return
 
 	@commands.command()
