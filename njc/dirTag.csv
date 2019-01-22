@@ -6,6 +6,7 @@
 6_0_6B	6 Bay	Davenport/Yonge	George Brown College	6 Queen's Quay/Dockside	N/A	Mount Dennis	
 6_0_Binserv	6 Bay	Davenport/Dupont 	Davenport/Yonge	Undetermined	N/A	Mount Dennis	
 6_1_6A	6 Bay	George Brown College	Davenport/Dupont 	6A Davenport/Dupont 	N/A	Mount Dennis	
+6_1_Booserv	6 Bay	Davenport/Yonge	Davenport/Dupont 	Undetermined	Last trip	Mount Dennis	
 6_1_6B	6 Bay	George Brown College	Davenport/Yonge	6B Bloor (Davenport/Yonge)	N/A	Mount Dennis	
 7_0_7	7 Bathurst 	Greenwin Village/Bathurst (Steeles) 	Bathurst Stn	7 Bathurst Stn	N/A	Wilson	
 7_0_BWBA	7 Bathurst	Wilson Ave/Bathurst	Bathurst Stn	7 Bathurst Stn	First trip for run	Wilson	
@@ -180,6 +181,7 @@
 36_0_fa36	36 Finch West	Arrow Road	Finch Stn	36 Finch Stn	via Finch West Stn	Arrow Rd	
 36_0_fa36c	36 Finch West	Arrow Road	Finch Stn	36 Finch Stn	bypass Finch West Stn	Arrow Rd	
 36_0_fa36	36 Finch West	Finch/Jane	Finch Stn	36 Finch Stn	via Finch West Stn	Arrow Rd	
+36_0_fj36	36 Finch West	Finch/Jane	Finch Stn	36 Finch Stn	N/A	Arrow Rd	
 36_0_MPWE	36 Finch West	Milvan Drive/Penn Drive	Finch Avenue West/Weston Road	36F Weston Rd	Last trip	Arrow Rd	
 36_1_36A	36 Finch West	Finch West Stn	Humberwood Loop	36A Humberwood 	N/A	Arrow Rd	
 36_1_36B	36 Finch West	Finch Stn	Finch West Stn	36A Finch West Stn	N/A	Arrow Rd	
@@ -195,7 +197,7 @@
 36_1_FWMP	36 Finch West	Finch Avenue West/Weston Road	Milvan Drive/Penn Road	36D Weston Rd and Milvan	First PM Trip	Arrow Rd	
 36_1_FWHW	36 Finch West	Finch Avenue West/Weston Road	Humberwood Loop	36A Humberwood	N/A	Arrow Rd	
 36_1_KE36B	36 Finch West	Keele Street/Finch Avenue West	Humberwood Loop	36A Humberwood	First PM Trip	Arrow Rd	
-36_1_FWES	36 Finch West	Finch Stn	Finch / Weston Rd	36S Weston Rd	Last AM Trip	Arrow Rd	
+36_1_FWES	36 Finch West	Finch Stn	Finch/Weston Rd	36S Weston Rd	Last AM Trip	Arrow Rd	
 37_0_37A	37 Islington	Humberwood Loop	Islington Stn	37 Islington Stn	N/A	Queensway	
 37_1_37A	37 Islington	Islington Stn	Humberwood Loop	37A Woodbine/Humberwood	via Rexdale Blvd	Queensway	
 37_0_37B	37 Islington	Steeles Loop/Islington	Islington Stn	37 Islington Stn	N/A	Queensway	
@@ -214,10 +216,11 @@
 39_0_FSMA	39 Finch East	Finch Stn	Markham Road	39S Markham Rd	Last trip	Malvern	
 39_0_BDNE	39 Finch East	Finch/Baldoon	Neilson Road	39 Finch Stn	First trip	Malvern	
 39_0_MCVP	39 Finch East	Victoria Park/McNicoll	480 Gordon Baker Road	39C Victoria Park and Gordon Baker	First PM Trip	Malvern	
+39_0_OFSE	39 Finch East	Old Finch/Morningview	Seneca College	39S Seneca	N/A	Malvern	
 39_1_39A	39 Finch East	Neilson Road	Finch Stn	39 Finch Stn	N/A	Malvern	
 39_1_39B	39 Finch East	Old Finch/Morningview	Finch Stn	39 Finch Stn	N/A	Malvern	
 39_1_39C	39 Finch East	Victoria Park/Gordon Baker	Finch Stn	39 Finch Stn	N/A	Malvern	
-39_1_NEBD	39 Finch East	Neilson Road / Crow Trail 	Baldoon Rd / Finch Ave East	39 Finch Stn	Last PM Trip	Malvern	
+39_1_NEBD	39 Finch East	Neilson Road/Crow Trail 	Baldoon Rd/Finch Av East	39 Finch Stn	Last PM Trip	Malvern	
 40_0_40	40 Junction 	Runnymede Loop	Dundas West Stn	40 Dundas West Stn	N/A	Queensway	
 40_1_40	40 Junction 	Dundas West Stn	Runnymede Loop	40 Runnymede	N/A	Queensway	
 40_1_40edna	40 Junction 	Edna/Dundas 	Runnymede Loop	40 Runnymede	While subway closed	Queensway	
@@ -239,7 +242,7 @@
 43_0_mc43A	43 Kennedy	McNicoll Avenue/Kennedy Road	Kennedy Stn	43 Kennedy Stn	School trip	Eglinton	
 43_0_MIMC	43 Kennedy	Midland Avenue/Steeles Av East	McNicoll Avenue/Kennedy Road	43 Kennedy Stn	School trip	Eglinton	
 43_0_MIPA	43 Kennedy	Steeles Av East/Midland Avenue	Kennedy Road/Passmore Avenue	43S Kennedy	Last trip	Eglinton	
-43_1_PAMI	43 Kennedy	Passmore/Kennedy Road	Midland Avenue/Steeles Ave East	43 Kennedy Stn	First trip	Eglinton	
+43_1_PAMI	43 Kennedy	Passmore/Kennedy Road	Midland Avenue/Steeles Av East	43 Kennedy Stn	First trip	Eglinton	
 43_1_43A	43 Kennedy	Kennedy Stn	Steeles Avenue East	43A Steeles	N/A	Eglinton	
 43_1_43B	43 Kennedy	Kennedy Stn	Scarborough Centre 	43B Scarborough Centre 	via Progress	Eglinton	
 44_0_44	44 Kipling South	Kipling Stn	Colonel Samuel Smith Park Loop	44 Lakeshore	N/A	Queensway	
@@ -279,6 +282,7 @@
 48_1_48	48 Rathburn	Royal York Stn	Mill Road/Rathburn Loop	48 Mill Rd	N/A	Queensway	
 48_0_48A	48 Rathburn	Renforth/Eringate	Royal York Stn	48 Royal York Stn	N/A	Queensway	
 48_1_48A	48 Rathburn	Royal York Stn	Renforth/Eringate	48A Renforth & Eringate	N/A	Queensway	
+48_0_48Aam	48 Rathburn	Renforth/Eringate	Royal York Stn	48 Royal York Stn	N/A	Queensway	
 48_0_MMRY	48 Rathburn	Silverthorn C.I	Royal York Stn	48 Royal York Stn	School Trip	Queensway	
 49_0_49	49 Bloor West	Markland Drive/Mill Road	Kipling Stn	49 Kipling Stn	N/A	Queensway	
 49_1_49	49 Bloor West	Kipling Stn	Markland Drive/Mill Road	49 Markland Wood	N/A	Queensway	
@@ -404,6 +408,7 @@
 63_1_LBKI	63 Ossington 	King Street West/Atlantic Ave	King Street West/Shaw Street	63S Short Turn	Last Trip before 363	Wilson	
 64_0_64	64 Main	Main Street Stn	Queen Street	64 Queen	N/A	Birchmount	
 64_1_64	64 Main	Queen Street	Main Street Stn	64 Main Street Stn	N/A	Birchmount	
+64_1_QUMS	64 Main	Queen Street	Main Street Stn	64 Main Street Stn	N/A	Birchmount	
 65_0_65	65 Parliament	The Esplanade	Castle Frank Stn	65 Castle Frank Stn	N/A	Birchmount	
 65_1_65	65 Parliament	Castle Frank Stn	The Esplanade	65 Esplanade	N/A	Birchmount	
 66_0_66A	66 Prince Edward	Humber Loop	Old Mill Stn	66 Old Mill Stn	N/A	Queensway	
@@ -422,6 +427,8 @@
 68_0_68B	68 Warden	Angus Glen Community Centre	Warden Stn	68 Warden Stn	N/A	Eglinton	
 68_1_68A	68 Warden	Warden Stn	Steeles/Warden Loop	68A Steeles	N/A	Eglinton	
 68_1_68B	68 Warden	Warden Stn	Angus Glen Community Centre	68B Major Mackenzie	Extra Fare Required North of Steeles	Eglinton	
+68_0_fawa	68 Warden	Finch Avenue East	Warden Stn	68 Warden Stn	N/A	Eglinton	
+68_1_poci	68 Warden 				N/A	Eglinton	
 68_1_wd68A	68 Warden	Danforth Road	Steeles/Warden Loop	68A Steeles	bypasses Warden Stn	Eglinton	
 68_1_wd68B	68 Warden	Danforth Road	Angus Glen Community Centre	68B Major Mackenzie	bypasses Warden Stn	Eglinton	
 69_0_69A	69 Warden South	Warden Stn	Kingston Road	69A Kingston Rd	via Warden	Birchmount	
@@ -471,6 +478,7 @@
 75_1_JVBL	75 Sherbourne	Lower Jarvis/Queen's Quay	Bloor Street/Sherbourne Street	75 Bloor Street	N/A	Wilson	
 76_0_76A	76 Royal York	Bloor St/Royal York Rd (Royal York Stn)	Lake Shore/Mimico	76A Lake Shore	N/A	Queensway	
 76_0_76B	76 Royal York	Bloor St/Royal York Rd (Royal York Stn)	Royal York/Portland	76B Queensway and Grande Avenue	N/A	Queensway	
+76_0_76B*	76 Royal York	Bloor St/Royal York Rd (Royal York Stn)	Royal York/Portland	76B Queensway and Grande Avenue	N/A	Queensway	
 76_0_76C	76 Royal York	Bloor/Royal York Rd (Royal York Stn)	The Queensway	76C Queensway	N/A	Queensway	
 76_0_76Cev	76 Royal York	Bloor/Royal York Rd (Royal York Stn)	Evans Avenue	76S Evans	N/A	Queensway	
 76_0_ev76	76 Royal York 	Evans Avenue	Lake Shore/Mimico	76A Lake Shore	N/A	Queensway	
@@ -518,6 +526,7 @@
 84_0_RIWE	84 Sheppard West 	Bradstock Road/Weston Road	Sheppard Ave West/Abraham Welsh Rd	84S Sheppard	Last Trip 	Arrow Rd	
 84_1_RIWE	84 Sheppard West 	Rivalda Rd/Sheppard Ave West	Bradstock Road/Weston Road	84A Weston Rd	First 84A Trip	Arrow Rd	
 84_0_WERI	84 Sheppard West 	Bradstock Rd/Weston Rd	Sheppard Ave West/Abraham Welsh Rd	84A Weston Rd	Last Trip	Arrow Rd	
+84_0_SRFA	84 Sheppard West	Rossdean Drive/Steeles 	Finch Avenue West	84S Short Turn	N/A	Arrow Rd	
 84_0_sa84	84 Sheppard West 	Sheppard Ave West/Arrow Rd	Sheppard-Yonge Stn	84 Sheppard-Yonge Stn	N/A	Arrow Rd	
 84_1_84sa	84 Sheppard West	Sheppard-Yonge Stn	Sheppard Ave West/Arrow Rd	84S Sheppard	N/A	Arrow Rd	
 84_0_ba84	84 Sheppard West	St Basil The Great College School 	Sheppard-Yonge Stn	84 Sheppard-Yonge Stn	School Trip	Arrow Rd	
@@ -832,7 +841,7 @@
 141_0_141pm	141 Mt. Pleasant Express	Spadina Avenue	Redpath/Eglinton	141 Eglinton	Extra Fare Required via Eglinton	Mount Dennis	
 141_1_141am	141 Downtown Express	Redpath/Eglinton	Simcoe/Adelaide	141 Downtown	Extra Fare Required	Mount Dennis	
 141_1_141pm	141 Downtown Express	Redpath/Eglinton	Simcoe/Adelaide	141 Downtown	Extra Fare Required	Mount Dennis	
-141_1_asad	141 Downtown Express	Simcoe/Adelaide	Adelaide / Church 	141 Downtown	Extra Fare Required	Mount Dennis	
+141_1_asad	141 Downtown Express	Simcoe/Adelaide	Adelaide/Church Street	141 Downtown	Extra Fare Required	Mount Dennis	
 142_0_142	142 Avenue Rd Express	Simcoe/Adelaide	Highway 401 (Bombay Loop)	142 Highway 401	Extra Fare Required	Wilson	
 142_1_142	142 Downtown Express	Highway 401 (Bombay Loop)	Simcoe/Adelaide	142 Downtown	Extra Fare Required	Wilson	
 142_0_SICH	142 Downtown Express	Simcoe/Adelaide	Charles Street West	142 Downtown	Extra Fare Required	Wilson	
@@ -1126,8 +1135,9 @@
 506_1_506	506 Carlton	Main Street Stn	High Park Stn	506 High Park	N/A	TTC Streetcar (Russell) 	
 506_0_506bus	506 Carlton	High Park Stn	Main Street Stn	506 Main Street Stn	N/A	Birchmount, Arrow Rd, Malvern, Queensway, Mount Dennis, Eglinton, Wilson	
 506_1_506bus	506 Carlton	Main Street Stn	High Park Stn	506 High Park 	N/A	Birchmount, Arrow Rd, Malvern, Queensway, Mount Dennis, Eglinton, Wilson	
-506_0_506BusCx	506 Carlton	Coxwell/Lower Gerrard 	Howard Park / Roncessvalles 	506 Roncesvalles 	Last run	Queensway	
-506_1_506BusCx	506 Carlton	Howard Park / Roncessvalles 	Coxwell/Lower Gerrard 	506 Coxwell and Queen	Last run	Queensway	
+506_1_506hp	506 Carlton	Main Street Stn	High Park Stn	506 High Park	N/A	Birchmount, Arrow Rd, Malvern, Queensway, Mount Dennis, Eglinton, Wilson	
+506_0_506BusCx	506 Carlton	Coxwell/Lower Gerrard 	Howard Park/Roncessvalles 	506 Roncesvalles 	Last run	Queensway	
+506_1_506BusCx	506 Carlton	Howard Park/Roncessvalles 	Coxwell/Lower Gerrard 	506 Coxwell and Queen	Last run	Queensway	
 506_0_506cx	506 Carlton	High Park Loop	Coxwell/Lower Gerrard 	506 Coxwell	Last run	TTC Streetcar (Russell)	
 506_1_cx506	506 Carlton	Coxwell/Lower Gerrard 	High Park Loop	506 High Park	First Trip 	TTC Streetcar (Russell)	
 506_0_CXMS	506 Carlton	Gerrard/Coxwell	Main Street Stn	506 Main Street Stn	First Trip	TTC Streetcar (Russell)	

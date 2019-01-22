@@ -46,34 +46,46 @@ class njc:
 		decoded = raw.decode("utf-8") # Decode from bytes object
 		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
 		service = ""
+		vehs = int('0')
 		vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
 
 		for i in vehicles: # For each vehicle found
 			veh = i.attributes['id'].value # GETS VEHICLE
 			lat = i.attributes['lat'].value # GETS LAT
 			lon = i.attributes['lon'].value # GETS LONG
-			hea = i.attributes['heading'].value # GETS COMPASS
+			hea = int(i.attributes['heading'].value) # GETS COMPASS
 			service = service + veh + ", " # GETS VEHICLE
+			vehs = vehs + int('1')
 
-			if hea == ('-4'): #label based on compass
-				mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
-			elif hea >= ('315') and hea < ('45'):
-				mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
-			elif hea >= ('45') and hea < ('135'):
-				mapurl = mapurl + "&markers=size:mid%7Ccolor:0x00ff00%7Clabel:E%7C{},{}".format(lat, lon)
-			elif hea >= ('135') and hea < ('225'):
-				mapurl = mapurl + "&markers=size:mid%7Ccolor:0x0000ff%7Clabel:S%7C{},{}".format(lat, lon)
-			else:
-				mapurl = mapurl + "&markers=size:mid%7Ccolor:0xcc00cc%7Clabel:W%7C{},{}".format(lat, lon)
+			if vehs <= int('27'):
+				if hea == int('-4'): #label based on compass
+					if vehs < int('20'):
+						mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('405'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('315'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
+				elif hea > int('225'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xffff00%7Clabel:W%7C{},{}".format(lat, lon)
+				elif hea > int('135'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x0000ff%7Clabel:S%7C{},{}".format(lat, lon)
+				elif hea > int('45'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x00ffff%7Clabel:E%7C{},{}".format(lat, lon)
+				else:
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
 
 		data.add_field(name="Vehicles", value=service)
 		data.set_image(url=mapurl)
+		data.set_footer(text="Map only shows up to 27 vehicles at a time. The map is intended to give you an idea of route headways.")
 
 
 		if service == "":
 			await self.bot.say("No vehicles could be found on route {}.".format(rte))
 		else:
-			await self.bot.say(embed=data)
+			try:
+				await self.bot.say(embed=data)
+			except Exception as errer:
+				await self.bot.say("An error occured: `{}`".format(errer))
 			return
 
 	@commands.command()
@@ -95,7 +107,7 @@ class njc:
 					dirtag = i.attributes['dirTag'].value # Direction Tag
 				except:
 					dirtag = str("N/A")
-				heading = i.attributes['heading'].value # Compass Direction
+				hea = int(i.attributes['heading'].value) # Compass Direction
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
@@ -142,7 +154,7 @@ class njc:
 					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16580352))
 
 
 
@@ -200,28 +212,36 @@ class njc:
 				try:
 					if str(linefleet[4]) not in str(line[6]):
 						await self.bot.say(":rotating_light: <@&536303913868197898> - Branch divisions don't match vehicle division!")
+						data = discord.Embed(colour=discord.Colour(value=16711907))
+
 				except Exception as errer:
 					if dirtag != str("N/A"):
 						await self.bot.say("**ERROR MESSAGE:** `{}`".format(errer))
 
-				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(heading) in j],heading)) # Obfuscation? Fun, either way
+				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 				try:
 					vision = vision
-					data.add_field(name="Vision Equipped?", value="**Yes!**".format(heading))
+					data.add_field(name="Vision Equipped?", value="**Yes!**")
 				except:
-					data.add_field(name="Vision Equipped?", value="No".format(heading))
+					data.add_field(name="Vision Equipped?", value="No")
 
-				if heading == ('-4'): #label based on compass
-					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:O%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
-				elif heading >= ('315') and heading < ('45'):
-					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
-				elif heading >= ('45') and heading < ('135'):
-					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:E%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
-				elif heading >= ('135') and heading < ('225'):
-					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:S%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo"
+
+				if hea == int('-4'): #label based on compass
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('405'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('315'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
+				elif hea > int('225'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xffff00%7Clabel:W%7C{},{}".format(lat, lon)
+				elif hea > int('135'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x0000ff%7Clabel:S%7C{},{}".format(lat, lon)
+				elif hea > int('45'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x00ffff%7Clabel:E%7C{},{}".format(lat, lon)
 				else:
-					data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:←%7C{},{}&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo".format(lat, lon, lat, lon))
-#                data.set_image(url="https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C{},{}".format(lat, lon, lat, lon))
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xcc00cc%7Clabel:N%7C{},{}".format(lat, lon)
+				data.set_image(url=mapurl)
 				data.set_footer(text="Last updated {} seconds ago. Division information is from n!fleet".format(updated))
 
 				try:
@@ -282,11 +302,11 @@ class njc:
 							line = row
 
 					try: #checks if vehicle in service is marked as inactive
-						if ("Active" not in str(linefleet[6])):
+						if (str(linefleet[6]) != "Active"):
 							if ("TRACK" in str(linefleet[6])):
 								service2 = (":white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
-							if ("Retired" in str(linefleet[6])):
+							elif ("Retired" in str(linefleet[6])):
 								service2 = (":x: :x: :x: :x: <@&536303913868197898> - {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
@@ -692,6 +712,8 @@ class njc:
 			await self.bot.say("I couldn't find the route information file.")
 			return
 
+
+
 		try: # GETS INFO FROM FILE
 			for row in reader:
 				if str(row[0]) == rte:
@@ -718,7 +740,22 @@ class njc:
 						else:
 							data.add_field(name="Divisions", value=line[2],inline='false')
 
-
+						try:
+							url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
+							raw = urlopen(url).read() # Get page and read data
+							decoded = raw.decode("utf-8") # Decode from bytes object
+							parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+							service = ""
+							vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+							for i in vehicles: # For each vehicle found
+								veh = i.attributes['id'].value # GETS VEHICLE
+								service = service + veh + ", "
+							if service == "":
+								data.add_field(name="Current Vehicles", value="No vehicles currently on route.",inline='false')
+							else:
+								data.add_field(name="Current Vehicles", value=service,inline='false')
+						except:
+							data.add_field(name="Current Vehicles", value="No vehicles currently on route.",inline='false')
 						data.set_footer(text="Learn about the branch by doing `n!branch <internal branch>`. Information last updated <future information>")
 
 					except Exception as errer:
@@ -727,7 +764,6 @@ class njc:
 
 		except Exception as errer:
 			await self.bot.say(errer)
-
 
 	# Gets profile for TTC branch
 	@commands.command()
