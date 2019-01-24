@@ -26,7 +26,7 @@ class njc:
 		self.channelID3 = 536640345530957844 #active-vehicles
 		self.channelID4 = 536650685618585600 #vehicle-checker
 		self.backupID = 506520464592732161 #bot-lab
-		self.scanInterval = 600
+		self.scanInterval = 300
 		self.looping = False
 
 	@commands.command()
@@ -97,7 +97,6 @@ class njc:
 		raw = urlopen(url).read() # Get page and read data
 		decoded = raw.decode("utf-8") # Decode from bytes object
 		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
-
 		vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
 		for i in vehicles: # Loop through these
 
@@ -151,11 +150,10 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16711680))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16580352))
-
 
 
 				try: # TRIES FETCHING DATA
@@ -164,13 +162,6 @@ class njc:
 					line = []
 				except Exception as errer:
 					await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-					data.add_field(name="On Route", value="No route")  
-					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-					data.add_field(name="Starts from", value="Unknown")
-					data.add_field(name="Ends at", value="Unknown")
-					data.add_field(name="Sign", value="Unknown")
-					data.add_field(name="Branch Notes", value="Unknown")
-					await self.bot.say(embed=data)
 					return
 
 				try: # GETS INFO FROM FILE
@@ -180,12 +171,18 @@ class njc:
 
 					# IF OK, THIS IS WHAT IS OUTPUTTED
 					taglist.close()
+					
+
 					if dirtag == str("N/A"):
 						try:
+							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=0))
 							data.add_field(name="Off Route", value=offroute)
 						except:
 							data.add_field(name="Off Route", value="*Not in service?*") 
 					else:
+						if str(linefleet[4]) not in str(line[6]):
+							await self.bot.say(":rotating_light: <@&536303913868197898> - Branch divisions don't match vehicle division!")
+							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=5604737))
 						data.add_field(name="On Route", value=line[1])  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Starts from", value=line[2])
@@ -193,6 +190,7 @@ class njc:
 						data.add_field(name="Sign", value=line[4])
 						data.add_field(name="Branch Notes", value=line[5])
 						data.add_field(name="Branch Divisions", value=line[6])
+		
 					try:
 						data.add_field(name="Vehicle Division", value=linefleet[4])
 						data.add_field(name="Vehicle Status", value=linefleet[6])
@@ -208,15 +206,6 @@ class njc:
 					data.add_field(name="Sign", value="Unknown")
 					data.add_field(name="Branch Notes", value="Unknown")
 					await self.bot.say(":question: <@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(errer))
-
-				try:
-					if str(linefleet[4]) not in str(line[6]):
-						await self.bot.say(":rotating_light: <@&536303913868197898> - Branch divisions don't match vehicle division!")
-						data = discord.Embed(colour=discord.Colour(value=16711907))
-
-				except Exception as errer:
-					if dirtag != str("N/A"):
-						await self.bot.say("**ERROR MESSAGE:** `{}`".format(errer))
 
 				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 				try:
@@ -312,6 +301,7 @@ class njc:
 							else:
 								service2 = (":question: <@&536303913868197898> - {} is not marked active and is on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
+
 							service5 = service5 + service2 + "\n"
 
 						try: #compares fleet division to branch division

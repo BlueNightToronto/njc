@@ -547,7 +547,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1313	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		2 January 2019
 1314	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1315	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active		9 July 2018
-1316	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
+1316	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		22 January 2019
 1317	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		20 January 2019
 1318	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		19 December 2018
 1319	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
@@ -570,7 +570,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1336	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466445500598452232/IMG_4176.JPG?width=500&height=300	15 December 2018
 1337	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		15 December 2018
 1338	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		21 December 2018
-1339	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		1 November 2018
+1339	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		22 January 2019
 1340	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1341	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466684119305420840/IMG_1217.JPG	21 January 2019
 1342	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466460401996136469/IMG_5087.JPG?width=500&height=300	11 July 2018
@@ -627,8 +627,8 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1393	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		20 January 2019
 1394	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		21 January 2019
 1395	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		24 October 2018
-1396	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active-TRACKING		20 January 2019
-1397	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Inactive		20 January 2019
+1396	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active TRACK		23 January 2019
+1397	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active TRACK		23 January 2019
 1398	1200-1423	Orion	2007 VII HEV	Arrow Rd	ISB-BAE	Active TRACK		21 January 2019
 1399	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		24 October 2018
 1400	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		12 January 2019
@@ -756,7 +756,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1598	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Retired		21 October 2018
 1599	1500-1689	Orion	2008 VII HEV	N/A	ISB-BAE	Retired - 2017		9 July 2018
 1600	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1601	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
+1601	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		22 January 2019
 1602	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466675275023777792/IMG_5329.JPG?width=779&height=520	11 July 2018
 1603	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1604	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -1004,7 +1004,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3025	3000-3027	ICTS	1986 Mark I	McCowan	3 phase linear	Active		24 September 2018
 3026	3000-3027	ICTS	1986 Mark I	McCowan	3 phase linear	Active		24 September 2018
 3027	3000-3027	ICTS	1986 Mark I	McCowan	3 phase linear	Active		24 September 2018
-3100	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		1 January 2019
+3100	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		24 January 2019
 3101	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		17 October 2018
 3102	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		9 July 2018
 3103	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		16 July 2018
@@ -1263,7 +1263,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3356	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		13 January 2019
 3357	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		22 December 2018
 3358	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		20 January 2019
-3359	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		9 July 2018
+3359	3100-3369	Nova Bus	2018 LFS IV	Mount Dennis	L9-B400R6	Active		24 January 2019
 3360	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		9 July 2018
 3361	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		9 July 2018
 3362	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		9 July 2018
@@ -1273,20 +1273,20 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3366	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		22 December 2018
 3367	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		13 January 2019
 3368	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		19 January 2019
-3369	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Active		19 January 2019
+3369	3100-3369	Nova Bus	2018 LFS IV	Arrow Rd	L9-B400R6	Inactive		22 January 2019
 3400	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow Rd	B6.7-BAE	Unavailable		1 January 2019
 3401	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow Rd	B6.7-BAE	Unavailable		23 December 2018
 3402	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow Rd	B6.7-BAE	Unavailable		30 November 2018
-3403	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Unavailable		23 December 2018
+3403	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		23 January 2019
 3404	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow Rd	B6.7-BAE	Unavailable		30 November 2018
-3405	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Unavailable		15 December 2018
+3405	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		24 January 2019
 3406	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Unavailable		12 January 2019
-3407	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		21 January 2019
+3407	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
 3408	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow Rd	B6.7-BAE	Unavailable		30 November 2018
 3409	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow Rd	B6.7-BAE	Unavailable		30 November 2018
 3410	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow Rd	B6.7-BAE	Unavailable		5 January 2019
-3411	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active TRACK		21 January 2019
-3412	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Unavailable		22 December 2018
+3411	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
+3412	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
 3413	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow	B6.7-BAE	Unavailable		30 November 2018
 3414	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Unavailable		12 December 2018
 3415	3400-3569	Nova Bus	2018 LFS IV HEV	Arrow	B6.7-BAE	Unavailable		30 November 2018
@@ -1296,23 +1296,23 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3419	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3420	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3421	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3422	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active TRACK		21 January 2019
-3423	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Inactive		21 January 2019
+3422	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
+3423	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
 3424	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3425	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active TRACK		21 January 2019
+3425	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
 3426	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3427	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3428	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3429	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3430	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3431	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active TRACK		21 January 2019
+3431	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
 3432	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3433	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3434	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3435	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3436	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3437	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3438	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
+3438	3400-3569	Nova Bus	2018 LFS IV HEV	Mount Dennis	B6.7-BAE	Unavailable		24 January 2019
 3439	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3440	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3441	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
@@ -1339,13 +1339,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3462	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3463	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3464	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3465	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
+3465	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Inactive		22 January 2019
 3466	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3467	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
+3467	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Inactive		22 January 2019
 3468	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3469	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
+3469	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Inactive		22 January 2019
 3470	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
-3471	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
+3471	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Inactive		22 January 2019
 3472	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3473	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
 3474	3400-3569	Nova Bus	2018 LFS IV HEV	N/A	B6.7-BAE	Unavailable		9 July 2018
@@ -1622,7 +1622,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 4179	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4180	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4181	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
-4182	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired	https://cdn.discordapp.com/attachments/385830976879722499/464882173690773514/20180706_152325.jpg	24 September 2018
+4182	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active	https://cdn.discordapp.com/attachments/385830976879722499/464882173690773514/20180706_152325.jpg	22 January 2019
 4183	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Retired - 2017		9 July 2018
 4184	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
 4185	4010-4199	UTDC	CLRV L2	TTC Streetcar	Overhead Wire	Active		9 July 2018
@@ -3173,7 +3173,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8425	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		24 August 2018
 8426	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		24 August 2018
 8427	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		24 August 2018
-8428	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		9 July 2018
+8428	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Inactive		24 January 2019
 8429	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		9 July 2018
 8430	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		20 January 2019
 8431	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		9 July 2018
@@ -3183,7 +3183,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8435	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		20 September 2018
 8436	8400-8504	Nova Bus	2015 LFS IV	Queensway	ISL9-B400R6	Active		20 September 2018
 8437	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		3 September 2018
-8438	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		3 September 2018
+8438	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Inactive		22 January 2019
 8439	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		3 September 2018
 8440	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		3 September 2018
 8441	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		3 September 2018
@@ -3224,7 +3224,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8476	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		12 October 2018
 8477	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		21 October 2018
 8478	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		12 October 2018
-8479	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		9 July 2018
+8479	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Inactive		22 January 2019
 8480	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		12 October 2018
 8481	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		12 October 2018
 8482	8400-8504	Nova Bus	2015 LFS IV	Birchmount	ISL9-B400R6	Active		12 October 2018
@@ -3433,7 +3433,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8692	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8693	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8694	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8695	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
+8695	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Inactive		22 January 2019
 8696	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8697	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8698	8620-8716	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
@@ -3703,7 +3703,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 9000	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
 9001	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/467624171866947587/IMG_20180714_032900_489.jpg	14 July 2018
 9002	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
-9003	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Stored		20 January 2019
+9003	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Inactive		22 January 2019
 9004	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
 9005	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
 9006	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Active		9 July 2018
