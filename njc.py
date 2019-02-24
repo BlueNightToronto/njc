@@ -20,11 +20,13 @@ class njc:
 
 	def __init__(self, bot):
 		self.bot = bot
+		self.channelstatus = 549292794188136448 #system-status
 		self.channelID = 536472876480462848 #out-of-divisions
 		self.channelID1 = 536638769722425344 #unknown-vehicles
 		self.channelID2 = 536640286248402974 #unknown-branches
 		self.channelID3 = 536640345530957844 #active-vehicles
 		self.channelID4 = 536650685618585600 #vehicle-checker
+		self.channelID5 = 541335416444420101 #branch-checker
 		self.backupID = 506520464592732161 #bot-lab
 		self.scanInterval = 300
 		self.looping = False
@@ -181,7 +183,7 @@ class njc:
 							data.add_field(name="Off Route", value="*Not in service?*") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							await self.bot.say(":rotating_light: <@&536303913868197898> - Branch divisions don't match vehicle division!")
+							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
 							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=5604737))
 						data.add_field(name="On Route", value=line[1])  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
@@ -205,14 +207,14 @@ class njc:
 					data.add_field(name="Ends at", value="Unknown")
 					data.add_field(name="Sign", value="Unknown")
 					data.add_field(name="Branch Notes", value="Unknown")
-					await self.bot.say(":question: <@&536303913868197898> - Unknown branch, add it to the database. `{}`".format(errer))
+					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 
 				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 				try:
 					vision = vision
-					data.add_field(name="Vision Equipped?", value="**Yes!**")
+					data.add_field(name="VISION Equipped?", value="**Yes!**")
 				except:
-					data.add_field(name="Vision Equipped?", value="No")
+					data.add_field(name="VISION Equipped?", value="No")
 
 				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo"
 
@@ -238,6 +240,143 @@ class njc:
 					return
 				except:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
+					return
+		await self.bot.say("Vehicle not found! #{}".format(veh))
+
+
+	@commands.command()
+	async def veh(self, veh):
+		"""Checks information for a selected TTC vehicle."""
+
+#        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
+		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocation&a=ttc&v=" + veh
+		raw = urlopen(url).read() # Get page and read data
+		decoded = raw.decode("utf-8") # Decode from bytes object
+		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+		vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
+		for i in vehicles: # Loop through these
+
+			service = i.attributes['id'].value # GETS VEHICLE
+			if veh == service: # IF MATCHING VEHICLE FOUND
+				try:
+					dirtag = i.attributes['dirTag'].value # Direction Tag
+				except:
+					dirtag = str("N/A")
+				hea = int(i.attributes['heading'].value) # Compass Direction
+				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
+				lat = i.attributes['lat'].value #latitude
+				lon = i.attributes['lon'].value # lon
+
+				try:
+					vision = i.attributes['speedKmHr'].value
+				except:
+					lon = i.attributes['lon'].value # lon
+
+				try:
+					find = i.attributes['routeTag'].value #routetag
+					url5 = "http://webservices.nextbus.com/service/publicXMLFeed?command=routeList&a=ttc"
+					raw5 = urlopen(url5).read() # Get page and read data
+					decoded5 = raw5.decode("utf-8") # Decode from bytes object
+					parsed5 = minidom.parseString(decoded5) # Parse with minidom to get XML stuffses
+					route = parsed5.getElementsByTagName('route') # Get all tags called 'vehicle'
+
+					for i in route: # Loop through these
+						routag = i.attributes['tag'].value
+						if routag == find: # IF MATCHING VEHICLE FOUND
+							offroute = i.attributes['title'].value
+				except:
+					offroute = str("No Route")
+
+
+				#LOADS FLEET INFO
+				try:
+					listfleet = open("cogs/njc/fleets/ttc.csv")
+					readerfleet = csv.reader(listfleet,delimiter="	")
+					linefleet = []
+				except:
+					await self.bot.say("I couldn't find the file.")
+					return
+
+				vehicle = "Test object"
+				try:
+					for row in readerfleet:
+						if str(row[0]) == veh:
+							linefleet = row
+
+						# IF OK, THIS IS WHAT IS OUTPUTTED
+					listfleet.close()
+
+					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16711680))
+				except Exception as errer:
+					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
+					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16580352))
+
+
+				try: # TRIES FETCHING DATA
+					taglist = open("cogs/njc/dirTag.csv")
+					reader = csv.reader(taglist,delimiter="	")
+					line = []
+				except Exception as errer:
+					await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+					return
+
+				try: # GETS INFO FROM FILE
+					for row in reader:
+						if str(row[0]) == dirtag:
+							line = row
+
+					# IF OK, THIS IS WHAT IS OUTPUTTED
+					taglist.close()
+					
+
+					if dirtag == str("N/A"):
+						try:
+							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=0))
+							data.add_field(name="Off Route", value=offroute)
+						except:
+							data.add_field(name="Off Route", value="*Not in service?*") 
+					else:
+						if str(linefleet[4]) not in str(line[6]):
+							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
+							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=5604737))
+						data.add_field(name="On Route", value=line[1])  
+						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+						data.add_field(name="Starts from", value=line[2])
+						data.add_field(name="Ends at", value=line[3])
+						data.add_field(name="Sign", value=line[4])
+						data.add_field(name="Branch Notes", value=line[5])
+						data.add_field(name="Branch Divisions", value=line[6])
+		
+					try:
+						data.add_field(name="Vehicle Division", value=linefleet[4])
+						data.add_field(name="Vehicle Status", value=linefleet[6])
+					except:
+						data.add_field(name="Vehicle Division", value="Unknown")
+						data.add_field(name="Vehicle Status", value="Unknown")
+				except Exception as errer:
+#                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
+					data.add_field(name="On Route", value="No route")  
+					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+					data.add_field(name="Starts from", value="Unknown")
+					data.add_field(name="Ends at", value="Unknown")
+					data.add_field(name="Sign", value="Unknown")
+					data.add_field(name="Branch Notes", value="Unknown")
+					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
+
+				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
+				try:
+					vision = vision
+					data.add_field(name="VISION Equipped?", value="**Yes!**")
+				except:
+					data.add_field(name="VISION Equipped?", value="No")
+
+				data.set_footer(text="Last updated {} seconds ago. Division information is from n!fleet".format(updated))
+
+				try:
+					await self.bot.say(embed=data)
+					return
+				except:
+					await self.bot.say(":rotating_light: {} is currently on `{}`. An error has occured while trying to embed data.".format(veh,dirtag,dirtag))
 					return
 		await self.bot.say("Vehicle not found! #{}".format(veh))
 
@@ -305,9 +444,13 @@ class njc:
 							service5 = service5 + service2 + "\n"
 
 						try: #compares fleet division to branch division
-							if str(linefleet[4]) not in str(line[6]):
+							if str(linefleet[4]) not in str(line[6]): #checks if divisions match
 								service1 = (":rotating_light: {} is on `{}`, divisions don't match!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
+								service = service + service1 + "\n"
+							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
+								service1 = (":ok_hand: {} is on `{}`!".format(veh,dirtag))
+								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
 							await self.bot.send_message(discord.Object(id = self.channelID2), ":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
@@ -318,6 +461,8 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus), ":white_check_mark: Bot service ok. Autoscan currently active.")
+		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
 #			if service != "":
@@ -1043,6 +1188,6 @@ class njc:
 		await self.bot.loop.create_task(self.autoscan())
 
 	async def on_ready(self):
-		await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
+		#await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
 		self.looping = True
 		await self.bot.loop.create_task(self.autoscan())
