@@ -980,6 +980,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 176_0_176pm	176 Mimco GO 	Newcastle/Windsor (Mimico GO) 	Lake Shore Blvd (Lake Shore Loop)	176 Parklawn	N/A	Queensway	This Route runs during rush hour every 30 minutes to meet the GO Train at Mimico GO, to bring people to Lakeshore to transfer to other bus routes
 176_1_176am	176 Mimico GO	Lake Shore Blvd (Lake Shore Loop)	Newcastle/Windsor (Mimico GO) 	176 Mimico GO 	N/A	Queensway	This Route runs during rush hour every 30 minutes to meet the GO Train at Mimico GO, to bring people to Lakeshore to transfer to other bus routes
 176_1_176pm	176 Mimico GO	Lake Shore Blvd (Lake Shore Loop)	Newcastle/Windsor (Mimico GO) 	176 Mimico GO 	N/A	Queensway	This Route runs during rush hour every 30 minutes to meet the GO Train at Mimico GO, to bring people to Lakeshore to transfer to other bus routes
+189_0_189	189 Stockyards	St Clair Ave West/Florence Crescent	High Park Stn	189 High Park Stn	via Keele Stn	Queensway	
+189_1_189	189 Stockyards	High Park Stn	St Clair Ave West/Florence Crescent	189 Scarlett Rd	N/A	Queensway	
 193_0_193	193 Exhibition Rocket	CNE Dufferin Gates	Dundas West Stn	193 Dundas West Stn	N/A	Queensway	This route no longer runs and is replaced by 29E (929 With new express branding)
 193_1_193	193 Exhibition Rocket	Dundas West Stn 	CNE Dufferin Gates	193 West Entrance	N/A	Queensway	This route no longer runs and is replaced by 29E (929 With new express branding)
 300_0_300A	300 Bloor-Danforth 	Pearson Airport (Terminal 3)	Warden Avenue	300A Warden	bypass Kipling Stn	Birchmount, Eglinton, Mount Dennis, Queensway	This is the standard branch for 300A.
@@ -1020,6 +1022,13 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 300_1_KEPS	300 Bloor-Danforth 	Kennedy Stn	Pape Stn	300S Pape Stn	N/A	Birchmount	For routes that end at Kipling stn and go onto 300, this is branch is often the first trip. 
 300_1_PSJN	300 Bloor-Danforth	Pape Stn	Jane Stn	300S Jane Stn	N/A	Queensway	This branch operates when the subway is about to open. Monday-Saturday.
 300_1_T1T3	300 Bloor-Danforth 	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	Various	Sign based on next trip	Birchmount, Eglinton, Queensway	All runs that start at the airport have this branch to ensure all passengers at the airport are able to board the bus.
+301_0_301	301 Queen	Neville Park Loop	Long Branch Loop	301 Long Branch	N/A	TTC Streetcar (Leslie, Russell)	
+301_0_301Bbus	301 Queen	Queen Street	Long Branch Loop	301 Long Branch	N/A	Wilson	
+301_0_301Rbus	301 Queen	Neville Park Loop	River Street	301 River Street	N/A	Mount Dennis, Wilson	
+301_0_LOCQ	301 Queen	Long Branch Loop	Connaught/Queen	301S Connaught 	Last trip	TTC Streetcar (Leslie, Russell)	
+301_0_LORQ	301 Queen	Long Branch Loop	Roncesvalles/Queen Street	301S Short Turn	N/A	TTC Streetcar (Leslie, Russell)	
+301_0_LOLQ	301 Queen	Long Branch Loop	Leslie Street/Queen Street East	301S Queen	N/A	TTC Streetcar (Leslie, Russell)	
+301_0_CQRQ	301 Queen	Connaught & Queen	Roncesvalles/Queen Street	301S Queen	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_301	301 Queen	Long Branch Loop	Neville Park Loop	301 Neville Park	N/A	TTC Streetcar (Leslie, Russell)	
 301_1_301Bbus	301 Queen	Long Branch Loop	Queen Street	301 Queen	N/A	Wilson	
 301_1_301Rbus	301 Queen	River Street	Neville Park Loop	301 Neville Park	N/A	Birchmount, Mount Dennis, Wilson	
