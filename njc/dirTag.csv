@@ -1153,8 +1153,13 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 354_1_354d	354 Lawrence East	Rouge Hill GO Stn	Yonge Street	354 Eglinton Stn	bypasses Lawrence East Stn	Eglinton	
 363_0_363	363 Ossington	Everden Ave (Eglinton West Stn)	Exhibition Loop	363 Exhibition	N/A	Wilson	
 363_1_363	363 Ossington	Exhibition Loop	Everden Ave (Eglinton West Stn)	363 Eglinton West Stn	N/A	Wilson	
-363_0_363ca	363 Ossington	Everden Ave (Eglinton West Stn)	King/Strachan	363S Short Turn	N/A	Wilson	
-363_1_ki363	363 Ossington	King St West/Shaw Street	Everden Ave (Eglinton West Stn)	363 Eglinton West Stn	N/A	Wilson	
+363_0_363egca	363 Ossington	Eglinton Avenue West	King Street West/Strachan Avenue	363S Short Turn	N/A	Wilson	
+363_0_363A	363 Ossington	Eglinton West Stn	Exhibition Loop	363A Exhibition	N/A	Wilson	
+363_0_363B	363 Ossington	Eglinton Ave West/Northcliffe	Exhibition Loop	363B Exhibition	N/A	Wilson	
+363_1_363B	363 Ossington	Exhibtion Loop	Eglinton Ave West/Northcliffe	363B Eglinton Ave	N/A	Wilson	
+363_0_363ca	363 Ossington	Everden Ave (Eglinton West Stn)	King Street West/Strachan Avenue	363S Short Turn	N/A	Wilson	
+363_1_ki363	363 Ossington	King Street West/Shaw Street	Everden Ave (Eglinton West Stn)	363 Eglinton West Stn	N/A	Wilson	
+363_1_ki363B	363 Ossington	King Street West/Shaw Street	Eglinton Ave West/Northcliffe	363B Eglinton Ave	N/A	Wilson	
 365_0_365	365 Parliament	Bloor Street	The Esplanade	365 Esplanade	N/A	Birchmount	
 365_1_365	365 Parliament	The Esplanade	Bloor Street	365 Castle Frank Stn	N/A	Birchmount	
 384_0_384	384 Sheppard West	Weston Road/Bradstock Road	Beecroft Rd (Sheppard Stn)	384 Sheppard Stn	bypasses Sheppard West Stn	Arrow Rd	
