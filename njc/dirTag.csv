@@ -3,12 +3,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 5_0_5B	5 Avenue Rd	Eglinton Stn	Gerrard Street West	5B Gerrard	N/A	Wilson	
 5_1_5A	5 Avenue Rd	Queen's Park	Eglinton Stn	5 Eglinton Stn	N/A	Wilson	
 5_1_5B	5 Avenue Rd	Gerrard Street West	Eglinton Stn	5 Eglinton Stn	N/A	Wilson	
-6_0_6A	6 Bay	Davenport/Dupont 	George Brown College	6 Queens Quay and Sherbourne	N/A	Mount Dennis	
-6_0_6B	6 Bay	Davenport/Yonge	George Brown College	6 Queens Quay and Sherbourne	N/A	Mount Dennis	
-6_0_Binserv	6 Bay	Davenport/Dupont 	Davenport/Yonge	Undetermined	N/A	Mount Dennis	TRACK
-6_1_6A	6 Bay	George Brown College	Davenport/Dupont 	6A Davenport/Dupont 	N/A	Mount Dennis	
-6_1_Booserv	6 Bay	Davenport/Yonge	Davenport/Dupont 	Undetermined	Last trip	Mount Dennis	TRACK
-6_1_6B	6 Bay	George Brown College	Davenport/Yonge	6B Bloor (Davenport/Yonge)	N/A	Mount Dennis	
+6_0_6A	6 Bay	Davenport/Dupont 	Dockside Drive/Queen Street East	6 Queens Quay and Sherbourne	N/A	Mount Dennis	
+6_1_6A	6 Bay	Dockside Drive/Queen Street East	Davenport/Dupont 	6A Davenport/Dupont 	N/A	Mount Dennis	
 7_0_7	7 Bathurst 	Greenwin Village/Bathurst (Steeles) 	Bathurst Stn	7 Bathurst Stn	N/A	Wilson	
 7_0_BWBA	7 Bathurst	Wilson Ave/Bathurst Street	Bathurst Stn	7 Bathurst Stn	First trip for run	Wilson	
 7_0_DUBA	7 Bathurst	Duncan Shops (Hillcrest)	Bathurst Stn	7 Bathurst Stn	142 Avenue Rd Express	Wilson	This is one of the special branches to bring the employees at TTC Hillcrest division home. Buses may not display as 7 Bathurst. - TRACK
