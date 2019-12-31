@@ -1212,8 +1212,6 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 396_1_396	396 Wilson	York Mills/Yonge Street	Steeles Loop/Martin Grove 	396 Steeles	bypass Wilson Stn	Arrow Rd	
 396_0_396*	396 Wilson	Steeles Loop/Martin Grove 	York Mills/Yonge Street	396A York Mills Stn	via Wilson Stn	Arrow Rd	
 396_1_396*	396 Wilson	York Mills/Yonge Street	Steeles Loop/Martin Grove 	396 Steeles	via Wilson Stn	Arrow Rd	
-501_0_501	501 Queen	Long Branch Loop	Neville Park Loop	501 Neville Park	N/A	TTC Streetcar (Russell/Leslie)	
-501_0_501bus	501 Queen	Long Branch Loop	Neville Park Loop	501 Neville Park	N/A	Eglinton, Queensway	
 501_0_501A	501 Queen	Humber Loop	Neville Park Loop	501 Neville Park	N/A	TTC Streetcar (Russell/Leslie)	
 501_0_501L	501 Queen	Long Branch Loop	Humber Loop	501 Humber	N/A	TTC Streetcar (Russell/Leslie)	
 501_0_501Rbus	501 Queen	River Street	Neville Park Loop	501 Neville Park	N/A	Mount Dennis, Wilson	
