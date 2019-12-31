@@ -1274,7 +1274,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 504_0_504B	504 King	Broadview Stn	Dufferin Gate Loop	504B Dufferin Gate	N/A	TTC Streetcar (Leslie)	
 504_0_304br	504 King	Dundas West Stn	Broadview/Queen	304S Short Turn	N/A	TTC Streetcar (Leslie)	
 504_0_504br	504 King	Dundas West Stn	Broadview/Queen	504S Queen	Last Trip	TTC Streetcar (Leslie)	
-504_0_504dich	504 King	Distillery Loop	Cherry Street/Front Street East	504S Short Turn	N/A	TTC Streetcar (Leslie)	
+504_0_504chdi	504 King	Cherry Street/Front Street East	Distillery Loop	504A Distillery	N/A	TTC Streetcar (Leslie)	
 504_0_BRBS	504 King	Broadview/Queen	Broadview Stn	504B Broadview Stn	First Trip	TTC Streetcar (Leslie)	
 504_0_EXBR	504 King	Dufferin Gate Loop	Broadview/Queen	504S Queen	Last Trip	TTC Streetcar (Leslie)	
 504_0_DWRQ	504 King	Dundas West Stn	Roncesvalles/Queen	504S Short Turn	N/A	TTC Streetcar (Leslie)	
