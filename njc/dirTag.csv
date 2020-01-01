@@ -551,16 +551,16 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 76_0_76B	76 Royal York South	Royal York Station	Royal York Rd/Portland Street	76B Queensway and Grand Ave	N/A	Queensway	
 76_0_76B*	76 Royal York South	Royal York Station	Royal York Rd/Portland Street	76B Queensway and Grand Ave	N/A	Queensway	
 76_0_76C	76 Royal York South	Royal York Station	The Queensway	76C Queensway	N/A	Queensway	
-76_0_76Cev	76 Royal York South	Royal York Station	Evans Avenue	76S Evans	N/A	Queensway	
-76_0_ev76	76 Royal York South	Evans Avenue	Lake Shore Blvd West/Mimico Avenue	76A Lake Shore	N/A	Queensway	
+76_0_76Cev	76 Royal York South	Royal York Station	Royal York Road/Evans Avenue	76S Evans	N/A	Queensway	
+76_0_ev76	76 Royal York South	Royal York Road/Evans Avenue	Lake Shore Blvd West/Mimico Avenue	76A Lake Shore	N/A	Queensway	
 76_0_qu76	76 Royal York South	The Queensway/Royal York Rd	Lake Shore Blvd West/Mimico Avenue	76A Lake Shore	N/A	Queensway	
 76_0_QUGN	76 Royal York South	The Queensway/Royal York Rd	Grand Ave/Dalesford Rd	76S Evans	N/A	Queensway	
-76_0_*GNPO	76 Royal York South	Grand Avenue/Dalesford Rd	Royal York Rd/Portland Street	76B Queensway and Grand Ave	N/A	Queensway	
+76_0_*GNPO	76 Royal York South	Grand Avenue/Dalesford Road	Royal York Rd/Portland Street	76B Queensway and Grand Ave	N/A	Queensway	
 76_1_76A	76 Royal York South	Lake Shore Blvd West/Mimico Avenue	Royal York Station	76 Royal York Stn	N/A	Queensway	
 76_1_76B	76 Royal York South	Royal York Rd/Portland Street	Royal York Station	76 Royal York Stn	N/A	Queensway	
 76_1_76C	76 Royal York South	The Queensway	Royal York Station	76 Royal York Stn	N/A	Queensway	
 76_1_ev76	76 Royal York South	Lake Shore Blvd West/Mimico Avenue	Evans Avenue	76S Evans	N/A	Queensway	
-76_1_ev76p	76 Royal York South	Evans Avenue	Royal York Station	76 Royal York Stn	N/A	Queensway	
+76_1_ev76p	76 Royal York South	Royal York Road/Evans Avenue	Royal York Station	76 Royal York Stn	N/A	Queensway	
 76_1_LAEV	76 Royal York South	Lake Shore Blvd West/Mimico Avenue	Evans Avenue	76S Evans	N/A	Queensway	
 77_0_77	77 Swansea	The Queensway	Runnymede Stn	77 Runnymede Stn	N/A	Mount Dennis	
 77_0_RB77	77 Swansea	Bloor Street/Runnymede 	The Queensway	77 Queensway	First trip while subway is closed	Mount Dennis	
