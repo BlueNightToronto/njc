@@ -1172,10 +1172,10 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 341_1_341	341 Keele	Bloor St West/Keele St (Keele Stn)	Pioneer Village Stn/Ian Macdonald Blvd	341 York University and Steeles	N/A	Mount Dennis	
 343_0_343	343 Kennedy	Steeles/Kennedy	Kennedy Stn	343 Kennedy Stn	N/A	Eglinton	
 343_0_MIPA	343 Kennedy	Steeles/Midland	Kennedy/Passmore	343S Kennedy	last trip	Eglinton	
-343_1_343	343 Kennedy	Eglinton Av East/Kennedy Rd	Steeles/Kennedy	343 Steeles	N/A	Eglinton	
+343_1_343	343 Kennedy	Eglinton Ave East/Kennedy Rd	Steeles/Kennedy	343 Steeles	N/A	Eglinton	
 343_1_PAMI	343 Kennedy	Kennedy/Passmore	Steeles/Midland	343 Kennedy Stn	First trip	Eglinton	
 352_0_352	352 Lawrence West	Pearson Airport (Terminal 3)	Sunnybrook Hospital	352 Sunnnybrook Hospital 	bypasses Lawrence West and Lawrence Stn	Wilson	
-352_0_LWSU	352 Lawrence West	Lawrence Ave West/Lorindale Ave	Sunnybrook Hospital	352 Sunnnybrook Hospital 	First Blue Night Trip	Wilson	
+352_0_LWSU	352 Lawrence West	Lawrence Ave West/Lorindale Avenue	Sunnybrook Hospital	352 Sunnnybrook Hospital 	First Blue Night Trip	Wilson	
 352_1_352	352 Lawrence West	Sunnybrook Hospital	Pearson Airport (Terminal 3)	352 Pearson Airport	bypasses Lawrence West and Lawrence Stn	Wilson	
 352_1_SUKE	352 Lawrence West	Sunnybrook Hospital	Keele Street	352S Keele 	bypasses Lawrence West and Lawrence Stn	Wilson	
 352_1_SULW	352 Lawrence West	Sunnybrook Hospital	Lorindale Av/Lawrence	352 Lawrence Stn	Last trip	Wilson	
