@@ -1145,13 +1145,13 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 332_1_332Con	332 Eglinton West	Duplex Avenue (Eglinton Stn)	Pearson Airport (Terminal 3)	332 Pearson Airport	N/A	Mount Dennis	
 332_1_332con	332 Eglinton West	Duplex Avenue (Eglinton Stn)	Pearson Airport (Terminal 3)	332 Pearson Airport	bypasses Eglinton West Stn	Mount Dennis	
 332_0_sk332	332 Eglinton West	Renforth Stn	Duplex Avenue (Eglinton Stn)	332 Eglinton Stn	bypasses Eglinton West Stn	Mount Dennis	This branch starts at Renforth Stn instead of Pearson Airport. It only runs immediately after a 32 Eglinton West trip to Renforth.
-334_0_334	334 Eglinton East	Eglinton Ave East/Duplex	Finch Avenue East	334 Finch/Neilson via Morningside	bypasses Kennedy Stn	Eglinton	
-334_0_334*	334 Eglinton East	Eglinton Ave East/Duplex	Finch Avenue East	334 Finch/Neilson via Morningside	via Kennedy Stn	Eglinton	
-334_0_334ke	334 Eglinton East	Eglinton Ave East/Duplex	Kennedy Stn	334S Kennedy Stn	Final trip as 334	Eglinton	
-334_0_FDNW	334 Eglinton East	Finchdene/Finch Ave East	Newgale/Finchdene	334 Eglinton Stn	First trip	Eglinton	
-334_1_334	334 Eglinton East	Finch Avenue East	Eglinton Ave East/Duplex	334 Eglinton Stn	bypasses Kennedy Stn	Eglinton	
-334_1_334*	334 Eglinton East	Finch Avenue East	Eglinton Ave East/Duplex	334 Eglinton Stn	via Kennedy Stn	Eglinton	
-334_1_NWFD	334 Eglinton East	Finchdene Square/Newgale	Finchdene Square/Finch Ave East	334 Finch/Neilson via Morningside	Last trip as 334	Eglinton	Some runs may continue as 34
+334_0_334	334 Eglinton East	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	Finch Avenue East	334 Finch/Neilson via Morningside	bypasses Kennedy Stn	Eglinton	
+334_0_334*	334 Eglinton East	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	Finch Avenue East	334 Finch/Neilson via Morningside	via Kennedy Stn	Eglinton	
+334_0_334ke	334 Eglinton East	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	Kennedy Stn	334S Kennedy Stn	Final trip as 334	Eglinton	
+334_0_FDNW	334 Eglinton East	Finch Ave East/Finchdene Square	Newgale/Finchdene	334 Eglinton Stn	First trip	Eglinton	
+334_1_334	334 Eglinton East	Finch Ave East/Finchdene Square	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	334 Eglinton Stn	bypasses Kennedy Stn	Eglinton	
+334_1_334*	334 Eglinton East	Finch Ave East/Finchdene Square	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	334 Eglinton Stn	via Kennedy Stn	Eglinton	
+334_1_NWFD	334 Eglinton East	Finchdene Square/Newgale	Finch Ave East/Finchdene Square	334 Finch/Neilson via Morningside	Last trip as 334	Eglinton	Some runs may continue as 34
 335_0_335	335 Jane	York University	Jane Stn	335 Jane Stn	N/A	Arrow Rd	
 335_1_335	335 Jane	Jane Street (Jane Stn)	York University	335 York University	N/A	Arrow Rd	
 336_0_336	336 Finch West	Humberwood Loop	Yonge St/Finch Ave West	336 Finch Stn	bypasses Finch Stn	Arrow Rd, Malvern	
