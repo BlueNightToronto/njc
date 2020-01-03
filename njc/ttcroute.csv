@@ -51,7 +51,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 12_0_KRBA*
 12_0_bi12A
 12_1_12*bi"
-14	Glencairn	Mount Dennis	None	"14_0_14
+14	Glencairn	Mount Dennis	28 Bayview South	"14_0_14
 14_1_14"
 15	Evans	Queensway	48 Rathburn, 111 East Mall, 937 Islington Express	"15_0_15
 15_1_15
@@ -112,7 +112,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 25_1_FEFM"
 26	Dupont	Mount Dennis	300 Bloor-Danforth, 312 St Clair-Junction	"26_0_26
 26_1_26"
-28	Bayview South	Wilson	None	"28_0_28
+28	Bayview South	Wilson	14 Glencairn	"28_0_28
 28_1_28"
 29	Dufferin	Mount Dennis	320 Yonge, 329 Dufferin	"29_0_29A
 29_0_29C
