@@ -228,7 +228,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 36_1_36fa	36 Finch West	Finch Station	Signet Drive/Arrow Rd	36S Arrow Rd	via Finch West Stn	Arrow Rd	
 36_1_36faCon	36 Finch West	Finch Station	Signet Drive/Arrow Rd	36S Arrow Rd	via Finch West Stn	Arrow Rd	
 36_1_36fac	36 Finch West	Finch Station	Signet Drive/Arrow Rd	36S Arrow Rd	bypass Finch West Stn	Arrow Rd	
-36_1_36J	36 Finch West	Finch Station	Humberwood Loop	36A Humberwood	via Finch West Stn	Arrow Rd	
+36_1_36J	36 Finch West	Finch Station	Humberwood Loop	36B Humberwood	via Finch West Stn	Arrow Rd	
+36_1_36Jfw	36 Finch West	Finch Station	Finch West Station	36A Finch West Stn	N/A	Arrow Rd	
 36_1_36JCon	36 Finch West	Finch Station	Humberwood Loop	36A Humberwood	via Finch West Stn	Arrow Rd	
 36_1_36Dpv	36 Finch West	Finch Ave West/Yonge Street	Milvan Drive/Penn Drive	36D Weston Rd and Milvan	bypass Finch West Stn	Arrow Rd	
 36_1_36Jpv	36 Finch West	Yonge Street	Humberwood Loop	36A Humberwood	bypass Finch West Stn	Arrow Rd	
@@ -664,6 +665,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 89_0_89	89 Weston	Albion Road/Weston Road	Keele Station	89 Keele Stn	N/A	Mount Dennis	
 89_1_89	89 Weston	Keele Station	Albion Road/Weston Road	89 Albion Rd	N/A	Mount Dennis	
 89_0_89sch	89 Weston	St Basil The Great College School	Keele Station	89 Keele Stn	School Trip	Mount Dennis	
+89_1_89am	89 Weston	Bloor Street West (Keele Stn)	Albion Road/Weston Road	89 Albion Rd	N/A	Mount Dennis	
 90_0_90A	90 Vaughan	Oakwood Avenue	St Clair West Station	90 St Clair West Stn	N/A	Wilson	
 90_1_90A	90 Vaughan	St Clair West Station	Oakwood Avenue	90A Oakwood 	N/A	Wilson	
 91_0_91C	91 Woodbine	York Mills Road	Woodbine Station	91C Woodbine Stn	via Laurentide	Birchmount	
@@ -1395,6 +1397,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 900_1_900	900 Airport Express	Kipling Stn	Pearson Airport (Terminal 3)	900 Pearson Airport	Express Network	Queensway	
 900_0_900AM	900 Airport Express	Pearson Airport (Terminal 3)	Dundas St West at Aukland Rd	900 Kipling Stn	Express Network, while subway is closed	Queensway	TRACK
 900_1_900AM	900 Airport Express	Dundas St West at Acorn Ave	Pearson Airport (Terminal 3)	900 Pearson Airport	Express Network, while subway is closed	Queensway	TRACK
+900_1_T1T3	900 Airport Express	Pearson Airport (Terminal 1)	Pearson Airport (Terminal 3)	900 Pearson Airport	Express Network	Queensway	
 902_0_902	902 Markham Rd Express	Progress Avenue/Sheppard Ave East	Warden Station	902 Warden Stn via Centennial College	Express Network	Birchmount	
 902_1_902	902 Markham Rd Express	Warden Station	Progress Avenue/Sheppard Ave East	902 Sheppard via Centennial College	Express Network	Birchmount	
 903_0_903	903 Kennedy-Scarborough Centre Express	Scarborough Centre Station	Kennedy Station	903 Kennedy Stn	Express Network	Malvern	
