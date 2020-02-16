@@ -1058,6 +1058,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 300_1_300Akp	300 Bloor-Danforth 	Warden Avenue	Kipling Station	300S Kipling Stn	N/A	Queensway	This branch operates when the subway is about to open on Sundays.
 300_1_300B	300 Bloor-Danforth 	Kennedy Station	The West Mall	300B West Mall	bypass Kipling Stn	Birchmount, Eglinton, Malvern, Queensway	This is the standard branch for 300B.
 300_1_300B*	300 Bloor-Danforth 	Kennedy Station	The West Mall	300B West Mall	via Kipling Stn	Queensway, Birchmount	While Kipling stn is still open, this branch runs to enter Kipling stn.
+300_1_300ba	300 Bloor-Danforth	Bathurst Station	Pearson Airport (Terminal 3)	300A Pearson Airport	via Kipling Stn	Mount Dennis	
 300_1_300baB	300 Bloor-Danforth	Kennedy Station	Bathurst Station	300S Bathurst Stn	N/A	Wilson, Mount Dennis	When the subway has opened. Used on Sunday mornings
 300_1_300bsB	300 Bloor-Danforth	Kennedy Station	Broadview Station	300S Broadview Stn	N/A	Birchmount, Eglinton, Queensway	When the subway has opened. Used on Sunday mornings
 300_1_300Bkp	300 Bloor-Danforth 	Kennedy Station	Kipling Station	300S Kipling Stn	N/A	Birchmount, Mount Dennis, Queensway	This branch operates when the subway is about to open.
