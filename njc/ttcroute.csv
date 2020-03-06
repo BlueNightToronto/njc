@@ -138,17 +138,25 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 32	Eglinton West	Wilson	141 Downtown/Mt Pleasant Express, 320 Yonge, 332 Eglinton West	"32_0_32A
 32_0_32C
 32_0_32D
+32_0_32F
+32_0_32Fp
+32_0_32Fes
 32_0_HOJA
-32_0_ke32sch
+32_0_ke32
 32_0_mp32sch
 32_0_MPEWsch
+32_0_ke32sch
+32_0_KEEW
 32_1_32A
+32_1_32ke
+32_1_ke32Asch
 32_1_32C
 32_1_32D
+32_1_32F
+32_1_es32F
 32_1_EMHO
-32_1_ke32Asch
-32_1_MMEWsch
-32_1_WRPI"
+32_1_WRPI
+32_1_MMEWsch"
 33	Forest Hill	Wilson	None	"33_0_33
 33_1_33
 33_1_33roch"
