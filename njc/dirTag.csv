@@ -153,10 +153,11 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 32_0_32Fp	32 Eglinton West	Royal York Road/Threhorne Drive	Eglinton Station	32 Eglinton Stn	via Eglinton W Stn	Mount Dennis	
 32_0_32Fes	32 Eglinton West	Royal York Road/Threhorne Drive	Eglinton Station	32 Eglinton Stn	via Eglinton W Stn	Mount Dennis	
 32_0_HOJA	32 Eglinton West	Emmett Avenue/Verona Avenue	Jane Street/Goldwin Avenue	32D Jane & Emmett	Last trip for run	Mount Dennis	
-32_0_ke32	32 Eglinton West	Keele Street/Trethewey Drive	Eglinton Station	32 Eglinton Stn	via Eglinton West Stn	Mount Dennis	
-32_0_mp32sch	32 Eglinton West	Michael Power/St Joseph HS	Eglinton Station	32 Eglinton Stn	School Trip, via Eglinton West Stn	Mount Dennis	TRACK
+32_0_ke32	32 Eglinton West	Keele Street/Trethewey Drive	Eglinton Station	32 Eglinton Stn	via Eglinton W Stn	Mount Dennis	
+32_0_mp32sch	32 Eglinton West	Michael Power/St Joseph HS	Eglinton Station	32 Eglinton Stn	School Trip, via Eglinton W Stn	Mount Dennis	TRACK
 32_0_MPEWsch	32 Eglinton West	Michael Power/St Joseph HS	Eglinton West Station	32D Eglinton West Stn	First PM Trip // School Trip	Mount Dennis	TRACK
 32_0_ke32sch	32 Eglinton West	Keele Street/Trethewey Drive	Eglinton Station	32 Eglinton Stn	via Eglinton W Stn	Mount Dennis	TRACK
+32_0_KEEW	32 Eglinton West	Keele Street/Trethewey Drive	Eglinton West Station	32D Eglinton West Stn	N/A	Mount Dennis	
 32_1_32A	32 Eglinton West	Eglinton Station	Renforth Station	32A Renforth Stn	via Eglinton West Stn	Mount Dennis	
 32_1_32ke	32 Eglinton West	Eglinton Station	Keele Street/Trethewey Drive	32S Short Turn	via Eglinton West Stn	Mount Dennis	After the 5 Avenue Rd trip, the bus drivers on 5 Avenue Rd changes to the 32 Eglinton West at Eglinton Stn and Arrive at Keele Street to end the trip
 32_1_ke32Asch	32 Eglinton West	Eglinton Station	Renforth Station	32A Renforth Stn	via Eglinton West Stn	Mount Dennis	TRACK
