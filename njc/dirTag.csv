@@ -343,10 +343,6 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 50_1_50	50 Burnhamthrope 	Islington Station	Mill Road/Burnhamthrope Road	50 Mill Road 	N/A	Queensway	
 51_0_51	51 Leslie	Freshmeadow/Don Mills (Steeles)	Eglinton Station	51 Eglinton Stn	N/A	Wilson	
 51_1_51	51 Leslie 	Eglinton Station	Freshmeadow/Don Mills (Steeles)	51 Steeles	N/A	Wilson	
-51_0_51Acon	51 Leslie	Freshmeadow/Don Mills (Steeles)	Eglinton Ave East/Leslie Street	51A Eglinton Stn	Transfer at Eglinton	Wilson	
-51_1_51Acon	51 Leslie	Eglinton Ave East/Leslie Street	Freshmeadow/Don Mills (Steeles)	51A Steeles	N/A	Wilson	
-51_0_51Ccon	51 Leslie	Lawrence Ave East/Don Mills	Eglinton Ave East/Leslie Street	51C Eglinton Stn	Transfer at Eglinton	Wilson	
-51_1_51Ccon	51 Leslie	Eglinton Ave East/Leslie Street	Lawrence Ave East/Don Mills	51C Steeles	N/A	Wilson	
 51_1_FIST	51 Leslie	Eglinton Station	Freshmeadow/Don Mills (Steeles)	51 Steeles	School Trip	Wilson	
 52_0_52A	52 Lawrence West 	Pearson Airport (Terminal 3)	Lawrence Station	52 Lawrence Stn	via Lawrence West Stn	Wilson	
 52_0_52Ayg	52 Lawrence West	Pearson Airport (Terminal 3)	Lorindale Ave (Yonge Street)	52 Lawrence Stn	Last trip // When subway is closed	Wilson	
