@@ -433,10 +433,10 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 54_1_RH54r	54 Lawrence East	East Avenue (Rouge Hill GO Stn)	Eglinton Station	54 Eglinton Stn	bypasses Lawrence East RT Stn	Eglinton	
 54_1_STRH	54 Lawrence East	Starspray Blvd (Starspray Loop)	East Avenue (Rouge Hill GO Stn)	54 Eglinton Stn	then continues as RH54	Eglinton	Instead of laying over at Starspray Loop, this branch allows buses to continue to Rouge Hill GO and turn off their buses. It is likely this is to reduce noise pollution at Starspray Loop.
 54_1_WALEcon	54 Lawrence East	Warden Ave/Lawrence Ave East	Leslie Street/Eglinton Ave East	54 Eglinton Stn	N/A	Eglinton	
-55_0_55	55 Warren Park	Underwood Avenue/Varsity Rd	Jane Station	55 Jane Stn	N/A	Mount Dennis	
-55_0_VAOL	55 Warren Park	Underwood Avenue/Varsity Rd	Dundas St West/Old Dundas 	55 Warren Park	Last trip	Mount Dennis	
-55_1_55	55 Warren Park	Jane Station	Underwood Avenue/Varsity Rd	55 Warren Park	N/A	Mount Dennis	
-55_1_OLVA	55 Warren Park	Dundas St West/Old Dundas	Underwood Avenue/Varsity Rd	55 Jane Stn	First trip	Mount Dennis	
+55_0_55	55 Warren Park	Underwood Avenue/Varsity Rd	Jane Station	55 Jane Stn	N/A	Mount Dennis, Queensway	
+55_0_VAOL	55 Warren Park	Underwood Avenue/Varsity Rd	Dundas St West/Old Dundas 	55 Warren Park	Last trip	Mount Dennis, Queensway	
+55_1_55	55 Warren Park	Jane Station	Underwood Avenue/Varsity Rd	55 Warren Park	N/A	Mount Dennis, Queensway	
+55_1_OLVA	55 Warren Park	Dundas St West/Old Dundas	Underwood Avenue/Varsity Rd	55 Jane Stn	First trip	Mount Dennis, Queensway	
 56_0_56A	56 Leaside	Eglinton Station	Donlands Station	56 Donlands Stn	N/A	Wilson	
 56_1_56A	56 Leaside	Donlands Station	Eglinton Station	56A Eglinton Stn	N/A	Wilson	
 56_0_56B	56 Leaside	Brentcliffe/Eglinton	Donlands Station	56 Donlands Stn	N/A	Wilson	
