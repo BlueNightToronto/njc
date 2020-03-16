@@ -1331,12 +1331,12 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 506_1_506bus	506 Carlton	Main Street Station	High Park Station	506 High Park 	N/A	Birchmount, Arrow Rd, Malvern, Queensway, Mount Dennis, Eglinton, Wilson	
 506_1_506hp	506 Carlton	Main Street Station	High Park Station	506 High Park	N/A	Eglinton	
 506_0_506BusCx	506 Carlton	Coxwell/Lower Gerrard	Howard Park/Roncesvalles	506 Roncesvalles 	Last Run	Mount Dennis, Queensway	
-506_1_506BusCx	506 Carlton	Howard Park/Roncesvalles 	Coxwell/Lower Gerrard	506 Coxwell and Queen	Last Run	Queensway	
+506_1_506BusCx	506 Carlton	Howard Park/Roncesvalles 	Coxwell/Lower Gerrard	506 Coxwell and Queen	Last Run	Mount Dennis, Queensway	
 506_0_506cx	506 Carlton	High Park Loop	Coxwell/Lower Gerrard	506 Coxwell	Last Run	TTC Streetcar (Russell/Leslie)	
 506_1_cx506	506 Carlton	Coxwell/Lower Gerrard	High Park Loop	506 High Park	First Trip 	TTC Streetcar (Russell/Leslie)	
 506_0_506cxBus	506 Carlton	Coxwell/Lower Gerrard	Main Street Station	506 Main Street Stn	N/A	Queensway	
 506_0_hp506bus	506 Carlton	Howard Park/Roncesvalles	Main Street Station	506 Main Street Stn	Morning Bus Trip 	Eglinton	
-506_0_506busDLMS	506 Carlton	Donlands Avenue	Main Street Station	506 Main Street Stn	N/A	Eglinton	
+506_0_506busDLMS	506 Carlton	Donlands Avenue	Main Street Station	506 Main Street Stn	N/A	Birchmount, Eglinton	
 506_0_CXMS	506 Carlton	Gerrard/Coxwell	Main Street Station	506 Main Street Stn	First Trip	TTC Streetcar Birchmount, Eglinton	
 506_1_MSCX	506 Carlton	Main Street Station	Gerrard/Coxwell	506 Coxwell	Final Trip	TTC Streetcar (Russell/Leslie)	
 506_0_hp506bus	506 Carlton	Howard Park/Roncesvalles	Main Street Station	506 Main Street Stn	Morning Bus Trip 	Eglinton	
