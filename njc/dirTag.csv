@@ -998,6 +998,10 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 162_1_162	162 Lawrence-Donway	The Donway East/Lawrence	Lawrence Station	162 Lawrence Stn	N/A	Wilson	
 162_1_DEDW	162 Lawrence-Donway	The Donway East/Lawrence	Lawrence Station	162 Lawrence Stn	N/A	Wilson	
 162_1_162con	162 Lawrence-Donway	The Donway East/Lawrence	Melrose Avenue	162 Avenue Rd (Roe Loop)	via Lawrence Stn	Wilson	
+163_0_163	163 Oakwood	Lawrence West Station	Ossington Station	163 Ossington Stn	via Marlee Ave	Wilson	
+163_0_163am	163 Oakwood	Lawrence West Station	Ossington Station	163 Ossington Stn	via Marlee Ave	Wilson	
+163_1_163	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	
+163_1_163pm	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	
 165_0_165A	165 Weston Rd North	Steeles Ave West/Barmac Road	York Mills Station	165 York Mills Stn	via Wilson Stn	Arrow Rd	
 165_0_165Apm	165 Weston Rd North	Steeles Ave West/Barmac Road	York Mills Station	165 York Mills Stn	via Wilson Stn	Arrow Rd	
 165_0_165AAM	165 Weston Rd North	Weston Road/Ormont Drive	York Mills Station	165 York Mills Stn	via Wilson Stn	Arrow Rd	
