@@ -742,8 +742,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 98_1_98B	98 Willowdale-Senlac	Steeles/Yonge Loop	Sheppard-Yonge Station	98B Sheppard-Yonge Stn	via Willowdale	Wilson	
 98_1_98C	98 Willowdale-Senlac	Steeles/Yonge Loop	Peckham/Steeles	98C Peckham	via Sheppard-Yonge Stn	Wilson	
 98_1_GOPE	98 Willowdale-Senlac	Goulding/Cactus	Peckham/Steeles 	98C Steeles	First trip of 98C	Wilson	
-99_0_99	99 Arrow Road 	Jane Street/Sheppard 	Arrow Road Bus Yard	99 Arrow Rd	N/A	Arrow Rd	This route runs before rush hour and before regular bus service begins, as it brings operators into the yard from Jane and Sheppard
-99_1_99	99 Arrow Road 	Arrow Road Bus Yard	Jane Street/Sheppard 	99 Jane	N/A	Arrow Rd	This route runs before rush hour and before regular bus service begins, as it brings operators into the yard from Jane and Sheppard
+99_0_99	99 Arrow Rd 	Jane Street/Sheppard 	Arrow Road Bus Yard	99 Arrow Rd	N/A	Arrow Rd	This route runs before rush hour and before regular bus service begins, as it brings operators into the yard from Jane and Sheppard
+99_1_99	99 Arrow Rd 	Arrow Road Bus Yard	Jane Street/Sheppard 	99 Jane	N/A	Arrow Rd	This route runs before rush hour and before regular bus service begins, as it brings operators into the yard from Jane and Sheppard
 100_0_100A	100 Flemingdon Park	Don Mills Road/Wynford Drive	Broadview Station	100A Broadview Stn	N/A	Eglinton	
 100_1_100A	100 Flemingdon Park	Broadview Station	Don Mills Road/Wynford Drive	100A Don Mills & Wynford	N/A	Eglinton	
 101_0_101	101 Downsview Park	75 Carl Hall Road (The Hangar)	Sheppard West Station	101 Sheppard West Stn	N/A	Arrow Rd	
