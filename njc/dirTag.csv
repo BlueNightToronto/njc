@@ -140,6 +140,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 30_0_30B	30 High Park	Runnymede Loop	Colborne Lodge Drive	30B High Park	via High Park Stn	Queensway	
 30_0_HPCL	30 High Park	High Park Station	Colborne Lodge Drive	30B High Park	N/A	Queensway	
 30_1_30A	30 High Park	High Park Station	Runnymede Loop	30 Runnymede	N/A	Queensway	
+30_1_30Acon	30 High Park	High Park Station	Runnymede Loop	30 Runnymede	N/A	Queensway	
 30_1_30B	30 High Park	Colborne Lodge Drive	Runnymede Loop	30B Runnymede	via High Park Stn	Queensway	
 30_1_CLHP	30 High Park	Colborne Lodge Drive	High Park Station	30S Short Turn	N/A	Queensway	
 31_0_31A	31 Greenwood	Greenwood Station	Queen Street	31A Queen	N/A	Birchmount	
@@ -472,6 +473,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 63_0_63A	63 Ossington 	Eglinton West Station	Alantic Avenue/King Street West	63 Liberty Village	via Ossington Stn	Wilson	
 63_0_63Apm	63 Ossington 	Eglinton West Station	Alantic Avenue/King Street West	63 Liberty Village	via Ossington Stn	Wilson	
 63_0_63B	63 Ossington 	St Clair Avenue West	Alantic Avenue/King Street West	63 Liberty Village	via Ossington Stn	Wilson	
+63_0_63BamSun	63 Ossington	St Clair Avenue West	Alantic Avenue/King Street West	63 Liberty Village	via Ossington Stn	Wilson	
 63_0_CALB	63 Ossington 	King St West/Strachan	Alantic Avenue/King Street West	63 Liberty Village	First trip	Wilson	
 63_0_63AamSun	63 Ossington 	Eglinton West Station	King Street West/Atlantic Avenue	63 Liberty Village	bypasses Ossington Stn	Wilson	While Ossington Stn is closed, Ossington Stn is bypassed and the Bloor Street stop is served.
 63_1_63A	63 Ossington 	Alantic Avenue/King Street West	Eglinton West Station	63A Eglinton West Stn	via Ossington Stn	Wilson	
@@ -583,8 +585,10 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 79_0_PILW	79 Scarlett Rd	Pine Street/Lawrence Avenue West	Lawrence Avenue West/Jane Street	79S Short Turn	Last Trip	Mount Dennis	
 80_0_80	80 Queensway	Sherway Gardens	Keele Station	80 Keele Stn via Parkside Dr	N/A	Queensway	
 80_0_qu80	80 Queensway	Kipling Avenue/The Queensway	Keele Station	80 Keele Stn via Parkside Dr	N/A	Queensway	
+80_0_80con	80 Queensway	Sherway Gardens	Keele Station	80 Keele Stn via Parkside Dr	N/A	Queensway	
 80_1_80	80 Queensway	Keele Station	Sherway Gardens	80 Sherway	N/A	Queensway	
 80_1_WDSH	80 Queensway	Windmere/The Queensway	Sherway Gardens	80 Sherway	First trip	Queensway	First trip coming from the garage
+80_1_80con	80 Queensway	Keele Station	Sherway Gardens	80 Sherway	N/A	Queensway	
 81_0_81	81 Thorncliffe Park	Thorncliffe Park Drive	Pape Station	81 Pape Stn	N/A	Birchmount	
 81_1_81	81 Thorncliffe Park	Pape Station	Thorncliffe Park Drive	81 Thorncliffe	N/A	Birchmount	
 81_1_MITH	81 Thorncliffe Park	Millwood Road/Overlea Blvd	Thorncliffe Park Drive	81 Thorncliffe	N/A	Birchmount	
@@ -783,17 +787,21 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 108_1_108C	108 Driftwood	Wilson Station	Pioneer Village Station	108C Pionner Village Stn	via Arleta	Arrow Rd	
 108_1_STPV	108 Driftwood	Driftwood/Stong Avenue	Pioneer Village Station	108C Pioneer Village Stn	First Trip	Arrow Rd	
 108_1_STPVc	108 Driftwood	Driftwood/Stong Avenue	Pioneer Village Station	108C Pioneer Village Stn	First Trip	Arrow Rd	
-109_0_109	109 Ranee	Bathurst Street	Lawrence West Station	109S Lawrence West Stn	via Flemington	Wilson	
-109_0_109B	109 Ranee	Bathurst Street	Eglinton West Station	109B Eglinton West Stn	via Flemington and Marlee	Wilson	
-109_0_109C	109 Ranee	Bathurst Street	Eglinton West Station	109C Eglinton West Stn	via Varna and Marlee	Wilson	
+109_0_109	109 Ranee	Bathurst Street/Neptune Drive	Lawrence West Station	109S Lawrence West Stn	via Flemington	Wilson	
+109_0_109B	109 Ranee	Bathurst Street/Neptune Drive	Eglinton West Station	109B Eglinton West Stn	via Flemington and Marlee	Wilson	
+109_0_109Bcon	109 Ranee	Bathurst Street/Neptune Drive	Eglinton West Station	109B Eglinton West Stn	via Flemington and Marlee	Wilson	
+109_0_109C	109 Ranee	Bathurst Street/Neptune Drive	Eglinton West Station	109C Eglinton West Stn	via Varna and Marlee	Wilson	
+109_0_109Ccon	109 Ranee	Bathurst Street/Neptune Drive	Eglinton West Station	109C Eglinton West Stn	via Varna and Marlee	Wilson	
 109_0_LAEW	109 Ranee	Lawrence West Station	Eglinton West Station	109 Eglinton West Stn	via Marlee	Wilson	
 109_0_RALA	109 Ranee	Ranee/Flemington (Yorkdale Stn)	Lawrence West Station	109S Lawrence West Stn	via Flemington	Wilson	
 109_0_RAEW	109 Ranee	Ranee/Flemington (Yorkdale Stn)	Eglinton West Station	109 Eglinton West Stn	via Flemington and Marlee	Wilson	
-109_1_109	109 Ranee	Lawrence West Station	Bathurst Street	109 Neptune	via Flemington	Wilson	
-109_1_109A	109 Ranee	Lawrence West Station	Bathurst Street	109 Neptune	via Varna	Wilson	
-109_1_109B	109 Ranee	Eglinton West Stn 	Bathurst Street	109B Neptune	via Marlee and Flemington	Wilson	
-109_1_109C	109 Ranee	Eglinton West Stn 	Bathurst Street	109C Neptune	via Marlee and Varna	Wilson	
-109_1_LARA	109 Ranee	Lawrence West Stn	Ranee/Flemington (Yorkdale Stn)	109S Short Turn	via Varna	Wilson	
+109_1_109	109 Ranee	Lawrence West Station	Bathurst Street/Neptune Drive	109 Neptune	via Flemington	Wilson	
+109_1_109A	109 Ranee	Lawrence West Station	Bathurst Street/Neptune Drive	109 Neptune	via Varna	Wilson	
+109_1_109B	109 Ranee	Eglinton West Station	Bathurst Street/Neptune Drive	109B Neptune	via Marlee and Flemington	Wilson	
+109_1_109Bcon	109 Ranee	Eglinton West Station	Bathurst Street/Neptune Drive	109B Neptune	via Marlee and Flemington	Wilson	
+109_1_109C	109 Ranee	Eglinton West Station	Bathurst Street/Neptune Drive	109C Neptune	via Marlee and Varna	Wilson	
+109_1_109Ccon	109 Ranee	Eglinton West Station	Bathurst Street/Neptune Drive	109C Neptune	via Marlee and Varna	Wilson	
+109_1_LARA	109 Ranee	Lawrence West Station	Ranee/Flemington (Yorkdale Stn)	109S Short Turn	via Varna	Wilson	
 110_0_110A	110 Islington South	Long Branch Loop	Islington Station	110A Islington Stn	via Browns Line and Horner	Queensway	
 110_0_110B	110 Islington South	Long Branch Loop	Islington Station	110B Islington Stn	via 30th Street and Horner	Queensway	
 110_0_110C	110 Islington South	Lake Shore Blvd	Islington Station	110B Islington Stn	via Horner and 30th Street	Queensway	
@@ -1001,6 +1009,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 163_0_163	163 Oakwood	Lawrence West Station	Ossington Station	163 Ossington Stn	via Marlee Ave	Wilson	
 163_0_163am	163 Oakwood	Lawrence West Station	Ossington Station	163 Ossington Stn	via Marlee Ave	Wilson	
 163_1_163	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	
+163_1_os163	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	Same trip as `163_1_163`
 163_1_163pm	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	
 165_0_165A	165 Weston Rd North	Steeles Ave West/Barmac Road	York Mills Station	165 York Mills Stn	via Wilson Stn	Arrow Rd	
 165_0_165Apm	165 Weston Rd North	Steeles Ave West/Barmac Road	York Mills Station	165 York Mills Stn	via Wilson Stn	Arrow Rd	
