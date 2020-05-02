@@ -184,7 +184,7 @@ class njc:
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
-							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=5604737))
+							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=0))
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 		
 					try:
@@ -198,13 +198,6 @@ class njc:
 					data.add_field(name="On Route", value="No route")  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
-
-				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
-				try:
-					vision = vision
-					data.add_field(name="VISION Equipped?", value="**Yes!**")
-				except:
-					data.add_field(name="VISION Equipped?", value="No")
 
 				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo"
 
@@ -675,11 +668,9 @@ class njc:
 				if row[0] != "vehicle" and int(row[0]) == number:
 					line = row
 			fleetlist.close()
-			data = discord.Embed( colour=discord.Colour(value=474494))
-			data.add_field(name="Manufacturer", value=line[2])
-			data.add_field(name="Model", value=line[3])
+			data = discord.Embed( colour=discord.Colour(value=16711680))
 			data.add_field(name="Division/Category", value=line[4])
-			data.add_field(name="Powertrain/Motor", value=line[5])
+			data.add_field(name="Powertrain/Motor", value=line[3])
 			data.add_field(name="Vehicle Group", value=line[1])
 			data.add_field(name="Status", value=line[6])
 			data.set_footer(text="Last updated " + line[8])
