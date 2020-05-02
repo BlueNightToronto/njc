@@ -20,15 +20,15 @@ class njc:
 
 	def __init__(self, bot):
 		self.bot = bot
-		self.channelstatus = 549292794188136448 #system-status
-		self.channelID = 536472876480462848 #out-of-divisions
-		self.channelID1 = 536638769722425344 #unknown-vehicles
-		self.channelID2 = 536640286248402974 #unknown-branches
-		self.channelID3 = 536640345530957844 #active-vehicles
-		self.channelID4 = 536650685618585600 #vehicle-checker
-		self.channelID5 = 541335416444420101 #branch-checker
-		self.backupID = 506520464592732161 #bot-lab
-		self.scanInterval = 300
+		self.channelstatus = 645764466985664562 #bot-console
+		self.channelID = 645764466985664562 #bot-console
+		self.channelID1 = 645764466985664562 #bot-console
+		self.channelID2 = 645764466985664562 #bot-console
+		self.channelID3 = 645764466985664562 #bot-console
+		self.channelID4 = 645764740718526485 #bot-console-checker
+		self.channelID5 = 645764740718526485 #bot-console-checker
+		self.backupID = 537718582256336940 #bot-lab
+		self.scanInterval = 900
 		self.looping = False
 
 	@commands.command()
@@ -91,8 +91,8 @@ class njc:
 			return
 
 	@commands.command()
-	async def vehicle(self, veh):
-		"""Checks information for a selected TTC vehicle."""
+	async def vehicle(self, agency, veh):
+		"""Checks information for a selected YRT, MiWay, TTC, and GO Transit vehicle."""
 
 #        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocation&a=ttc&v=" + veh
@@ -185,13 +185,7 @@ class njc:
 						if str(linefleet[4]) not in str(line[6]):
 							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
 							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=5604737))
-						data.add_field(name="On Route", value=line[1])  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-						data.add_field(name="Starts from", value=line[2])
-						data.add_field(name="Ends at", value=line[3])
-						data.add_field(name="Sign", value=line[4])
-						data.add_field(name="Branch Notes", value=line[5])
-						data.add_field(name="Branch Divisions", value=line[6])
 		
 					try:
 						data.add_field(name="Vehicle Division", value=linefleet[4])
@@ -203,10 +197,6 @@ class njc:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
 					data.add_field(name="On Route", value="No route")  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-					data.add_field(name="Starts from", value="Unknown")
-					data.add_field(name="Ends at", value="Unknown")
-					data.add_field(name="Sign", value="Unknown")
-					data.add_field(name="Branch Notes", value="Unknown")
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 
 				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
@@ -435,10 +425,10 @@ class njc:
 								service2 = (":white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
 							elif ("Retired" in str(linefleet[6])):
-								service2 = (":x: :x: :x: :x: <@&536303913868197898> - {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
+								service2 = (":x: :x: :x: :x: <@&566964640114933764> - {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
-								service2 = (":question: <@&536303913868197898> - {} is not marked active and is on `{}`!".format(veh,dirtag))
+								service2 = (":question: <@&566964640114933764> - {} is not marked active and is on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 
 							service5 = service5 + service2 + "\n"
@@ -453,7 +443,7 @@ class njc:
 								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID2), ":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
+							await self.bot.send_message(discord.Object(id = self.channelID2),":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
 
 					except Exception as errer:
 						await self.bot.send_message(discord.Object(id = self.channelID1), ":minibus: **UNKNOWN VEHICLE #{}** is on `{}`".format(veh,dirtag,errer))
@@ -461,7 +451,7 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus), ":white_check_mark: Bot service ok. Autoscan currently active.")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),":white_check_mark: **Bot service ok. Autoscan currently active.**")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -902,7 +892,7 @@ class njc:
 
 	# Gets profile for TTC branch
 	@commands.command()
-	async def branch(self, branch):
+	async def branch(self, agency, branch):
 		"""Gets information about a TTC internal branch."""
 
 		try:
