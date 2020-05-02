@@ -674,7 +674,7 @@ class njc:
 			data.add_field(name="Vehicle Group", value=line[1])
 			data.add_field(name="Status", value=line[6])
 			data.set_footer(text="Last updated " + line[8])
-
+			
 
 			if number < 1000:
 				if agency == 'ttc':
@@ -682,7 +682,7 @@ class njc:
 				elif agency == 'miway':
 					number = str('0{}'.format(number))
 			data.set_author(name="Fleet Information for {}".format(agencyname) + str(number), url=line[7])
-			data.set_thumbnail(url=line[7])
+			data.set_image(url=line[7])
 
 		except Exception as e:
 			data = discord.Embed(title="Vehicle {} was not found ".format(number) + "for {}".format(agencyname),description="Either you have entered a non-existent vehicle number, or that vehicle has not been added to our database yet! Vehicle groups that have been completely retired are removed from the database!\n\nError: `" + str(e) + "`",colour=discord.Colour(value=16467744))
