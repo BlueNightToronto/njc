@@ -43,7 +43,7 @@ class njc:
 		data = discord.Embed(title="Vehicles on Route " + rte, description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo"
+		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 		raw = urlopen(url).read() # Get page and read data
 		decoded = raw.decode("utf-8") # Decode from bytes object
 		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -152,10 +152,10 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16711680))
+					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16580352))
+					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="",colour=discord.Colour(value=16580352))
 
 
 				try: # TRIES FETCHING DATA
@@ -177,19 +177,20 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=0))
-							data.add_field(name="Off Route", value=offroute)
+							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
-							data.add_field(name="Off Route", value="*Not in service?*") 
+							data.add_field(name="Currently on Branch", value=offroute) 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
 							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=0))
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+						
+					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 		
 					try:
-						data.add_field(name="Vehicle Division", value=linefleet[4])
-						data.add_field(name="Vehicle Status", value=linefleet[6])
+						data.add_field(name="Speed", value=linefleet[4])
 					except:
 						data.add_field(name="Vehicle Division", value="Unknown")
 						data.add_field(name="Vehicle Status", value="Unknown")
@@ -198,8 +199,9 @@ class njc:
 					data.add_field(name="On Route", value="No route")  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
+					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=15&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyBwzgxqLQV91ERZjAlmrJO0yGNd7GxYOlo"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
