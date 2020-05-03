@@ -192,12 +192,6 @@ class njc:
 					
 					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
 					
-					try:
-						data.add_field(name="Vehicle Division", value=linefleet[4])
-					except:
-						data.add_field(name="Speed", value="Unknown")
-						data.add_field(name="Vehicle Division", value="Unknown")
-						data.add_field(name="Vehicle Status", value="Unknown")
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
 					data.add_field(name="On Route", value="No route")  
