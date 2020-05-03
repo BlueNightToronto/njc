@@ -38,9 +38,9 @@ class njc:
 		await self.bot.say(embed=data)
 
 	@commands.command()
-	async def routeveh(self, rte):
+	async def routeveh(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on Route " + rte, description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=8388608))
+		data = discord.Embed(title="Vehicles on TTC route " + rte, description=" vehicles currently on route.",colour=discord.Colour(value=8388608))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
 		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
@@ -112,6 +112,7 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
+				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
 					vision = i.attributes['speedKmHr'].value
@@ -152,10 +153,10 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="",colour=discord.Colour(value=16580352))
+					data = discord.Embed(title="Vehicle Tracking for {} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
 
 
 				try: # TRIES FETCHING DATA
@@ -177,21 +178,24 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
-							data.add_field(name="Currently on Branch", value=offroute) 
+							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
-							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=0))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=0))
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						
 					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
-		
+					
+					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
+					
 					try:
-						data.add_field(name="Speed", value=linefleet[4])
+						data.add_field(name="Vehicle Division", value=linefleet[4])
 					except:
+						data.add_field(name="Speed", value="Unknown")
 						data.add_field(name="Vehicle Division", value="Unknown")
 						data.add_field(name="Vehicle Status", value="Unknown")
 				except Exception as errer:
@@ -423,7 +427,7 @@ class njc:
 								service2 = (":x: :x: :x: :x: <@&566964640114933764> - {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
-								service2 = (":question: <@&566964640114933764> - {} is not marked active and is on `{}`!".format(veh,dirtag))
+								service2 = (":question: <@&566964640114933764> - {} is not marked active and is on `{}`!".format(veh,dirtag,update))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 
 							service5 = service5 + service2 + "\n"
@@ -446,7 +450,7 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus),":white_check_mark: **Bot service ok. Autoscan currently active.**")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**, Scan complete. See below for statistics.")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -683,7 +687,7 @@ class njc:
 					number = str('W{}'.format(number))
 				elif agency == 'miway':
 					number = str('0{}'.format(number))
-			data.set_author(name="Fleet Information for {}".format(agencyname) + str(number), url=line[7])
+			data.set_author(name="{}".format(agencyname) + str(number), url=line[7])
 			data.set_image(url=line[7])
 
 		except Exception as e:
@@ -735,7 +739,8 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="'{}' has been updated for ".format(field) + agency + " " + str(number),description="New value for {}: ".format(field) + newvalue,colour=discord.Colour(value=34633))
+		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="{} has been updated to ".format(field) + " " + agency + str(number) + newvalue,colour=discord.Colour(value=34633))
+		data.set_footer(text="Learn about the branch by doing n!branch<internal branch>'. Information last updated<future information>.")
 		await self.bot.say(embed=data)
 
 	# Gets schedules
