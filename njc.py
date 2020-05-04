@@ -91,7 +91,7 @@ class njc:
 			return
 
 	@commands.command()
-	async def vehicle(self, agency, veh):
+	async def vehicle(self,agency,veh):
 		"""Checks information for a selected YRT, MiWay, TTC, and GO Transit vehicle."""
 
 #        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
@@ -112,6 +112,7 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
+				routetag = i.attributes['routeTag'].value #routetag
 				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
@@ -156,7 +157,7 @@ class njc:
 					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
-					data = discord.Embed(title="Vehicle Tracking for {} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
+					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
 
 
 				try: # TRIES FETCHING DATA
@@ -184,8 +185,8 @@ class njc:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=0))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=13491480))
+						data.add_field(name="Currently on route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						
 					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
@@ -463,7 +464,7 @@ class njc:
 
 	# COMMAND FOR GETTING NEXT BUS <STOPID>
 	@commands.command()
-	async def ttcnext(self, stopID):
+	async def ttcnext(self,stopID):
 		"""Obtains next vehicle predictions for TTC bus stop's SMS code. Enter a stopID, 'info', or 'alias'"""
 
 		if stopID == 'info':
@@ -534,7 +535,7 @@ class njc:
 			return
 
 		msg1 = ["No predictions found for this route."]
-		data = discord.Embed(title="Next Vehicle Predictions",description="Stop ID: {}".format(stopID), colour=discord.Colour(value=11250603))
+		data = discord.Embed(title="Next Vehicle Predictions",description="Stop ID: {}".format(stopID), colour=discord.Colour(value=13491480))
 		routes = parsed.getElementsByTagName('predictions') # Get all tags called 'predictions'
 		for i in routes: # Loop through these
 			stopname = i.attributes['stopTitle'].value # GETS STOP NAME
@@ -619,6 +620,167 @@ class njc:
 			                   "Check console for error details. "
 			                   "(There's a good chance that the error is that the data is too long)")
 			print("Error:", e, "\nData:", data.to_dict(), "\nString:", string)
+			
+
+	#COMMAND FOR GETTING NEXT BUS <STOPID>
+	@commands.command()
+	async def tstop(self,agency,stopID):
+		"""Obtains next vehicle predictions for GO bus stop's SMS code. Enter a stopID, 'info', or 'alias'"""
+
+		if stopID == 'info':
+			data = discord.Embed(title="Next Vehicle Predictions for Toronto Transit Commission",description="This bot was developed by <@281750712805883904> and <@221493681075650560>. When you submit a valid stop ID, the bot fetches data and displays it here. This information is to let users find departures for a selected bus stop efficiently, without wasting much data.\n\nOne prediction typically looks like this:\n`00:07:07 - #8844 on 25_1_25A*, run 25_52_182`\n\nThis means vehicle `#8844` is coming to the stop in 7 minutes. This can help you find internal branches. `25_1_25A*` means it is on route `25` going `1` outbound on internal branch `25A*`.\n\nWith the run information, you can find interesting run interlines. The run `25_52_82` lets you know if it interlines, and when it services. This is run `8` on route `25`, which operates in the `2` afternoon. The runbox number `52` does not match run `8`. This happens if a route interlines, or if it shares the corridor with another route, to prevent confusion to operators. For possible values of runs, use the command `n!ttcnext runs`\n\nFor daytime routes that fully interline with another route for the whole day, like 130 Middlefield and 132 Milner, the runbox number will not differ from the route run number.\n\nPlease report any bugs to <@221493681075650560>.\n\nThere may currently be more bugs than usual, as the code needs a major rewrite.\n\nAll prediction data is copyright Toronto Transit Commission 2018.", colour=discord.Colour(value=13491480))
+			data.set_thumbnail(url="")
+			await self.bot.say(embed=data)
+			return
+		elif stopID == 'alias':
+			data = discord.Embed(title="StopID Alias",description="You can also type these in to get their bus stop.", colour=discord.Colour(value=13491480))
+
+			try:
+				fleetlist = open("cogs/njc/goalias.csv")
+				reader = csv.reader(fleetlist,delimiter=",")
+				line = []
+			except:
+				await self.bot.say("No alias file found... <@221493681075650560>")
+				stopID = stopID
+			tosay = ""
+			for row in reader:
+				try:
+					if tosay != "":
+						tosay=tosay + "; `" + row[0] + "`"
+					else:
+						tosay = "`" + row[0] + "`"
+				except Exception as e:
+					stopID = stopID
+					await self.bot.say("Error, see console")
+					print("Error:", e)
+			data.add_field(name='Alias',value=tosay, inline='false') # Alias
+			data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
+			await self.bot.say(embed=data)
+			return
+		elif stopID == 'runs':
+			data = discord.Embed(title="Runs Information",description="`<route>_<runbox>_<run><time>`, ex. `12_88_20`", colour=discord.Colour(value=13491480))
+			data.add_field(name='Values for Routes:',value="The main route for the run. In the example, it is `12`.", inline='false') # Alias
+			data.add_field(name='Values for Runbox:',value="Same as run, unless this run goes on more than one route, and/or the route operates very closely to another route. In the example, it is `88`.", inline='false') # Alias
+			data.add_field(name='Values for Run:',value="The run number for the particular route. In the example, it is `2`.", inline='false') # Alias
+			data.add_field(name='Values for Time:',value="`0` - Run operates all day.\n`1` - Run operates in the morning period only.\n`2` - Run starts to operate in the afternoon period.\nIn the example, it is `0`.", inline='false') # Alias
+			data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
+			await self.bot.say(embed=data)
+			return
+
+		try:
+			fleetlist = open("cogs/njc/goalias.csv")
+			reader = csv.reader(fleetlist,delimiter=",")
+			line = []
+		except:
+			await self.bot.say("No alias file found... <@221493681075650560>")
+			stopID = stopID
+
+		try:
+			for row in reader:
+				if str(row[0]) == stopID:
+					line = row
+			fleetlist.close()
+			stopID=line[1]
+		except:
+			stopID = stopID
+
+		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&stopId=" + stopID
+		raw = urlopen(url).read() # Get page and read data
+		decoded = raw.decode("utf-8") # Decode from bytes object
+		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+
+		if len(parsed.getElementsByTagName('Error')) > 0: # Check whether the ID is valid
+			data = discord.Embed(title=":x: Invalid Stop ID or Command: " + stopID,description="Type `n!ttcnext info` for help.",colour=discord.Colour(value=16467744))
+			await self.bot.say(embed=data)
+			return
+
+		msg1 = ["No predictions found for this route."]
+		data = discord.Embed(title="Next Vehicle Predictions",description="Stop ID: {}".format(stopID), colour=discord.Colour(value=13491480))
+		routes = parsed.getElementsByTagName('predictions') # Get all tags called 'predictions'
+		for i in routes: # Loop through these
+			stopname = i.attributes['stopTitle'].value # GETS STOP NAME
+			routename = i.attributes['routeTitle'].value # GETS ROUTE NAME
+			predictions = i.getElementsByTagName('prediction') # Get all sub-tags called 'prediction'
+			for i in predictions: # Loop through these
+				try: #test
+					seconds = int(i.attributes['seconds'].value) # If the seconds value is blank, this will throw an error (dividing by 0) and trigger the exception handler, and this value needs to be an int later anyway
+					vehicle = i.attributes['vehicle'].value
+					if vehicle >= '1000' and vehicle <= '1149':
+						vehicle = vehicle + " VII Hybrid"                    
+					elif vehicle >= '1200' and vehicle <= '1423':
+						vehicle = vehicle + " VII NG Hybrid"                    
+					elif vehicle >= '1500' and vehicle <= '1689':
+						vehicle = vehicle + " VII NG Hybrid"                    
+					elif vehicle >= '1700' and vehicle <= '1829':
+						vehicle = vehicle + " VII NG Hybrid"                    
+					elif vehicle >= '3100' and vehicle <= '3369':
+						vehicle = vehicle + " LFS VISION"                    
+					elif vehicle >= '4000' and vehicle <= '4199':
+						vehicle = vehicle + " CLRV"                    
+					elif vehicle >= '4200' and vehicle <= '4251':
+						vehicle = vehicle + " ALRV"                    
+					elif vehicle >= '4400' and vehicle <= '4999':
+						vehicle = vehicle + " Flexity"                    
+					elif vehicle >= '7500' and vehicle <= '7883':
+						vehicle = vehicle + " VII"                    
+					elif vehicle >= '7900' and vehicle <= '7979':
+						vehicle = vehicle + " VII"                    
+					elif vehicle >= '8000' and vehicle <= '8011':
+						vehicle = vehicle + " VII-Airport"                    
+					elif vehicle >= '8012' and vehicle <= '8099':
+						vehicle = vehicle + " VII"                    
+					elif vehicle >= '8100' and vehicle <= '8219':
+						vehicle = vehicle + " VII NG"         
+					elif vehicle >= '8300' and vehicle <= '8396':
+						vehicle = vehicle + " VII 3G"         
+					elif vehicle >= '8400' and vehicle <= '8504':
+						vehicle = vehicle + " LFS"                    
+					elif vehicle >= '8510' and vehicle <= '8617':
+						vehicle = vehicle + " LFS"                    
+					elif vehicle >= '8620' and vehicle <= '8964':
+						vehicle = vehicle + " LFS"                    
+					elif vehicle >= '9000' and vehicle <= '9152':
+						vehicle = vehicle + " LFS-Artic"
+					elif vehicle >= '9200' and vehicle <= '9239':
+						vehicle = vehicle + " LFS"                    
+					else:
+						vehicle = vehicle + " UNKNOWN VEHICLE"
+					toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, str(seconds // 3600).zfill(2), str(seconds // 60 % 60).zfill(2), str(seconds % 60).zfill(2), seconds] # Get the time value, vehicle and route name from the first one
+
+					if msg1[0] == "No predictions found for this route.":
+						msg1 = [toSay]
+					else:
+						msg1.append(toSay)
+				except:
+					try:
+						msg1 = ["No predictions found for this route."]
+						continue # And starting the next loop immediately
+					except:
+						msg1 = "Invalid Data recieved"
+						await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
+
+			sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
+			cleanMessagesBuffer = ["{3}:{4}:{5} - #{0} on `{1}`, Run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+			if cleanMessagesBuffer != []:
+				cleanMessages = cleanMessagesBuffer
+			else:
+				cleanMessages = [sortedMessageData[0]] # I didn't realise that if the 'if' statement 4 lines up failed, it would still write to the variable, but it wouldn't actually write any data, so the variable was empty, which caused bad things to happen.
+			string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
+			data.add_field(name=routename,value=string, inline='false') # Say message
+			data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
+			data.set_footer(text="Use 'n!ttcnext info' for more info about this command.")
+			msg1 = ['No predictions found for this route.']
+
+		data.set_author(name=stopname, icon_url="http://ttc.ca/images/ttc-main-logo.gif")
+		try:
+			await self.bot.say(embed=data)
+		except Exception as e:
+			await self.bot.say("I need the `Embed links` permission "
+			                   "to send this. "
+			                   "Check console for error details. "
+			                   "(There's a good chance that the error is that the data is too long)")
+			print("Error:", e, "\nData:", data.to_dict(), "\nString:", string)
+
 
 	#Gets info for fleet
 	@commands.command()
