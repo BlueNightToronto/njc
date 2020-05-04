@@ -421,14 +421,14 @@ class njc:
 								service2 = (":x: :x: :x: :x: <@&566964640114933764> - {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
-								service2 = (":question: <@&566964640114933764> - {} is not marked active and is on `{}`!".format(veh,dirtag,update))
+								service2 = (":question: <@&566964640114933764> - {} is not marked active and is on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 
 							service5 = service5 + service2 + "\n"
 
 						try: #compares fleet division to branch division
 							if str(linefleet[4]) not in str(line[6]): #checks if divisions match
-								service1 = (":rotating_light: {} is on `{}`, divisions don't match!".format(veh,dirtag))
+								service1 = (":rotating_light: {} is on `{}`. divisions don't match!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
@@ -444,7 +444,7 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**, Scan complete. See below for statistics.")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**, `Scan complete. See below for statistics`.")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -899,15 +899,15 @@ class njc:
 			for row in reader:
 				if str(row[0]) == branch:
 					line = row
-					data = discord.Embed(title="Branch Information for `{}`".format(branch),colour=discord.Colour(value=15801115))
+					data = discord.Embed(title="Branch Information for: `{}`".format(branch),colour=discord.Colour(value=15541450))
 
 
 					try:
-# ROUTE
-						if line[1] == "":
-							data.add_field(name="Route:", value="undefined",inline='false')
+# BRANCHES
+						if line[4] == "":
+							data.add_field(name="Sign:", value="undefined",inline='false')
 						else:
-							data.add_field(name="Route:", value=line[1],inline='false')
+							data.add_field(name="Sign:", value=line[4],inline='false')
 
 # STARTS
 						if line[2] == "":
@@ -921,12 +921,6 @@ class njc:
 						else:
 							data.add_field(name="Ends at:", value=line[3],inline='false')
 
-# BRANCHES
-						if line[4] == "":
-							data.add_field(name="Sign:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Sign:", value="{}".format(line[4]),inline='false')
-
 # NOTES
 						if line[5] == "":
 							data.add_field(name="Notes:", value="undefined",inline='false')
@@ -935,18 +929,19 @@ class njc:
 
 # Division
 						if line[6] == "":
-							data.add_field(name="Branch divisions:", value="undefined",inline='false')
+							data.add_field(name="Divisions:", value="undefined",inline='false')
 						else:
-							data.add_field(name="Branch divisions:", value="{}".format(line[6]),inline='false')
+							data.add_field(name="Divisions:", value="{}".format(line[6]),inline='false')
 
 # Long Description
 						if line[7] == "":
-							data.add_field(name="Long description:", value="Not available.",inline='false')
+							data.add_field(name="Long Description:", value="Unavailable.",inline='false')
 						else:
-							data.add_field(name="Long description:", value="{}".format(line[7]),inline='false')
+							data.add_field(name="Long Description:", value="{}".format(line[7]),inline='false')
 
 
-						data.set_footer(text="Information last updated <future information>")
+						data.set_image(url="http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297547264171_ORIGINAL.jpg?size=520x")
+						data.set_footer(text="Last updated on ")
 
 					except Exception as errer:
 						await self.bot.say(errer)
