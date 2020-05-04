@@ -25,8 +25,8 @@ class njc:
 		self.channelID1 = 645764466985664562 #bot-console
 		self.channelID2 = 645764466985664562 #bot-console
 		self.channelID3 = 645764466985664562 #bot-console
-		self.channelID4 = 645764740718526485 #bot-console-checker
-		self.channelID5 = 645764740718526485 #bot-console-checker
+		self.channelID4 = 645764466985664562 #bot-console
+		self.channelID5 = 645764466985664562 #bot-console
 		self.backupID = 537718582256336940 #bot-lab
 		self.scanInterval = 900
 		self.looping = False
@@ -40,7 +40,7 @@ class njc:
 	@commands.command()
 	async def routeveh(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on TTC route " + rte, description=" vehicles currently on route.",colour=discord.Colour(value=8388608))
+		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route. ".format(rte),colour=discord.Colour(value=8388608))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
 		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
@@ -415,13 +415,13 @@ class njc:
 					try: #checks if vehicle in service is marked as inactive
 						if (str(linefleet[6]) != "Active"):
 							if ("TRACK" in str(linefleet[6])):
-								service2 = (":white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
+								service2 = ("`[DD-MM-YYYY %d %B %Y]:` :white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
 							elif ("Retired" in str(linefleet[6])):
-								service2 = (":x: :x: :x: :x: <@&566964640114933764> - {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
+								service2 = (":x: :x: :x: :x: {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
-								service2 = (":question: <@&566964640114933764> - {} is not marked active and is on `{}`!".format(veh,dirtag))
+								service2 = (":question: {} is not marked active and is on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 
 							service5 = service5 + service2 + "\n"
@@ -444,7 +444,7 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**, `Scan complete. See below for statistics`.")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**. ```Scan complete.```")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -884,7 +884,7 @@ class njc:
 
 	# Gets profile for TTC branch
 	@commands.command()
-	async def branch(self, agency, branch):
+	async def branch(self,agency,branch):
 		"""Gets information about a TTC internal branch."""
 
 		try:
@@ -899,7 +899,7 @@ class njc:
 			for row in reader:
 				if str(row[0]) == branch:
 					line = row
-					data = discord.Embed(title="Branch Information for: `{}`".format(branch),colour=discord.Colour(value=15541450))
+					data = discord.Embed(title="TTC Branch Information for `{}`".format(branch),colour=discord.Colour(value=15541450))
 
 
 					try:
@@ -941,7 +941,7 @@ class njc:
 
 
 						data.set_image(url="http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297547264171_ORIGINAL.jpg?size=520x")
-						data.set_footer(text="Last updated on ")
+						data.set_footer(text="Last updated on {}")
 
 					except Exception as errer:
 						await self.bot.say(errer)
@@ -951,78 +951,53 @@ class njc:
 			await self.bot.say(errer)
 
 
-	# Gets profile for NJC branch
+	# Allow Users to edit the branches
 	@commands.command()
-	async def nbranch(self, branch):
-		"""Gets information about a NJC internal branch."""
+	async def branchedit(self, agency : str, number : int, field: str, newvalue: str):
+		"""Allow user to edit branches."""
 
 		try:
-			list = open("cogs/njc/dirTag-NJC.csv")
-			reader = csv.reader(list,delimiter="	")
-			line = []
+			reader = None
+			fleetlist = open("cogs/njc/{}.csv".format(agency))
+			reader = csv.reader(fleetlist,delimiter="	")
 		except:
-			await self.bot.say("I couldn't find the branch information file.")
+			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the fleet lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
+			await self.bot.say(embed=data)
 			return
 
-		try: # GETS INFO FROM FILE
-			for row in reader:
-				if str(row[0]) == branch:
-					line = row
-					data = discord.Embed(title="Branch Information for `{}`".format(branch),colour=discord.Colour(value=15801115))
 
-
-					try:
-# ROUTE
-						if line[1] == "":
-							data.add_field(name="Route:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Route:", value=line[1],inline='false')
-
-# STARTS
-						if line[2] == "":
-							data.add_field(name="Starts from:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Starts from:", value=line[2],inline='false')
-
-# ENDS
-						if line[3] == "":
-							data.add_field(name="Ends at:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Ends at:", value=line[3],inline='false')
-
-# BRANCHES
-						if line[4] == "":
-							data.add_field(name="Sign:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Sign:", value="{}".format(line[4]),inline='false')
-
-# NOTES
-						if line[5] == "":
-							data.add_field(name="Notes:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Notes:", value="{}".format(line[5]),inline='false')
-
-# Division
-						if line[6] == "":
-							data.add_field(name="Branch divisions:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Branch divisions:", value="{}".format(line[6]),inline='false')
-
-# Long Description
-						if line[7] == "":
-							data.add_field(name="Long description:", value="Not available.",inline='false')
-						else:
-							data.add_field(name="Long description:", value="{}".format(line[7]),inline='false')
-
-
-						data.set_footer(text="Information last updated <future information>")
-
-					except Exception as errer:
-						await self.bot.say(errer)
-					await self.bot.say(embed=data)
-
-		except Exception as errer:
-			await self.bot.say(errer)
+		lineNum = None
+		lines = []
+		for row in reader:
+			if row:
+				lines.append(row)
+				if len(lines) > 1 and int(row[0]) == number:
+					if not lineNum:
+						lineNum = len(lines) - 1
+					else:
+						await self.bot.say("More than one bus :3")
+						return
+		fleetlist.close()
+		if True:
+			num = lines[0].index(field)
+			if lineNum:
+				lines[lineNum][num] = newvalue
+				lines[lineNum][-1] = datetime.date.today().strftime("%d %B %Y").lstrip("0")
+			else:
+				await self.bot.say("Invalid number")
+				return
+		else:
+			await self.bot.say("Invalid field")
+			return
+		writer = None
+		with open("cogs/njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
+			writer = csv.writer(fleetlist,delimiter="	")     
+			for i in lines:
+				writer.writerow(i)
+		fleetlist.close()
+		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="{} has been updated to ".format(field) + " " + agency + str(number) + newvalue,colour=discord.Colour(value=34633))
+		data.set_footer(text="Learn about the branch by doing n!branch<internal branch>'. Information last updated<future information>.")
+		await self.bot.say(embed=data)
 
 
 	# Gets profile for TTC route
@@ -1161,10 +1136,10 @@ class njc:
 		if self.looping:
 			await self.check(discord.Object(id = self.backupID))
 			return
-		self.looping = True
+		self.looping = False
 		await self.bot.loop.create_task(self.autoscan())
 
 	async def on_ready(self):
 		#await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
-		self.looping = True
+		self.looping = False
 		await self.bot.loop.create_task(self.autoscan())
