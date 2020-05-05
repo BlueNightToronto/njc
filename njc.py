@@ -230,7 +230,7 @@ class njc:
 
 
 	@commands.command()
-	async def veh(self, veh):
+	async def veh(self,agency,veh):
 		"""Checks information for a selected TTC vehicle."""
 
 #        url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=3000"
@@ -329,7 +329,7 @@ class njc:
 						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						
-					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
+					data.add_field(name="Compass", value="Facing {} (*{}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 					
 					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
 					
@@ -419,7 +419,7 @@ class njc:
 					try: #checks if vehicle in service is marked as inactive
 						if (str(linefleet[6]) != "Active"):
 							if ("TRACK" in str(linefleet[6])):
-								service2 = (":white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
+								service2 = (":white_check_mark: {} is in service on `{}`! `status` is set to `{}`.".format(veh,dirtag,linefleet[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
 							elif ("Retired" in str(linefleet[6])):
 								service2 = (":x: :x: :x: :x: {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
@@ -432,7 +432,7 @@ class njc:
 
 						try: #compares fleet division to branch division
 							if str(linefleet[4]) not in str(line[6]): #checks if divisions match
-								service1 = (":rotating_light: {} is on `{}`. divisions don't match!".format(veh,dirtag))
+								service1 = (":rotating_light: {} is on `{}`. No match between fleet division of `{}` and branch division of `{}`!".format(veh,dirtag,linefleet[4],line[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
