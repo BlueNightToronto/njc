@@ -40,7 +40,7 @@ class njc:
 	@commands.command()
 	async def routeveh(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route. ".format(rte),colour=discord.Colour(value=8388608))
+		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route. ".format(rte),colour=discord.Colour(value=13491480))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
 		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
@@ -217,7 +217,7 @@ class njc:
 				else:
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xcc00cc%7Clabel:N%7C{},{}".format(lat, lon)
 				data.set_image(url=mapurl)
-				data.set_footer(text="Last updated {} seconds ago. Division information is from n!fleet".format(updated))
+				data.set_footer(text="Last updated {} seconds ago. Powered by Yorkline".format(updated))
 
 				try:
 					await self.bot.say(embed=data)
@@ -250,6 +250,8 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
+				routetag = i.attributes['routeTag'].value #routetag
+				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
 					vision = i.attributes['speedKmHr'].value
@@ -290,10 +292,10 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16711680))
+					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
-					data = discord.Embed(title="Vehicle Tracking for TTC {} - UNKNOWN VEHICLE".format(veh), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=16580352))
+					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
 
 
 				try: # TRIES FETCHING DATA
@@ -315,52 +317,51 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=0))
-							data.add_field(name="Off Route", value=offroute)
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
-							data.add_field(name="Off Route", value="*Not in service?*") 
+							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							await self.bot.say(":rotating_light: Branch divisions don't match vehicle division!")
-							data = discord.Embed(title="Vehicle Tracking for TTC {} - {} {}".format(veh,linefleet[2],linefleet[3]), description="<@463799485609541632> TTC tracker.",colour=discord.Colour(value=5604737))
-						data.add_field(name="On Route", value=line[1])  
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=13491480))
+						data.add_field(name="Currently on route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-						data.add_field(name="Starts from", value=line[2])
-						data.add_field(name="Ends at", value=line[3])
-						data.add_field(name="Sign", value=line[4])
-						data.add_field(name="Branch Notes", value=line[5])
-						data.add_field(name="Branch Divisions", value=line[6])
-		
-					try:
-						data.add_field(name="Vehicle Division", value=linefleet[4])
-						data.add_field(name="Vehicle Status", value=linefleet[6])
-					except:
-						data.add_field(name="Vehicle Division", value="Unknown")
-						data.add_field(name="Vehicle Status", value="Unknown")
+						
+					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
+					
+					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
+					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
 					data.add_field(name="On Route", value="No route")  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-					data.add_field(name="Starts from", value="Unknown")
-					data.add_field(name="Ends at", value="Unknown")
-					data.add_field(name="Sign", value="Unknown")
-					data.add_field(name="Branch Notes", value="Unknown")
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
+					
 
-				data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
-				try:
-					vision = vision
-					data.add_field(name="VISION Equipped?", value="**Yes!**")
-				except:
-					data.add_field(name="VISION Equipped?", value="No")
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
-				data.set_footer(text="Last updated {} seconds ago. Division information is from n!fleet".format(updated))
+				if hea == int('-4'): #label based on compass
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('405'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('315'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
+				elif hea > int('225'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xffff00%7Clabel:W%7C{},{}".format(lat, lon)
+				elif hea > int('135'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x0000ff%7Clabel:S%7C{},{}".format(lat, lon)
+				elif hea > int('45'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x00ffff%7Clabel:E%7C{},{}".format(lat, lon)
+				else:
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xcc00cc%7Clabel:N%7C{},{}".format(lat, lon)
+				data.set_image(url=mapurl)
+				data.set_footer(text="Last updated {} seconds ago. Powered by Yorkline".format(updated))
 
 				try:
 					await self.bot.say(embed=data)
 					return
 				except:
-					await self.bot.say(":rotating_light: {} is currently on `{}`. An error has occured while trying to embed data.".format(veh,dirtag,dirtag))
+					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
 		await self.bot.say("Vehicle not found! #{}".format(veh))
 
@@ -416,7 +417,7 @@ class njc:
 					try: #checks if vehicle in service is marked as inactive
 						if (str(linefleet[6]) != "Active"):
 							if ("TRACK" in str(linefleet[6])):
-								service2 = ("`[DD-MM-YYYY %d %B %Y]:` :white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
+								service2 = (":white_check_mark: {} is in service on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
 							elif ("Retired" in str(linefleet[6])):
 								service2 = (":x: :x: :x: :x: {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
