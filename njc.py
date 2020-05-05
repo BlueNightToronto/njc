@@ -78,7 +78,7 @@ class njc:
 
 		data.add_field(name="Vehicles", value=service)
 		data.set_image(url=mapurl)
-		data.set_footer(text="Map only shows up to 27 vehicles at a time. The map is intended to give you an idea of route headways.")
+		data.set_footer(text="Map only shows up to 27 vehicles at a time. Powered by Yorkline.")
 
 
 		if service == "":
@@ -112,11 +112,11 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
-				routetag = i.attributes['routeTag'].value #routetag
 				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
 					vision = i.attributes['speedKmHr'].value
+					routetag = i.attributes['routeTag'].value
 				except:
 					lon = i.attributes['lon'].value # lon
 
@@ -180,13 +180,14 @@ class njc:
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=13491480))
-						data.add_field(name="Currently on route", value="{}".format(routetag))  
+						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						
 					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
@@ -250,11 +251,11 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
-				routetag = i.attributes['routeTag'].value #routetag
 				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
 					vision = i.attributes['speedKmHr'].value
+					routetag = i.attributes['routeTag'].value
 				except:
 					lon = i.attributes['lon'].value # lon
 
@@ -318,13 +319,14 @@ class njc:
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=13491480))
-						data.add_field(name="Currently on route", value="{}".format(routetag))  
+						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						
 					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
@@ -338,7 +340,7 @@ class njc:
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
