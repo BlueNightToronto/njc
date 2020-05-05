@@ -43,7 +43,7 @@ class njc:
 		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route. ".format(rte),colour=discord.Colour(value=13491480))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 		raw = urlopen(url).read() # Get page and read data
 		decoded = raw.decode("utf-8") # Decode from bytes object
 		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -197,11 +197,12 @@ class njc:
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
 					data.add_field(name="On Route", value="No route")  
+					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
@@ -251,7 +252,6 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
-				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
 					vision = i.attributes['speedKmHr'].value
@@ -326,12 +326,9 @@ class njc:
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=13491480))
-						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						
-					data.add_field(name="Compass", value="Facing {} (*{}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
-					
-					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
+					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
@@ -340,7 +337,7 @@ class njc:
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=256x256&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
@@ -436,7 +433,7 @@ class njc:
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
-								service1 = (":ok_hand: {} is on `{}`! `{}`.".format(veh,dirtag,linefleet[4]))
+								service1 = (":ok_hand: {} is on `{}`! `{}` division.".format(veh,dirtag,linefleet[4]))
 								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
@@ -448,7 +445,7 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**. ```Scan complete.```")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**. ```Scan Complete.```")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -1118,15 +1115,15 @@ class njc:
 
 	# Allow Users to edit the branches
 	@commands.command()
-	async def branchedit(self, agency : str, number : int, field: str, newvalue: str):
+	async def branchedit(self, agency : str, branch : int, value: str, newvalue: str):
 		"""Allow user to edit branches."""
 
 		try:
 			reader = None
-			fleetlist = open("cogs/njc/{}.csv".format(agency))
+			fleetlist = open("cogs/njc/dirTag.csv".format(branch))
 			reader = csv.reader(fleetlist,delimiter="	")
 		except:
-			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the fleet lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
+			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the branch lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
 			await self.bot.say(embed=data)
 			return
 
@@ -1140,7 +1137,7 @@ class njc:
 					if not lineNum:
 						lineNum = len(lines) - 1
 					else:
-						await self.bot.say("More than one bus :3")
+						await self.bot.say("More than one branch :3")
 						return
 		fleetlist.close()
 		if True:
@@ -1155,7 +1152,7 @@ class njc:
 			await self.bot.say("Invalid field")
 			return
 		writer = None
-		with open("cogs/njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
+		with open("cogs/njc/dirTag.csv".format(branch), "w", newline='') as fleetlist:
 			writer = csv.writer(fleetlist,delimiter="	")     
 			for i in lines:
 				writer.writerow(i)
