@@ -436,7 +436,7 @@ class njc:
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
-								service1 = (":ok_hand: {} is on `{}`!".format(veh,dirtag))
+								service1 = (":ok_hand: {} is on `{}`! `{}`.".format(veh,dirtag,linefleet[4]))
 								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
