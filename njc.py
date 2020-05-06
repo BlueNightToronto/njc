@@ -1061,7 +1061,7 @@ class njc:
 			for row in reader:
 				if str(row[0]) == branch:
 					line = row
-					data = discord.Embed(title="{}: `{}`".format(line[4],branch),colour=discord.Colour(value=15541450))
+					data = discord.Embed(title="{}: `{}`".format(line[1],branch),colour=discord.Colour(value=15541450))
 
 
 					try:
@@ -1079,9 +1079,9 @@ class njc:
 
 # ENDS
 						if line[3] == "":
-							data.add_field(name="Ends at:", value="undefined",inline='false')
+							data.add_field(name="Destination:", value="undefined",inline='false')
 						else:
-							data.add_field(name="Ends at:", value=line[3],inline='false')
+							data.add_field(name="Destination:", value=line[3],inline='false')
 
 # NOTES
 						if line[5] == "":
