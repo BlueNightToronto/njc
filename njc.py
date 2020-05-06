@@ -972,7 +972,7 @@ class njc:
 	# Gets bylaw
 	@commands.command()
 	async def bylaw(self, agency : str):
-		"""Gets rules for an agency. Available agencies: [TTC, MiWay, Go Transit]"""
+		"""Gets rules for an agency. Available agencies: [TTC, MiWay, Go Transit, YRT]"""
 
 		if agency.lower() in ['ttc']: # ttc
 			data = discord.Embed(colour=discord.Colour(value=5))
@@ -985,6 +985,11 @@ class njc:
 		elif agency.lower() in ['gotransit']: # gotransit
 			data = discord.Embed(colour=discord.Colour(value=5))
 			data.add_field(name="Go Transit Bylaw No. 2", value=str("https://www.gotransit.com/static_files/gotransit/assets/pdf/Policies/By-Law_No2.pdf"))
+			
+		elif agency.lower() in ['yrt']: #yrt
+			data = discord.Embed(colour=discord.Colour(value=5))
+			data.add_field(name="THE REGIONAL MUNICIPALITY OF YORK BYLAW NO. 2017-7", value=str("https://www.yrt.ca/en/about-us/resources/Bylaw-2017-7.pdf"))
+			
 
 		else:
 			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="The bylaw for this agency could not be found.",colour=discord.Colour(value=16467744))
