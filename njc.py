@@ -972,7 +972,7 @@ class njc:
 	# Gets bylaw
 	@commands.command()
 	async def bylaw(self, agency : str):
-		"""Gets rules for an agency. Available agencies: [TTC, MiWay, Go Transit, YRT]"""
+		"""Gets rules for an agency. Available agencies: [TTC, MiWay, YRT, Go Transit]"""
 
 		if agency.lower() in ['ttc']: # ttc
 			data = discord.Embed(colour=discord.Colour(value=5))
@@ -982,13 +982,13 @@ class njc:
 			data = discord.Embed(colour=discord.Colour(value=5))
 			data.add_field(name="THE CORPORATION OF THE CITY OF MISSISSAUGA TRANSIT BY-LAW", value=str("https://www7.mississauga.ca/documents/bylaws/TRANSIT_RULES_UPDATE.pdf"))
 			
-		elif agency.lower() in ['gotransit']: # gotransit
-			data = discord.Embed(colour=discord.Colour(value=5))
-			data.add_field(name="Go Transit Bylaw No. 2", value=str("https://www.gotransit.com/static_files/gotransit/assets/pdf/Policies/By-Law_No2.pdf"))
-			
 		elif agency.lower() in ['yrt']: #yrt
 			data = discord.Embed(colour=discord.Colour(value=5))
 			data.add_field(name="THE REGIONAL MUNICIPALITY OF YORK BYLAW NO. 2017-7", value=str("https://www.yrt.ca/en/about-us/resources/Bylaw-2017-7.pdf"))
+			
+		elif agency.lower() in ['gotransit']: # gotransit
+			data = discord.Embed(colour=discord.Colour(value=5))
+			data.add_field(name="Go Transit Bylaw No. 2", value=str("https://www.gotransit.com/static_files/gotransit/assets/pdf/Policies/By-Law_No2.pdf"))
 			
 
 		else:
