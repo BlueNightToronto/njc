@@ -196,8 +196,8 @@ class njc:
 					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-					data.add_field(name="On Route", value="No route")  
-					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
+					data.add_field(name="On Route", value="No Route")  
+					data.add_field(name="Currently on Route", value="`{}`".format(routetag))  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
@@ -1061,21 +1061,21 @@ class njc:
 			for row in reader:
 				if str(row[0]) == branch:
 					line = row
-					data = discord.Embed(title="TTC Branch Information for `{}`".format(branch),colour=discord.Colour(value=15541450))
+					data = discord.Embed(title="{}: `{}`".format(line[4],branch),colour=discord.Colour(value=15541450))
 
 
 					try:
 # BRANCHES
 						if line[4] == "":
-							data.add_field(name="Sign:", value="undefined",inline='false')
+							data.add_field(name="Sign:", value="unavailable",inline='false')
 						else:
 							data.add_field(name="Sign:", value=line[4],inline='false')
 
 # STARTS
 						if line[2] == "":
-							data.add_field(name="Starts from:", value="undefined",inline='false')
+							data.add_field(name="Origin:", value="undefined",inline='false')
 						else:
-							data.add_field(name="Starts from:", value=line[2],inline='false')
+							data.add_field(name="Origin:", value=line[2],inline='false')
 
 # ENDS
 						if line[3] == "":
@@ -1103,7 +1103,7 @@ class njc:
 
 
 						data.set_image(url="http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297547264171_ORIGINAL.jpg?size=520x")
-						data.set_footer(text="Last updated on {}")
+						data.set_footer(text="Last updated on <future information>")
 
 					except Exception as errer:
 						await self.bot.say(errer)
