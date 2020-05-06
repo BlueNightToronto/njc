@@ -972,7 +972,7 @@ class njc:
 	# Gets bylaw
 	@commands.command()
 	async def bylaw(self, agency : str):
-		"""Gets rules for an agency. Available agencies: [TTC, MiWay, gotransit]"""
+		"""Gets rules for an agency. Available agencies: [TTC, MiWay, Go Transit]"""
 
 		if agency.lower() in ['ttc']: # ttc
 			data = discord.Embed(colour=discord.Colour(value=5))
