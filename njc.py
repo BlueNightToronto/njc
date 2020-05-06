@@ -40,7 +40,7 @@ class njc:
 	@commands.command()
 	async def routeveh(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route. ".format(rte),colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route.".format(rte),colour=discord.Colour(value=13491480))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
 		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
@@ -117,6 +117,7 @@ class njc:
 				try:
 					vision = i.attributes['speedKmHr'].value
 					routetag = i.attributes['routeTag'].value
+					alias = i.attributes['alias'].value
 				except:
 					lon = i.attributes['lon'].value # lon
 
@@ -154,9 +155,9 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}`".format(veh),colour=discord.Colour(value=13491480))
 				except Exception as errer:
-					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
+					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
 
 
@@ -179,16 +180,20 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}`".format(veh),colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}`".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+						data.add_field(name="Origin", value=line[2])
+						data.add_field(name="Destination", value=line[3])
+						data.add_field(name="Notes", value=line[5])
+						data.add_field(name="Branch Division", value=line[6])
 						
 					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 					
@@ -196,7 +201,6 @@ class njc:
 					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-					data.add_field(name="On Route", value="No Route")  
 					data.add_field(name="Currently on Route", value="`{}`".format(routetag))  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
@@ -219,7 +223,7 @@ class njc:
 				else:
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xcc00cc%7Clabel:N%7C{},{}".format(lat, lon)
 				data.set_image(url=mapurl)
-				data.set_footer(text="Last updated {} seconds ago. Powered by Yorkline".format(updated))
+				data.set_footer(text="Last updated {} seconds ago. Powered by Yorkline.".format(updated))
 
 				try:
 					await self.bot.say(embed=data)
@@ -555,6 +559,10 @@ class njc:
 						vehicle = vehicle + " VII NG Hybrid"                    
 					elif vehicle >= '3100' and vehicle <= '3369':
 						vehicle = vehicle + " LFS VISION"                    
+					elif vehicle >= '3400' and vehicle <= '3654':
+						vehicle = vehicle + " LFS VII Hybrid"                    
+					elif vehicle >= '3700' and vehicle <= '3724':
+						vehicle = vehicle + " New Flyer Xcelsior XE40"                    
 					elif vehicle >= '4000' and vehicle <= '4199':
 						vehicle = vehicle + " CLRV"                    
 					elif vehicle >= '4200' and vehicle <= '4251':
@@ -843,7 +851,7 @@ class njc:
 					number = str('W{}'.format(number))
 				elif agency == 'miway':
 					number = str('0{}'.format(number))
-			data.set_author(name="{}".format(agencyname) + str(number), url=line[7])
+			data.set_author(name="TTC #{}".format(agencyname) + str(number), url=line[7])
 			data.set_image(url=line[7])
 
 		except Exception as e:
@@ -895,8 +903,8 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="{} has been updated to ".format(field) + " " + agency + str(number) + newvalue,colour=discord.Colour(value=34633))
-		data.set_footer(text="Learn about the branch by doing n!branch<internal branch>'. Information last updated<future information>.")
+		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from ".format(field) + " " + newvalue,colour=discord.Colour(value=34633))
+		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
 	# Gets schedules
@@ -1073,25 +1081,25 @@ class njc:
 
 # STARTS
 						if line[2] == "":
-							data.add_field(name="Origin:", value="undefined",inline='false')
+							data.add_field(name="Origin:", value="unavailable",inline='false')
 						else:
 							data.add_field(name="Origin:", value=line[2],inline='false')
 
 # ENDS
 						if line[3] == "":
-							data.add_field(name="Destination:", value="undefined",inline='false')
+							data.add_field(name="Destination:", value="unavailable",inline='false')
 						else:
 							data.add_field(name="Destination:", value=line[3],inline='false')
 
 # NOTES
 						if line[5] == "":
-							data.add_field(name="Notes:", value="undefined",inline='false')
+							data.add_field(name="Notes:", value="unavailable",inline='false')
 						else:
 							data.add_field(name="Notes:", value="{}".format(line[5]),inline='false')
 
 # Division
 						if line[6] == "":
-							data.add_field(name="Divisions:", value="undefined",inline='false')
+							data.add_field(name="Divisions:", value="unavailable",inline='false')
 						else:
 							data.add_field(name="Divisions:", value="{}".format(line[6]),inline='false')
 
@@ -1103,7 +1111,7 @@ class njc:
 
 
 						data.set_image(url="http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297547264171_ORIGINAL.jpg?size=520x")
-						data.set_footer(text="Last updated on <future information>")
+						data.set_footer(text="Last updated on <future information>.")
 
 					except Exception as errer:
 						await self.bot.say(errer)
