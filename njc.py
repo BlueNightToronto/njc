@@ -112,12 +112,11 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
-				speed = i.attributes['speedKmHr'].value #speed
+				speed = i.attributes['speedKmHr'].value #speedKmHr
 
 				try:
 					vision = i.attributes['speedKmHr'].value
 					routetag = i.attributes['routeTag'].value
-					alias = i.attributes['alias'].value
 				except:
 					lon = i.attributes['lon'].value # lon
 
@@ -155,7 +154,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}`".format(veh),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}` - `{}`".format(veh,linefleet[2]),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -180,7 +179,7 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}`".format(veh),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is not currently not sign into any run.",colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
@@ -322,14 +321,14 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is not sign into any run.",colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]),description="", colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						
 					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
@@ -563,14 +562,14 @@ class njc:
 						vehicle = vehicle + " LFS VII Hybrid"                    
 					elif vehicle >= '3700' and vehicle <= '3724':
 						vehicle = vehicle + " New Flyer Xcelsior XE40"                    
+					elif vehicle >= '3725' and vehicle <= '3749':
+						vehicle = vehicle + " Catalyst BE40 K9M"                    
 					elif vehicle >= '4000' and vehicle <= '4199':
 						vehicle = vehicle + " CLRV"                    
 					elif vehicle >= '4200' and vehicle <= '4251':
 						vehicle = vehicle + " ALRV"                    
 					elif vehicle >= '4400' and vehicle <= '4999':
 						vehicle = vehicle + " Flexity"                    
-					elif vehicle >= '7500' and vehicle <= '7883':
-						vehicle = vehicle + " VII"                    
 					elif vehicle >= '7900' and vehicle <= '7979':
 						vehicle = vehicle + " VII"                    
 					elif vehicle >= '8000' and vehicle <= '8011':
@@ -903,7 +902,7 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from ".format(field) + " " + newvalue,colour=discord.Colour(value=34633))
+		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from ` ` to ` ` for #".format(field) + str(number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -954,7 +953,7 @@ class njc:
 
 		maptitle = [agency , line]
 		if agency.lower() in ['ttc']: # TTC
-			data = discord.Embed(description="NJC Map Fetcher", title="Toronto Transit Commission - Route {1}".format(*maptitle), colour=discord.Colour(value=2130939))
+			data = discord.Embed(description="TTC Map Fetcher", title="Toronto Transit Commission - Route {1}".format(*maptitle), colour=discord.Colour(value=2130939))
 			if line < 999:
 				if line < 10:
 					line1 = str("00" + str(line))
@@ -1114,7 +1113,7 @@ class njc:
 
 # Long Description
 						if line[7] == "":
-							data.add_field(name="Long Description:", value="Unavailable.",inline='false')
+							data.add_field(name="Long Description:", value="unavailable.",inline='false')
 						else:
 							data.add_field(name="Long Description:", value="{}".format(line[7]),inline='false')
 
@@ -1132,7 +1131,7 @@ class njc:
 
 	# Allow Users to edit the branches
 	@commands.command()
-	async def branchedit(self, agency : str, branch : int, value: str, newvalue: str):
+	async def branchedit(self, agency : str, branch : int, field: str, newvalue: str):
 		"""Allow user to edit branches."""
 
 		try:
@@ -1169,13 +1168,13 @@ class njc:
 			await self.bot.say("Invalid field")
 			return
 		writer = None
-		with open("cogs/njc/dirTag.csv".format(branch), "w", newline='') as fleetlist:
+		with open("cogs/njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
 			writer = csv.writer(fleetlist,delimiter="	")     
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="{} has been updated to ".format(field) + " " + agency + str(number) + newvalue,colour=discord.Colour(value=34633))
-		data.set_footer(text="Learn about the branch by doing n!branch<internal branch>'. Information last updated<future information>.")
+		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for #".format(field) + str(number),colour=discord.Colour(value=34633))
+		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
 
