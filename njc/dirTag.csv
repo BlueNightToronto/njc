@@ -1337,7 +1337,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 504_1_DIRQ	504 King	Distillery Loop	Roncesvalles/Queen Street West	504S Short Turn/Roncesvalles	Last trip 	TTC Streetcar (Leslie)	
 504_1_RQDI	504 King	Roncesvalles/Queen	Distillery Loop	504A Distillery	First Trip	TTC Streetcar (Leslie)	
 505_0_505	505 Dundas	Dundas West Station	Broadview Station	505 Broadview Stn	via Dundas	Birchmount, Eglinton, Mount Dennis	
-505_1_505	505 Dundas	Broadview Station	Dundas West Station	505 Dundas West Stn	via Dundas	Birchmount, Eglinton, Mount Dennis	
+505_1_505	505 Dundas	Broadview Station	Dundas West Station	505 Dundas West Stn	via Dundas	Birchmount, Eglinton, Mount Dennis
+505_1_505Busrush	505 Dundas	Broadview Station	Dundas West Station	505 Dundas West Stn	via Dundas	Eglinton	
 505_1_505rush	505 Dundas	Broadview Station	Dundas West Station	506 Dundas West Stn	via Dundas	Birchmount, Eglinton	
 505_0_505bus	505 Dundas	Dundas West Station	Broadview Station	505 Broadview Stn via Dundas	N/A	Birchmount, Mount Dennis	
 505_1_505bus	505 Dundas 	Broadview Station	Dundas West Station	505 Dundas West Stn via Dundas	N/A	Birchmount, Mount Dennis	
