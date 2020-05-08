@@ -154,7 +154,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}` - `{}`".format(veh,linefleet[2]),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -189,7 +189,7 @@ class njc:
 							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}`".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-						data.add_field(name="Origin", value=line[2])
+						data.add_field(name="Starts from", value=line[2])
 						data.add_field(name="Destination", value=line[3])
 						data.add_field(name="Notes", value=line[5])
 						data.add_field(name="Branch Division", value=line[6])
