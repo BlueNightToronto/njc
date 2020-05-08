@@ -20,13 +20,13 @@ class njc:
 
 	def __init__(self, bot):
 		self.bot = bot
-		self.channelstatus = 645764466985664562 #bot-console
-		self.channelID = 645764466985664562 #bot-console
-		self.channelID1 = 645764466985664562 #bot-console
-		self.channelID2 = 645764466985664562 #bot-console
-		self.channelID3 = 645764466985664562 #bot-console
-		self.channelID4 = 645764466985664562 #bot-console
-		self.channelID5 = 645764466985664562 #bot-console
+		self.channelstatus = 708131713661796424 #yorkline
+		self.channelID = 708131713661796424 #yorkline
+		self.channelID1 = 708131713661796424 #yorkline
+		self.channelID2 = 708131713661796424 #yorkline
+		self.channelID3 = 708131713661796424 #yorkline
+		self.channelID4 = 708131713661796424 #yorkline
+		self.channelID5 = 708131713661796424 #yorkline
 		self.backupID = 537718582256336940 #bot-lab
 		self.scanInterval = 900
 		self.looping = False
@@ -40,10 +40,10 @@ class njc:
 	@commands.command()
 	async def routeveh(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route.".format(rte),colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route.".format('27'),colour=discord.Colour(value=13491480))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 		raw = urlopen(url).read() # Get page and read data
 		decoded = raw.decode("utf-8") # Decode from bytes object
 		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -996,7 +996,7 @@ class njc:
 
 	# Gets profile for TTC route
 	@commands.command()
-	async def route(self, rte):
+	async def route(self,agency,rte):
 		"""Gets information about a TTC route."""
 
 		try:
@@ -1013,7 +1013,7 @@ class njc:
 			for row in reader:
 				if str(row[0]) == rte:
 					line = row
-					data = discord.Embed(title="**{} {}** - **Route Information**".format(rte, line[1]),colour=discord.Colour(value=15801115))
+					data = discord.Embed(title="**Vehicles on TTC route {}**".format(rte, line[1]), description="{} vehicles currently on route.".format("27"),colour=discord.Colour(value=8388608))
 
 
 					try:
@@ -1021,22 +1021,17 @@ class njc:
 						if line[4] == "":
 							data.add_field(name="Internal Branches:", value="undefined",inline='false')
 						else:
-							data.add_field(name="Internal Branches:", value="`{}`".format(line[4]),inline='false')
+							data.add_field(name="Internal Branches:", value="```{}```".format(line[4]),inline='false')
 
 # INTERLINES
 						if line[3] == "":
-							data.add_field(name="Interlined with", value="undefined",inline='false')
+							data.add_field(name="Active Branches:", value="undefined",inline='false')
 						else:
-							data.add_field(name="Interlined with", value=line[3],inline='false')
-
-# DIVISIONS
-						if line[2] == "":
-							data.add_field(name="Divisions", value="undefined",inline='false')
-						else:
-							data.add_field(name="Divisions", value=line[2],inline='false')
+							data.add_field(name="Active Branches:", value="```{}```".format(line[4]),inline='false')
 
 						try:
 							url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
+							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C43.6756116,-79.402095&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C43.6922,-79.49606&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C43.6442677,-79.3660425"
 							raw = urlopen(url).read() # Get page and read data
 							decoded = raw.decode("utf-8") # Decode from bytes object
 							parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -1046,12 +1041,13 @@ class njc:
 								veh = i.attributes['id'].value # GETS VEHICLE
 								service = service + veh + ", "
 							if service == "":
-								data.add_field(name="Current Vehicles", value="No vehicles currently on route.",inline='false')
+								data.add_field(name="Vehicles", value="No vehicles currently on route.",inline='false')
 							else:
-								data.add_field(name="Current Vehicles", value=service,inline='false')
+								data.add_field(name="Vehicles", value=service,inline='false')
 						except:
 							data.add_field(name="Current Vehicles", value="No vehicles currently on route.",inline='false')
-						data.set_footer(text="Learn about the branch by doing `n!branch <internal branch>`. Information last updated <future information>")
+						data.set_image(url=mapurl)
+						data.set_footer(text="Powered by Yorkline.")
 
 					except Exception as errer:
 						await self.bot.say(errer)
