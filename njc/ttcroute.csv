@@ -1,28 +1,9 @@
 Route Number	Route Name	Division(s)	All Interlines	Internal Branches
-5	Avenue Rd	Wilson	320 Yonge	"5_0_5A
-5_0_5B
-5_1_5A
-5_1_5B"
-6	Bay	Mount Dennis	300 Bloor-Danforth	"6_0_6A
-6_0_6B
-6_0_Binserv
-6_1_6A
-6_1_6B"
-7	Bathurst	Wilson	142 Avenue Rd/Downtown Express, 307 Bathurst, 320 Yonge	"7_0_7
-7_0_BWBA
-7_0_DUBA
-7_0_GRBW
-7_1_BWGR
-7_0_HIBA
-7_1_7
-7_1_BABW
-7_1_BADU
-7_1_BWVL"
-8	Broadview	Birchmount	None	"8_0_8
-8_1_8"
-9	Bellamy	Birchmount	20 Cliffside	"9_0_9
-9_1_9
-9_1_9rush"
+5	Avenue Rd	Wilson	320 Yonge	"5_0_5A; 5_0_5B; 5_1_5A; 5_1_5B"
+6	Bay	Mount Dennis	300 Bloor-Danforth	"6_0_6A; 6_1_6A"
+7	Bathurst	Wilson	142 Avenue Rd/Downtown Express, 307 Bathurst, 320 Yonge	"7_0_BWBA; 7_0_DUBA ; 7_0_GRBW; 7_1_BWGR; 7_0_HIBA; 7_1_7; 7_1_BABW; 7_1_BADU; 7_1_BWVL"
+8	Broadview	Birchmount	None	"8_0_8; 8_1_8"
+9	Bellamy	Birchmount	20 Cliffside	"9_0_9; 9_1_9; 9_1_9rush"
 10	Van Horne	Wilson	None	"10_0_10
 10_1_10
 10_0_VHBR"
@@ -31,34 +12,11 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 11_0_11C
 11_1_11C
 11_1_11Apm"
-12	Kingston Rd	Birchmount	17 Birchmount, 22 Coxwell, 24 Victoria Park, 70 O'Connor, 87 Cosburn, 302 Kingston-McCowan, 322 Coxwell, 324 Victoria Park	"12_0_12A
-12_1_12A
-12_0_12B
-12_1_12B
-12_0_12C
-12_0_12C*
-12_1_12C
-12_1_12C*
-12_0_12D
-12_1_12D
-12_0_12Apeak
-12_1_NMVI
-12_1_cd12C
-12_1_kb12C
-12_1_BAKR
-12_0_VIBI
-12_0_KRBA
-12_0_KRBA*
-12_0_bi12A
-12_1_12*bi"
+12	Kingston Rd	Birchmount	17 Birchmount, 22 Coxwell, 24 Victoria Park, 70 O'Connor, 87 Cosburn, 302 Kingston-McCowan, 322 Coxwell, 324 Victoria Park	"12_0_12A; 12_1_12A; 12_0_12B; 12_1_12B; 12_0_12C; 12_0_12C*; 12_1_12C; 12_1_12C*; 12_0_12D; 12_1_12D; 12_0_12Apeak; 12_1_NMVI; 12_1_cd12C; 12_1_kb12C; 12_1_BAKR; 12_0_VIBI; 12_0_KRBA; 12_0_KRBA*; 12_0_bi12A; 12_1_12*bi"
 14	Glencairn	Mount Dennis	28 Bayview South	"14_0_14
 14_1_14"
-15	Evans	Queensway	48 Rathburn, 111 East Mall, 937 Islington Express	"15_0_15
-15_1_15
-15_1_ESRY"
-16	McCowan	Birchmount, Eglinton	70 O'Connor, 300 Bloor-Danforth, 322 Coxwell, 324 Victoria Park	"16_0_16
-16_1_16
-16_0_16dd"
+15	Evans	Queensway	48 Rathburn, 111 East Mall, 937 Islington Express	"15_0_15; 15_1_15; 15_1_ESRY"
+16	McCowan	Birchmount, Eglinton	70 O'Connor, 300 Bloor-Danforth, 322 Coxwell, 324 Victoria Park	"16_0_16; 16_1_16; 16_0_16dd"
 17	Birchmount	Birchmount	12 Kingston Rd, 69 Warden South, 320 Yonge, 902 Markham Rd Express	"17_0_17A
 17_0_17B
 17_0_17C
@@ -126,7 +84,9 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 29_1_29wils
 29_1_dm29"
 30	High Park	Queensway	49 Bloor West, 300 Bloor Danforth	"30_0_30A
+30_0_30Acon
 30_1_30A
+30_1_30Acon
 30_0_30B
 30_1_30B
 30_0_HPCL
@@ -275,13 +235,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 45_1_45Bcon
 45_0_45BCon
 45_1_45BCon"
-46	Martin Grove	Arrow Rd, Queensway	35 Jane, 45 Kipling, 60 Steeles West, 396 Wilson	"46_0_46
-46_1_46
-46_0_46con
-46_1_46con
-46_0_mr46
-46_0_NTKP
-46_1_NTSL"
+46	Martin Grove	Arrow Rd, Queensway	35 Jane, 45 Kipling, 60 Steeles West, 396 Wilson	"46_0_46; 46_1_46; 46_0_46con; 46_1_46con; 46_0_mr46; 46_0_NTKP; 46_1_NTSL"
 47	Lansdowne	Wilson	300 Bloor-Danforth, 312 St Clair-Junction, 320 Yonge, 329 Dufferin	"47_0_47A
 47_0_47ASun
 47_0_47B
@@ -297,88 +251,66 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 48_1_48
 48_1_48Aam
 48_1_KIML"
-49	Bloor West	Queensway	300 Bloor-Danforth	"49_0_49
-49_1_49
-49_0_MABL"
+49	Bloor West	Queensway	300 Bloor-Danforth	"49_0_49; 49_1_49; 49_0_MABL"
 50	Burnhamthrope	Queensway	300 Bloor-Danforth	"50_0_50
 50_0_MMIS
 50_1_50"
-51	Leslie	Wilson	320 Yonge	"51_0_51
-51_1_51
-51_1_FIST"
-52	Lawrence West	Wilson	352 Lawrence West	"52_0_52A
-52_0_52Ayg
-52_0_52B
-52_0_52D
-52_0_52Dyg
-52_0_52F
-52_0_52G
-52_0_52Gcon
-52_0_ch52Gcon
-52_0_ch52G
-52_0_LALS
-52_0_LALSch
-52_0_ROLW
-52_0_TOLS
-52_0_TOYG
-52_0_WELS
-52_0_WMT3
-52_1_52A
-52_1_52B
-52_1_52D
-52_1_52F
-52_1_52G
-52_1_52Gcon
-52_1_ba52A
-52_1_ba52B
-52_1_dl52A
-52_1_dl52B
-52_1_MGTO
-52_1_WELS
-52_1_yg52A
-52_1_yg52D
-52_1_T1T3
-52_0_52Dyg"
+51	Leslie	Wilson	320 Yonge	"51_0_51 ; 51_1_51; 51_1_FIST"
+52	Lawrence West	Wilson	352 Lawrence West	"52_0_52A; 52_0_52Ayg; 52_0_52B; 52_0_52D; 52_0_52Dyg; 52_0_52F; 52_0_52G; 52_0_52Gcon; 52_0_ch52Gcon; 52_0_ch52G; 52_0_LALS; 52_0_LALSch; 52_0_ROLW; 52_0_TOLS; 52_0_WELS; 52_0_WMT3; 52_1_52A; 52_1_52B; 52_1_52D; 52_1_52F; 52_1_52G; 52_1_52Gcon; 52_1_ba52A; 52_1_ba52B; 52_1_MGTO; 52_1_WELS; 52_1_yg52A; 52_1_yg52D; 52_1_T1T3; 52_0_52Dyg"
 53	Steeles East	Malvern	39 Finch East, 85 Sheppard East, 116 Morningside, 133 Neilson, 353 Steeles	"53_0_53A
-53_1_53A
 53_0_53B
-53_1_53B
 53_0_53Bpm
+53_0_53Bmk
+53_0_BRMK
+53_1_53A
+53_1_53B
 53_1_53Bpm
-53_0_53E
-53_1_53E
-53_0_53F
-53_1_53F
-53_0_53Epm
-53_1_53Epm
-53_1_53Epm*
-53_0_53Fpm
-53_1_53Fpm
 53_1_SYON
-53_1_BSFS
-53_0_BRMK"
+53_1_BSFS"
 54	Lawrence East	Eglinton	320 Yonge, 334 Eglinton East, 354 Lawrence East	"54_0_54A
+54_0_54Acon
+54_0_54Arcon
 54_0_54B
+54_0_54Bcon
+54_0_54BrCon
 54_0_54Bpm
+54_0_54BpmCon
+54_0_54Bpmr
+54_0_54BpmrCon
 54_0_54rst
 54_0_MRST
 54_0_LSOT
 54_0_LMOT
 54_0_rt54A
+54_0_la54A
+54_0_lm54A
+54_0_54Ccon
+54_0_54Dcon
+54_0_54Gcon
+54_0_54GpmCon
 54_1_54A
+54_1_54Acon
+54_1_54ArCon
 54_1_54B
+54_1_54Bcon
+54_1_54BrCon
 54_1_54Bpm
+54_1_54BpmCon
+54_1_54Bpmr
 54_1_54Br
 54_1_la54
 54_1_lmr54
 54_1_mor54
+54_1_54Ccon
+54_1_54Dcon
+54_1_54Gcon
+54_1_54GpmCon
 54_1_OTBR
 54_1_RH54
 54_1_RH54r
-54_1_STRH"
-55	Warren Park	Mount Dennis	None	"55_0_55
-55_1_55
-55_0_VAOL"
+54_1_STRH
+54_1_WALEcon"
+55	Warren Park	Queensway	None	"55_0_55; 55_1_55; 55_0_VAOL"
 56	Leaside	Wilson	320 Yonge	"56_0_56A
 56_1_56A
 56_0_56B
@@ -410,9 +342,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 61	Avenue Road North	Wilson	320 Yonge	"61_0_61
 61_1_61
 61_1_61aros"
-62	Mortimer	Birchmount	87 Cosburn	"62_0_62
-62_0_62A
-62_1_62"
+62	Mortimer	Birchmount	87 Cosburn	"62_0_62; 62_0_62A; 62_1_62"
 63	Ossington	Wilson	320 Yonge, 363 Ossington	"63_0_63A
 63_1_63A
 63_0_63B
@@ -462,8 +392,10 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 70_1_70B
 70_1_70C
 70_1_dc70C"
-71	Runnymede	Mount Dennis	300 Bloor-Danforth	"71_0_71
-71_1_71"
+71	Runnymede	Mount Dennis	300 Bloor-Danforth	"71_0_71A
+71_1_71A
+71_0_71B
+71_1_71B"
 72	Pape	Birchmount	None	"72_0_72A
 72_1_72A
 72_0_72B
@@ -525,8 +457,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 81_0_DSTH
 81_1_THDS
 81_1_MITH"
-82	Rosedale	Wilson	75 Sherbourne, 320 Yonge	"82_0_82
-82_1_82"
+82	Rosedale	Wilson	75 Sherbourne, 320 Yonge	"82_0_82; 82_1_82"
 83	Jones	Birchmount	300 Bloor-Danforth, 322 Coxwell, 324 Victoria Park	"83_0_83
 83_1_83"
 84	Sheppard West	Arrow Rd	99 Arrow Rd	"84_0_84A
@@ -568,22 +499,21 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 85_1_sld85
 85_1_RHSL"
 86	Scarborough	Eglinton	 300 Bloor-Danforth, 334 Eglinton East	"86_0_86A
-86_0_86B
-86_0_86C
-86_0_86D
-86_0_CNKG
-86_0_MACO
-86_0_KGSL
-86_0_ZOO
-86_0_kn86
 86_1_86A
+86_0_86B
 86_1_86B
+86_0_86C
 86_1_86C
+86_0_86D
 86_1_86D
-86_1_ZOO"
+86_0_MACO
+86_0_CNKG
+86_0_KGSL
+86_0_kn86"
 87	Cosburn	Birchmount	12 Kingston Rd, 62 Mortimer, 300 Bloor-Danforth	"87_0_87A
-87_0_87C
 87_1_87A
+87_0_87C
+87_0_87 C
 87_1_87C
 87_1_cc87"
 88	South Leaside	Wilson	320 Yonge	"88_0_88A
@@ -660,19 +590,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 100_1_100A"
 101	Downsview Park	Arrow Rd	None	"101_0_101
 101_1_101"
-102	Markham Rd	Birchmount, Eglinton, Malvern	300 Bloor-Danforth, 302 Kingston-McCowan, 986 Scarborough Express	"102_0_102A
-102_1_102A
-102_0_102B
-102_1_102B
-102_0_102Bpm
-102_1_102Bpm
-102_1_102Bam
-102_0_102D
-102_1_102D
-102_0_MPWA
-102_1_WAMP
-102_1_CNCC
-102_1_CDHS"
+102	Markham Rd	Birchmount, Eglinton, Malvern	300 Bloor-Danforth, 302 Kingston-McCowan, 986 Scarborough Express	"102_0_102A; 102_0_102B; 102_0_102Cpm; 102_0_102D; 102_0_MPWA; 102_0_SEMK; 102_1_102A; 102_1_102B; 102_1_102Cam; 102_1_102D; 102_1_WAMP; 102_1_CNCC; 102_1_CDHS; 102_1_SEMK""
 104	Faywood	Wilson	None	"104_0_104
 104_1_104"
 105	Dufferin North	Wilson	106 Sentinel	"105_0_105A
@@ -765,13 +683,11 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 120_1_120
 120_1_SHNR"
 121	Fort-York Esplanade	Birchmount	None	"121_0_121A
-121_0_121C
-121_0_121D
-121_0_121S
 121_1_121A
+121_0_121C
 121_1_121C
-121_1_121D
-121_1_121S"
+121_0_121D
+121_1_121D"
 122	Graydon Hall	Wilson	115 Silver Hills, 320 Yonge	"122_0_122
 122_0_122*
 122_0_ROUP
@@ -789,11 +705,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 123_1_EMKP
 123_0_SHLO"
 124	Sunnybrook	Wilson	None	"124_0_124
-124_0_124con
-124_1_124
-124_1_124con
-124_1_124compm
-124_1_124pm"
+124_1_124"
 125	Drewry	Wilson	320 Yonge	"125_0_125
 125_1_125
 125_1_TOBA
@@ -844,55 +756,36 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 135	Gerrard	Birchmount	70 O'Connor, 300 Bloor-Danforth	"135_0_135
 135_1_135"
 141	Downtown/Mt.Pleasant Express	Mount Dennis	32 Eglinton West	"141_0_141am
-141_0_141A
-141_0_141B
-141_0_141pm
 141_1_141am
-141_1_141A
-141_1_141B
-141_1_141pm
-141_1_asad"
+141_0_141pm
+141_1_141pm"
 142	Downtown/Avenue Rd Express	Wilson	7 Bathurst	"142_0_142
 142_1_142
 142_0_SICH"
 143	Downtown/Beach Express	Birchmount	None	"143_0_143
-143_0_143Con
-143_0_143pm
 143_1_143
-143_1_143Con
-143_1_143pm
-143_1_143pmCon
-143_1_SHAS"
+143_1_SHAS
+143_0_143pm
+143_1_143pm"
 144	Downtown/Don Valley Express	Eglinton	68 Warden, 102 Markham Rd	"144_0_144
 144_0_144A
 144_0_144B
-144_0_JVAS
 144_1_144
 144_1_144A
 144_1_144B
-144_1_ASAD"
+144_0_JVAS"
 145	Downtown/Humber Bay Express	Queensway	None	"145_0_145A
-145_0_145Aa
-145_0_145Ap
-145_0_145A4
-145_0_145A5
+145_1_145A
 145_0_145Aam
+145_1_145Aam
 145_0_145Apm
-145_0_145Ba
-145_0_145Bp
+145_1_145Apm
 145_0_145B1
 145_0_145B2
 145_0_145B3
 145_0_145B
-145_0_ADRM
-145_1_145A
-145_1_145Aam
-145_1_145Apm
-145_1_145Ap
 145_1_145B
-145_1_145Bp
-145_1_145Ami
-145_1_145Ami1"
+145_0_ADRM"
 160	Bathurst North	Wilson	None	"160_0_160
 160_0_CLST
 160_1_160"
@@ -900,11 +793,13 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 161_0_ljro
 161_1_161"
 162	Lawrence-Donway	Wilson	None	"162_0_162
-162_0_162con
 162_0_DWDE
-162_1_162
-162_1_DEDW
-162_1_162con"
+162_1_162"
+163	Oakwood	Wilson	None	"163_0_163
+163_0_163am
+163_1_163
+163_1_os163
+163_1_163pm"
 165	Weston Rd North	Arrow Rd	None	"165_0_165A
 165_1_165A
 165_0_165AAM
@@ -934,14 +829,15 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 176_1_176am
 176_0_176pm
 176_1_176pm"
-189 Stockyards  Queensway None  "189_0_189
-189_1_189"
+186	Wilson Rocket	Arrow Rd	36 Finch West	"186_0_186
+186_1_186"
 300	Bloor-Danforth	Birchmount, Eglinton, Malvern, Mount Dennis, Queensway	6 Bay, 16 McCowan, 20 Cliffside, 22 Coxwell, 24 Victoria Park, 25 Don Mills, 26 Dupont, 30 Lambton, 32 Eglinton West, 34 Eglinton East, 40 Junction, 41 Keele, 43 Kennedy, 44 Kipling South, 45 Kipling, 47 Lansdowne, 49 Bloor West, 50 Burnhamthorpe, 68 Warden, 73 Royal York, 76 Royal York South, 77 Swansea, 79 Scarlett Rd, 81 Thorncliffe Park, 86 Scarborough, 87 Cosburn, 100 Flemingdon Park, 102 Markham Rd, 111 East Mall, 112 West Mall, 113 Danforth, 116 Morningside, 123 Sherway, 135 Gerrard, 302 Kingston-McCowan, 332 Eglinton West, 900 Airport Express, 944 Kipling South Express, 985 Sheppard East Express	"300_0_300A
 300_0_300A*
 300_0_300Abs
 300_0_300Ake
 300_0_300B
 300_0_300B*
+300_0_300Abs
 300_0_300Bstn
 300_0_300Bdd
 300_0_300cs
@@ -970,24 +866,13 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 300_1_CSDW
 300_1_CSJN
 300_1_KPEM
-300_1_KPEM*
 300_1_KEPS
 300_1_PSJN
 300_1_T1T3"
 301	Queen	Russel, Leslie	501 Queen	"301_0_301
-301_0_301Bbus
-301_0_301Rbus
-301_0_LOCQ
-301_0_LORQ
-301_0_LOLQ
-301_0_CQRQ
 301_1_301
-301_1_301Bbus
-301_1_301Rbus
-301_1_br301bus
-301_1_CQBRbus
 301_1_NECQ
-301_1_NELQ"
+301_0_LOCQ"
 302	Kingston Rd-McCowan	Birchmount, Malvern	12 Kingston Rd, 16 McCowan, 21 Brimley, 22 Coxwell, 24 Victoria Park, 87 Cosburn, 102 Markham Rd	"302_0_302
 302_1_302
 302_0_BIDA"
@@ -1024,7 +909,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 315_1_315
 315_0_315con
 315_1_315con"
-320	Yonge	Birchmount, Eglinton, Malvern, Mount Dennis, Wilson	5 Avenue Rd, 7 Bathurst, 11 Bayview, 17 Birchmount, 25 Don Mills, 29 Dufferin, 32 Eglinton West, 34 Eglinton East, 42 Cummer, 47 Lansdowne, 51 Leslie, 54 Lawrence East, 56 Leaside, 61 Avenue Rd North, 63 Ossington, 70 O'Connor, 75 Sherbourne, 82 Rosedale, 88 South Leaside, 89 Weston, 90 Vaughan, 94 Wellesley, 97 Yonge, 98 Willowdale-Senlac, 100 Flemingdon Park, 104 Faywood, 105 Dufferin North 109 Ranee, 122 Graydon Hall, 125 Drewry, 127 Davenport, 925 Don Mills Express, 985 Sheppard East Express	"320_0_320
+320	Yonge	Birchmount, Eglinton, Malvern, Mount Dennis, Wilson	5 Avenue Rd, 7 Bathurst, 11 Bayview, 17 Birchmount, 25 Don Mills, 29 Dufferin, 32 Eglinton West, 34 Eglinton East, 42 Cummer, 47 Lansdowne, 51 Leslie, 52 Lawrence West, 54 Lawrence East, 56 Leaside, 61 Avenue Rd North, 63 Ossington, 70 O'Connor, 75 Sherbourne, 82 Rosedale, 88 South Leaside, 89 Weston, 90 Vaughan, 94 Wellesley, 97 Yonge, 98 Willowdale-Senlac, 100 Flemingdon Park, 104 Faywood, 105 Dufferin North, 109 Ranee, 122 Graydon Hall, 125 Drewry, 127 Davenport, 925 Don Mills Express, 985 Sheppard East Express	"320_0_320
 320_0_320A
 320_0_SYFS
 320_0_YEQQ
@@ -1174,12 +1059,6 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 506_0_CXMS
 506_1_MSCX
 506_0_hp506bus"
-508 Lake Shore  Leslie  None  "508_0_508
-508_0_LORQ
-508_0_rq508
-508_1_508
-508_1_508lo
-508_1_RQLO"
 509	Harbourfront	Leslie	Unknown	"509_0_509
 509_1_509
 509_0_EXBA
@@ -1219,7 +1098,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 900_1_900AM"
 902	Markham Rd Express	Birchmount	17 Birchmount	"902_0_902
 902_1_902"
-903	Kennedy-Scarborough Ctr. Express	Malvern	131 Nugget	"903_0_903
+903	Kennedy-Scarborough Centre Express	Malvern	131 Nugget	"903_0_903
 903_1_903"
 905	Eglinton East Express	Eglinton	None	"905_0_905
 905_1_905"
@@ -1241,8 +1120,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 927_1_927C
 927_1_927Dam
 927_1_927Dpm
-927_1_MGHY
-927_1_MGRCP"
+927_1_MGHY"
 929	Dufferin Express	Mount Dennis	None	"929_0_929
 929_0_929dlaw
 929_1_929
@@ -1273,8 +1151,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 945	Kipling Express	Queensway	112 West Mall	"945_0_945
 945_1_945"
 952	Lawrence West Express	Wilson	None	"952_0_952
-952_1_952
-952_1_T1T3"
+952_1_952"
 953	Steeles East Express	Malvern	53 Steeles East, 353 Steeles East	"953_0_953Aam
 953_0_953Apm
 953_0_953Bam
@@ -1283,8 +1160,7 @@ Route Number	Route Name	Division(s)	All Interlines	Internal Branches
 953_1_953Aam
 953_1_953Apm
 953_1_953Bam
-953_1_953Bpm
-953_1_MOSE"
+953_1_953Bpm"
 954	Lawrence East Express	Eglinton	None	"954_0_954
 954_0_954pm
 954_1_954
