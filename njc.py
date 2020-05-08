@@ -1089,9 +1089,9 @@ class njc:
 
 # STARTS
 						if line[2] == "":
-							data.add_field(name="Origin:", value="unavailable",inline='false')
+							data.add_field(name="Starts from:", value="unavailable",inline='false')
 						else:
-							data.add_field(name="Origin:", value=line[2],inline='false')
+							data.add_field(name="Starts from:", value=line[2],inline='false')
 
 # ENDS
 						if line[3] == "":
@@ -1113,12 +1113,12 @@ class njc:
 
 # Long Description
 						if line[7] == "":
-							data.add_field(name="Long Description:", value="unavailable.",inline='false')
+							data.add_field(name="Long Description:", value="Unavailable.",inline='false')
 						else:
 							data.add_field(name="Long Description:", value="{}".format(line[7]),inline='false')
 
 
-						data.set_image(url="http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297547264171_ORIGINAL.jpg?size=520x")
+						data.set_image(url="https://images.dailyhive.com/20161220114818/Screen-Shot-2016-12-20-at-11.47.00-AM.png")
 						data.set_footer(text="Last updated on <future information>.")
 
 					except Exception as errer:
