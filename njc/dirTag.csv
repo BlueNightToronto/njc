@@ -1267,6 +1267,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 501_0_501sywb	501 Queen	Sunnyside Loop (Roncesvalles)	Woodbine Avenue/Queen Street East	501 Neville Park	N/A	TTC Streetcar (Russell)	
 501_0_rq501	501 Queen	Sunnyside Loop (Roncesvalles)	Neville Park Loop	501 Neville Park	N/A	TTC Streetcar (Leslie)	
 501_0_501NESYbus	501 Queen	Neville Park Loop	Sunnyside Loop (Roncesvalles)	501S Short Turn	N/A	Queensway	
+501_0_501SUB	501 Queen	Long Branch Loop	Neville Park Blvd	501 Neville Park	N/A	TTC Streetcar (Leslie)	
 501_1_501	501 Queen	Neville Park Loop	Long Branch Loop	501 Long Branch 	N/A	TTC Streetcar (Russell/Leslie)	
 501_1_501bus	501 Queen	Neville Park Loop	Long Branch Loop	501 Long Branch	N/A	Eglinton, Queensway	
 501_1_501A	501 Queen	Neville Park Loop	Humber Loop	501 Humber 	N/A	TTC Streetcar (Russell/Leslie)	
@@ -1283,6 +1284,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 501_1_LQHU	501 Queen	Leslie Street/Queen Street East	Humber Loop	501 Humber	N/A	TTC Streetcar (Russell/Leslie)	
 501_1_RQHU	501 Queen	Sunnyside Loop (Roncesvalles)	Humber Loop	501 Humber	N/A	TTC Streetcar (Russell/Leslie)	
 501_1_CQSY	501 Queen	Connaught/Queen 	Sunnyside Loop (Roncesvalles)	501 Roncesvalles	N/A	TTC Streetcar (Russell/Leslie)	
+501_1_501SUB	501 Queen	Neville Park Blvd	Long Branch Loop	501 Long Branch	N/A	TTC Streetcar (Leslie)	
 502_0_502	502 Downtowner	McCaul/Queen	Bingham Loop	502 Bingham	N/A	Birchmount	
 502_1_502	502 Downtowner	Bingham Loop	McCaul/Queen	502 McCaul	N/A	Birchmount	
 502_0_CQBI	502 Downtowner	Connaught/Queen	Bingham Loop	502 Bingham	N/A	Birchmount	
