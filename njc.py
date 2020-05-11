@@ -38,9 +38,9 @@ class njc:
 		await self.bot.say(embed=data)
 
 	@commands.command()
-	async def routeveh(self,agency,rte):
+	async def route(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles are currently on route.".format('27'),colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=13491480))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
 		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
@@ -112,13 +112,14 @@ class njc:
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
-				speed = i.attributes['speedKmHr'].value #speedKmHr
+				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
 					vision = i.attributes['speedKmHr'].value
 					routetag = i.attributes['routeTag'].value
 				except:
 					lon = i.attributes['lon'].value # lon
+					speed = i.attributes['speedKmHr'].value #vision
 
 				try:
 					find = i.attributes['routeTag'].value #routetag
@@ -179,17 +180,17 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is not currently not sign into any run.",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is not currently sign into any run.",colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`{}`".format(veh),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-						data.add_field(name="Starts from", value=line[2])
+						data.add_field(name="Origin", value=line[2])
 						data.add_field(name="Destination", value=line[3])
 						data.add_field(name="Notes", value=line[5])
 						data.add_field(name="Branch Division", value=line[6])
@@ -205,7 +206,7 @@ class njc:
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
@@ -340,7 +341,7 @@ class njc:
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~13&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
@@ -448,7 +449,7 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**. ```Scan Complete.```")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**. ```Scan Complete! The following vehicles are tracking.```")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -837,20 +838,19 @@ class njc:
 				if row[0] != "vehicle" and int(row[0]) == number:
 					line = row
 			fleetlist.close()
-			data = discord.Embed( colour=discord.Colour(value=16711680))
+			data = discord.Embed(title="TTC Vehicle #{}".format(number,line[3]), description="",colour=discord.Colour(value=16711680))
 			data.add_field(name="Division/Category", value=line[4])
 			data.add_field(name="Powertrain/Motor", value=line[3])
 			data.add_field(name="Vehicle Group", value=line[1])
 			data.add_field(name="Status", value=line[6])
 			data.set_footer(text="Last updated " + line[8])
-			
+
 
 			if number < 1000:
 				if agency == 'ttc':
 					number = str('W{}'.format(number))
 				elif agency == 'miway':
 					number = str('0{}'.format(number))
-			data.set_author(name="TTC #{}".format(agencyname) + str(number), url=line[7])
 			data.set_image(url=line[7])
 
 		except Exception as e:
@@ -996,7 +996,7 @@ class njc:
 
 	# Gets profile for TTC route
 	@commands.command()
-	async def route(self,agency,rte):
+	async def routeveh(self,agency,rte):
 		"""Gets information about a TTC route."""
 
 		try:
@@ -1013,7 +1013,7 @@ class njc:
 			for row in reader:
 				if str(row[0]) == rte:
 					line = row
-					data = discord.Embed(title="**Vehicles on TTC route {}**".format(rte, line[1]), description="{} vehicles currently on route.".format("27"),colour=discord.Colour(value=8388608))
+					data = discord.Embed(title="**Vehicles on TTC route {}**".format(rte, line[1]), description="{} vehicles currently on route.".format(1),colour=discord.Colour(value=13491480))
 
 
 					try:
@@ -1031,7 +1031,7 @@ class njc:
 
 						try:
 							url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C43.6756116,-79.402095&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C43.6922,-79.49606&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C43.6442677,-79.3660425"
+							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 							raw = urlopen(url).read() # Get page and read data
 							decoded = raw.decode("utf-8") # Decode from bytes object
 							parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -1046,8 +1046,8 @@ class njc:
 								data.add_field(name="Vehicles", value=service,inline='false')
 						except:
 							data.add_field(name="Current Vehicles", value="No vehicles currently on route.",inline='false')
-						data.set_image(url=mapurl)
 						data.set_footer(text="Powered by Yorkline.")
+						data.set_image(url=mapurl)
 
 					except Exception as errer:
 						await self.bot.say(errer)
@@ -1085,9 +1085,9 @@ class njc:
 
 # STARTS
 						if line[2] == "":
-							data.add_field(name="Starts from:", value="unavailable",inline='false')
+							data.add_field(name="Origin:", value="unavailable",inline='false')
 						else:
-							data.add_field(name="Starts from:", value=line[2],inline='false')
+							data.add_field(name="Origin:", value=line[2],inline='false')
 
 # ENDS
 						if line[3] == "":
