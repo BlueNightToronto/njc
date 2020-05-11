@@ -838,7 +838,7 @@ class njc:
 				if row[0] != "vehicle" and int(row[0]) == number:
 					line = row
 			fleetlist.close()
-			data = discord.Embed(title="TTC Vehicle #{}".format(number,line[3]), description="",colour=discord.Colour(value=16711680))
+			data = discord.Embed(title="TTC Vehicle #{} - {} {}".format(number,line[2],line[3]), description="",colour=discord.Colour(value=16711680))
 			data.add_field(name="Division/Category", value=line[4])
 			data.add_field(name="Powertrain/Motor", value=line[3])
 			data.add_field(name="Vehicle Group", value=line[1])
