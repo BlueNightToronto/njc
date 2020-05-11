@@ -812,15 +812,15 @@ class njc:
 
 		# AGENCY NAME
 		if agency == 'go':
-			agencyname = "GO Transit "
+			agencyname = "GO Transit"
 		elif agency =='ttc':
-			agencyname = "TTC "
+			agencyname = "TTC"
 		elif agency =='yrt':
-			agencyname = "YRT "
+			agencyname = "YRT"
 		elif agency =='miway':
-			agencyname = "MiWay "
+			agencyname = "MiWay"
 		elif agency =='ddot':
-			agencyname = "DDOT "
+			agencyname = "DDOT"
 		else:
 			agencyname = ""
 
@@ -838,7 +838,7 @@ class njc:
 				if row[0] != "vehicle" and int(row[0]) == number:
 					line = row
 			fleetlist.close()
-			data = discord.Embed(title="TTC Vehicle #{} - {} {}".format(number,line[2],line[3]), description="",colour=discord.Colour(value=16711680))
+			data = discord.Embed(title="{} Vehicle #{} - {} {}".format(agencyname,number,line[2],line[3]), description="",colour=discord.Colour(value=16711680))
 			data.add_field(name="Division/Category", value=line[4])
 			data.add_field(name="Powertrain/Motor", value=line[3])
 			data.add_field(name="Vehicle Group", value=line[1])
