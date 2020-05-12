@@ -155,7 +155,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{}".format(veh), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -180,14 +180,14 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is not currently sign into any run.",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh), description="This vehicle is not currently sign into any run.",colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{}".format(veh), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
@@ -468,12 +468,12 @@ class njc:
 
 	# COMMAND FOR GETTING NEXT BUS <STOPID>
 	@commands.command()
-	async def ttcnext(self,stopID):
+	async def tnext(self,agency,stopID):
 		"""Obtains next vehicle predictions for TTC bus stop's SMS code. Enter a stopID, 'info', or 'alias'"""
 
 		if stopID == 'info':
 			data = discord.Embed(title="Next Vehicle Predictions for Toronto Transit Commission",description="This bot was developed by <@281750712805883904> and <@221493681075650560>. When you submit a valid stop ID, the bot fetches data and displays it here. This information is to let users find departures for a selected bus stop efficiently, without wasting much data.\n\nOne prediction typically looks like this:\n`00:07:07 - #8844 on 25_1_25A*, run 25_52_182`\n\nThis means vehicle `#8844` is coming to the stop in 7 minutes. This can help you find internal branches. `25_1_25A*` means it is on route `25` going `1` outbound on internal branch `25A*`.\n\nWith the run information, you can find interesting run interlines. The run `25_52_82` lets you know if it interlines, and when it services. This is run `8` on route `25`, which operates in the `2` afternoon. The runbox number `52` does not match run `8`. This happens if a route interlines, or if it shares the corridor with another route, to prevent confusion to operators. For possible values of runs, use the command `n!ttcnext runs`\n\nFor daytime routes that fully interline with another route for the whole day, like 130 Middlefield and 132 Milner, the runbox number will not differ from the route run number.\n\nPlease report any bugs to <@221493681075650560>.\n\nThere may currently be more bugs than usual, as the code needs a major rewrite.\n\nAll prediction data is copyright Toronto Transit Commission 2018.", colour=discord.Colour(value=13491480))
-			data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
+			data.set_thumbnail(url="")
 			await self.bot.say(embed=data)
 			return
 		elif stopID == 'alias':
@@ -507,7 +507,7 @@ class njc:
 			data.add_field(name='Values for Runbox:',value="Same as run, unless this run goes on more than one route, and/or the route operates very closely to another route. In the example, it is `88`.", inline='false') # Alias
 			data.add_field(name='Values for Run:',value="The run number for the particular route. In the example, it is `2`.", inline='false') # Alias
 			data.add_field(name='Values for Time:',value="`0` - Run operates all day.\n`1` - Run operates in the morning period only.\n`2` - Run starts to operate in the afternoon period.\nIn the example, it is `0`.", inline='false') # Alias
-			data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
+			data.set_thumbnail(url="")
 			await self.bot.say(embed=data)
 			return
 
@@ -534,12 +534,12 @@ class njc:
 		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
 
 		if len(parsed.getElementsByTagName('Error')) > 0: # Check whether the ID is valid
-			data = discord.Embed(title=":x: Invalid Stop ID or Command: " + stopID,description="Type `n!ttcnext info` for help.",colour=discord.Colour(value=16467744))
+			data = discord.Embed(title=":x: Invalid Stop ID or Command: " + stopID,description="Type `!tnext info` for help.",colour=discord.Colour(value=16467744))
 			await self.bot.say(embed=data)
 			return
 
 		msg1 = ["No predictions found for this route."]
-		data = discord.Embed(title="Next Vehicle Predictions",description="Stop ID: {}".format(stopID), colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="{}".format(stopID),description="**Predictions for the following stops: `{}`**".format(stopID), colour=discord.Colour(value=13491480))
 		routes = parsed.getElementsByTagName('predictions') # Get all tags called 'predictions'
 		for i in routes: # Loop through these
 			stopname = i.attributes['stopTitle'].value # GETS STOP NAME
@@ -550,47 +550,47 @@ class njc:
 					seconds = int(i.attributes['seconds'].value) # If the seconds value is blank, this will throw an error (dividing by 0) and trigger the exception handler, and this value needs to be an int later anyway
 					vehicle = i.attributes['vehicle'].value
 					if vehicle >= '1000' and vehicle <= '1149':
-						vehicle = vehicle + " VII Hybrid"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '1200' and vehicle <= '1423':
-						vehicle = vehicle + " VII NG Hybrid"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '1500' and vehicle <= '1689':
-						vehicle = vehicle + " VII NG Hybrid"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '1700' and vehicle <= '1829':
-						vehicle = vehicle + " VII NG Hybrid"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '3100' and vehicle <= '3369':
-						vehicle = vehicle + " LFS VISION"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '3400' and vehicle <= '3654':
-						vehicle = vehicle + " LFS VII Hybrid"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '3700' and vehicle <= '3724':
-						vehicle = vehicle + " New Flyer Xcelsior XE40"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '3725' and vehicle <= '3749':
-						vehicle = vehicle + " Catalyst BE40 K9M"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '4000' and vehicle <= '4199':
-						vehicle = vehicle + " CLRV"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '4200' and vehicle <= '4251':
-						vehicle = vehicle + " ALRV"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '4400' and vehicle <= '4999':
-						vehicle = vehicle + " Flexity"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '7900' and vehicle <= '7979':
-						vehicle = vehicle + " VII"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '8000' and vehicle <= '8011':
-						vehicle = vehicle + " VII-Airport"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '8012' and vehicle <= '8099':
-						vehicle = vehicle + " VII"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '8100' and vehicle <= '8219':
-						vehicle = vehicle + " VII NG"         
+						vehicle = vehicle + ""         
 					elif vehicle >= '8300' and vehicle <= '8396':
-						vehicle = vehicle + " VII 3G"         
+						vehicle = vehicle + ""         
 					elif vehicle >= '8400' and vehicle <= '8504':
-						vehicle = vehicle + " LFS"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '8510' and vehicle <= '8617':
-						vehicle = vehicle + " LFS"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '8620' and vehicle <= '8964':
-						vehicle = vehicle + " LFS"                    
+						vehicle = vehicle + ""                    
 					elif vehicle >= '9000' and vehicle <= '9152':
-						vehicle = vehicle + " LFS-Artic"
+						vehicle = vehicle + ""
 					elif vehicle >= '9200' and vehicle <= '9239':
-						vehicle = vehicle + " LFS"                    
+						vehicle = vehicle + ""                    
 					else:
 						vehicle = vehicle + " UNKNOWN VEHICLE"
 					toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, str(seconds // 3600).zfill(2), str(seconds // 60 % 60).zfill(2), str(seconds % 60).zfill(2), seconds] # Get the time value, vehicle and route name from the first one
@@ -608,18 +608,95 @@ class njc:
 						await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
 
 			sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
-			cleanMessagesBuffer = ["{3}:{4}:{5} - #{0} on `{1}`, Run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+			cleanMessagesBuffer = ["**{3}:{4}:{5}** - vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
 			if cleanMessagesBuffer != []:
 				cleanMessages = cleanMessagesBuffer
 			else:
 				cleanMessages = [sortedMessageData[0]] # I didn't realise that if the 'if' statement 4 lines up failed, it would still write to the variable, but it wouldn't actually write any data, so the variable was empty, which caused bad things to happen.
 			string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
 			data.add_field(name=routename,value=string, inline='false') # Say message
-			data.set_thumbnail(url="http://ttc.ca/images/ttc-main-logo.gif")
-			data.set_footer(text="Use 'n!ttcnext info' for more info about this command.")
+			data.set_footer(text="Use !fleet, !branch or !route to get more information with the above values.")
 			msg1 = ['No predictions found for this route.']
+			
+		msg1 = ["No predictions found for this route."]
+		data = discord.Embed(title="#{} {}".format(stopID,stopname),description="**Predictions for the following stops: `{}`**".format(stopID), colour=discord.Colour(value=13491480))
+		routes = parsed.getElementsByTagName('predictions') # Get all tags called 'predictions'
+		for i in routes: # Loop through these
+			stopname = i.attributes['stopTitle'].value # GETS STOP NAME
+			routename = i.attributes['routeTitle'].value # GETS ROUTE NAME
+			predictions = i.getElementsByTagName('prediction') # Get all sub-tags called 'prediction'
+			for i in predictions: # Loop through these
+				try: #test
+					seconds = int(i.attributes['seconds'].value) # If the seconds value is blank, this will throw an error (dividing by 0) and trigger the exception handler, and this value needs to be an int later anyway
+					vehicle = i.attributes['vehicle'].value
+					if vehicle >= '1000' and vehicle <= '1149':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '1200' and vehicle <= '1423':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '1500' and vehicle <= '1689':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '1700' and vehicle <= '1829':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '3100' and vehicle <= '3369':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '3400' and vehicle <= '3654':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '3700' and vehicle <= '3724':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '3725' and vehicle <= '3749':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '4000' and vehicle <= '4199':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '4200' and vehicle <= '4251':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '4400' and vehicle <= '4999':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '7900' and vehicle <= '7979':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '8000' and vehicle <= '8011':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '8012' and vehicle <= '8099':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '8100' and vehicle <= '8219':
+						vehicle = vehicle + ""         
+					elif vehicle >= '8300' and vehicle <= '8396':
+						vehicle = vehicle + ""         
+					elif vehicle >= '8400' and vehicle <= '8504':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '8510' and vehicle <= '8617':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '8620' and vehicle <= '8964':
+						vehicle = vehicle + ""                    
+					elif vehicle >= '9000' and vehicle <= '9152':
+						vehicle = vehicle + ""
+					elif vehicle >= '9200' and vehicle <= '9239':
+						vehicle = vehicle + ""                    
+					else:
+						vehicle = vehicle + " UNKNOWN VEHICLE"
+					toSay = [vehicle,i.attributes['dirTag'].value,i.attributes['block'].value, str(seconds // 3600).zfill(2), str(seconds // 60 % 60).zfill(2), str(seconds % 60).zfill(2), seconds] # Get the time value, vehicle and route name from the first one
 
-		data.set_author(name=stopname, icon_url="http://ttc.ca/images/ttc-main-logo.gif")
+					if msg1[0] == "No predictions found for this route.":
+						msg1 = [toSay]
+					else:
+						msg1.append(toSay)
+				except:
+					try:
+						msg1 = ["No predictions found for this route."]
+						continue # And starting the next loop immediately
+					except:
+						msg1 = "Invalid Data recieved"
+						await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
+
+			sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
+			cleanMessagesBuffer = ["**{3}:{4}:{5}** - vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+			if cleanMessagesBuffer != []:
+				cleanMessages = cleanMessagesBuffer
+			else:
+				cleanMessages = [sortedMessageData[0]] # I didn't realise that if the 'if' statement 4 lines up failed, it would still write to the variable, but it wouldn't actually write any data, so the variable was empty, which caused bad things to happen.
+			string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
+			data.add_field(name=routename,value=string, inline='false') # Say message
+			data.set_footer(text="Use !fleet, !branch or !route to get more information with the above values.")
+			msg1 = ['No predictions found for this route.']
 		try:
 			await self.bot.say(embed=data)
 		except Exception as e:
@@ -1031,7 +1108,7 @@ class njc:
 
 						try:
 							url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 							raw = urlopen(url).read() # Get page and read data
 							decoded = raw.decode("utf-8") # Decode from bytes object
 							parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
