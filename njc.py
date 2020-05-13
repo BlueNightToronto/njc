@@ -179,7 +179,7 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run. It is located at {} Division".format(linefleet[4]),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(linefleet[4]),colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 							data.add_field(name="Vehicle Division", value=linefleet[4])
