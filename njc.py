@@ -82,7 +82,7 @@ class njc:
 
 
 		if service == "":
-			await self.bot.say("No vehicles could be found on route {}.".format(rte))
+			await self.bot.say(":octagonal_sign: No vehicles could be found on route {}.".format(rte))
 		else:
 			try:
 				await self.bot.say(embed=data)
@@ -179,7 +179,7 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run. Located at {} Division".format(linefleet[4]),colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 							data.add_field(name="Vehicle Division", value=linefleet[4])
@@ -234,7 +234,6 @@ class njc:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
 		await self.bot.say("Vehicle not found! #{}".format(veh))
-
 
 	@commands.command()
 	async def veh(self,agency,veh):
@@ -917,9 +916,9 @@ class njc:
 				if row[0] != "vehicle" and int(row[0]) == number:
 					line = row
 			fleetlist.close()
-			data = discord.Embed(title="{} Vehicle #{} - {} {}".format(agencyname,number,line[2],line[3]), description="",colour=discord.Colour(value=16711680))
+			data = discord.Embed(title="{} #{} - {} {}".format(agencyname,number,line[2],line[3]), description="",colour=discord.Colour(value=16711680))
 			data.add_field(name="Division/Category", value=line[4])
-			data.add_field(name="Powertrain/Motor", value=line[3])
+			data.add_field(name="Powertrain/Motor", value=line[5])
 			data.add_field(name="Vehicle Group", value=line[1])
 			data.add_field(name="Status", value=line[6])
 			data.set_footer(text="Last updated " + line[8])
