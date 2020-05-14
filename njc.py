@@ -179,7 +179,7 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(linefleet[4]),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 							data.add_field(name="Vehicle Division", value=linefleet[4])
@@ -615,12 +615,11 @@ class njc:
 			else:
 				cleanMessages = [sortedMessageData[0]] # I didn't realise that if the 'if' statement 4 lines up failed, it would still write to the variable, but it wouldn't actually write any data, so the variable was empty, which caused bad things to happen.
 			string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
-			data.add_field(name=routename,value=string, inline='false') # Say message
 			data.set_footer(text="Use !fleet, !branch or !route to get more information with the above values.")
 			msg1 = ['No predictions found for this route.']
 			
 		msg1 = ["No predictions found for this route."]
-		data = discord.Embed(title="#{} {}".format(stopID,stopname),description="**Predictions for the following stops: `{}`**".format(stopID), colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="#{} {}".format(stopID,stopname),description="**Predictions for the following stops: `#{}`**".format(stopID), colour=discord.Colour(value=13491480))
 		routes = parsed.getElementsByTagName('predictions') # Get all tags called 'predictions'
 		for i in routes: # Loop through these
 			stopname = i.attributes['stopTitle'].value # GETS STOP NAME
@@ -695,7 +694,7 @@ class njc:
 			else:
 				cleanMessages = [sortedMessageData[0]] # I didn't realise that if the 'if' statement 4 lines up failed, it would still write to the variable, but it wouldn't actually write any data, so the variable was empty, which caused bad things to happen.
 			string = "\n".join(cleanMessages) # I fixed it by checking whether the variable is empty, and replacing it with the no predictions message if it is.
-			data.add_field(name=stopname,value=string, inline='false') # Say message
+			data.add_field(name=routename,value=string, inline='false') # Say message
 			data.set_footer(text="Use !fleet, !branch or !route to get more information with the above values.")
 			msg1 = ['No predictions found for this route.']
 		try:
