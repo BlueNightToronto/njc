@@ -89,6 +89,56 @@ class njc:
 			except Exception as errer:
 				await self.bot.say("An error occured: `{}`".format(errer))
 			return
+			
+		data = discord.Embed(title="GO Route " + rte, description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=13491480))
+
+		url = "http://transitfeeds.com/p/go-transit/32/latest/routes?q=" + rte
+		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+		raw = urlopen(url).read() # Get page and read data
+		decoded = raw.decode("utf-8") # Decode from bytes object
+		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
+		service = ""
+		vehs = int('0')
+		vehicles = parsed.getElementsByTagName('blocks') # Get all tags called 'blocks'
+
+		for i in vehicles: # For each vehicle found
+			veh = i.attributes['id'].value # GETS VEHICLE
+			lat = i.attributes['lat'].value # GETS LAT
+			lon = i.attributes['lon'].value # GETS LONG
+			hea = int(i.attributes['heading'].value) # GETS COMPASS
+			service = service + veh + ", " # GETS VEHICLE
+			vehs = vehs + int('1')
+
+			if vehs <= int('27'):
+				if hea == int('-4'): #label based on compass
+					if vehs < int('20'):
+						mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('405'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
+				elif hea > int('315'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
+				elif hea > int('225'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xffff00%7Clabel:W%7C{},{}".format(lat, lon)
+				elif hea > int('135'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x0000ff%7Clabel:S%7C{},{}".format(lat, lon)
+				elif hea > int('45'):
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x00ffff%7Clabel:E%7C{},{}".format(lat, lon)
+				else:
+					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
+
+		data.add_field(name="Vehicles", value=service)
+		data.set_image(url=mapurl)
+		data.set_footer(text="Map only shows up to 27 vehicles at a time. Powered by Yorkline.")
+
+
+		if service == "":
+			await self.bot.say(":octagonal_sign: No vehicles could be found on route {}.".format(rte))
+		else:
+			try:
+				await self.bot.say(embed=data)
+			except Exception as errer:
+				await self.bot.say("An error occured: `{}`".format(errer))
+			return
 
 	@commands.command()
 	async def vehicle(self,agency,veh):
@@ -233,7 +283,7 @@ class njc:
 				except:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
-		await self.bot.say("Vehicle not found! #{}".format(veh))
+		await self.bot.say("**TTC Vehicle Not Found!** vehicle `#{}`".format(veh))
 
 	@commands.command()
 	async def veh(self,agency,veh):
