@@ -40,7 +40,7 @@ class njc:
 	@commands.command()
 	async def route(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="Vehicles on TTC route " + rte, description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="TTC route " + rte, description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=8388608))
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
 		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
@@ -56,7 +56,7 @@ class njc:
 			lat = i.attributes['lat'].value # GETS LAT
 			lon = i.attributes['lon'].value # GETS LONG
 			hea = int(i.attributes['heading'].value) # GETS COMPASS
-			service = service + veh + ", " # GETS VEHICLE
+			service = service + veh + "; " # GETS VEHICLE
 			vehs = vehs + int('1')
 
 			if vehs <= int('27'):
@@ -204,7 +204,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(veh),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -238,7 +238,7 @@ class njc:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
@@ -1140,17 +1140,12 @@ class njc:
 			for row in reader:
 				if str(row[0]) == rte:
 					line = row
-					data = discord.Embed(title="**Vehicles on TTC route {}**".format(rte, line[1]), description="{} vehicles currently on route.".format(1),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="**TTC route {} {}**".format(rte, line[1]), description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=8388608))
 
 
 					try:
-# BRANCHES
-						if line[4] == "":
-							data.add_field(name="Internal Branches:", value="undefined",inline='false')
-						else:
-							data.add_field(name="Internal Branches:", value="```{}```".format(line[4]),inline='false')
 
-# INTERLINES
+# BRANCHES
 						if line[3] == "":
 							data.add_field(name="Active Branches:", value="undefined",inline='false')
 						else:
@@ -1166,7 +1161,7 @@ class njc:
 							vehicles = parsed.getElementsByTagName('vehicle') # Get all tags called 'vehicle'
 							for i in vehicles: # For each vehicle found
 								veh = i.attributes['id'].value # GETS VEHICLE
-								service = service + veh + ", "
+								service = service + veh + "; "
 							if service == "":
 								data.add_field(name="Vehicles", value="No vehicles currently on route.",inline='false')
 							else:
@@ -1242,6 +1237,7 @@ class njc:
 
 
 						data.set_image(url="https://images.dailyhive.com/20161220114818/Screen-Shot-2016-12-20-at-11.47.00-AM.png")
+						data.set_footer(text="Last updated {} seconds ago".format(line[1]))
 
 					except Exception as errer:
 						await self.bot.say(errer)
