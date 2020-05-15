@@ -154,7 +154,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(veh),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -179,7 +179,7 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run. Locate at `#{}`".format(veh),colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 							data.add_field(name="Vehicle Division", value=linefleet[4])
@@ -188,7 +188,7 @@ class njc:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`".format(veh),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value="{}".format(routetag))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
@@ -298,7 +298,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{}".format(veh,linefleet[2],linefleet[3]), description="",colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{} - {} {}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`",colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -323,7 +323,7 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh), description="This vehicle is currently sign onto any run.",colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
 							data.add_field(name="Currently on Route", value="N/A")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 						except:
@@ -1048,7 +1048,7 @@ class njc:
 	# Gets bylaw
 	@commands.command()
 	async def bylaw(self, agency : str):
-		"""Gets rules for an agency. Available agencies: [TTC, MiWay, YRT, GO Transit]"""
+		"""Gets rules for an agency. Available agencies: [TTC, MiWay, YRT, GO Transit, Hamilton]"""
 
 		if agency.lower() in ['ttc']: # ttc
 			data = discord.Embed(colour=discord.Colour(value=5))
@@ -1058,7 +1058,7 @@ class njc:
 			data = discord.Embed(colour=discord.Colour(value=5))
 			data.add_field(name="THE CORPORATION OF THE CITY OF MISSISSAUGA TRANSIT BY-LAW", value=str("https://www7.mississauga.ca/documents/bylaws/TRANSIT_RULES_UPDATE.pdf"))
 			
-		elif agency.lower() in ['yrt']: #yrt
+		elif agency.lower() in ['yrt']: # yrt
 			data = discord.Embed(colour=discord.Colour(value=5))
 			data.add_field(name="THE REGIONAL MUNICIPALITY OF YORK BYLAW NO. 2017-7", value=str("https://www.yrt.ca/en/about-us/resources/Bylaw-2017-7.pdf"))
 			
