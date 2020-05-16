@@ -1029,7 +1029,7 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
+		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for {} vehicle #`{}`".format(field,newvalue,newvalue,agency,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -1255,7 +1255,7 @@ class njc:
 
 		try:
 			reader = None
-			fleetlist = open("cogs/njc/dirTag.csv".format(branch))
+			fleetlist = open("cogs/njc/{}.csv".format(branch))
 			reader = csv.reader(fleetlist,delimiter="	")
 		except:
 			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the branch lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
@@ -1292,7 +1292,7 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for #".format(field) + str(number),colour=discord.Colour(value=34633))
+		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
