@@ -38,9 +38,10 @@ class njc:
 		await self.bot.say(embed=data)
 
 	@commands.command()
-	async def route(self,agency,rte):
+	async def routeveh(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="TTC route " + rte, description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=8388608))
+		data = discord.Embed(title="TTC route " + rte, description="{} vehicles currently on route.".format(*rte),colour=discord.Colour(value=13491480))
+		
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
 		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
@@ -57,56 +58,6 @@ class njc:
 			lon = i.attributes['lon'].value # GETS LONG
 			hea = int(i.attributes['heading'].value) # GETS COMPASS
 			service = service + veh + "; " # GETS VEHICLE
-			vehs = vehs + int('1')
-
-			if vehs <= int('27'):
-				if hea == int('-4'): #label based on compass
-					if vehs < int('20'):
-						mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
-				elif hea > int('405'):
-					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
-				elif hea > int('315'):
-					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
-				elif hea > int('225'):
-					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xffff00%7Clabel:W%7C{},{}".format(lat, lon)
-				elif hea > int('135'):
-					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x0000ff%7Clabel:S%7C{},{}".format(lat, lon)
-				elif hea > int('45'):
-					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x00ffff%7Clabel:E%7C{},{}".format(lat, lon)
-				else:
-					mapurl = mapurl + "&markers=size:mid%7Ccolor:0xff0000%7Clabel:N%7C{},{}".format(lat, lon)
-
-		data.add_field(name="Vehicles", value=service)
-		data.set_image(url=mapurl)
-		data.set_footer(text="Map only shows up to 27 vehicles at a time. Powered by Yorkline.")
-
-
-		if service == "":
-			await self.bot.say(":octagonal_sign: No vehicles could be found on route {}.".format(rte))
-		else:
-			try:
-				await self.bot.say(embed=data)
-			except Exception as errer:
-				await self.bot.say("An error occured: `{}`".format(errer))
-			return
-			
-		data = discord.Embed(title="GO Route " + rte, description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=13491480))
-
-		url = "http://transitfeeds.com/p/go-transit/32/latest/routes?q=" + rte
-		mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
-		raw = urlopen(url).read() # Get page and read data
-		decoded = raw.decode("utf-8") # Decode from bytes object
-		parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
-		service = ""
-		vehs = int('0')
-		vehicles = parsed.getElementsByTagName('blocks') # Get all tags called 'blocks'
-
-		for i in vehicles: # For each vehicle found
-			veh = i.attributes['id'].value # GETS VEHICLE
-			lat = i.attributes['lat'].value # GETS LAT
-			lon = i.attributes['lon'].value # GETS LONG
-			hea = int(i.attributes['heading'].value) # GETS COMPASS
-			service = service + veh + ", " # GETS VEHICLE
 			vehs = vehs + int('1')
 
 			if vehs <= int('27'):
@@ -204,7 +155,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(veh),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(*stopID),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -283,7 +234,7 @@ class njc:
 				except:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
-		await self.bot.say("**TTC Vehicle Not Found!** vehicle `#{}`".format(veh))
+		await self.bot.say("**TTC Vehicle Not Found!** {} vehicle #`{}`".format(agency,veh))
 
 	@commands.command()
 	async def veh(self,agency,veh):
@@ -669,7 +620,7 @@ class njc:
 			msg1 = ['No predictions found for this route.']
 			
 		msg1 = ["No predictions found for this route."]
-		data = discord.Embed(title="#{} {}".format(stopID,stopname),description="**Predictions for the following stops: `#{}`**".format(stopID), colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="#{} {}".format(stopID,stopname),description="**Predictions for the following stops: `{}`**".format(stopID), colour=discord.Colour(value=13491480))
 		routes = parsed.getElementsByTagName('predictions') # Get all tags called 'predictions'
 		for i in routes: # Loop through these
 			stopname = i.attributes['stopTitle'].value # GETS STOP NAME
@@ -738,7 +689,7 @@ class njc:
 						await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
 
 			sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
-			cleanMessagesBuffer = ["**{3}:{4}:{5}** - vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+			cleanMessagesBuffer = ["**0:{4}:{5}**, vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
 			if cleanMessagesBuffer != []:
 				cleanMessages = cleanMessagesBuffer
 			else:
@@ -1029,7 +980,7 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for {} vehicle #`{}`".format(field,newvalue,newvalue,agency,number),colour=discord.Colour(value=34633))
+		data = discord.Embed(title="FLEETEDIT: Success ",description="You change to the value of `{}` from `{}` to `{}` for {} vehicle #`{}`".format(field,newvalue,newvalue,agency,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -1123,7 +1074,7 @@ class njc:
 
 	# Gets profile for TTC route
 	@commands.command()
-	async def routeveh(self,agency,rte):
+	async def route(self,agency,rte):
 		"""Gets information about a TTC route."""
 
 		try:
@@ -1140,21 +1091,20 @@ class njc:
 			for row in reader:
 				if str(row[0]) == rte:
 					line = row
-					data = discord.Embed(title="**TTC route {} {}**".format(rte, line[1]), description="{} vehicles currently on route.".format('1'),colour=discord.Colour(value=8388608))
-
+					data = discord.Embed(title="TTC route {}-{}".format(rte, line[1]), description="{} vehicles currently on route.".format(*rte),colour=discord.Colour(value=8388608))
+					
 
 					try:
-					
 # BRANCHES
-						if line[3] == "":
-							data.add_field(name="Active Branches:", value="undefined",inline='false')
+						if line[4] == "":
+							data.add_field(name="{} Active Branches:".format(*rte), value=service,inline='false')
 						else:
-							data.add_field(name="Active Branches:", value="```{}```".format(line[4]),inline='false')
+							data.add_field(name="{} Active Branches:".format(*rte), value="```{}```".format(line[4]),inline='false')
 							
 
 						try:
 							url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8&markers=43.7334004,-79.2640682|43.7386627,-79.2386398|43.7747854,-79.1779166|43.7324638,-79.2641983|43.7701661,-79.1761139|43.735093,-79.2554748|43.7669258,-79.1584091|43.770996,-79.186737|43.7440462,-79.2126478|43.8085823,-79.1710586|43.7341158,-79.2603058"
+							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8&"
 							raw = urlopen(url).read() # Get page and read data
 							decoded = raw.decode("utf-8") # Decode from bytes object
 							parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -1200,45 +1150,33 @@ class njc:
 
 
 					try:
-# BRANCHES
-						if line[4] == "":
-							data.add_field(name="Sign:", value="unavailable",inline='false')
-						else:
-							data.add_field(name="Sign:", value=line[4],inline='false')
-
 # STARTS
 						if line[2] == "":
 							data.add_field(name="Origin:", value="unavailable",inline='false')
 						else:
-							data.add_field(name="Origin:", value=line[2],inline='false')
+							data.add_field(name="Origin:", value=line[2],inline='true')
 
 # ENDS
 						if line[3] == "":
 							data.add_field(name="Destination:", value="unavailable",inline='false')
 						else:
-							data.add_field(name="Destination:", value=line[3],inline='false')
+							data.add_field(name="Destination:", value=line[3],inline='true')
 
 # NOTES
-						if line[5] == "":
+						if line[5] == "" :
 							data.add_field(name="Notes:", value="unavailable",inline='false')
 						else:
-							data.add_field(name="Notes:", value="{}".format(line[5]),inline='false')
+							data.add_field(name="Notes:", value="{}".format(line[5]),inline='true')
 
 # Division
 						if line[6] == "":
 							data.add_field(name="Divisions:", value="unavailable",inline='false')
 						else:
-							data.add_field(name="Divisions:", value="{}".format(line[6]),inline='false')
-
-# Long Description
-						if line[7] == "":
-							data.add_field(name="Long Description:", value="Unavailable.",inline='false')
-						else:
-							data.add_field(name="Long Description:", value="{}".format(line[7]),inline='false')
+							data.add_field(name="Divisions:", value="{}".format(line[6]),inline='true')
 
 
-						data.set_image(url="https://images.dailyhive.com/20161220114818/Screen-Shot-2016-12-20-at-11.47.00-AM.png")
-						data.set_footer(text="Last updated {} seconds ago".format(line[1]))
+						data.set_image(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
+						data.set_footer(text="Last updated on <future information>.")
 
 					except Exception as errer:
 						await self.bot.say(errer)
@@ -1255,8 +1193,8 @@ class njc:
 
 		try:
 			reader = None
-			fleetlist = open("cogs/njc/{}.csv".format(branch))
-			reader = csv.reader(fleetlist,delimiter="	")
+			branchlist = open("cogs/njc/{}.csv".format(branch))
+			reader = csv.reader(branchlist,delimiter="	")
 		except:
 			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the branch lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
 			await self.bot.say(embed=data)
@@ -1287,11 +1225,11 @@ class njc:
 			await self.bot.say("Invalid field")
 			return
 		writer = None
-		with open("cogs/njc/fleets/{}.csv".format(agency), "w", newline='') as fleetlist:
-			writer = csv.writer(fleetlist,delimiter="	")     
+		with open("cogs/njc/{}.csv".format(branch), "w", newline='') as branchlist:
+			writer = csv.writer(branchlist,delimiter="	")     
 			for i in lines:
 				writer.writerow(i)
-		fleetlist.close()
+		branchlist.close()
 		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
