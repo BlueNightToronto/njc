@@ -190,7 +190,7 @@ class njc:
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}".format(veh),colour=discord.Colour(value=13491480))
-						data.add_field(name="Currently on Route", value="{}".format(routetag))  
+						data.add_field(name="Currently on Route", value="{}".format(line[1]))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
 						data.add_field(name="Destination", value=line[3])
@@ -689,7 +689,7 @@ class njc:
 						await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
 
 			sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
-			cleanMessagesBuffer = ["**{3}:{4}:{5}**, vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+			cleanMessagesBuffer = ["**0:{4}:{5}**, vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
 			if cleanMessagesBuffer != []:
 				cleanMessages = cleanMessagesBuffer
 			else:
