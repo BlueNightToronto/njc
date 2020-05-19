@@ -20,13 +20,13 @@ class njc:
 
 	def __init__(self, bot):
 		self.bot = bot
-		self.channelstatus = 708131713661796424 #yorkline
-		self.channelID = 708131713661796424 #yorkline
-		self.channelID1 = 708131713661796424 #yorkline
-		self.channelID2 = 708131713661796424 #yorkline
-		self.channelID3 = 708131713661796424 #yorkline
-		self.channelID4 = 708131713661796424 #yorkline
-		self.channelID5 = 708131713661796424 #yorkline
+		self.channelstatus = 712427124497317959 #yorkline-autoscan
+		self.channelID = 712427124497317959 #yorkline-autoscan
+		self.channelID1 = 712427124497317959 #yorkline-autoscan
+		self.channelID2 = 712427124497317959 #yorkline-autoscan
+		self.channelID3 = 712427124497317959 #yorkline-autoscan
+		self.channelID4 = 712427124497317959 #yorkline-autoscan
+		self.channelID5 = 712427124497317959 #yorkline-autoscan
 		self.backupID = 537718582256336940 #bot-lab
 		self.scanInterval = 900
 		self.looping = False
@@ -181,7 +181,7 @@ class njc:
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(linefleet[4]),colour=discord.Colour(value=13491480))
-							data.add_field(name="Currently on Route", value="N/A")
+							data.add_field(name="Currently on Route", value="`N/A`")
 							data.add_field(name="Currently on Branch", value="`N/A`")
 							data.add_field(name="Vehicle Division", value=linefleet[4])
 							data.add_field(name="Status", value=linefleet[6])
@@ -189,12 +189,12 @@ class njc:
 							data.add_field(name="Currently on Branch", value="`N/A`") 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}".format(veh),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value="{}".format(line[1]))  
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
 						data.add_field(name="Destination", value=line[3])
-						data.add_field(name="Notes", value=line[5])
+						data.add_field(name="Branch Divisions", value=line[6])
 						data.add_field(name="Vehicle Division", value=line[6])
 						data.add_field(name="Status", value=linefleet[6])
 						
@@ -921,7 +921,7 @@ class njc:
 			data.add_field(name="Powertrain/Motor", value=line[5])
 			data.add_field(name="Vehicle Group", value=line[1])
 			data.add_field(name="Status", value=line[6])
-			data.set_footer(text="Last updated " + line[8])
+			data.set_footer(text="Last updated on " + line[8])
 
 
 			if number < 1000:
@@ -980,7 +980,7 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ",description="You change to the value of `{}` from `{}` to `{}` for {} vehicle #`{}`".format(field,newvalue,newvalue,agency,number),colour=discord.Colour(value=34633))
+		data = discord.Embed(title="FLEETEDIT: Success ",description="Change value of `{}` from `{}` to new value of {} for {} vehicle #`{}`".format(field,newvalue,newvalue,agency,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -1104,7 +1104,7 @@ class njc:
 
 						try:
 							url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
-							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8&"
+							mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~2&scale=2&size=768x768&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 							raw = urlopen(url).read() # Get page and read data
 							decoded = raw.decode("utf-8") # Decode from bytes object
 							parsed = minidom.parseString(decoded) # Parse with minidom to get XML stuffses
@@ -1177,6 +1177,7 @@ class njc:
 
 						data.set_image(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
 						data.set_footer(text="Last updated on <future information>.")
+						
 
 					except Exception as errer:
 						await self.bot.say(errer)
@@ -1193,7 +1194,7 @@ class njc:
 
 		try:
 			reader = None
-			branchlist = open("cogs/njc/{}.csv".format(branch))
+			branchlist = open("cogs/njc/{}.csv".format(agency))
 			reader = csv.reader(branchlist,delimiter="	")
 		except:
 			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the branch lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
@@ -1225,7 +1226,7 @@ class njc:
 			await self.bot.say("Invalid field")
 			return
 		writer = None
-		with open("cogs/njc/{}.csv".format(branch), "w", newline='') as branchlist:
+		with open("cogs/njc/{}.csv".format(agency), "w", newline='') as branchlist:
 			writer = csv.writer(branchlist,delimiter="	")     
 			for i in lines:
 				writer.writerow(i)
