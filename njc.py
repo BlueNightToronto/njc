@@ -234,7 +234,7 @@ class njc:
 				except:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
-		await self.bot.say("**TTC Vehicle Not Found!** {} vehicle #`{}`".format(agency,veh))
+		await self.bot.say("**{} vehicle not found!** {} vehicle #{}".format(agency,agency,veh))
 
 	@commands.command()
 	async def veh(self,agency,veh):
@@ -689,7 +689,7 @@ class njc:
 						await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
 
 			sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
-			cleanMessagesBuffer = ["**0:{4}:{5}**, vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "**" + str(i[-4]), str(i[-3]), str(i[-2]) + "**")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+			cleanMessagesBuffer = ["**0:{4}:{5}**, vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "" + str(i[-4]), str(i[-3]), str(i[-2]) + "")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
 			if cleanMessagesBuffer != []:
 				cleanMessages = cleanMessagesBuffer
 			else:
@@ -980,7 +980,9 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ",description="Change value of `{}` from `{}` to new value of {} for {} vehicle #`{}`".format(field,newvalue,newvalue,agency,number),colour=discord.Colour(value=34633))
+		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed value of `{}` from `{}` to new value of {} for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
+		data.add_field(name="Today's Date",value="Current date: {}",inline='false')
+		data.add_field(name="Edited from user",value="Edited by: <@{}>",inline='false')
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
