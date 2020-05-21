@@ -422,24 +422,24 @@ class njc:
 					try: #checks if vehicle in service is marked as inactive
 						if (str(linefleet[6]) != "Active"):
 							if ("TRACK" in str(linefleet[6])):
-								service2 = (":white_check_mark: {} is in service on `{}`! `status` is set to `{}`.".format(veh,dirtag,linefleet[6]))
+								service2 = (":white_check_mark: TTC vehicle #{} is on `{}`. Vehicle status is marked as `{}`.".format(veh,dirtag,linefleet[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
 							elif ("Retired" in str(linefleet[6])):
 								service2 = (":x: :x: :x: :x: {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
-								service2 = (":question: {} is not marked `Active` and is on `{}`!".format(veh,dirtag))
+								service2 = (":x: TTC vehicle #{}, is on `{}`. Vehicle is marked **{}**.".format(veh,dirtag,linefleet[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 
 							service5 = service5 + service2 + "\n"
 
 						try: #compares fleet division to branch division
 							if str(linefleet[4]) not in str(line[6]): #checks if divisions match
-								service1 = (":rotating_light: {} is on `{}`. No match between fleet division of `{}` and branch division of `{}`!".format(veh,dirtag,linefleet[4],line[6]))
+								service1 = (":rotating_light: TTC vehicle #{} is on `{}`. Fleet division is `{}` but branch division is `{}`!".format(veh,dirtag,linefleet[4],line[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
-								service1 = (":ok_hand: {} is on `{}`! `{}` division.".format(veh,dirtag,linefleet[4]))
+								service1 = (":ok_hand: TTC vehicle #{}, is on {}. Branch `function` value is `{}`.".format(veh,dirtag,line[7]))
 								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
@@ -980,9 +980,7 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
-		data.add_field(name="Current Date",value="Current date: ",inline='false')
-		data.add_field(name="Edited from user",value="Edited by: <@{}>",inline='false')
+		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,field,newvalue,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -1094,7 +1092,7 @@ class njc:
 			for row in reader:
 				if str(row[0]) == rte:
 					line = row
-					data = discord.Embed(title="TTC route {}-{}".format(rte, line[1]), description="{} vehicles currently on route.".format(*rte),colour=discord.Colour(value=8388608))
+					data = discord.Embed(title="TTC {}-{}".format(rte, line[1]), description="{} vehicles currently on route.".format(*rte),colour=discord.Colour(value=8388608))
 					
 
 					try:
@@ -1154,13 +1152,13 @@ class njc:
 					try:
 # STARTS
 						if line[2] == "":
-							data.add_field(name="Origin:", value="unavailable",inline='false')
+							data.add_field(name="Origin:", value="origin",inline='false')
 						else:
 							data.add_field(name="Origin:", value=line[2],inline='true')
 
 # ENDS
 						if line[3] == "":
-							data.add_field(name="Destination:", value="unavailable",inline='false')
+							data.add_field(name="Destination:", value="destination",inline='false')
 						else:
 							data.add_field(name="Destination:", value=line[3],inline='true')
 
@@ -1172,7 +1170,7 @@ class njc:
 
 # Division
 						if line[6] == "":
-							data.add_field(name="Divisions:", value="unavailable",inline='false')
+							data.add_field(name="Divisions:", value="divisions",inline='false')
 						else:
 							data.add_field(name="Divisions:", value="{}".format(line[6]),inline='true')
 
@@ -1197,13 +1195,13 @@ class njc:
 
 	# Allow Users to edit the branches
 	@commands.command()
-	async def branchedit(self, agency : str, branch : int, field: str, newvalue: str):
+	async def branchedit(self, agency , dirtag , field , newvalue):
 		"""Allow user to edit branches."""
 
 		try:
 			reader = None
-			branchlist = open("cogs/njc/{}.csv".format(agency))
-			reader = csv.reader(branchlist,delimiter="	")
+			list = open("cogs/njc/DirTag.csv")
+			reader = csv.reader(list,delimiter="	")
 		except:
 			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the branch lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
 			await self.bot.say(embed=data)
@@ -1234,12 +1232,12 @@ class njc:
 			await self.bot.say("Invalid field")
 			return
 		writer = None
-		with open("cogs/njc/{}.csv".format(agency), "w", newline='') as branchlist:
-			writer = csv.writer(branchlist,delimiter="	")     
+		with open("cogs/njc/DirTag.csv", "w", newline='') as list:
+			writer = csv.writer(list,delimiter="	")     
 			for i in lines:
 				writer.writerow(i)
-		branchlist.close()
-		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
+		list.close()
+		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,value,newvalue,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
