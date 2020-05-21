@@ -428,7 +428,7 @@ class njc:
 								service2 = (":x: :x: :x: :x: {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
-								service2 = (":question: {} is not marked active and is on `{}`!".format(veh,dirtag))
+								service2 = (":question: {} is not marked `Active` and is on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 
 							service5 = service5 + service2 + "\n"
@@ -921,7 +921,7 @@ class njc:
 			data.add_field(name="Powertrain/Motor", value=line[5])
 			data.add_field(name="Vehicle Group", value=line[1])
 			data.add_field(name="Status", value=line[6])
-			data.set_footer(text="Last updated on " + line[8])
+			data.set_footer(text="Last updated " + line[8])
 
 
 			if number < 1000:
@@ -980,11 +980,12 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed value of `{}` from `{}` to new value of {} for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
-		data.add_field(name="Today's Date",value="Current date: {}",inline='false')
+		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
+		data.add_field(name="Current Date",value="Current date: ",inline='false')
 		data.add_field(name="Edited from user",value="Edited by: <@{}>",inline='false')
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
+
 
 	# Gets schedules
 	@commands.command()
@@ -1122,7 +1123,6 @@ class njc:
 						except:
 							data.add_field(name="Current Vehicles", value="No vehicles currently on route.",inline='false')
 						data.set_footer(text="Powered by Yorkline.")
-						data.set_image(url=mapurl)
 
 					except Exception as errer:
 						await self.bot.say(errer)
@@ -1176,9 +1176,15 @@ class njc:
 						else:
 							data.add_field(name="Divisions:", value="{}".format(line[6]),inline='true')
 
+# Long Description
+						if line[7] == "":
+							data.add_field(name="Long description:", value="Not available.",inline='false')
+						else:
+							data.add_field(name="Long description:", value="{}".format(line[7]),inline='false')
 
-						data.set_image(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
-						data.set_footer(text="Last updated on <future information>.")
+
+						data.set_thumbnail(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
+						data.set_footer(text="Last updated on " + line[6])
 						
 
 					except Exception as errer:
