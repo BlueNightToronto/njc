@@ -27,6 +27,7 @@ class njc:
 		self.channelID3 = 712427124497317959 #yorkline-autoscan
 		self.channelID4 = 712427124497317959 #yorkline-autoscan
 		self.channelID5 = 712427124497317959 #yorkline-autoscan
+		self.channelID6 = 712427124497317959 #yorkline-autoscan
 		self.backupID = 537718582256336940 #bot-lab
 		self.scanInterval = 900
 		self.looping = False
@@ -38,9 +39,9 @@ class njc:
 		await self.bot.say(embed=data)
 
 	@commands.command()
-	async def routeveh(self,agency,rte):
+	async def route(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="TTC route " + rte, description="{} vehicles currently on route.".format(*rte),colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="TTC route " + rte, description="{} vehicles currently on route.".format(rte),colour=discord.Colour(value=13491480))
 		
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
@@ -155,7 +156,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(*veh),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="Branch and fleet data curated by bot staff. Located at `#{}`".format(veh),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -181,12 +182,9 @@ class njc:
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(linefleet[4]),colour=discord.Colour(value=13491480))
-							data.add_field(name="Currently on Route", value="`N/A`")
-							data.add_field(name="Currently on Branch", value="`N/A`")
 							data.add_field(name="Vehicle Division", value=linefleet[4])
-							data.add_field(name="Status", value=linefleet[6])
 						except:
-							data.add_field(name="Currently on Branch", value="`N/A`") 
+							data.add_field(name="Vehicle Division", value=linefleet[4])
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(veh),colour=discord.Colour(value=13491480))
@@ -194,13 +192,13 @@ class njc:
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
 						data.add_field(name="Destination", value=line[3])
+						data.add_field(name="Notes", value=line[5])
 						data.add_field(name="Branch Divisions", value=line[6])
 						data.add_field(name="Vehicle Division", value=line[6])
-						data.add_field(name="Status", value=linefleet[6])
 						
-					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
+					data.add_field(name="Heading", value=" `{} ({}°)`".format(*[(["North", "Northeast", "East", "Southeast", "South", "Southwest", "West", "Northwest", "North", "Disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 					
-					data.add_field(name="Speed", value="`{}km/hr`".format(speed))
+					data.add_field(name="Speed", value="`{}km/h`".format(speed))
 					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
@@ -422,36 +420,36 @@ class njc:
 					try: #checks if vehicle in service is marked as inactive
 						if (str(linefleet[6]) != "Active"):
 							if ("TRACK" in str(linefleet[6])):
-								service2 = (":white_check_mark: TTC vehicle #{} is on `{}`. Vehicle status is marked as `{}`.".format(veh,dirtag,linefleet[6]))
+								service2 = (":white_check_mark: {} is on `{}`. Vehicle status is marked as `{}`.".format(veh,dirtag,linefleet[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID4), service2)
 							elif ("Retired" in str(linefleet[6])):
-								service2 = (":x: :x: :x: :x: {} IS MARKED RETIRED BUT IS ON `{}`!".format(veh,dirtag))
+								service2 = (":x: :x: :x: :x: {} is marked Retired But is on `{}`!".format(veh,dirtag))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 							else:
-								service2 = (":x: TTC vehicle #{}, is on `{}`. Vehicle is marked **{}**.".format(veh,dirtag,linefleet[6]))
+								service2 = (":x: {} is on `{}`. Vehicle is marked **{}**.".format(veh,dirtag,linefleet[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID3), service2)
 
 							service5 = service5 + service2 + "\n"
 
 						try: #compares fleet division to branch division
 							if str(linefleet[4]) not in str(line[6]): #checks if divisions match
-								service1 = (":rotating_light: TTC vehicle #{} is on `{}`. Fleet division is `{}` but branch division is `{}`!".format(veh,dirtag,linefleet[4],line[6]))
+								service1 = (":rotating_light: {} is on `{}`. Fleet division is `{}` but branch division is `{}`!".format(veh,dirtag,linefleet[4],line[6]))
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
-								service1 = (":ok_hand: TTC vehicle #{}, is on {}. Branch `function` value is `{}`.".format(veh,dirtag,line[7]))
+								service1 = (":ok_hand: {} is on `{}`. Branch `function` value is `{}`.".format(veh,dirtag,line[7]))
 								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID2),":pencil2: {} is on **UNKNOWN BRANCH `{}`**".format(veh,dirtag,errer))
+							await self.bot.send_message(discord.Object(id = self.channelID2),":pencil2: {} is on `{}`. This is an **UNKNOWN BRANCH**".format(veh,dirtag,errer))
 
 					except Exception as errer:
-						await self.bot.send_message(discord.Object(id = self.channelID1), ":minibus: **UNKNOWN VEHICLE #{}** is on `{}`".format(veh,dirtag,errer))
+						await self.bot.send_message(discord.Object(id = self.channelID1), ":minibus: {} is on `{}`. This is an **UNKNOWN VEHICLE".format(veh,dirtag,errer))
 
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Full scan Completed**. ```Scan Complete! The following vehicles are tracking.```")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Scan Completed**. ```Scan Complete! The following vehicles are tracking.```")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -1158,9 +1156,9 @@ class njc:
 
 # ENDS
 						if line[3] == "":
-							data.add_field(name="Destination:", value="destination",inline='false')
+							data.add_field(name="Terminus:", value="destination",inline='false')
 						else:
-							data.add_field(name="Destination:", value=line[3],inline='true')
+							data.add_field(name="Terminus:", value=line[3],inline='true')
 
 # NOTES
 						if line[5] == "" :
@@ -1178,7 +1176,7 @@ class njc:
 						if line[7] == "":
 							data.add_field(name="Long description:", value="Not available.",inline='false')
 						else:
-							data.add_field(name="Long description:", value="{}".format(line[7]),inline='false')
+							data.add_field(name="Long description:", value="{}".format(line[7]),inline='true')
 
 
 						data.set_thumbnail(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
