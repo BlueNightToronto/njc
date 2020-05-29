@@ -29,7 +29,7 @@ class njc:
 		self.channelID5 = 712427124497317959 #yorkline-autoscan
 		self.channelID6 = 712427124497317959 #yorkline-autoscan
 		self.backupID = 537718582256336940 #bot-lab
-		self.scanInterval = 900
+		self.scanInterval = 300
 		self.looping = False
 
 	@commands.command()
@@ -181,20 +181,21 @@ class njc:
 
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(linefleet[4]),colour=discord.Colour(value=13491480))
-							data.add_field(name="Vehicle Division", value=linefleet[4])
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(veh),colour=discord.Colour(value=13491480))
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
+							data.add_field(name="Speed", value="`VISION missing`".format(speed))
 						except:
-							data.add_field(name="Vehicle Division", value=linefleet[4])
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at `#{}`".format(veh),colour=discord.Colour(value=13491480))
-						data.add_field(name="Currently on Route", value="{}".format(line[1]))  
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not signed onto any run. Located at `{}`".format(veh),colour=discord.Colour(value=13491480))
+						data.add_field(name="Currently on Route", value=line[1])
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
 						data.add_field(name="Destination", value=line[3])
 						data.add_field(name="Notes", value=line[5])
 						data.add_field(name="Branch Divisions", value=line[6])
-						data.add_field(name="Vehicle Division", value=line[6])
+						data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
 						
 					data.add_field(name="Heading", value=" `{} ({}°)`".format(*[(["North", "Northeast", "East", "Southeast", "South", "Southwest", "West", "Northwest", "North", "Disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 					
@@ -297,7 +298,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{} - {} {}".format(veh,linefleet[2],linefleet[3]), description="This vehicle is at #`Invalid bus stop`",colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{} - {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="Branch and fleet data curated by bot staff.",colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("<@&536303913868197898> - Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -323,20 +324,25 @@ class njc:
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
-							data.add_field(name="Currently on Route", value="N/A")
-							data.add_field(name="Currently on Branch", value="`N/A`")
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
 						except:
-							data.add_field(name="Currently on Branch", value="`N/A`") 
+							data.add_field(name="Vehicle Division", value=linefleet[4]) 
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{}".format(veh),description="", colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} -{} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]),description="", colour=discord.Colour(value=13491480))
+						data.add_field(name="Currently on Route", value=line[1])
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+						data.add_field(name="Origin", value=line[2])
+						data.add_field(name="Destination", value=line[3])
+						data.add_field(name="Notes", value=line[5])
+						data.add_field(name="Branch Division", value=line[6])
+						data.add_field(name="Vehicle Division", value="`{}`".format(line[6]))  
 						
-					data.add_field(name="Compass", value="Facing {} ({}°)".format(*[(["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "north", "disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
+					data.add_field(name="Heading", value="`{} ({}°)`".format(*[(["North", "Northeast", "East", "Southeast", "South", "Southwest", "West", "Northwest", "North", "Disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
-					data.add_field(name="On Route", value="No route")  
+					data.add_field(name="Currently on Route", value="`{}`".format(routetag))  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
@@ -680,14 +686,14 @@ class njc:
 						msg1.append(toSay)
 				except:
 					try:
-						msg1 = ["No predictions found for this route."]
+						msg1 = ["No predictions found for the following routes:"]
 						continue # And starting the next loop immediately
 					except:
 						msg1 = "Invalid Data recieved"
 						await self.bot.say("Invalid data recieved.") # Dunno how it'll look if there's no data, wrapping it in a try/except should cover all bases
 
 			sortedMessageData = sorted(msg1, key = lambda x:x[6]) # All this bit is hacky as anything, it really needs a rewrite
-			cleanMessagesBuffer = ["**0:{4}:{5}**, vehicle #`{0}` on `{1}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "" + str(i[-4]), str(i[-3]), str(i[-2]) + "")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
+			cleanMessagesBuffer = ["**0:{4}:{5}**, `{1}` w/veh #`{0}`, run `{2}`".format(*i[:-1] if i[6] > 60 else (*i[:-4], "" + str(i[-4]), str(i[-3]), str(i[-2]) + "")) for i in sortedMessageData if sortedMessageData[0] != "No predictions found for this route."] # lol if this works first try
 			if cleanMessagesBuffer != []:
 				cleanMessages = cleanMessagesBuffer
 			else:
@@ -914,11 +920,13 @@ class njc:
 				if row[0] != "vehicle" and int(row[0]) == number:
 					line = row
 			fleetlist.close()
-			data = discord.Embed(title="{} #{} - {} {}".format(agencyname,number,line[2],line[3]), description="",colour=discord.Colour(value=16711680))
+			data = discord.Embed(title="{} #{} - {} {}".format(agencyname,number,line[2],line[3]), description="",colour=discord.Colour(value=20))
 			data.add_field(name="Division/Category", value=line[4])
 			data.add_field(name="Powertrain/Motor", value=line[5])
 			data.add_field(name="Vehicle Group", value=line[1])
 			data.add_field(name="Status", value=line[6])
+			data.add_field(name="Last active on:", value="`{}`".format(line[3]))
+			data.add_field(name="Timestamp:", value="`{}`".format(line[6]))
 			data.set_footer(text="Last updated " + line[8])
 
 
@@ -927,7 +935,7 @@ class njc:
 					number = str('W{}'.format(number))
 				elif agency == 'miway':
 					number = str('0{}'.format(number))
-			data.set_image(url=line[7])
+			data.set_image(url="https://c8.alamy.com/comp/C5DBFF/toronto-transit-system-ttc-hybrid-electric-bus-with-front-bicycle-C5DBFF.jpg")
 
 		except Exception as e:
 			data = discord.Embed(title="Vehicle {} was not found ".format(number) + "for {}".format(agencyname),description="Either you have entered a non-existent vehicle number, or that vehicle has not been added to our database yet! Vehicle groups that have been completely retired are removed from the database!\n\nError: `" + str(e) + "`",colour=discord.Colour(value=16467744))
@@ -978,7 +986,7 @@ class njc:
 			for i in lines:
 				writer.writerow(i)
 		fleetlist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,field,newvalue,number),colour=discord.Colour(value=34633))
+		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -1180,7 +1188,7 @@ class njc:
 
 
 						data.set_thumbnail(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
-						data.set_footer(text="Last updated on " + line[6])
+						data.set_footer(text="Last updated on " + line[4])
 						
 
 					except Exception as errer:
