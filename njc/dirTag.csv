@@ -1174,8 +1174,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 334_1_334	334 Eglinton East	Finch Ave East/Finchdene Square	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	334 Eglinton Stn	bypasses Kennedy Stn	Eglinton	
 334_1_334*	334 Eglinton East	Finch Ave East/Finchdene Square	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	334 Eglinton Stn	via Kennedy Stn	Eglinton	
 334_1_NWFD	334 Eglinton East	Finchdene Square/Newgale	Finch Ave East/Finchdene Square	334 Finch/Neilson via Morningside	Last trip as 334	Eglinton	Some runs may continue as 34
-335_0_335	335 Jane	York University	Jane St @ Bloor St West	335 Jane Stn	N/A	Mount Dennis	
-335_1_335	335 Jane	Jane St @ Bloor St West	York University	335 York University	N/A	Mount Dennis	
+335_0_335	335 Jane	Ian Macdonald Blvd @ The Chimneystack Rd	Jane St @ Bloor St West	335 Jane Stn	N/A	Mount Dennis	
+335_1_335	335 Jane	Jane St @ Bloor St West	Ian Macdonald Blvd @ The Chimneystack Rd	335 York University	N/A	Mount Dennis	
 336_0_336	336 Finch West	Humberwood Loop	Yonge St/Finch Ave West	336 Finch Stn	bypasses Finch Stn	Arrow Rd, Malvern	
 336_1_336	336 Finch West	Yonge St/Finch Ave West	Humberwood Loop	336S Short Turn	bypasses Finch Stn	Arrow Rd, Malvern	
 336_0_336fs	336 Finch West	Woodbine Racetrack	Finch Station	336 Finch Stn	then operates on 36	Arrow Rd	
