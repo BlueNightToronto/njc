@@ -235,7 +235,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 36_1_36faCon	36 Finch West	Finch Station	Signet Drive/Arrow Rd	36S Arrow Rd	via Finch West Stn	Arrow Rd	
 36_1_36fac	36 Finch West	Finch Station	Signet Drive/Arrow Rd	36S Arrow Rd	bypass Finch West Stn	Arrow Rd	
 36_1_36J	36 Finch West	Finch Station	Humberwood Loop	36B Humberwood	via Finch West Stn	Arrow Rd	
-36_1_36Jfw	36 Finch West	Finch Station	Finch West Station	36A Finch West Stn	N/A	Arrow Rd	
+36_1_36Jfw	36 Finch West	Finch Station	Humberwood Loop	36A Finch West Stn	N/A	Arrow Rd	
 36_1_36JCon	36 Finch West	Finch Station	Humberwood Loop	36A Humberwood	via Finch West Stn	Arrow Rd	
 36_1_36Dpv	36 Finch West	Finch Ave West/Yonge Street	Milvan Drive/Penn Drive	36D Weston Rd and Milvan	bypass Finch West Stn	Arrow Rd	
 36_1_36Jpv	36 Finch West	Yonge Street	Humberwood Loop	36A Humberwood	bypass Finch West Stn	Arrow Rd	
@@ -407,10 +407,6 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 54_0_rt54A	54 Lawrence East	Lawrence East RT Station	Starspray Blvd (Starspray Loop)	54A Starspray Blvd	First PM Trip	Eglinton	
 54_0_la54A	54 Lawrence East	Warden Ave/Lawrence Ave East	Starspray Blvd (Starspray Loop)	54A Starspray Blvd	N/A	Eglinton	
 54_0_lm54A	54 Lawrence East	Lawrence Ave East/Markham Road	Starspray Blvd (Starspray Loop)	54A Starspray Blvd	N/A	Eglinton	
-54_0_54Ccon	54 Lawrence East	Eglinton/Leslie	Starspray Blvd (Starspray Loop)	54A Starspray Blvd	via Lawrence East Stn	Eglinton	
-54_0_54Dcon	54 Lawrence East	Eglinton Station	Lawrence East RT Station	54D Lawrence East Stn	via Don Mills	Eglinton	
-54_0_54Gcon	54 Lawrence East	Eglinton/Leslie	Orton Park Road/Brimorton Road	54B Orton Park	via Lawrence East Stn	Eglinton	
-54_0_54GpmCon	54 Lawrence East	Eglinton/Leslie	Scarborough Golf Club Rd/Lawrence 	54B Orton Park	via Lawrence East Stn	Eglinton	
 54_1_54A	54 Lawrence East	Starspray Blvd (Starspray Loop)	Eglinton Station	54 Eglinton Stn	via Lawrence East Stn	Eglinton	
 54_1_54Acon	54 Lawrence East	Starspray Blvd (Starspray Loop)	Eglinton Station	54 Eglinton Stn	via Don Mills and Lawrence East Stn	Eglinton	Due to construction at Eglinton & Leslie, buses are diverted via Don Mills to Eglinton Stn
 54_1_54ArCon	54 Lawrence East	Starspray Blvd (Starspray Loop)	Eglinton Station	54 Eglinton Stn	via Don Mills, bypass Lawrence East Stn	Eglinton	Due to construction at Eglinton & Leslie, buses are diverted via Don Mills to Eglinton Stn
@@ -424,10 +420,6 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 54_1_la54	54 Lawrence East	Warden Ave/Lawrence Ave East	Eglinton Station	54 Eglinton Stn	bypasses Lawrence East RT Stn	Eglinton	
 54_1_lmr54	54 Lawrence East	Morningside/Lawrence Ave East	Eglinton Station	54 Eglinton Stn	bypasses Lawrence East RT Stn	Eglinton	
 54_1_mor54	54 Lawrence East	Lawrence Ave East/Markham Rd	Eglinton Station	54 Eglinton Stn	bypasses Lawrence East RT Stn	Eglinton	
-54_1_54Ccon	54 Lawrence East	Starspray Blvd (Starspray Loop)	Eglinton/Leslie	54C Eglinton and Leslie	Transfer at Leslie	Eglinton	
-54_1_54Dcon	54 Lawrence East	Lawrence East RT Stn	Eglinton Station	54D Eglinton Stn	via Don Mills	Eglinton	
-54_1_54Gcon	54 Lawrence East	Orton Park Road/Brimorton Road	Eglinton/Leslie	54 Eglinton Stn	Transfer at Leslie	Eglinton	
-54_1_54GpmCon	54 Lawrence East	Scarborough Golf Club/Lawrence	Eglinton/Leslie	54 Eglinton Stn	Transfer at Leslie	Eglinton	
 54_1_OTBR	54 Lawrence East	Orton Park Rd/Lawrence Av East 	Scarborough Golf Club/Lawrence 	54B Orton Park	Last trip	Eglinton	
 54_1_RH54	54 Lawrence East	East Avenue (Rouge Hill GO Stn)	Eglinton Station	54 Eglinton Stn	N/A	Eglinton	
 54_1_RH54r	54 Lawrence East	East Avenue (Rouge Hill GO Stn)	Eglinton Station	54 Eglinton Stn	bypasses Lawrence East RT Stn	Eglinton	
@@ -524,8 +516,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 70_1_70A	70 O'Connor	Coxwell Station	Craigton Drive/Pharmacy Avenue	70A Eglinton 	N/A	Eglinton	
 70_1_70B	70 O'Connor	Coxwell Station	Victoria Park/O'Connor Drive	70B Victoria Park	N/A	Eglinton	
 70_1_70C	70 O'Connor	Coxwell Station	Warden Station	70C Warden Stn	N/A	Birchmount, Eglinton	
-70_1_dc70C	70 O'Connor	Danforth Rd/Coxwell Avenue	Warden Station	70C Warden Stn	First 70C trip, while subway is closed	Eglinton	
-71_0_71	71 Runnymede	Mount Dennis Garage	Runnymede Station	71 Runnymede Stn	N/A	Mount Dennis	
+70_1_dc70C	70 O'Connor	Danforth Rd/Coxwell Avenue	Warden Stn	70C Warden Stn	First 70C trip, while subway is closed	Eglinton	
+71_0_71	71 Runnymede	Mount Dennis Garage	Runnymede Stn	71 Runnymede Stn	N/A	Mount Dennis	
 71_1_71	71 Runnymede	Runnymede Station	Mount Dennis Garage	71 Industry St	N/A	Mount Dennis	
 72_0_72A	72 Pape 	Pape Station	Eastern Avenue	72A Eastern	N/A	Birchmount	
 72_1_72A	72 Pape	Eastern Avenue	Pape Stn	72 Pape Stn	N/A	Birchmount	
@@ -866,11 +858,9 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 121_0_121A	121 Fort York-Esplanade 	Exhibition (Prince's Gate Loop)	Front Street East/Parliament Street	121A Distillery	via Union Stn	Birchmount	
 121_0_121C	121 Fort York-Esplanade	Exhibition (Prince's Gate Loop)	Cherry Beach	121C Cherry Beach	via Union Stn	Birchmount	
 121_0_121D	121 Fort York-Esplanade 	Ontario Place	Cherry Beach	121D Cherry Beach	via Union Stn	Birchmount	
-121_0_121S	121 Fort York-Esplanade	Union Station	Distillery District	121A Distillery	Starts at Union Station	Birchmount	This branch helps customers travel to the Distillery District for the Toronto Christmas Market
 121_1_121A	121 Fort York-Esplanade 	Mill Street/Cherry Street	Exhibition (Prince's Gate Loop)	121A Exhibition (Princes Gate)	via Union Stn	Birchmount	
 121_1_121C	121 Fort York-Esplanade	Cherry Beach	Exhibition (Prince's Gate Loop)	121C Exhibition	via Union Stn	Birchmount	
 121_1_121D	121 Fort York-Esplanade 	Cherry Beach	Ontario Place 	121D Ontario Place	via Distillery and Union Stn	Birchmount	
-121_1_121S	121 Fort York-Esplanade	Distillery District	Union Station	121A Exhibition (Princes Gate)	Ends at Union Station	Birchmount	This branch helps customers travel to the Distillery District for the Toronto Christmas Market
 122_0_122	122 Graydon Hall	York Mills Station	Roywood/Fenside 	122 Roywood via Lesmill	N/A	Wilson	
 122_0_122*	122 Graydon Hall	York Mills Station	Roywood/Fenside 	122 Roywood via Lesmill	N/A	Wilson	
 122_0_ROUP	122 Graydon Hall	Underpass Gate/Roywood	Roywood/Fenside 	122 York Mills Stn via Lesmill	N/A	Wilson	
@@ -1011,7 +1001,7 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 163_0_163	163 Oakwood	Lawrence West Station	Ossington Station	163 Ossington Stn	via Marlee Ave	Wilson	
 163_0_163am	163 Oakwood	Lawrence West Station	Ossington Station	163 Ossington Stn	via Marlee Ave	Wilson	
 163_1_163	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	
-163_1_os163	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	Same trip as `163_1_163`
+163_1_os163	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	
 163_1_163pm	163 Oakwood	Ossington Station	Lawrence West Station	163 Lawrence West Stn	via Marlee Ave	Wilson	
 165_0_165A	165 Weston Rd North	Steeles Ave West/Barmac Road	York Mills Station	165 York Mills Stn	via Wilson Stn	Arrow Rd	
 165_0_165Apm	165 Weston Rd North	Steeles Ave West/Barmac Road	York Mills Station	165 York Mills Stn	via Wilson Stn	Arrow Rd	
@@ -1184,8 +1174,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 334_1_334	334 Eglinton East	Finch Ave East/Finchdene Square	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	334 Eglinton Stn	bypasses Kennedy Stn	Eglinton	
 334_1_334*	334 Eglinton East	Finch Ave East/Finchdene Square	Eglinton Ave East/Duplex Avenue (Eglinton Stn)	334 Eglinton Stn	via Kennedy Stn	Eglinton	
 334_1_NWFD	334 Eglinton East	Finchdene Square/Newgale	Finch Ave East/Finchdene Square	334 Finch/Neilson via Morningside	Last trip as 334	Eglinton	Some runs may continue as 34
-335_0_335	335 Jane	York University	Jane Station	335 Jane Stn	N/A	Arrow Rd	
-335_1_335	335 Jane	Jane Street (Jane Stn)	York University	335 York University	N/A	Arrow Rd	
+335_0_335	335 Jane	York University	Jane St @ Bloor St West	335 Jane Stn	N/A	Mount Dennis	
+335_1_335	335 Jane	Jane St @ Bloor St West	York University	335 York University	N/A	Mount Dennis	
 336_0_336	336 Finch West	Humberwood Loop	Yonge St/Finch Ave West	336 Finch Stn	bypasses Finch Stn	Arrow Rd, Malvern	
 336_1_336	336 Finch West	Yonge St/Finch Ave West	Humberwood Loop	336S Short Turn	bypasses Finch Stn	Arrow Rd, Malvern	
 336_0_336fs	336 Finch West	Woodbine Racetrack	Finch Station	336 Finch Stn	then operates on 36	Arrow Rd	
@@ -1212,10 +1202,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 352_1_SUKE	352 Lawrence West	Sunnybrook Hospital	Keele Street/Lawrence Ave West	352S Keele 	bypass Lawrence Stn and Lawrence West Stn	Wilson	
 352_1_SULW	352 Lawrence West	Sunnybrook Hospital	Lorindale Avenue/Lawrence Ave West	352 Lawrence Stn	Last trip	Wilson	
 353_0_353	353 Steeles	York University	Finchdene Square	353 Staines	N/A	Malvern	
-353_0_c353	353 Steeles	York University	Finchdene Square	353 Staines	N/A	Malvern	
 353_0_FDNW	353 Steeles	Finchdene/Finch Ave East	Newgale/Finchdene	353 York University	First trip	Malvern	
 353_1_353	353 Steeles	Finchdene Square	York University	353 York University	N/A	Malvern	
-353_1_353c	353 Steeles	Finchdene Square	York University	353 York University	N/A	Malvern	
 353_1_NWFD	353 Steeles	Newgale/Finchdene	Finchdene/Finch	353 Staines	Last trip	Malvern	
 354_0_354B	354 Lawrence East	Eglinton Station	Starspray Blvd (Starspray Loop)	354 Starspray Blvd	bypasses Lawrence East Stn	Eglinton	
 354_1_354B	354 Lawrence East	Starspray Blvd (Starspray Loop)	Eglinton Stn	354 Eglinton Stn	N/A	Eglinton	
@@ -1224,12 +1212,8 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 363_0_363	363 Ossington	Everden Ave (Eglinton West Stn)	Exhibition Loop	363 Exhibition	N/A	Wilson	
 363_1_363	363 Ossington	Exhibition Loop	Everden Ave (Eglinton West Stn)	363 Eglinton West Stn	N/A	Wilson	
 363_0_363egca	363 Ossington	Eglinton Avenue West	King Street West/Strachan Avenue	363S Short Turn	N/A	Wilson	
-363_0_363A	363 Ossington	Eglinton West Station	Exhibition Loop	363A Exhibition	N/A	Wilson	
 363_0_363B	363 Ossington	Eglinton Ave West/Northcliffe	Exhibition Loop	363B Exhibition	N/A	Wilson	
 363_1_363B	363 Ossington	Exhibtion Loop	Eglinton Ave West/Northcliffe	363B Eglinton Ave	N/A	Wilson	
-363_0_363ca	363 Ossington	Everden Ave (Eglinton West Stn)	King Street West/Strachan Avenue	363S Short Turn	N/A	Wilson	
-363_1_ki363	363 Ossington	King Street West/Shaw Street	Everden Ave (Eglinton West Stn)	363 Eglinton West Stn	N/A	Wilson	
-363_1_ki363B	363 Ossington	King Street West/Shaw Street	Eglinton Ave West/Northcliffe	363B Eglinton Ave	N/A	Wilson	
 365_0_365	365 Parliament	Bloor Street East (Castle Frank Stn)	The Esplanade	365 Esplanade	N/A	Birchmount	
 365_1_365	365 Parliament	The Esplanade	Bloor Street East (Castle Frank Stn)	365 Castle Frank Stn	N/A	Birchmount	
 384_0_384	384 Sheppard West	Weston Road/Bradstock Road	Beecroft Rd (Sheppard Stn)	384 Sheppard Stn	bypasses Sheppard West Stn	Arrow Rd	
@@ -1340,13 +1324,13 @@ Branch ID	Route Name 	Starting Point	Ending Point	Sign	Notes	Division(s)	Long De
 504_1_RQDI	504 King	Roncesvalles/Queen	Distillery Loop	504A Distillery	First Trip	TTC Streetcar (Leslie)	
 505_0_505	505 Dundas	Dundas West Station	Broadview Station	505 Broadview Stn	via Dundas	TTC Streetcar (Leslie)	
 505_0_505bd	505 Dundas	Dundas West Station	Broadview Station	505 Broadview Stn	via Dundas	TTC Streetcar (Leslie)	
-505_0_BDBS	505 Dundas	Broadview/Dundas Street East	Broadview Station	via Dundas	TTC Streetcar (Leslie)	
+505_0_BDBS	505 Dundas	Broadview/Dundas Street West	Broadview Station	via Dundas	TTC Streetcar (Leslie)	
 505_1_505	505 Dundas	Broadview Station	Dundas West Station	505 Dundas West Stn	via Dundas	TTC Streetcar (Leslie)	
 505_1_505Busrush	505 Dundas	Broadview Station	Dundas West Station	505 Dundas West Stn	via Dundas	Eglinton	
 505_1_505rush	505 Dundas	Broadview Station	Dundas West Station	505 Dundas West Stn	via Dundas	TTC Streetcar (Leslie)	
 505_0_505bus	505 Dundas	Dundas West Station	Broadview Station	505 Broadview Stn via Dundas	N/A	Eglinton	
 505_1_505bus	505 Dundas 	Broadview Station	Dundas West Station	505 Dundas West Stn via Dundas	N/A	Eglinton	
-505_1_bd505	505 Dundas	Bloor Street West/Danforth Avenue	Dundas West Station	via Dundas	N/A	TTC Streetcar (Leslie)	
+505_1_bd505	505 Dundas	Broadview Ave/Danforth Avenue	Dundas West Station	via Dundas	N/A	TTC Streetcar (Leslie)	
 505_1_BSBD	505 Dundas	Broadview Stn	Bloor Street West/Dundas Street West	via Dundas	N/A	TTC Streetcar (Leslie)	
 505_1_505rushbus	505 Dundas	Broadview Station	Dundas West Stn	505 Dundas West Stn via Dundas	bypass Broadview Avenue	Birchmount, Mount Dennis	
 506_0_506	506 Carlton	High Park Loop	Main Street Station	506 Main Street Stn	N/A	TTC Streetcar (Leslie)	
