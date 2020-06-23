@@ -39,7 +39,7 @@ class njc:
 		await self.bot.say(embed=data)
 
 	@commands.command()
-	async def route(self,agency,rte):
+	async def rte(self,agency,rte):
 		"""Checks vehicles on a route."""
 		data = discord.Embed(title="TTC route " + rte, description="{} vehicles currently on route.".format(rte),colour=discord.Colour(value=13491480))
 		
@@ -443,11 +443,14 @@ class njc:
 								await self.bot.send_message(discord.Object(id = self.channelID), service1)
 								service = service + service1 + "\n"
 							if str("TRACK") in str(line[7]): #Checks if a vehicle is on TRACK branch
-								service1 = (":ok_hand: {} is on `{}`. Branch `function` value is `{}`.".format(veh,dirtag,line[7]))
+								service1 = (":ok_hand: {} is on `{}`. Branch `function value is `{}`.".format(veh,dirtag,line[7]))
+								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
+							if str("RESEARCH") in str(line[7]):#checks if a branch is needed to be research
+								service1 = (":mag: {} is on `{}`. Branch function value is `{}`.".format(veh,dirtag,line[7]))
 								await self.bot.send_message(discord.Object(id = self.channelID5), service1)
 								service = service + service1 + "\n"
 						except Exception as errer:
-							await self.bot.send_message(discord.Object(id = self.channelID2),":pencil2: {} is on `{}`. This is an **UNKNOWN BRANCH**".format(veh,dirtag,errer))
+							await self.bot.send_message(discord.Object(id = self.channelID2),":pencil2: {} is on `{}`. This is an **UNKNOWN BRANCH**.".format(veh,dirtag,errer))
 
 					except Exception as errer:
 						await self.bot.send_message(discord.Object(id = self.channelID1), ":minibus: {} is on `{}`. This is an **UNKNOWN VEHICLE".format(veh,dirtag,errer))
@@ -1098,15 +1101,15 @@ class njc:
 			for row in reader:
 				if str(row[0]) == rte:
 					line = row
-					data = discord.Embed(title="TTC {}-{}".format(rte, line[1]), description="{} vehicles currently on route.".format(*rte),colour=discord.Colour(value=8388608))
+					data = discord.Embed(title="TTC {}-{}".format(rte, line[1]), description="{} vehicles currently on route.".format(rte),colour=discord.Colour(value=8388608))
 					
 
 					try:
 # BRANCHES
 						if line[4] == "":
-							data.add_field(name="{} Active Branches:".format(*rte), value=service,inline='false')
+							data.add_field(name="{} Active Branches:".format(rte), value=service,inline='false')
 						else:
-							data.add_field(name="{} Active Branches:".format(*rte), value="```{}```".format(line[4]),inline='false')
+							data.add_field(name="{} Active Branches:".format(rte), value="```{}```".format(line[4]),inline='false')
 							
 
 						try:
@@ -1188,7 +1191,7 @@ class njc:
 
 
 						data.set_thumbnail(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
-						data.set_footer(text="Last updated on " + line[4])
+						data.set_footer(text="Last updated on " + line[1])
 						
 
 					except Exception as errer:
