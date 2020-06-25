@@ -84,7 +84,7 @@ class njc:
 
 
 		if service == "":
-			await self.bot.say(":octagonal_sign: No vehicles could be found on route {}.".format(rte))
+			await self.bot.say(":triangular_flag_on_post: The route you are looking for cannot be found at this time. It may indicate the has suspended or does not exist.".format(rte))
 		else:
 			try:
 				await self.bot.say(embed=data)
@@ -183,7 +183,6 @@ class njc:
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(veh),colour=discord.Colour(value=13491480))
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
-							data.add_field(name="Speed", value="`VISION missing`".format(speed))
 						except:
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
 					else:
@@ -1161,7 +1160,7 @@ class njc:
 					try:
 # STARTS
 						if line[2] == "":
-							data.add_field(name="Origin:", value="origin",inline='false')
+							data.add_field(name="Origin:", value="unavailable",inline='false')
 						else:
 							data.add_field(name="Origin:", value=line[2],inline='true')
 
@@ -1179,7 +1178,7 @@ class njc:
 
 # Division
 						if line[6] == "":
-							data.add_field(name="Divisions:", value="divisions",inline='false')
+							data.add_field(name="Divisions:", value="unavailable",inline='false')
 						else:
 							data.add_field(name="Divisions:", value="{}".format(line[6]),inline='true')
 
@@ -1204,13 +1203,13 @@ class njc:
 
 	# Allow Users to edit the branches
 	@commands.command()
-	async def branchedit(self, agency , dirtag , field , newvalue):
-		"""Allow user to edit branches."""
+	async def branchedit(self,agency,dirtag,field,newvalue):
+		"""Edit branches for TTC."""
 
 		try:
 			reader = None
-			list = open("cogs/njc/DirTag.csv")
-			reader = csv.reader(list,delimiter="	")
+			taglist = open("cogs/njc/dirTag.csv")
+			reader = csv.reader(taglist,delimiter="	")
 		except:
 			data = discord.Embed(title="This agency is unsupported or invalid at this time.",description="You can help contribute to the branch lists. Contact <@300473777047994371>",colour=discord.Colour(value=5))
 			await self.bot.say(embed=data)
@@ -1218,22 +1217,22 @@ class njc:
 
 
 		lineNum = None
-		lines = []
+		line = []
 		for row in reader:
 			if row:
-				lines.append(row)
-				if len(lines) > 1 and int(row[0]) == number:
+				line.append(row)
+				if len(line) > 1 and str(row[0]) == dirtag:
 					if not lineNum:
-						lineNum = len(lines) - 1
+						lineNum = len(line) - 1
 					else:
 						await self.bot.say("More than one branch :3")
 						return
-		fleetlist.close()
+		taglist.close()
 		if True:
-			num = lines[0].index(field)
+			num = line[0].index(field)
 			if lineNum:
-				lines[lineNum][num] = newvalue
-				lines[lineNum][-1] = datetime.date.today().strftime("%d %B %Y").lstrip("0")
+				line[lineNum][num] = newvalue
+				line[lineNum][-1] = datetime.date.today().strftime("%d %B %Y").lstrip("0")
 			else:
 				await self.bot.say("Invalid number")
 				return
@@ -1241,12 +1240,12 @@ class njc:
 			await self.bot.say("Invalid field")
 			return
 		writer = None
-		with open("cogs/njc/DirTag.csv", "w", newline='') as list:
-			writer = csv.writer(list,delimiter="	")     
-			for i in lines:
+		with open("cogs/njc/dirTag.csv", "w", newline='') as taglist:
+			writer = csv.writer(taglist,delimiter="	")     
+			for i in line:
 				writer.writerow(i)
-		list.close()
-		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,value,newvalue,number),colour=discord.Colour(value=34633))
+		taglist.close()
+		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC branch `{}`".format(field,newvalue,newvalue,dirtag),colour=discord.Colour(value=34633))
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
