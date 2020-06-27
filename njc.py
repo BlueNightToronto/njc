@@ -29,7 +29,7 @@ class njc:
 		self.channelID5 = 712427124497317959 #yorkline-autoscan
 		self.channelID6 = 712427124497317959 #yorkline-autoscan
 		self.backupID = 537718582256336940 #bot-lab
-		self.scanInterval = 300
+		self.scanInterval = 900
 		self.looping = False
 
 	@commands.command()
@@ -41,7 +41,7 @@ class njc:
 	@commands.command()
 	async def rte(self,agency,rte):
 		"""Checks vehicles on a route."""
-		data = discord.Embed(title="TTC route " + rte, description="{} vehicles currently on route.".format(rte),colour=discord.Colour(value=13491480))
+		data = discord.Embed(title="TTC {}".format(rte), description="{} vehicles currently on route.".format(rte),colour=discord.Colour(value=8388608))
 		
 
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&r=" + rte
@@ -156,7 +156,7 @@ class njc:
 						# IF OK, THIS IS WHAT IS OUTPUTTED
 					listfleet.close()
 
-					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="Branch and fleet data curated by bot staff. Located at `#{}`".format(veh),colour=discord.Colour(value=13491480))
+					data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="Branch and fleet data curated by bot staff. Located at `#{}`".format(updated),colour=discord.Colour(value=13491480))
 				except Exception as errer:
 					await self.bot.say("Unknown vehicle, add it to the database. `{}`".format(errer))
 					data = discord.Embed(title="Vehicle Tracking for #{} - UNKNOWN VEHICLE".format(veh, agencyname), description="",colour=discord.Colour(value=16580352))
@@ -178,13 +178,26 @@ class njc:
 					# IF OK, THIS IS WHAT IS OUTPUTTED
 					taglist.close()
 					
+					if dirtag == str("N/A"):
+						try:
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto a proper route block. Located at {} TTC".format(linefleet[4]),colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Route", value="`{}`".format(line[1]))
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
+							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
+						except:
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
+							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
+					
 
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(veh),colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Route", value="`{}`".format(line[1]))
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
+							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
 						except:
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
+							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not signed onto any run. Located at `{}`".format(veh),colour=discord.Colour(value=13491480))
@@ -207,7 +220,7 @@ class njc:
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
@@ -346,7 +359,7 @@ class njc:
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
-				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=~14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
+				mapurl = "https://maps.googleapis.com/maps/api/staticmap?format=png8&zoom=14&scale=2&size=512x512&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyDka7xhpBUOanrqnglwPLuW5_FFhwkuAR8"
 
 				if hea == int('-4'): #label based on compass
 					mapurl = mapurl + "&markers=size:mid%7Ccolor:0x000000%7Clabel:O%7C{},{}".format(lat, lon)
@@ -374,13 +387,13 @@ class njc:
 		await self.bot.say("Vehicle not found! #{}".format(veh))
 
 	#Scans all active vehicles automatically
-	async def autoscan(self):
+	async def vehcheck(self):
 		while True:
 			await self.check(discord.Object(id = self.channelID))
 			await asyncio.sleep(self.scanInterval)
 
 	async def check(self, channel):
-#		await self.bot.send_message(channel, ":mag_right: **Scanning...**\nThis command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
+#		await self.bot.send_message(channel, ":mag: **Scanning...**\nThis command checks all vehicles in service if the vehicle division matches the branch division. This is useful for finding unknown branches, vehicles on routes out of their division, and updating information. Please don't spam the command.")
 		service = ""
 		service5 = ""
 		url = "http://webservices.nextbus.com/service/publicXMLFeed?command=vehicleLocations&a=ttc&t=0"
@@ -457,7 +470,7 @@ class njc:
 		except Exception as errer:
 			await self.bot.send_message(channel, "**Fatal error occured:**\n**VEHICLE:** `{0}`\n**BRANCH:** `{1}`\n**ERROR:** `{2}`".format(veh,dirtag,errer))
 
-		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Scan Completed**. ```Scan Complete! The following vehicles are tracking.```")
+		try: await self.bot.send_message(discord.Object(id = self.channelstatus),"**TTC Scan Completed**." "```Scan Complete! The following vehicles are tracking.```")
 		except: await self.bot.send_message(discord.Object(id = self.channelstatus), "An error may have occured.")
 #Groups all messages in one
 #		try:
@@ -929,7 +942,7 @@ class njc:
 			data.add_field(name="Status", value=line[6])
 			data.add_field(name="Last active on:", value="`{}`".format(line[3]))
 			data.add_field(name="Timestamp:", value="`{}`".format(line[6]))
-			data.set_footer(text="Last updated " + line[8])
+			data.set_footer(text="This is not an official app for transit agencies. Last updated " + line[8])
 
 
 			if number < 1000:
@@ -989,6 +1002,8 @@ class njc:
 				writer.writerow(i)
 		fleetlist.close()
 		data = discord.Embed(title="FLEETEDIT: Success ",description="You changed the value of `{}` from `{}` to `{}` for TTC vehicle #`{}`".format(field,newvalue,newvalue,number),colour=discord.Colour(value=34633))
+		data.add_field(name="Current date", value="Current date: {}".format(number),inline='false')
+		data.add_field(name="Edited by user", value="Edited by: <@312399217786224640>".format(number),inline='true')
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -1108,7 +1123,15 @@ class njc:
 						if line[4] == "":
 							data.add_field(name="{} Active Branches:".format(rte), value=service,inline='false')
 						else:
-							data.add_field(name="{} Active Branches:".format(rte), value="```{}```".format(line[4]),inline='false')
+							data.add_field(name="{} {} Active Branches:".format(rte,line[1]), value="```{}```".format(line[4]),inline='false')
+							
+							
+						
+# DAYS OF OPERATION
+						if line[3] == "":
+							data.add_field(name="Days of Operation:", value=service,inline='false')
+						else:
+							data.add_field(name="Days of Operation:", value=line[3],inline='false')
 							
 
 						try:
@@ -1124,8 +1147,11 @@ class njc:
 								service = service + veh + "; "
 							if service == "":
 								data.add_field(name="Vehicles", value="No vehicles currently on route.",inline='false')
+								data.set_image(url=mapurl)
 							else:
 								data.add_field(name="Vehicles", value=service,inline='false')
+								data.set_image(url=mapurl)
+								
 						except:
 							data.add_field(name="Current Vehicles", value="No vehicles currently on route.",inline='false')
 						data.set_footer(text="Powered by Yorkline.")
@@ -1184,13 +1210,14 @@ class njc:
 
 # Long Description
 						if line[7] == "":
-							data.add_field(name="Long description:", value="Not available.",inline='false')
+							data.add_field(name="Long Description:", value='Not Available',inline='false')
 						else:
-							data.add_field(name="Long description:", value="{}".format(line[7]),inline='true')
+							data.add_field(name="Long Description:", value="{}".format(line[7]),inline='true')
+							
 
 
 						data.set_thumbnail(url="https://s3.amazonaws.com/btoimage/prism-thumbnails/articles/09ea-20130207-Bus-Worst.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.webp")
-						data.set_footer(text="Last updated on " + line[1])
+						data.set_footer(text="Last updated on {}".format(line[1]))
 						
 
 					except Exception as errer:
@@ -1245,7 +1272,9 @@ class njc:
 			for i in line:
 				writer.writerow(i)
 		taglist.close()
-		data = discord.Embed(title="FLEETEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC branch `{}`".format(field,newvalue,newvalue,dirtag),colour=discord.Colour(value=34633))
+		data = discord.Embed(title="BRANCHEDIT: Success ".format(field),description="You change to the value of `{}` from `{}` to `{}` for TTC branch `{}`".format(field,newvalue,newvalue,dirtag),colour=discord.Colour(value=34633))
+		data.add_field(name="Current date", value="Current date: {}".format(dirtag),inline='false')
+		data.add_field(name="Edited by user", value="Edited by: <@{}>".format(dirtag),inline='true')
 		data.set_footer(text="Powered by Yorkline.")
 		await self.bot.say(embed=data)
 
@@ -1382,14 +1411,14 @@ class njc:
 		await self.bot.say(ordered)
 
 	@commands.command()
-	async def vehcheck(self):
+	async def autoscan(self):
 		if self.looping:
 			await self.check(discord.Object(id = self.backupID))
 			return
 		self.looping = False
-		await self.bot.loop.create_task(self.autoscan())
+		await self.bot.loop.create_task(self.vehcheck())
 
 	async def on_ready(self):
 		#await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
-		self.looping = False
-		await self.bot.loop.create_task(self.autoscan())
+		self.looping = N/A
+		await self.bot.loop.create_task(self.vehcheck())
