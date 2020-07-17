@@ -84,7 +84,7 @@ class njc:
 
 
 		if service == "":
-			await self.bot.say(":triangular_flag_on_post: The route you are looking for cannot be found at this time. It may indicate the has suspended or does not exist.".format(rte))
+			await self.bot.say(":triangular_flag_on_post: The route you are looking for cannot be found at this time. It may indicate the has suspended or does not exist.")
 		else:
 			try:
 				await self.bot.say(embed=data)
@@ -180,27 +180,15 @@ class njc:
 					
 					if dirtag == str("N/A"):
 						try:
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto a proper route block. Located at {} TTC".format(linefleet[4]),colour=discord.Colour(value=13491480))
-							data.add_field(name="Currently on Route", value="`{}`".format(line[1]))
-							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
-							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
-						except:
-							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
-							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
-					
-
-					if dirtag == str("N/A"):
-						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.".format(veh),colour=discord.Colour(value=13491480))
-							data.add_field(name="Currently on Route", value="`{}`".format(line[1]))
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
-							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
+							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
 						except:
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))  
-							data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))
+							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
 					else:
 						if str(linefleet[4]) not in str(line[6]):
-							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not signed onto any run. Located at `{}`".format(veh),colour=discord.Colour(value=13491480))
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not signed onto a proper route block.".format(veh),colour=discord.Colour(value=13491480))
 						data.add_field(name="Currently on Route", value=line[1])
 						data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
 						data.add_field(name="Origin", value=line[2])
@@ -217,6 +205,7 @@ class njc:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
 					data.add_field(name="Currently on Route", value="`{}`".format(routetag))  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
+					data.add_field(name="Speed", value="`VISION missing`".format(speed))
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
@@ -245,7 +234,7 @@ class njc:
 				except:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
-		await self.bot.say("**{} vehicle not found!** {} vehicle #{}".format(agency,agency,veh))
+		await self.bot.say(":triangular_flag_on_post: Vehicle {} could not be found.".format(veh))
 
 	@commands.command()
 	async def veh(self,agency,veh):
@@ -332,13 +321,25 @@ class njc:
 					# IF OK, THIS IS WHAT IS OUTPUTTED
 					taglist.close()
 					
+					if dirtag == str("N/A"):
+						try:
+							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
+							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
+						except:
+							data.add_field(name="Currently on Route", value="`{}`".format(routetag))  
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
+							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
+					
 
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
+							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
 						except:
-							data.add_field(name="Vehicle Division", value=linefleet[4]) 
+							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
+							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
 					else:
 						if str(linefleet[4]) not in str(line[6]):
 							data = discord.Embed(title="TTC Vehicle #{} -{} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]),description="", colour=discord.Colour(value=13491480))
@@ -384,7 +385,7 @@ class njc:
 				except:
 					await self.bot.say(":rotating_light: {} is currently on `{}`. Corrupted route data! Please check data for `{}` :rotating_light:".format(veh,dirtag,dirtag))
 					return
-		await self.bot.say("Vehicle not found! #{}".format(veh))
+		await self.bot.say(":triangular_flag_on_post: Vehicle {} could not be found.".format(veh))
 
 	#Scans all active vehicles automatically
 	async def vehcheck(self):
@@ -1115,7 +1116,7 @@ class njc:
 			for row in reader:
 				if str(row[0]) == rte:
 					line = row
-					data = discord.Embed(title="TTC {}-{}".format(rte, line[1]), description="{} vehicles currently on route.".format(rte),colour=discord.Colour(value=8388608))
+					data = discord.Embed(title="TTC {}-{} - Page 1 of 1".format(rte, line[1]), description="{} vehicles currently on route.".format(rte),colour=discord.Colour(value=8388608))
 					
 
 					try:
