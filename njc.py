@@ -108,16 +108,15 @@ class njc:
 			if veh == service: # IF MATCHING VEHICLE FOUND
 				try:
 					dirtag = i.attributes['dirTag'].value # Direction Tag
+					speed = i.attributes['speedKmHr'].value #speed
 				except:
 					dirtag = str("N/A")
 				hea = int(i.attributes['heading'].value) # Compass Direction
 				updated = i.attributes['secsSinceReport'].value # Seconds since last updated
 				lat = i.attributes['lat'].value #latitude
 				lon = i.attributes['lon'].value # lon
-				speed = i.attributes['speedKmHr'].value #speed
 
 				try:
-					vision = i.attributes['speedKmHr'].value
 					routetag = i.attributes['routeTag'].value
 				except:
 					lon = i.attributes['lon'].value # lon
@@ -199,13 +198,13 @@ class njc:
 						
 					data.add_field(name="Heading", value=" `{} ({}°)`".format(*[(["North", "Northeast", "East", "Southeast", "South", "Southwest", "West", "Northwest", "North", "Disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
 					
-					data.add_field(name="Speed", value="`{}km/h`".format(speed))
+					data.add_field(name="Speed", value="`VISION missing`")
 					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
 					data.add_field(name="Currently on Route", value="`{}`".format(routetag))  
 					data.add_field(name="Currently on Branch", value="`{}`".format(dirtag))  
-					data.add_field(name="Speed", value="`VISION missing`".format(speed))
+					data.add_field(name="Speed", value="`{}km/h`".format(speed))
 					await self.bot.say(":question: Unknown branch, add it to the database. `{}`".format(errer))
 					
 
@@ -252,6 +251,7 @@ class njc:
 			if veh == service: # IF MATCHING VEHICLE FOUND
 				try:
 					dirtag = i.attributes['dirTag'].value # Direction Tag
+					speed = i.attributes['speedKmHr'].value #speed
 				except:
 					dirtag = str("N/A")
 				hea = int(i.attributes['heading'].value) # Compass Direction
@@ -324,6 +324,7 @@ class njc:
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Route", value="`N/A`")
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
 							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
 						except:
@@ -335,9 +336,11 @@ class njc:
 					if dirtag == str("N/A"):
 						try:
 							data = discord.Embed(title="TTC Vehicle #{} {} {} - Page 1 of 1".format(veh,linefleet[2],linefleet[3]), description="This vehicle is currently not sign onto any run.",colour=discord.Colour(value=13491480))
+							data.add_field(name="Currently on Route", value="`N/A`")
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
 							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
 						except:
+							data.add_field(name="Currently on Route", value="`{}`").format(routetag)
 							data.add_field(name="Vehicle Division", value="`{}`".format(linefleet[4]))
 							data.add_field(name="Vehicle Status", value="`{}`".format(linefleet[6]))
 					else:
@@ -351,7 +354,10 @@ class njc:
 						data.add_field(name="Branch Division", value=line[6])
 						data.add_field(name="Vehicle Division", value="`{}`".format(line[6]))  
 						
+						
 					data.add_field(name="Heading", value="`{} ({}°)`".format(*[(["North", "Northeast", "East", "Southeast", "South", "Southwest", "West", "Northwest", "North", "Disabled"][i]) for i, j in enumerate([range(0, 30), range(30, 68), range(68, 113), range(113, 158), range(158, 203), range(203, 248), range(248, 293), range(293, 338), range(338, 360),range(-10, 0)]) if int(hea) in j],hea)) # Obfuscation? Fun, either way
+					
+					data.add_field(name="Speed", value="`VISION missing`")
 					
 				except Exception as errer:
 #                    await self.bot.say("dirTag.csv not found!\n`" + str(errer) + "`")
@@ -1421,5 +1427,5 @@ class njc:
 
 	async def on_ready(self):
 		#await self.bot.send_message(discord.Object(id = self.channelID), "Loaded!")
-		self.looping = N/A
+		self.looping = True
 		await self.bot.loop.create_task(self.vehcheck())
