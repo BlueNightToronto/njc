@@ -408,7 +408,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1124	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1125	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1126	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
-1127	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		7 May 2020
+1127	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		26 June 2020
 1128	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1129	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
 1130	1000-1149	Orion	2006 VII HEV	Mount Dennis	ISB-BAE	Active		9 July 2018
@@ -551,7 +551,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1317	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		14 March 2019
 1318	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		27 April 2019
 1319	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
-1320	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active TRACK		17 November 2019
+1320	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		19 May 2020
 1321	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
 1322	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		19 January 2019
 1323	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		21 January 2019
@@ -572,7 +572,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1338	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		21 December 2018
 1339	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		22 January 2019
 1340	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
-1341	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active TRACK	https://cdn.discordapp.com/attachments/385830976879722499/466684119305420840/IMG_1217.JPG	11 May 2020
+1341	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466684119305420840/IMG_1217.JPG	20 May 2020
 1342	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active	https://media.discordapp.net/attachments/385830976879722499/466460401996136469/IMG_5087.JPG?width=500&height=300	11 July 2018
 1343	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active TRACK		17 November 2019
 1344	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		9 July 2018
@@ -631,7 +631,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1397	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		28 January 2019
 1398	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		28 January 2019
 1399	1200-1423	Orion	2007 VII HEV	Wilson	ISB-BAE	Active		24 October 2018
-1400	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active TRACK		17 November 2019
+1400	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		27 May 2020
 1401	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		12 January 2019
 1402	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		12 January 2019
 1403	1200-1423	Orion	2007 VII HEV	Malvern	ISB-BAE	Active		6 February 2019
@@ -704,7 +704,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1546	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Retired		20 September 2018
 1547	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active	https://cdn.discordapp.com/attachments/385830976879722499/466610306739601418/IMG_8992.JPG	11 July 2018
 1548	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1549	1500-1689	Orion	2008 VII HEV	Mount	ISB-BAE	Active		3 November 2018
+1549	1500-1689	Orion	2008 VII HEV	Mount Dennis	ISB-BAE	Active		20 July 2020
 1550	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		19 January 2019
 1551	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Retired		20 September 2018
 1552	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
@@ -812,7 +812,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 1654	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1655	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1656	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
-1657	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active TRACK		19 December 2019
+1657	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		19 May 2020
 1658	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		13 January 2019
 1659	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		9 July 2018
 1660	1500-1689	Orion	2008 VII HEV	Malvern	ISB-BAE	Active		20 January 2019
@@ -1296,7 +1296,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3419	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		19 February 2019
 3420	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		25 January 2019
 3421	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		25 January 2019
-3422	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
+3422	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		21 May 2020
 3423	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
 3424	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		25 January 2019
 3425	3400-3569	Nova Bus	2018 LFS IV HEV	Malvern	B6.7-BAE	Active		22 January 2019
@@ -1532,53 +1532,53 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 3700	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		27 October 2019
 3701	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		27 October 2019
 3702	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		8 May 2020
-3703	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
+3703	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		28 June 2020
 3704	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		7 May 2020
 3705	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		27 October 2019
 3706	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		7 May 2020
-3707	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		5 May 2020
+3707	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active		28 June 2020
 3708	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		5 May 2020
-3709	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3710	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3711	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		5 May 2020
+3709	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		15 May 2020
+3710	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		21 May 2020
+3711	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active		28 June 2020
 3712	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3713	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
+3713	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		21 May 2020
 3714	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		5 May 2020
-3715	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3716	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3717	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3718	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3719	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3720	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3721	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3722	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3723	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
+3715	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		27 June 2020
+3716	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		15 August 2020
+3717	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		15 August 2020
+3718	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		15 August 2020
+3719	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		15 August 2020
+3720	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		15 August 2020
+3721	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active TRACK		15 August 2020
+3722	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active		27 October 2019
+3723	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Active		27 October 2019
 3724	3700-3724	New Flyer	XE40 Xcelsior	Arrow Rd	Siemens ELFA2	Inactive TRACK		27 October 2019
-3725	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active TRACK		27 October 2019
-3726	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active TRACK		23 January 2020
-3727	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		28 January 2020
-3728	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		10 January 2020
-3729	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		11 January 2020
-3730	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		8 March 2020
-3731	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		24 December 2019
-3732	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		24 December 2019
-3733	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		6 March 2020
-3734	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		9 February 2020
-3735	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3736	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3737	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3738	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3739	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3740	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3741	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3742	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3743	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3744	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3745	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3746	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3747	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3748	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
-3749	3725-3749	Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		27 October 2019
+3725	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active TRACK		15 May 2020
+3726	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		20 July 2020
+3727	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3728	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3729	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3730	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3731	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3732	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3733	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3734	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Active		15 May 2020
+3735	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3736	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3737	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3738	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3739	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3740	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3741	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3742	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3743	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3744	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3745	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3746	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3747	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3748	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
+3749	3725-3749	2019 Proterra	Catalyst BE40	Mount Dennis	EEV-7202	Unavailable		15 May 2020
 3750	3750-3759	2019 BYD	K9M	Eglinton	2 x BYD TYC-150A	Inactive		14 May 2020
 3751	3750-3759	2019 BYD	K9M	Eglinton	2 x BYD TYC-150A	Inactive		14 May 2020
 3752	3750-3759	2019 BYD	K9M	Eglinton	2 x BYD TYC-150A	Inactive		14 May 2020
@@ -1838,7 +1838,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 4250	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired - 2015		9 July 2018
 4251	4200-4251	UTDC	ALRV L3	TTC Streetcar	Brown Boveri	Retired		24 September 2018
 4400	4400-4603	Bombardier	Flexity	Leslie	Bombardier	Active		8 August 2018
-4401	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		14 May 2020
+4401	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		19 May 2020
 4402	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		6 August 2018
 4403	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		6 August 2018
 4404	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		6 August 2018
@@ -1943,7 +1943,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 4503	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		20 October 2018
 4504	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		26 September 2019
 4505	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		23 October 2018
-4506	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		10 November 2018
+4506	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		16 May 2020
 4507	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		16 November 2018
 4508	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		10 October 2019
 4509	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		16 November 2018
@@ -1975,7 +1975,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 4535	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		1 April 2019
 4536	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		8 April 2019
 4537	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		11 April 2019
-4538	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		15 April 2019
+4538	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		20 May 2020
 4539	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		16 April 2019
 4540	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		18 April 2019
 4541	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		1 May 2019
@@ -2007,7 +2007,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 4567	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		11 September 2019
 4568	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		29 August 2019
 4569	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		17 September 2019
-4570	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		21 September 2019
+4570	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		15 May 2020
 4571	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		26 September 2019
 4572	4400-4603	Bombardier	Flexity	Leslie	Overhead Wire	Active		2 January 2019
 4573	4400-4603	Bombardier	Flexity	TTC Streetcar	Overhead Wire	Active		27 February 2019
@@ -3804,7 +3804,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8921	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
 8922	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		10 January 2020
 8923	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 July 2018
-8924	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active TRACK		19 December 2019
+8924	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		28 June 2020
 8925	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		19 August 2018
 8926	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		19 January 2019
 8927	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		19 August 2018
@@ -3828,7 +3828,7 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8945	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		19 December 2019
 8946	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		19 December 2019
 8947	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active	https://media.discordapp.net/attachments/385830976879722499/466678244234756097/IMG_5197.JPG?width=779&height=520	19 December 2019
-8948	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active TRACK		6 March 2020
+8948	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		19 May 2020
 8949	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		9 January 2020
 8950	8720-8964	Nova Bus	2017 LFS IV	Eglinton	L9-B400R6	Active		19 December 2019
 8951	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active		9 July 2018
@@ -3847,13 +3847,13 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 8964	8720-8964	Nova Bus	2017 LFS IV	Birchmount	L9-B400R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466632764582526976/IMG_1704.JPG	27 April 2019
 9000	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		13 March 2019
 9001	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active TRACK	https://cdn.discordapp.com/attachments/385830976879722499/467624171866947587/IMG_20180714_032900_489.jpg	17 November 2019
-9002	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active TRACK		17 November 2019
-9003	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Inactive		22 January 2019
-9004	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active TRACK		28 August 2019
-9005	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active TRACK		17 November 2019
-9006	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active TRACK		28 August 2019
-9007	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active TRACK		17 November 2019
-9008	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active TRACK		17 November 2019
+9002	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		19 May 2020
+9003	9000-9026	Nova Bus	2013 LFS Artic III	Wilson	ISL9-B500R6	Retired		20 May 2020
+9004	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		20 May 2020
+9005	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		27 May 2020
+9006	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		20 May 2020
+9007	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		21 May 2020
+9008	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		19 May 2020
 9009	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		24 August 2019
 9010	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		13 January 2020
 9011	9000-9026	Nova Bus	2013 LFS Artic III	Malvern	ISL9-B500R6	Active		11 January 2020
@@ -3946,10 +3946,10 @@ vehicle	group	manufacturer	model	division	powertrain	status	thumbnail	date
 9098	9027-9152	Nova Bus	2014 LFS Artic IV	Malvern	ISL9-B500R6	Active		9 July 2018
 9099	9027-9152	Nova Bus	2014 LFS Artic IV	Malvern	ISL9-B500R6	Active		5 February 2019
 9100	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		12 October 2018
-9101	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		12 October 2018
-9102	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		12 October 2018
+9101	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		20 July 2020
+9102	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		20 July 2020
 9103	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active	https://cdn.discordapp.com/attachments/385830976879722499/466594215950811162/IMG_8244.JPG	12 October 2018
-9104	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		12 October 2018
+9104	9027-9152	Nova Bus	2014 LFS Artic IV	Mount Dennis	ISL9-B500R6	Active		20 July 2020
 9105	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9106	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
 9107	9027-9152	Nova Bus	2014 LFS Artic IV	Arrow Rd	ISL9-B500R6	Active		9 July 2018
